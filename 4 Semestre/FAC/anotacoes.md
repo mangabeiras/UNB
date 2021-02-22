@@ -22,6 +22,44 @@ Por que Assembly para MIPS (Microprocessor Without Interlocked Pipeline Stages)
 * Ela contém CPU (soma subtração). PPU (Pontos flutuantes), Coprocessor 0 (exceções)
  - Os registradores são as melhores tipos de memórias
 
-#Especificações dos Registradores
+# Especificações dos Registradores
 
 ![Imagem](img/FACb.png)
+
+# Anotações aula C MIPS
+
+## Alocação de Memória (SPIM  e Mars)
+![Alocacao](img/alocacao.png)
+
+# ESTRUTURA BASICA DE UM PROGRAMA
+* .text: area do programa (instrucoes) em si;
+* .data: area para declarações de variáveis estaticas
+* .globl: area global de declaracao
+
+## Linguagem de Máquina (De montagem)
+* Mais primitiva que linguagens de alto nivel. Sem controle de fluxo sofisticado
+* Muito Restritiva: MIPS Arithmetic Instrutions
+
+## Modelo de programação: MIPS ISA
+* OBJETIVO DE EFICIENCIA
+
+## Aritmética MIPS
+* Todas as instruções possuem 3 operandos
+* A ordem é fixa
+* No MIPS, add e sub são as operações
+* Todos os operando devem ser registradores
+
+## Registradores vs Memoria
+* O registrador que associa variáveis a registradores
+* Tudo que o processador faz passa pela memoria
+
+![Memoria](img/memoria.png)
+
+## Exemplo de manipulação de Memoria no MIPS
+
+![Exemplo](img/exemploMem.png)
+* lw -> uso para pegar um dado de um array
+* sw -> uso para gravar um dado num array
+
+* Pra nao fazer 2 instruções, use assim:
+* *addi $s3, $s3,4 ==  $s3 = s3 + 4*

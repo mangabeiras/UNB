@@ -1,1 +1,14 @@
-unsupported reparse point
+*==============================================
+*OPAMP9 pinout: +VIN -VIN -Z +Z +V -V +IOUT -IOUT  RSET
+*Copyright (c) 1998 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*==========================================
+*Maxim
+
+*MAX Sngl Wideband Transconductance Amplifier pkg:DIP14 2,6,5,3,1,7,13,9,11
+.PARAM XMAX435 File:Maxim.lib
+
+*MAX Sngl Differential Line Receiver pkg:DIP14 6,2,14,1,11,13,9,5,3
+.PARAM XMAX4146 File:Maxim.lib

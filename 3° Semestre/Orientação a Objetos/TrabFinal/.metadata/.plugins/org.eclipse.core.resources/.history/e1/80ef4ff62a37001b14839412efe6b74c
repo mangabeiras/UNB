@@ -1,0 +1,48 @@
+package visao;
+
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.table.AbstractTableModel;
+import javax.swing.table.TableColumn;
+import javax.swing.table.TableModel;
+import javax.swing.JTable;
+import java.awt.Font;
+import javax.swing.table.DefaultTableModel;
+
+public class Listar extends JFrame {
+	TableModel tabela;
+	private JTable table;
+	public Listar() {
+		configuraFrame();
+		criaTabela();
+	}
+	
+	private void configuraFrame() {
+		setTitle("Menu");
+		setResizable(false);
+		setMinimumSize(new Dimension(500, 500));
+		setMaximumSize(new Dimension(500, 500));
+		setAlwaysOnTop(false);
+		setLocationRelativeTo(null);
+		getContentPane().setLayout(null);
+	}
+	
+
+	private void criaTabela() {
+		table = new JTable();
+		table.setBounds(0, 458, 484, -458);
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+			},
+			new String[] {
+				"ID Pessoa", "Nome", "Saude", "Gestante", "Idade"
+			}
+		));
+		table.add(new JLabel() ,"Roberto", 0);
+		table.setFont(new Font("Arial", Font.BOLD, 12));
+		getContentPane().add(table);
+	}
+}

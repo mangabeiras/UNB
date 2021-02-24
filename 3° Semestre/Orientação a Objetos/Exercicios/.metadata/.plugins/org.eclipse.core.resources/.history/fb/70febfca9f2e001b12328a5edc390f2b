@@ -1,0 +1,57 @@
+package interfaceGrafica;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import dados.Grupo;
+import dados.Homem;
+
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JTextPane;
+import javax.swing.JLabel;
+
+public class JanelaCdHomem extends JFrame {
+	JButton confirma, cancela;
+	public JanelaCdHomem(Grupo grupo) {
+		grupo.addPessoa(new Homem(cadastroNome(), 0, 1 ,1));	
+		
+	}
+	
+	public String cadastroNome() {
+		JPanel cadastro = new JPanel();
+		JTextField texto = new JTextField();
+		
+		getContentPane().add(cadastro, BorderLayout.CENTER);
+		cadastro.setLayout(null);
+		
+		JButton confirma = new JButton("Ok");
+		confirma.setBounds(82, 169, 89, 23);
+		confirma.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		cadastro.add(confirma);
+		
+		JButton cancela = new JButton("Cancela");
+		cancela.setBounds(258, 169, 89, 23);
+		cadastro.add(cancela);
+		
+		texto.setBounds(46, 102, 339, 20);
+		texto.setEnabled(true);
+		texto.setEditable(true);
+		cadastro.add(texto);
+		
+		JLabel cabecalho = new JLabel("Insira o nome");
+		cabecalho.setBounds(46, 37, 153, 14);
+		cadastro.add(cabecalho);
+		
+		setContentPane(cadastro);
+		return "pimba";
+	}
+}

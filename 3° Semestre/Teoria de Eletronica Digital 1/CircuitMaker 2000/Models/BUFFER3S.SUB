@@ -1,1 +1,15 @@
-unsupported reparse point
+*Generic 3-state Buffer MCE Nodes: In,OE,Out
+*MCE mixed-mode 3-state buffer
+.SUBCKT X3SBUFF 6 7 8
+R1 4 3 1
+C1 0 3 .004u IC=0V
+V1 5 0 DC 5V
+BNLVs1 4 0 V=v(6)
+SVcSW1 3 8 7 0 STTL
+R2 8 5 10Meg
+R3 0 8 10Meg
+R4 7 0 10Meg
+*TTL TTL switch (vih=2.0v, vil=0.8v)
+.MODEL STTL SW(VT=2 VH=1.2 ROFF=500E+6 )
+.ENDS X3SBUFF
+

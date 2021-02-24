@@ -1,0 +1,30 @@
+package interfaceGrafica;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class TelaPrincipal extends JFrame{
+	private JButton novo;
+	
+	public TelaPrincipal(JFrame janela) {
+		setTitle("Menu");
+		setLayout(null);
+		novo = new JButton("Novo");
+		novo.setBounds(170, 118, 90, 20);
+		
+		novo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evento) {
+				JFrame janela = new JanelaSexo();
+				janela.setVisible(true);
+				setVisible(false);
+			}
+		});
+		
+		add(novo);
+		setVisible(true);
+	}
+	
+}

@@ -1,1 +1,20 @@
-unsupported reparse point
+*==============================================
+*OpComp8 pinout: AMPIN+ AMPIN- COMPIN+ +V -V REF AMPOUT COMPOUT
+*Copyright (c) 1998 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*==============================================
+*Maxim
+
+*MAX Sngl Op Amp/ Comp./Ref. pkg:DIP8 3,2,5,8,4,6,1,7
+.PARAM XMAX951 File:Maxim.lib
+
+*MAX Sngl Op Amp/ Comp./Ref. pkg:DIP8 3,2,5,8,4,6,1,7
+.PARAM XMAX952 File:Maxim.lib
+
+*MAX Sngl Op Amp/ Comp. pkg:DIP8 3,2,5,6,8,4,1,7
+.PARAM XMAX953 File:Maxim.lib
+
+*MAX Sngl Op Amp/ Comp. pkg:DIP8 3,2,5,6,8,4,1,7
+.PARAM XMAX954 File:Maxim.lib

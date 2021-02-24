@@ -1,0 +1,149 @@
+package visao;
+
+import java.awt.Dimension;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+
+import dados.Pessoa;
+
+import javax.swing.JTable;
+import java.awt.Font;
+import javax.swing.table.DefaultTableModel;
+
+import conexao.PessoaDao;
+
+import javax.swing.JButton;
+import javax.swing.ScrollPaneConstants;
+
+// CLASSE QUE LISTA TODAS AS PESSOAS CADASTRADAS
+public class Lista extends JFrame {
+	private TelaPrincipal principal;
+	private JScrollPane barraRolagem;
+	private JTable tabela;
+	private DefaultTableModel modelo;
+	private JPanel painelTabela;
+	private JButton voltar;
+	
+	// CONSTRUTOR
+	Lista() {
+		initComponents();
+	}
+	
+	// CRIA PAINEL DA TABELA
+	private void criaPainelTabela() {
+		painelTabela = new JPanel();
+		painelTabela.setMinimumSize(new Dimension(800, 400));
+		painelTabela.setMaximumSize(new Dimension(800, 400));
+		painelTabela.setBounds(0, 0, 784, 397);
+		painelTabela.setLayout(null);
+		getContentPane().add(painelTabela);		
+	}
+	
+	// CRIA BOTAO VOLTAR
+	private void criaBotaoVoltar() {
+		voltar = new JButton("Voltar");
+		voltar.setFont(new Font("Arial", Font.BOLD, 12));
+		voltar.setBounds(355, 390, 90, 25);
+		getContentPane().add(voltar);
+	}
+	
+	// CONFIGURA A JANELA
+	private void configuraFrame() {
+		setTitle("Cadastros");
+		setResizable(false);
+		setMinimumSize(new Dimension(800, 500));
+		setMaximumSize(new Dimension(800, 500));
+		setAlwaysOnTop(false);
+		setLocationRelativeTo(null);
+		getContentPane().setLayout(null);
+	}
+	
+	// CRIA A TABELA
+	private void criaTabela() {
+		criaModel();
+		tabela = new JTable(modelo);
+		configuraColunas();
+		tabela.setBounds(1, 1, 782, 0);
+		tabela.setEnabled(false);
+		tabela.setRowHeight(25);	
+		painelTabela.add(tabela);
+	}
+	
+	// LENGTH DAS COLUNAS
+	private void configuraColunas() {
+		tabela.getColumnModel().getColumn(0).setPreferredWidth(80);
+		tabela.getColumnModel().getColumn(1).setPreferredWidth(150);
+		tabela.getColumnModel().getColumn(2).setPreferredWidth(150);
+		tabela.getColumnModel().getColumn(3).setPreferredWidth(80);
+		tabela.getColumnModel().getColumn(4).setPreferredWidth(40);
+	}
+	
+	// MODEL DA TABELA
+	private void criaModel() {
+		modelo = new DefaultTableModel();
+		modelo.addColumn("ID Pessoa");
+		modelo.addColumn("Nome");
+		modelo.addColumn("Saude");
+		modelo.addColumn("Gestacao");
+		modelo.addColumn("Idade");
+	}
+	
+	// BARRA DE ROLAGEM
+	private void criaBarraRolagem() {
+		barraRolagem = new JScrollPane(tabela);
+		barraRolagem.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		barraRolagem.doLayout();
+		barraRolagem.setBounds(0, 0, 784, 380);
+		painelTabela.add(barraRolagem);
+	}
+	
+	public JTable getTabela() {
+		modelo.setNumRows(0);
+		return this.tabela;
+	}
+		
+	
+	// PREENCHE TABELA
+	private void preencheTabela() {
+		modelo.setNumRows(0);
+		PessoaDao dao = new PessoaDao();
+		
+		for (Pessoa p : dao.getGrupo().getGrupo()) {
+			if (p.getSituacaoGestacao() == null)
+				modelo.addRow(new Object[] {p.getId(), p.getNome().toLowerCase(), p.getSituacaoExtenso(), "--", p.getIdade()});
+			else
+				modelo.addRow(new Object[] {p.getId(), p.getNome().toLowerCase(), p.getSituacaoExtenso(), p.getSituacaoGExtenso(), "--"});
+		}
+	}
+	
+	// VOLTA AO MENU PRINCIPAL
+	private void menuPrincipal() {
+		principal = new TelaPrincipal();
+		principal.setVisible(true);
+		setVisible(false);
+	}
+	
+	// ADICIONA OS ESCUTADORES
+	private void addEscutadores() {
+		voltar.addActionListener(evt -> menuPrincipal());
+	}
+	
+	// INICIA OS COMPONENTS
+	private void initComponents() {
+		configuraFrame();
+		
+		criaPainelTabela();
+		
+		criaTabela();
+		
+		criaBarraRolagem();
+		
+		preencheTabela();
+		
+		criaBotaoVoltar();
+		
+		addEscutadores();
+	}
+	
+}

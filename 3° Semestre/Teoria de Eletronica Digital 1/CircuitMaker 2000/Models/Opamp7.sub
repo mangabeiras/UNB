@@ -1,1 +1,105 @@
-unsupported reparse point
+*==============================================
+*OPAMP7 pin order: +I,-I,+V,-V,O,X1,X2
+*Copyright (c) 1997 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*====================================================
+*MicroCode Engineering
+
+*Sngl LowNoise OpAmp pkg:DIP8 3,2,7,4,6,5,8
+.PARAM XNE5534 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XTL060 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XTL070 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XTL080 File:Mcemods2.lib
+
+*Sngl GenPurpose OpAmp pkg:DIP8 3,2,7,4,6,1,8 
+.PARAM XUA748 File:Mcemods2.lib
+
+*====================================================
+*Comlinear
+
+*COM Sngl FastSettle Video OpAmp w/Disable pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XCLC410 File:Comlin.lib
+
+*COM Sngl LoNoise WideBW OpAmp w/ISupAdj&ExtComp pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XCLC426 File:Comlin.lib
+
+*COM Sngl HiSpeed OutputClamping OpAmp pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XCLC501 File:Comlin.lib
+
+*COM Sngl Clamping LoGain Fast14bitSettl OpAmp pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XCLC502 File:Comlin.lib
+
+*====================================================
+*Linear Technology
+
+*LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XLM101A File:Ltc.lib
+
+*LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XLM108 File:Ltc.lib
+
+*LTC Dual OpAmp pkg:DIP16 (A:5,4,1,6,16,3,2)(B:13,12,9,6,8,11,10)
+.PARAM XLH2108 File:Ltc.lib
+
+*LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XLM108A File:Ltc.lib
+
+*LTC Dual OpAmp pkg:DIP16 (A:5,4,1,6,16,3,2)(B:13,12,9,6,8,11,10)
+.PARAM XLH2108A File:Ltc.lib
+
+*LTC Sngl LoPwr OpAmp & Reference pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XLM10C File:Ltc.lib
+
+*LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XLM301A File:Ltc.lib
+
+*LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XLM308 File:Ltc.lib
+
+*LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XLM308A File:Ltc.lib
+
+*LTC Sngl pA uV LoNoise OpAmp pkg:DIP8 3,2,7,4,6,1,8
+.PARAM XLT1008 File:Ltc.lib
+
+*===================================
+*Maxim
+
+*MAX Sngl Differential Line Receiver pkg:DIP14 6,2,14,1,11,13,9
+.PARAM XMAX4144 File:Maxim.lib
+
+
+*====================================
+*Analog Devices
+
+*AD Percision, 500ns settling BiFET OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XAD744 File:AD1.lib
+
+*AD Percision, 500ns settling BiFET OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XAD744A File:AD1.lib
+
+*AD Percision, 500ns settling BiFET OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XAD744B File:AD1.lib
+
+*AD Percision, 500ns settling BiFET OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XAD744C File:AD1.lib
+
+*AD Percision, 500ns settling BiFET OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XAD744J File:AD1.lib
+
+*AD Percision, 500ns settling BiFET OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XAD744K File:AD1.lib
+
+*AD Percision, 500ns settling BiFET OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XAD744S File:AD1.lib
+
+*AD Percision, 500ns settling BiFET OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6,8,5
+.PARAM XAD744T File:AD1.lib

@@ -1,1 +1,8 @@
-unsupported reparse point
+* CAMCAD Layer Map File
+0                    -> TOP LAYER
+PADS                 -> MULTI LAYER
+SILKSCREEN           -> TOP SILKSCREEN
+OUTLINE              -> KEEP OUT LAYER
+VIAS                 -> MULTI LAYER
+LAYER1               -> TOP LAYER
+LAYER2               -> BOTTOM LAYER

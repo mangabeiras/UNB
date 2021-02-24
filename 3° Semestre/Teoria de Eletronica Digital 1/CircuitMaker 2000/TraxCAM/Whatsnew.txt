@@ -1,1 +1,986 @@
-unsupported reparse point
+WHATSNEW.TXT
+
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.4e                                      *
+*                                                                             *
+*******************************************************************************
+
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.4d                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD		:	Unload Aperture Table newly implemented.
+
+			Check name output log file optimized to only
+			report every change only once.
+
+			Hilite Net License moved to QUERY License.
+
+			CC File update to reflect Object Color Override function.
+
+			Reports for Apertures and Tools.
+
+ASL 		:	"Active Server Page" user programable aperture reader 
+			implemented.
+
+DXF in		:	Better DXF "bad file" detection. If a bad DXF file is 
+			encountered, CAMCAD gives a error message with line number.
+
+CADIF in	:	Component geometry name can now be changed from generic
+			ALTxxx to part description name.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.4c                                      *
+*                                                                             *
+*******************************************************************************
+
+HP3070 out	:	Prefered Test access layer for Vias now derived through
+			TEST Attribute.
+
+HP5DX out	:	5DX_PACKAGE_ID attribute implemented.
+
+HPGL in		:	Pen Colors implemented.
+
+THEDA in	:	TL Version 5 implemented.
+		
+			THEDA to MENTOR PCB Translator implemented.
+
+DXF in		:	Closed Polyline not anymore dependent on Polyflag 70
+
+CAMCAD		:	"Pick and Edit a Geometry" has now all Geometries sorted
+			by name, Width and Tools are ignored. They are edited in
+			Aperture and Tool Dialogs.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.4b                                      *
+*                                                                             *
+*******************************************************************************
+
+ALLEGRO out	:	Optional Board Header script implemented.
+			Optional Package Header script implemented.
+
+CAMCAD		:	Allow X,Y offset and rotation on Complex apertures.
+
+			New REPORTS Menue created. This creates Excel and
+			RSI-EXchange compatible reports, BOMs and Netlist reports.
+
+			LayerGroups implemented.
+
+			Print errors fixed. (Footer, Multipage, Negative).
+
+HP3070 out	:	New HP3070.out command implememented
+			.KeyValType	allows the assignment of a HP Devicetype
+			dependend on a Attribute Keyword - Value combination.
+
+HP5DX out	:	BOARD Thickness from datafile is avail.
+
+GENCAD in	:	BOARD Thickness implemented.
+
+PADS in		:	Error fix when traces changes width.
+
+ORCAD in	:	Doublicated Vias elimitated.
+
+PADS to MENTOR PCB Translator
+		:	Multiple improvements done.
+
+EIF in		:	Testpoints are not updated in the Key-in netlist, but in
+			the Veribest created SCICARDS Netlist. Reader now can detect
+			the Veribest created SCICARDS Netlist.
+
+ALLEGRO in	:	Component Height can now be derived from a CLASS/SUBCLASS 
+			text entry.
+
+ALLEGRO out	:	MECHANICAL Package userdefinable Header and Footer Script
+			implemented.
+
+DXF to GERBER Translator
+		:	Mulitple improvements done.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.4a                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD		:	Add geometries allows to select geometries from 
+			different files.
+
+			OLE client/server implemented.
+
+			Layer Stack dialog implemented. Layer Stacking can
+			now be assigned in a table, including layer types
+			and thickness.
+
+Gerber in	:	"Disappearing" Flash fixed.
+
+Theda in	:	"Pad in Pad" fixed. Hierarchical Padstacks now display
+			correctly.
+			
+Mentor 4Files in:	PN_EXT property now updates the partnumber.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.3d                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD		:	HP import settings can now be saved with SAVE SETTINGS
+			and used as default settings.
+
+SOLIDWORKS out	:	SolidWorks 98 now supported. New DLL's are available.
+
+			Different geometry heights for same geometries are now 
+			supported.
+
+HP3070 out	:	test for "on-top-of-each-other" testpoints implemented.
+			testpoints will get moved by x-1 y-1 unit.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.3c                                      *
+*                                                                             *
+*******************************************************************************
+
+BARCO in	:	Linewidth error fixed.
+
+EDIF in		:	Token read error fixed.
+
+			.DOTSIZE in EDIF.IN is now user definable.
+
+CR3000 in	:	Layer Comments and Mirror Layers implemented.
+
+Copper Pour	:	Optimized Copper Pour.
+
+Protel Schem in	:	Part mirror/rotation fixed.
+
+DXF in		:	3DFACE implemented in the paperview (2D).
+
+GERBER in	:	Multi quadrant (G75) arc fixed.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.3b                                      *
+*                                                                             *
+*******************************************************************************
+
+HP3070 out      :       TEST "NONE" implemented.
+			
+			Non-connected Pin switch implemented.
+
+PADS in         :       PART based TYPE@DECAL combination resolved.
+
+EIF in          :       Fiducials implemented.
+
+IPC356 out      :       Blind and buried vias implemented.
+
+EDIF400 in      :       Bare and Assembly board views implemented.
+
+GERBER in       :       Scan error fixed.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.3a                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD          :       Aperture fill on/off option
+                        
+                        Panelization funtion implemented.
+
+                        Resquence entity function added.                
+
+HP5DX           :       Optional HP 5DX output.
+                        
+IPC356 in	:	Component creation option done. see IPC.IN
+
+HPGL in         :       Multi page plots implemented.
+
+DXF in		:	Entity layer BYBLOCK implemented.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.2c                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD          :       Seperation for TEST Features:
+
+                        TESTPOINT : is a one pin enity on the PCB design marked
+                                    as a test point.
+                                    Testpoints are in the Netlist, but not listed
+                                    in BOM outout.        
+
+                        TESTPROBE : this is a PROBE placement from the tester
+                                    adapter board and has no direct influence 
+                                    on the design.
+
+GERBER in       :       Multiple File load now creates only one file entry.
+
+GENCAM in	:	Version 1.0 implmentation of GenCAM IPC-2510
+
+GENCAM out	:	Version 1.0 implmentation of GenCAM IPC-2510
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.2b                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD		:	Add Attribute to Entity in point and click mode.
+			Allows to fast assignment of instructions i.e. Assembly
+			modes, Test fields etc...
+
+                        Aperture default File Extensions now can be defined
+                        in default.set.
+
+                        Hierachiercal Query (Block in Block).
+
+                        Hierachiercal Measure (Measure 2 pins in a Block).
+
+Gerber in       :       Parameterized Macro commands.
+
+                        Error fixed in duplicated Macro Apertures.
+
+EIF in          :       Load now possible with the Correspondence file.
+
+                        Unknown Commands are now skipped to the next
+                        known Command without existing.
+
+                        Mirror Layer mapping now supported in EIF.IN
+
+PDIF in         :       Attribute \% is converted to %
+
+ALLEGRO out     :       Reference name position in Library fixed.
+
+Mentor Neutral in  :    UNNAMEDNET detection
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.2a                                      *
+*                                                                             *
+*******************************************************************************
+
+General release.
+
+CAMCAD		:	Selected Element COPY command in EDIT functions.
+
+PADS in         :       UNNAMEDNET detection
+
+HP3070 out      :       eliminate 1/10 mil via offset.
+                        UNNAMEDNETS have COMP_PIN netname
+                        SHOWOUTLINE not seperated between TOP and BOTTOM.
+
+Attribute out   :       new record .PCBCOMPPLACE
+                        new record .ATTACH2COMPPIN
+
+Attribute in    :       new record .ATTACH2COMPPIN
+
+PDIF in         :       upto 30 layers of COMPOUTLINE can now be defined 
+                        in PDIF.IN
+
+IGES in         :       A 2 dimensional IGES graphic reader is now optional
+                        for CAMCAD Graphics and CAMCAD Professional.
+
+EXCELLON out    :       some format fixes.
+
+DXF out		:	Allows the display of Drill Tool locations and codes.
+			(see dxf.out).
+
+Gerber out	:	New Windows Explorer compatible selection of project
+			directory.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.1g                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD		:	PCB Design Optimizing Functions accelerated 
+			(from 2.2.1f 15min to 2.2.1g 3min)
+
+			Memory usage drastically reduced.
+                        
+                        Full function REDLINE option implemented with
+                        Legder text, Cloud, Sketch and more.
+
+                        Professional Line join functions implemented:
+                        1. snap
+                        2. join 
+                        3. chamfer
+                        4. fillet
+
+                        CompPin Editor : Better error message if
+                        a component designator does not exist.
+
+Gerber in	:	read time on large designs reduced.
+
+OrcadLtd in	:	SEG record supported.
+			Version 5004 supported.
+
+DXF out         :       Fixed rotated Apertures.
+
+Mentor in       :       ^$ref display adjusted to Mentor Apperance.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.1f                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD          :       Remove Attribute occurance globally implemented.
+
+			Pan Component function now has a droplist, which lists
+			all reference designators.
+
+			Component/Pin editor now shows the attribute Icon, if 
+			an comp/pin attribute exist.
+
+			Error fixed when assigning apertures to drill tools.
+
+GERBER out	:	Apertures smaller SMALLWIDTH are set to SMALLWIDTH value.
+
+HP3070 out      :       Viasize is checked against Electrical Outer Layers.
+
+EXCELLON in	:	Now can create Gerber Apertures automatically during
+			read.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.1e                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD		:	Show Pinname and Show Netname is now toggled against
+			each other (to elimitate one redraw).
+
+			Comp/Pin editor function improved:
+			1. Generates Comp/Pin Location if not created
+			2. Generatea NonCon Net if not generated
+			3. Dialog is now Nodal (other CAMCAD functions can
+			   be used while Comp/Pin editor is active).
+			4. Netname always shown when a Comp/Pin is found.
+
+
+GERBER in	:	Fixed an offset problem in multiple loading of 
+			incremental Gerber files.
+
+			LN (LayerName) in Gerber files is now proceeded by
+			the file name, so that 2 Gerberfiles with the same
+			LayerName do not merge the graphic.
+
+CCM out         :       A CCM process can now be started automatically during
+                        the CCM export. (see CCM.OUT .CCMProcess command)
+
+PFW out		:	filled polygons are now translated to "PG" Polygons.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.1d                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD          :       Some close to zero Arc drawing problems fixed.
+
+                        Attributes and Values are treated non case sensitive.
+
+			Load project : More resistant against invalid CC files.
+
+                        Attribute Changes are now correctly reflected in Output 
+                        files.
+
+			Last Command Repeat for Geometry Add. 
+			Just hit the space bar and the last add command is 
+			activated. 
+
+ALLEGRO out     :       Mechanical and Format components now translated.
+
+GERBER out      :       Apertures can be rotated in all angles (1 degree acc.)
+
+GENCAD out      :       Allow different name for PANEL and BOARD fiducial.
+
+CDI out         :       Arcs in Board and Figure section fixed.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.1c                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD          :       CC File save:
+                        1. Crash on unique Blocknames fixed.
+                        2. Page Units are now saved and restored.
+
+Excellon in     :       Units dialog corrected.
+
+DXF out         :       DXF.out created with the following commands:
+                        .POLYCRACk
+                        .POLYCRACKWIDTH
+
+ALLEGRO in	:	Allows now the rotation of boards in a panel.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.1b                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD          :       Component/Pin Editor created
+
+                        Find a Component/Pin in the netlist
+
+                        Find a Component and all Pins and Nets for this comp.
+
+                        Pan to a Component/Pin location.
+
+PADS in		:	pads.in allows to classify padstacks as NON_ELECTRICAL
+
+NEUTRAL in	:	neutral.in allows to classify padstacks (Ignore, Fiducial)
+
+ACCEL in	:	intelligent interpretation of complex value strings.
+			(i.e 1 Meg = 1M, 10Ohm = 10 10V = VOLTAGE 10 ...)
+
+HP3070 out	:	Warning message if no netlist exist.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.1a                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD		:	PEDIT now can display pin names/numbers for placed
+			components.
+			
+			PEDIT now can display netnames on the pins of placed
+			components.
+
+ORCADLTD in	:	Orcad Width to Version 7.x adapted. ORCADLTD.IN 
+			created.
+
+CAMCAD		:       new Polygon function Copper Pour implemented.
+                        new Polygon function Outline implemented.
+                        new Polygon function Simple Outline implemented.
+                        new Polygon function Shrink/Expand implemented.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.0g                                      *
+*                                                                             *
+*******************************************************************************
+
+CCM out		:	Different Padshapes for SMD Top/Bottom allowed.
+
+			PCBSHAPE library section addded.
+
+GENCAD in	:	GENCAD reader is now an option in the HP3070 product.
+
+CAMCAD		:	DataFile now saves all Keywords, CAMCAD, IN, OUT.
+
+HP3070 out	:	Test via redefinition according to changes in HP 
+			specification
+
+			Multiple CAD interfaces optimized for HP3070
+
+MNEUTRAL in	:	The sequence of sections is free. The file can now 
+			have a netlist before components are defined.
+
+ALLEGRO out	:	Project path is maintained, even if layerfiles are
+			placed in a different path.
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.0f                                      *
+*                                                                             *
+*******************************************************************************
+
+IPC in 		:	IPC356 reader now creates Components and a Netlist.
+
+PFW in		:	Protel for Windows V2.8 reader implemented.
+
+CAMCAD		:	Attributes now can have a NEVER_MIRROR flag, which 
+			allows attributes to be always visible from the "top",
+			even is the geometry is mirrored.
+
+			Clean Documentation does not clean Board outline.
+
+			Reduce memory needs for non intelligent files (HPGL,
+			GERBER, DXF etc...) by 38%.
+
+ALLEGRO out	:	Allegro V12 PCB translator implemented.
+
+AcCEL in	:	SMD recognition implemented (accel.IN)
+
+GERBER in	:	Multiple Step and Repeats in Multiple files corrected.
+
+MENTOR in	:	SMD Padstack defintions corrected.
+
+NEUTRAL in	:	SMD Padstack defintions corrected.
+
+EDIF in		:	Attribute text placement corrected.
+
+THEDA in	:	Multiple enhancements to TL Version 3.2
+
+
+*******************************************************************************
+*                                   					      *
+*                  CAMCAD Edition 2.2.0e                                      *
+*                                                                             *
+*******************************************************************************
+
+SOLIDWORKS out	:	Outline calculation can not be selected between
+			2 different algorithm, EASY and COMPLEX. The result
+			can be shown on a SHOWLAYER.
+
+CCM out		:	Outline calculation can not be selected between
+			2 different algorithm, EASY and COMPLEX. The result
+			can be shown on a SHOWLAYER.
+
+Gerber out	:	Different Fonts are now recognized and translated.
+
+EDIF 200 in	:	Full EDIF 200 schematic viewer, with all attributes,
+			netlist and graphic implemented.
+
+CAMCAD          :       Editing and modifications on Rotated, Mirrored and
+                        Scaled graphics improved.
+
+                        new Polygon function Polygon Clean implemented.
+                        new Polygon function Vectorize Pour implemented.
+
+			Fill Style applies now also for Voids.
+
+			Fill Style is now saved in Settings.
+
+			"Select Nets" improvements.
+			
+			More robust against loading a wrong format. Example
+			load a DXF as a Gerber file. Program does not crash
+			anymore.
+
+			Last Command Repeat. 
+			Just hit the space bar and the last command is activated. 
+			Example Select an object, select MOVE command, 
+			move the object, select a next object, HIT SPACEBAR, 
+			move the object etc...
+
+			Proportional Text and character spacing: 
+			See updated HELP file CAMCAD.HLP
+	
+
+CADIF in	:	SMD recognition implemented (CADIF.IN)
+
+CADIF - MENTOR	:	A complete CADIF to MENTOR PCB Translator implemented.
+
+PDIF in		:	Eliminated unused tokens from log file.
+
+MENTOR 4 in	:	COMPONENT height also now supported as a @mark value.
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.2.0d                                      *
+*                                                                             *
+*******************************************************************************
+
+PDIF in		:	Ty 0 components are set to MECHANICAL COMPONENT.
+			All other types ar eassigned as attributes.
+
+Barco in	:	Error fixed with Complex apertures and Linewidth
+			association.
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.2.0c                                      *
+*                                                                             *
+*******************************************************************************
+
+HP3070 out      :       Tolerance defaults now +- Tolerance entries.
+
+ALLEGRO in      :       SMD recognition (same algorithm as in CCM out).
+
+ACCEL EDA in	:	Multiline text now correctly defined.
+
+CAMCAD
+   Professional	:	Mulitple DDE enhancements for integration with 
+			- Repair stations
+			- ICC Manufacturing Process Control system 
+
+OPG out		:	Interface to OPG inspection system implemented.
+	
+Mentor Board in	:	Text justification and aspect ratio corrected.
+
+PDIF in         :       PDIF.IN now can preassign layer intelligence like
+                        Solderpaste, mask etc...
+
+GENCAD in       :       memory use and read speed optimization done.
+
+ORCAD LTD in	:	Version 7.1 implemented.
+
+PADS PWR in	:	*TESTPOINT* section of POWER V2.0 implemented.
+
+PDIF in		:	SMD recognition implemented.
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.2.0b                                      *
+*                                                                             *
+*******************************************************************************
+
+
+All CAMCAD      :       Fill Style is user selectable to see through filled 
+			areas.
+
+			Layerlist now has "Fly-by" implemented to see long
+			layernames.
+
+			Tools (Drills, Holes) have icons in CAMCAD.
+
+HP3070 out      :       Update to new HP3070 B.02.75 version.
+                        H (Henry) on Inductors are elimitaded. Default in HP.
+
+ACCEL EDA in	:	now a component height attribute can be defined in
+			ACCEL.IN. This attributes is supported in 3D-ECAD.
+			
+			All component attributes are now read into CAMCAD.
+
+HPGL in		:	Circle to Flash can now be defined by Parameters in 
+			HPGL.IN
+			
+			Character Space Ration can now be defined in HPGL.IN
+
+ALLEGRO in	:	Arcs on mirrored component fixed.
+
+GENCAD out	:	Fiducuial name prefix can now be defined in GENCAD.OUT
+
+DXF int		:	R14 entities implemented.
+			LWPOLYLINE				
+
+IPC356 out	:	Full implementation of IPC356 output with multiple
+			userdefinable options, such as Vias, Unconnected pins
+
+			IPC.CHK rename and name checking implemented.
+
+ORCAD LTD in	:	CAMCAD now deleted defined, but unused Vias during 
+			import.
+
+PADS in		:	Automatically extracts Tolerance from PADS files.
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.2.0a                                      *
+*                                                                             *
+*******************************************************************************
+
+All CAMCAD      :       New license system, which allows a user to have multiple
+                        Version of CAMCAD simultanious.
+                        All file loads, single or multiple now allows all the
+                        file placement options.
+
+GERBER          :       Gerber.In now allows the defintion of used definable
+                        Block End Characters.
+                        Negative Layerflag in CAMCAD is now supported in the
+                        Gerber file output.
+
+PADS PCB/POWER  :       Update to Power V2.0. The *MISC section is now 
+                        implemented.                
+			Upto 30 COMPONENT outlines are now allowed in PADS.IN
+
+CPrint 		:	Negative (Reverse) Print function implemented.
+
+DXF Reader	:	MTEXT justification fixed.
+
+HPGL Reader     :       Error in HPGL2 arc function fixed.
+
+Aperture Editor	:	Apertures can now be entered in any Units, regardless
+			selected pageunits.
+
+Aperture Reader :       Size A, Size B value display corrected.
+
+PEDIT		:	Function to elimitate documentation graphics and 
+                        non-electrical components to smaller file size and 
+			information for interfaces like ANSOFT or HP3070 output.
+
+GENCAD          :       GENCAD Writer now detects the layer types for PADSTACKS,
+                        so that a Layer mapping is not needed anymore for layertype
+                        TOP, BOTTOM, ALL.
+
+ALLEGRO         :       text justification is now evaluated.
+                        Log file now reports all unknown records and user attributes.
+			Pin rotation implemeted.
+
+Veribest 	:	File read now supports correlation file.
+
+General improvements:
+
+All reported errors fixes in all CAMCAD products.
+Multiple memory and speed enhancements.
+
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.1.3b                                      *
+*                                                                             *
+*******************************************************************************
+
+All CAMCAD	:	Error larges arcs on Zoom out, they disappear Zoomed in
+			fixed: small Arcs and Circles on 16bit graphics 
+			(Windows3.1,3.11,95) are now compensated for.
+
+	New Function	Pan/Zoom by Coordinate input. (All Versions)
+	New Function	Pan/Zoom by Reference designator input. (PEDIT option)
+			
+HP3070		:	Userdefinable Log and Check name file.
+
+ALLEGRO 	:	If no pinname exist, the pinnumber will be assigned
+			as a pinname
+
+Mentor Neutral  :	Assignment of Tooling and Fiducials through NEUTRAL.IN
+
+PADS PCB	:	Alphanumeric Pin names are now supported. Adapted to
+			PADS POWER V 2.x
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.1.3a                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD CEDIT/PEDIT  :   Geometry Editor implemented.
+
+CAMCAD Professional :   PCB menue now has a feature to delete Vias, Traces
+
+DXFOUT              :   Mirrored File output fixed.    
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.1.2f                                      *
+*                                                                             *
+*******************************************************************************
+
+ALLEGRO Reader	:	Non fatal read errors and warnings are logged into 
+			allegro.log.
+			DRAFTING symbol implemented.
+			Layer stacking and other layer attributes implemented.		   
+
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.1.2d                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD          :       linewidth on Polystrures is now individual per poly 
+                        changable.
+			Allow of Linking and Unlinking of Polylines. 
+			Add / Delete / Move Voids in Polylines.              
+			Added the Degree display for bulges (arced) Polylines.
+                        New and Improved Layerlist with dialog for
+                        all layer attributes.
+
+GERBER Reader	:	Circle/Arc combination fixed.
+			Rotated Aperture error fixed.
+
+HPGL Reader	:	Error in AR fixed.
+
+CCM Writer	:	Now writes Attributes on Pins.
+
+CCT Reader 	:       CCT (cooper&Chyan) Design file PCB reader implemented.
+
+PDIF Reader	:	File syntax is now more robust againts whitespace and long
+			attributes.
+
+MNEUTRAL Reader	:	Multiple file load implemented.
+			Fast file analysis to check completeness of the file.
+			(Minimum GEOM, PAD, COMP, BOARD required)
+                        COMPONENT_CENTER attribute implemented.
+
+APERTURE Reader :       Now supports rotated Aperture definitions.
+
+NAVIGATOR	:	Additional information added:
+			1. Padstacks now show the drill tool in ()
+			2. The inserts of Padstacks (Padshapes) now show their 
+			   placement-layers in []
+			3. PCB components now show their geometry 
+                           name (shapename) in ().
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.1.2c                                      *
+*                                                                             *
+*******************************************************************************
+
+CAMCAD          :       a new, improved layer type edit dialog. 
+			Rotated Apertures can not be placed and edited.
+
+PDIFIN		:	more robust, does log unknown keywords and 
+			is less syntax sensoitive. (Fully tested with ACCEL EDA PDIF)
+
+MENTOROUT	:	PCB MENTOR out changed accuracy to 0.00001 inch.
+
+GERBERIN	:	Step and Repeat command (SR) is now supported.
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.1.2b                                      *
+*                                                                             *
+*******************************************************************************
+
+NAVIGATOR	:	Padstack listings now have a drill name listed.
+
+GERBERIN        : 	for ZUKEN gerber output:
+		  	1. Set decimals to 2.0
+		  	2. set 360 degree circle.
+
+HPGLIN		:	Error fix, when HP file was generated by MicroStation.
+
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Edition 2.1.2a                                      *
+*                                                                             *
+*******************************************************************************
+
+Attribute list	:	Invisible Attributes do not have x,y or layer display anymore.
+
+PDIFIN		:	More robust PDIF reader (continues even if there are errors
+				in the PDIF file)
+
+GERBERIN	:	Arcs in Polyareas fixed. LayerPolarisation now creates a
+				new layers, so that layer stacking can be controlled.
+
+Datafile Load	:	Shareware product : No load and save of datafile allowed.
+
+			Graphic product: The Datafileload will not load Netlist,
+				Typelist or Attribute information.
+
+PCBEDIT		:	A new feature with allows the query, editing, attributes and
+			hilites of PCB intelligence.
+                        When text string is longer than the query box, a horizontal
+                        bar appears.
+
+GEOMETRY List dialog updated which now allows
+			unlimited long names
+			sorting by name
+			setting on Aperture and Tool flags
+			viewing and changing of BlockTypes
+
+VERIBESTIN	:	Implemeted EIF reader
+
+GENCADIN        :       Logfile implmented
+                        Rectangular PADSHAPE fixed.
+
+MENTORIN	:	implemented MIRRORONLY and NEVERMIRROR as layer attribute,
+			to show correctly different graphic on _1 and _2 layers.
+
+GERBERIN        :       now supports the reading of rectangle apertures for 
+                        draws
+
+LICENCING	: 	grouping CAMCAD into its Product groups
+		  	SHAREWARE | GRAPHIC | PROFESSIONAL | 3D-ECAD | 
+		  	PCB TRANSALTORS | HP3070 | ANSOFT
+
+MENTOR PCB out  :       save and load of Layer setup files.
+                        the initial layer assign is done in MENTOR.OUT
+                        only PADSTACKS which are used as vias are creates as 
+                        via geometries.                            
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Professional Edition 2.1.1f                         *
+*                                                                             *
+*******************************************************************************
+
+Error fixes:
+	DXFIN now supports correctly ROUND and ENDCAP features.
+	All errors reported until 10-Jun-97 fixed.
+	CC file save and load updated and fixed.
+
+New Implementations:
+	INSERT Type toolbar implemented.	
+	CCM file output.
+	CCS file output.
+	HPGL Input can now ignore PenWidth.	
+	Import/Export remembers the last selection.
+	ANSOFT export implemented.
+	Autocad ADI reader implemented.
+	HP EGS (ME10) reader implemented.	
+	Generate Geometry function added.
+	Recalculate File data around a new origin function implemented.
+
+Enhancements:
+	ACCEL PCB import updated.
+	ORCAD PCB import updated.
+	When closing a Document Window, system ask the user for OK.
+	Netlist Highlite improved.
+	New HELP file system.
+        DXF import checks for uneven scaled blocks
+
+*******************************************************************************
+*                                   					      *					  
+*                  CAMCAD Professional Edition 2.1.1e                         *
+*                                                                             *
+*******************************************************************************
+
+The CAMCAD systems contains multiple options. Some enhancements and new features
+are not available for all options.
+
+2.1.1e
+Error fixes:
+
+New Implementations:
+
+Enhancements:
+
+
+2.1.1d
+Error fixes:
+        Fatal error fixed when loading more than 1000 apertures.
+        Stack error reading PCAD files, which had same padstack and
+                component definition fixed.
+        Feature rotation error fixed in IPC350/356 input.
+
+New implementations:
+        Optional Output for SolidWorks added.
+        Attribute Inherence Button added.
+	Optional Input for HPEGS added.
+	
+Enhancements:
+        Text-Query/Edit dialog now supports textchar Width
+        HPGL output file accuracy (and size) is now user definable.
+        Attributes load now checks if an Attribute is already loaded.
+        Pads file reader now can read non standard "GERBIN Pads ASCII" files.
+	DXF special character support (Degree, Diameter, Plusminus)
+	PDIF special character support (Degree, Diameter, Plusminus)
+
+2.1.1c
+Error fixes:
+	Gerber Metric/English command (G70, G71) fixed.
+
+New implementations:
+	Milling support added.
+	Aperture rotation support added.
+	New Tool menue for drill tools added.
+	PADS PCB/PERFORM and POWERPCB import added.
+	Create a Geometry from grouped elements.
+
+Enhancements:
+	DXF reader now converts special characters (Circle Diameter, Degree etc...)
+	Graphic redraw speed up due to a internal Layerlist reorganisation.
+	Flash support in PCAD-PDIF importers.
+
+To receive a new update, or to report errors, please contact us at:
+tech@rsi-inc.com
+
+To license new options, please contact us at:
+sales@rsi-inc.com
+
+For software improvements and special implementation wishes, please contact us at:
+camcad@rsi-inc.com
+
+e-mail  :       camcad@rsi-inc.com, tech@rsi-inc.com
+Phone   :       949 - 721 - 1017 (PST)
+Fax     :       949 - 721 - 1019

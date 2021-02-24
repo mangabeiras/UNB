@@ -1,0 +1,42 @@
+package DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import conector.Conexao;
+import dados.Pessoa;
+
+public class PessoaDAO {
+	private Connection con = Conexao.getConnection();
+	
+	public void cadastrar(Pessoa pessoa) {
+		String sql = "INSERT INTO pandemia.pessoa (nome, saude, gestante, idade) VALUES (?, ?, ?, ?)";
+		
+		try {
+			PreparedStatement preparador = con.prepareStatement(sql);
+			preparador.setString(1, pessoa.getNome());
+			preparador.setString(2, pessoa.getSituacao().toString());
+			preparador.setString(3, pessoa.getSituacaoGestacao());
+			preparador.setString(4, pessoa.getIdade());
+			preparador.execute(); 
+			preparador.close();
+			System.out.println("Cadastrado com sucesso!");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			if (con != null) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					System.out.print("Falha ao fechar a conexão.");
+					System.out.println("Causa: " + e.getMessage());
+				}
+			}
+		}
+	}
+	public void getPessoa() {
+		
+	}
+}

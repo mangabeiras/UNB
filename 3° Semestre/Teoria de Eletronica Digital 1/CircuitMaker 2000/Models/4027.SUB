@@ -1,1 +1,45 @@
-unsupported reparse point
+*4027 JK Flip-Flop MCE Nodes: S,J,CP,K,R,QN,Q
+*MCE mixed-mode JK Flip-Flop pkg:DIP16 (A:7,6,3,5,4,2,1)(B:9,10,13,11,12,14,15)
+.SUBCKT X4027 4 14 6 5 3 8 9
+XU5D 3 13 7404
+XU5C 4 15 7404
+XU5A 5 7 7404
+XU2B 11 6 12 10 7410
+XU2A 16 13 6 11 7410
+XU1C 15 12 11 16 7410
+XU1A 15 11 8 9 7410
+XU1B 9 10 13 8 7410
+XU3A 10 13 14 8 18 7421
+XU3B 10 9 13 7 17 7421
+XU4A 18 17 12 7402
+.IC V(8)=0V V(9)=4.5V
+.ENDS X4027
+
+* Models/Subcircuits Used:
+*7404 MCE mixed-mode inverter: A,Q pkg:DIP14 (A:1,2)(B:3,4)(C:5,6)(D:9,8)(E:11,10)(F:13,12)
+.SUBCKT 7404 5 3
+BNLVs1 4 0 V=~(V(5))
+R1 4 3 1
+C1 3 0 .004uF IC=0V
+.ENDS 7404
+
+*7410 MCE mixed-mode 3-input NAND gate: A,B,C,Q pkg:DIP14 (A:1,2,13,12)(B:3,4,5,6)(C:9,10,11,8)
+.SUBCKT 7410 1 2 3 4
+BNLVs1 5 0 V=~(V(1) & v(2) & v(3))
+R1 5 4 1
+C1 4 0 .004uF IC=0V
+.ENDS 7410
+
+*7421 MCE mixed-mode 4-input AND gate: A,B,C,D,Q pkg:DIP14 (A:1,2,4,5,6)(B:9,10,12,13,8)
+.SUBCKT 7421 1 2 3 4 5
+BNLVs1 6 0 V=V(1) & v(2) & v(3) & v(4)
+R1 6 5 1
+C1 5 0 .004uF IC=0V
+.ENDS 7421
+
+*7402 MCE mixed-mode 2-input NOR gate: A,B,Q pkg:DIP14 (A:2,3,1)(B:5,6,4)(C:8,9,10)(D:11,12,13)
+.SUBCKT 7402 3 4 5
+BNLVs1 1 0 V=~(V(3) | v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS 7402

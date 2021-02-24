@@ -1,1 +1,164 @@
-unsupported reparse point
+*==============================================
+*FW Bridge pinout: AC1 AC2 V+ V-
+*Copyright (c) 1996 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*Default Bridge
+.PARAM XBRIDGE File:Mcediode.lib
+
+*50V 25A 3.75us Si
+.PARAM XMDA2500 File:Mcediode.lib
+
+*50V 1A Si pkg:D-70
+.PARAM XDF005 File:Mcediode.lib
+
+*100V 1A Si pkg:D-70
+.PARAM XDF01 File:Mcediode.lib
+
+*200V 1A Si pkg:D-70
+.PARAM XDF02 File:Mcediode.lib
+
+*400V 1A Si pkg:D-70
+.PARAM XDF04 File:Mcediode.lib
+
+*600V 1A Si pkg:D-70
+.PARAM XDF06 File:Mcediode.lib
+
+*800V 1A Si pkg:D-70
+.PARAM XDF08 File:Mcediode.lib
+
+*1000V 1A Si pkg:D-70
+.PARAM XDF10 File:Mcediode.lib
+
+*50V 1.5A Si pkg:D-38
+.PARAM X1KAB5 File:Mcediode.lib
+
+*100V 1.5A Si pkg:D-38
+.PARAM X1KAB10 File:Mcediode.lib
+
+*200V 1.5A Si pkg:D-38
+.PARAM X1KAB20 File:Mcediode.lib
+
+*400V 1.5A Si pkg:D-38
+.PARAM X1KAB40 File:Mcediode.lib
+
+*600V 1.5A Si pkg:D-38
+.PARAM X1KAB60 File:Mcediode.lib
+
+*800V 1.5A Si pkg:D-38
+.PARAM X1KAB80 File:Mcediode.lib
+
+*1000V 1.5A Si pkg:D-38
+.PARAM X1KAB100 File:Mcediode.lib
+
+*50V 1.8A Si pkg:D-2
+.PARAM X18DB05 File:Mcediode.lib
+
+*100V 1.8A Si pkg:D-2
+.PARAM X18DB1 File:Mcediode.lib
+
+*200V 1.8A Si pkg:D-2
+.PARAM X18DB2 File:Mcediode.lib
+
+*400V 1.8A Si pkg:D-2
+.PARAM X18DB4 File:Mcediode.lib
+
+*600V 1.8A Si pkg:D-2
+.PARAM X18DB6 File:Mcediode.lib
+
+*800V 1.8A Si pkg:D-2
+.PARAM X18DB8 File:Mcediode.lib
+
+*1000V 1.8A Si pkg:D-2
+.PARAM X18DB10 File:Mcediode.lib
+
+*50V 2A Si pkg:D-37
+.PARAM X2KBB5 File:Mcediode.lib
+
+*100V 2A Si pkg:D-37
+.PARAM X2KBB10 File:Mcediode.lib
+
+*200V 2A Si pkg:D-37
+.PARAM X2KBB20 File:Mcediode.lib
+
+*400V 2A Si pkg:D-37
+.PARAM X2KBB40 File:Mcediode.lib
+
+*600V 2A Si pkg:D-37
+.PARAM X2KBB60 File:Mcediode.lib
+
+*800V 2A Si pkg:D-37
+.PARAM X2KBB80 File:Mcediode.lib
+
+*1000V 2A Si pkg:D-37
+.PARAM X2KBB100 File:Mcediode.lib
+
+*50V 2A Si pkg:D-44
+.PARAM X2KBP005 File:Mcediode.lib
+
+*100V 2A Si pkg:D-44
+.PARAM X2KBP01 File:Mcediode.lib
+
+*200V 2A Si pkg:D-44
+.PARAM X2KBP02 File:Mcediode.lib
+
+*400V 2A Si pkg:D-44
+.PARAM X2KBP04 File:Mcediode.lib
+
+*600V 2A Si pkg:D-44
+.PARAM X2KBP06 File:Mcediode.lib
+
+*800V 2A Si pkg:D-44
+.PARAM X2KBP08 File:Mcediode.lib
+
+*1000V 2A Si pkg:D-44
+.PARAM X2KBP10 File:Mcediode.lib
+
+*50V 3A Si pkg:D-46
+.PARAM XKBPC1005 File:Mcediode.lib
+
+*100V 3A Si pkg:D-46
+.PARAM XKBPC101 File:Mcediode.lib
+
+*200V 3A Si pkg:D-46
+.PARAM XKBPC102 File:Mcediode.lib
+
+*400V 3A Si pkg:D-46
+.PARAM XKBPC104 File:Mcediode.lib
+
+*600V 3A Si pkg:D-46
+.PARAM XKBPC106 File:Mcediode.lib
+
+*800V 3A Si pkg:D-46
+.PARAM XKBPC108 File:Mcediode.lib
+
+*1000V 3A Si pkg:D-46
+.PARAM XKBPC110 File:Mcediode.lib
+
+*50V 6A Si pkg:D-72
+.PARAM XKBPC6005 File:Mcediode.lib
+
+*100V 6A Si pkg:D-72
+.PARAM XKBPC601 File:Mcediode.lib
+
+*200V 6A Si pkg:D-72
+.PARAM XKBPC602 File:Mcediode.lib
+
+*400V 6A Si pkg:D-72
+.PARAM XKBPC604 File:Mcediode.lib
+
+*600V 6A Si pkg:D-72
+.PARAM XKBPC606 File:Mcediode.lib
+
+*800V 6A Si pkg:D-72
+.PARAM XKBPC608 File:Mcediode.lib
+
+*1000V 6A Si pkg:D-72
+.PARAM XKBPC610 File:Mcediode.lib
+
+*20V 1A Si pkg:D-70
+.PARAM X1BQ20 File:Mcediode.lib
+
+*40V 1A Si pkg:D-70
+.PARAM X1BQ40 File:Mcediode.lib

@@ -1,1 +1,29 @@
-unsupported reparse point
+*==============================================
+*Compara8 pinout: IN+ IN- V+ V- LE GND QOUT QOUTCOMP
+*Copyright (c) 1998 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*==============================================
+*Maxim
+
+*MAX Sngl TTL Comp. pkg:DIP8 2,3,1,4,5,6,7,8
+.PARAM XMAX909 File:Maxim.lib
+
+*MAX Dual TTL Comp. pkg:DIP16 (A:8,7,11,6,4,3,1,2)(B:9,10,11,6,13,14,16,15)
+.PARAM XMAX912 File:Maxim.lib
+
+*MAX Sngl TTL Comp. pkg:DIP8 2,3,1,4,5,6,7,8
+.PARAM XMAX913 File:Maxim.lib
+
+*MAX Sngl TTL Comp. pkg:DIP8 3,4,7,2,5,6,1,8
+.PARAM XMAX923 File:Maxim.lib
+
+*MAX Sngl TTL Comp. pkg:DIP8 3,4,7,2,5,6,1,8
+.PARAM XMAX932 File:Maxim.lib
+
+*MAX Sngl TTL Comp. pkg:DIP8 3,4,7,2,5,6,1,8
+.PARAM XMAX933 File:Maxim.lib
+
+*MAX Sngl TTL Comp. pkg:DIP8 1,2,8,3,4,5,6,7
+.PARAM XMAX961 File:Maxim.lib

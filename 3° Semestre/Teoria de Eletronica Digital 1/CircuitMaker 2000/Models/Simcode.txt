@@ -1,1 +1,391 @@
-unsupported reparse point
+//============================================================
+# ls00 source
+//74LS00: 2-input NAND gate IOL=8mA
+//typical prop delay values from TI 1981 2nd edition data book
+//============================================================
+INPUTS VCC, GND, INA, INB;
+OUTPUTS VCC_LD, INA_LD, INB_LD, OUT;
+INTEGERS tblIndex;
+REALS tt_val, tplh_val, tphl_val, ril_val, rih_val,
+      ricc_val, riccl_val, ricch_val;
+
+PWR_GND_PINS(VCC,GND);		//set pwr_param and gnd_param values
+SUPPLY_MIN_MAX(4.75,5.25);	//check for min supply=4.75 and max supply=5.25
+VOL_VOH_MIN(0.2,-0.4,0.1);	//set min vol_param=gnd_param+0.2, max voh_param=pwr_param-0.4
+VIL_VIH_VALUE(1.25,1.35);	//set input threshold values: vil and vih
+IO_PAIRS(INA:INA_LD, INB:INB_LD);
+
+IF (init_sim) THEN
+  BEGIN
+    //MESSAGE("time\tINA\tINB\tOUT");
+
+    //NOTE: both ttlh and tthl are the same value
+    tt_val= (MIN_TYP_MAX(tt_param: NULL, 5n, NULL));
+
+    tplh_val= (MIN_TYP_MAX(tp_param: NULL, 9n,  15n));
+    tphl_val= (MIN_TYP_MAX(tp_param: NULL, 10n, 15n));
+
+    //LS std output drive IOL max=8mA @ vol=0.4V: rol_param=(0.4-vol_param)/8mA
+    rol_param= (MIN_TYP_MAX(drv_param: NULL, 25,  NULL));
+
+    //LS std output drive IOH max=-400uA @ voh=4.5V: roh_param=(voh_param-4.5)/400uA
+    roh_param= (MIN_TYP_MAX(drv_param: NULL, 250, NULL));
+
+    //LS input load IIH=20uA @ 2.7V: ril= (2.7-vol_param)/20uA;
+    ril_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 125k));
+
+    //LS input load IIL=-0.4mA @ 0.4V: r1= (voh_param-0.4)/0.4mA
+    rih_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 10.5k));
+
+    //Icc @ 5V with output high: 25k= 0.8mA/4 typical, 12.5k= 1.6mA/4 max
+    ricch_val= (MIN_TYP_MAX(i_param: NULL, 25k, 12.5k));
+
+    //Icc @ 5V with output low: 8333.4= 2.4mA/4 typical, 4545.5= 4.4mA/4 max
+    riccl_val= (MIN_TYP_MAX(i_param: NULL, 8333.4, 4545.5));
+
+    STATE OUT = ONE;	//initialize output
+    EXIT;
+  END;
+
+DRIVE OUT = (v0=vol_param,v1=voh_param,ttlh=tt_val,tthl=tt_val);
+LOAD INA_LD, INB_LD = (v0=vol_param,r0=ril_val,v1=voh_param,r1=rih_val,io=1e9,t=1p);
+
+TABLE tblIndex
+INA	INB	OUT
+1	1	L
+X	X	H;
+
+//MESSAGE("%fs\t%d\t%d\t%d",present_time,INA,INB,OUT);
+IF (OUT) THEN
+  BEGIN
+    ricc_val= (ricch_val);	//output high
+  ELSE
+    ricc_val= (riccl_val);	//output low
+  END;
+
+LOAD VCC_LD = (v0=gnd_param,r0=ricc_val,t=1p);
+
+DELAY OUT =
+  CASE (TRAN_LH) : tplh_val
+  CASE (TRAN_HL) : tphl_val
+END;
+EXIT;
+
+
+
+
+//============================================================
+# ls08 source
+//74LS08: 2-input AND gate IOL=8mA
+//typical prop delay values from TI 1981 2nd edition data book
+//============================================================
+INPUTS VCC, GND, INA, INB;
+OUTPUTS VCC_LD, INA_LD, INB_LD, OUT;
+INTEGERS tblIndex;
+REALS tt_val, tplh_val, tphl_val, ril_val, rih_val,
+      ricc_val, riccl_val, ricch_val;
+
+PWR_GND_PINS(VCC,GND);		//set pwr_param and gnd_param values
+SUPPLY_MIN_MAX(4.75,5.25);	//check for min supply=4.75 and max supply=5.25
+VOL_VOH_MIN(0.2,-0.4,0.1);	//set min vol_param=gnd_param+0.2, max voh_param=pwr_param-0.4
+VIL_VIH_VALUE(1.25,1.35);	//set input threshold values: vil and vih
+IO_PAIRS(INA:INA_LD, INB:INB_LD);
+
+IF (init_sim) THEN
+  BEGIN
+
+    //NOTE: both ttlh and tthl are the same value
+    tt_val= (MIN_TYP_MAX(tt_param: NULL, 5n, NULL));
+
+    tplh_val= (MIN_TYP_MAX(tp_param: NULL, 8n,  15n));
+    tphl_val= (MIN_TYP_MAX(tp_param: NULL, 10n, 20n));
+
+    //LS std output drive IOL max=8mA @ vol=0.4V: rol_param=(0.4-vol_param)/8mA
+    rol_param= (MIN_TYP_MAX(drv_param: NULL, 25,  NULL));
+
+    //LS std output drive IOH max=-400uA @ voh=4.5V: roh_param=(voh_param-4.5)/400uA
+    roh_param= (MIN_TYP_MAX(drv_param: NULL, 250, NULL));
+
+    //LS input load IIH=20uA @ 2.7V: ril= (2.7-vol_param)/20uA;
+    ril_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 125k));
+
+    //LS input load IIL=-0.4mA @ 0.4V: r1= (voh_param-0.4)/0.4mA
+    rih_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 10.5k));
+
+    //Icc @ 5V with output high: 8333.4= 2.4mA/4 typical, 4166.7= 4.8mA/4 max
+    ricch_val= (MIN_TYP_MAX(i_param: NULL, 8333.4, 4166.7));
+
+    //Icc @ 5V with output low: 4545.5= 4.4mA/4 typical, 2272.7= 8.8mA/4 max
+    riccl_val= (MIN_TYP_MAX(i_param: NULL, 4545.5, 2272.7));
+
+    STATE OUT = ZERO;	//initialize output
+    EXIT;
+  END;
+
+DRIVE OUT = (v0=vol_param,v1=voh_param,ttlh=tt_val,tthl=tt_val);
+LOAD INA_LD, INB_LD = (v0=vol_param,r0=ril_val,v1=voh_param,r1=rih_val,io=1e9,t=1p);
+
+TABLE tblIndex
+INA	INB	OUT
+1	1	H
+X	X	L;
+
+IF (OUT) THEN
+  BEGIN
+    ricc_val= (ricch_val);	//output high
+  ELSE
+    ricc_val= (riccl_val);	//output low
+  END;
+
+LOAD VCC_LD = (v0=gnd_param,r0=ricc_val,t=1p);
+DELAY OUT =
+  CASE (TRAN_LH) : tplh_val
+  CASE (TRAN_HL) : tphl_val
+END;
+EXIT;
+
+
+
+
+
+//============================================================
+# ls74 source
+//1/2- 74LS74 D flip-flop
+//typical prop delay values from TI 1981 2nd edition data book
+//============================================================
+INPUTS VCC, GND, PRE, DATA, CLK, CLR;
+OUTPUTS VCC_LD, PRE_LD, DATA_LD, CLK_LD, CLR_LD, QN, Q;
+INTEGERS tblIndex;
+REALS tplh_val, tphl_val, ts_val, th_val, trec_val, tt_val,
+      clk_twl, clk_twh, pre_clr_twl, ril_val, rih_val, ricc_val;
+
+PWR_GND_PINS(VCC,GND);		//set pwr_param and gnd_param values
+SUPPLY_MIN_MAX(4.75,5.25);	//check for min supply=4.75 and max supply=5.25
+VOL_VOH_MIN(0.2,-0.4,0.1);	//set min vol_param=gnd_param+0.2, max voh_param=pwr_param-0.4
+VIL_VIH_VALUE(1.25,1.35);	//set input threshold values: vil and vih
+IO_PAIRS(PRE:PRE_LD, DATA:DATA_LD, CLK:CLK_LD, CLR:CLR_LD);
+
+IF (init_sim) THEN
+  BEGIN		//select prop delay, setup, hold, and width times
+
+    //NOTE: both ttlh and tthl are the same value
+    tt_val= (MIN_TYP_MAX(tt_param: NULL, 5n,  NULL));
+
+    tplh_val= (MIN_TYP_MAX(tp_param: NULL, 14n, 25n));
+    tphl_val= (MIN_TYP_MAX(tp_param: NULL, 20n, 40n));
+
+    ts_val= (20n);
+    th_val= (5n);
+    trec_val= (5n);
+    clk_twl= (25n);		//not specified - derived from fmax
+    clk_twh= (25n);
+    pre_clr_twl= (20n);
+
+    //LS std output drive IOL max=8mA @ vol=0.4V: rol_param=(0.4-vol_param)/8mA
+    rol_param= (MIN_TYP_MAX(drv_param: NULL, 25,  NULL));
+
+    //LS std output drive IOH max=-400uA @ voh=4.5V: roh_param=(voh_param-4.5)/400uA
+    roh_param= (MIN_TYP_MAX(drv_param: NULL, 250, NULL));
+
+    //LS input load IIH=20uA @ 2.7V: ril= (2.7-vol_param)/20uA;
+    ril_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 125k));
+
+    //LS input load IIL=-0.4mA @ 0.4V: r1= (voh_param-0.4)/0.4mA
+    rih_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 10.5k));
+
+    //Icc @ 5V: 2500= 4mA/2 typical, 1250= 8mA/2 max 
+    ricc_val= (MIN_TYP_MAX(i_param: NULL, 2500, 1250));
+
+    STATE Q = ONE;		// initialize output states
+    STATE QN = ZERO;
+    EXIT;
+  END;
+
+DRIVE Q QN = (v0=vol_param,v1=voh_param,ttlh=tt_val,tthl=tt_val);
+LOAD PRE_LD DATA_LD CLK_LD CLR_LD = (v0=vol_param,r0=ril_val,v1=voh_param,r1=rih_val,io=1e9,t=1p);
+
+EXT_TABLE tblIndex
+PRE CLR CLK DATA    Q     QN
+0   1   X   X       H     L
+1   0   X   X       L     H
+0   0   X   X       H     H
+1   1   ^   X       DATA  ~DATA
+1   1   X   X       Q     ~Q;
+
+LOAD VCC_LD = (v0=gnd_param,r0=ricc_val,t=1p);
+
+IF (warn_param) THEN
+  BEGIN
+    IF (PRE && CLR) THEN
+      BEGIN
+        SETUP_HOLD(CLK=LH DATA Ts=ts_val Th=th_val "CLK->DATA");
+        RECOVER(CLK=LH PRE CLR Trec=trec_val "CLK->PRE or CLR");
+        WIDTH(CLK Twl=clk_twl Twh=clk_twh "CLK");
+        WIDTH(PRE CLR Twl= pre_clr_twl "PRE or CLR");
+      END;
+  END;
+
+DELAY Q QN =
+  CASE (TRAN_LH) : tplh_val
+  CASE (TRAN_HL) : tphl_val
+END;
+EXIT;
+
+
+
+
+//============================================================
+# ls161 source
+//74LS161A 4-bit binary counter with asynchronous reset
+//============================================================
+INPUTS VCC, GND, CEP, CET, CP, D3, D2, D1, D0, PEN, MRN;
+OUTPUTS VCC_LD, CEP_LD, CET_LD, CP_LD, D3_LD, D2_LD, D1_LD,
+        D0_LD, PEN_LD, MRN_LD, TC, Q3, Q2, Q1, Q0;
+INTEGERS internal_reg, count, load, cet_changed;
+REALS tt_val, tplh_CP_TC, tphl_CP_TC, tplh_COUNT,tphl_COUNT,
+      tplh_LOAD, tphl_LOAD, tplh_CET_TC, tphl_CET_TC,
+	  tphl_RESET, twl_CP, twl_MR, ts_D, th_D, ts_CE_PE,
+	  th_CE_PE, trec_MR, ril1_val, rih1_val, ril2_val, rih2_val,ricc_val;
+
+PWR_GND_PINS(VCC,GND);		//set pwr_param and gnd_param values
+SUPPLY_MIN_MAX(4.75,5.25);	//check for min supply=4.75 and max supply=5.25
+VOL_VOH_MIN(0.2,-0.4,0.1);	//set min vol_param=gnd_param+0.2, max voh_param=pwr_param-0.4
+VIL_VIH_VALUE(1.25,1.35);	//set input threshold values: vil and vih
+IO_PAIRS(CEP:CEP_LD, CET:CET_LD, CP:CP_LD, D3:D3_LD, D2:D2_LD, D1:D1_LD,
+        D0:D0_LD, PEN:PEN_LD, MRN:MRN_LD);
+
+IF (init_sim) THEN
+  BEGIN
+	tt_val= (MIN_TYP_MAX(tt_param: NULL, 5n, NULL));
+
+    tplh_CP_TC= (MIN_TYP_MAX(tp_param: NULL, 20n, 35n));
+	tphl_CP_TC= (MIN_TYP_MAX(tp_param: NULL, 18n, 35n));
+
+    tplh_COUNT= (MIN_TYP_MAX(tp_param: NULL, 13n, 24n));
+	tphl_COUNT= (MIN_TYP_MAX(tp_param: NULL, 18n, 27n));
+
+    tplh_LOAD= (MIN_TYP_MAX(tp_param: NULL, 13n, 24n));
+	tphl_LOAD= (MIN_TYP_MAX(tp_param: NULL, 18n, 27n));
+
+    tplh_CET_TC= (MIN_TYP_MAX(tp_param: NULL, 9n, 14n));
+	tphl_CET_TC= (MIN_TYP_MAX(tp_param: NULL, 9n, 14n));
+	
+	tphl_RESET= (MIN_TYP_MAX(tp_param: NULL, 20n, 28n));
+
+    twl_CP = (25n);
+    twl_MR = (20n);
+    ts_D = (20n);
+	th_D = (3n);
+    ts_CE_PE = (20n);
+	th_CE_PE = (0n);
+    trec_MR = (15n);
+
+	//LS std output drive IOL max=8mA @ vol=0.4V: rol_param=(0.4-vol_param)/8mA
+    rol_param= (MIN_TYP_MAX(drv_param: NULL, 25,  NULL));
+
+	//LS std output drive IOH max=-400uA @ voh=4.5V: roh_param=(voh_param-4.5)/400uA
+    roh_param= (MIN_TYP_MAX(drv_param: NULL, 250, NULL));
+
+    //LS input load IIH=20uA @ 2.7V: ril= (2.7-vol_param)/20uA;
+	ril1_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 125k));
+
+    //LS input load IIL=-0.4mA @ 0.4V: r1= (voh_param-0.4)/0.4mA
+	rih1_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 10.5k));
+
+    //LS input load IIH=40uA @ 2.7V: ril= (2.7-vol_param)/40uA;
+	ril2_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 62.5k));
+
+    //LS input load IIL=-0.8mA @ 0.4V: r1= (voh_param-0.4)/0.8mA
+	rih2_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 5.25k));
+
+    //One device per package, so use full Icc
+	//Icc Typ: 5.0V/19mA = 263ohms
+	//Icc Max: 5.25V/32mA = 164ohms
+	ricc_val= (MIN_TYP_MAX(i_param: NULL, 263, 164));
+
+    internal_reg= (0);					//clear internal register
+	STATE Q0 Q1 Q2 Q3 TC = ZERO;	//initialize outputs
+	EXIT;
+  END;
+
+DRIVE Q0 Q1 Q2 Q3 TC = (v0=vol_param,v1=voh_param,ttlh=tt_val,tthl=tt_val);
+
+LOAD MRN_LD, D0_LD, D1_LD, D2_LD, D3_LD, CEP_LD =
+  (v0=vol_param,r0=ril1_val,v1=voh_param,r1=rih1_val,io=1e9,t=1p);
+
+LOAD CP_LD, PEN_LD, CET_LD =
+  (v0=vol_param,r0=ril2_val,v1=voh_param,r1=rih2_val,io=1e9,t=1p);
+
+count= (0);
+load= (0);
+IF (MRN) THEN
+  BEGIN
+    IF (CHANGED_LH(CP)) THEN
+	  BEGIN										//clock changed L->H
+	    IF (PEN) THEN
+		  BEGIN
+		    IF (CEP && CET) THEN
+			  BEGIN								//count
+			    count= (1);
+			    internal_reg= (internal_reg + 1);
+				IF (internal_reg > 15) THEN
+				  BEGIN
+				    internal_reg= (0);
+				  END;
+			  END;
+		  ELSE									//parallel load
+		    load= (1);
+		    internal_reg= (NUMBER(D3 D2 D1 D0));
+		  END;
+	  END;										//else hold - no change
+  ELSE
+	internal_reg= (0);							//reset
+  END;
+
+STATE_BIT Q0 Q1 Q2 Q3 = (internal_reg);
+IF (CET && Q3 && Q2 && Q1 && Q0) THEN	//set terminal count state
+  BEGIN
+    STATE TC = ONE;
+  ELSE
+    STATE TC = ZERO;
+  END;
+
+IF (warn_param) THEN
+  BEGIN
+    WIDTH(MRN Twl= twl_MR "MR");
+    IF (MRN) THEN
+	  BEGIN
+        WIDTH(CP Twl= twl_CP "CP");
+        SETUP_HOLD(CP=LH PEN Ts=ts_CE_PE Th=th_CE_PE "PE->CP");
+	    IF (load) THEN
+		  BEGIN
+            SETUP_HOLD(CP=LH D0 D1 D2 D3 Ts=ts_D Th=th_D "Dn->CP");
+		  ELSE
+            SETUP_HOLD(CP=LH CEP CET Ts=ts_CE_PE Th=th_CE_PE "CEP or CET ->CP");
+		  END;
+	  END;
+
+   RECOVER(CP=LH MRN Trec=trec_MR "MR->CLK");
+  END;
+
+
+LOAD VCC_LD = (v0=gnd_param,r0=ricc_val,t=1p);
+DELAY Q3, Q2, Q1, Q0 =
+  CASE (count && TRAN_LH) : tplh_COUNT
+  CASE (count && TRAN_HL) : tphl_COUNT
+
+  CASE (load && TRAN_LH) : tplh_LOAD
+  CASE (load && TRAN_HL) : tphl_LOAD
+
+  CASE (1) : tphl_RESET			//longest delay used for default
+END;
+
+cet_changed= (CHANGED(CET));
+DELAY TC =
+  CASE (cet_changed && TRAN_LH) : tplh_CET_TC
+  CASE (cet_changed && TRAN_HL) : tphl_CET_TC
+
+  CASE (TRAN_LH) : tplh_CP_TC	//longest delay used for default
+  CASE (TRAN_HL) : tphl_CP_TC	//longest delay used for default
+END;
+EXIT;

@@ -1,1 +1,1330 @@
-unsupported reparse point
+*==============================================
+*SCR - pin order: A G K
+*Copyright (c) 1997 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*Default SCR pkg:TO-92B 1,2,3
+.PARAM XSCR File:Mcetriac.lib
+
+*1200V If=110A tq=16us
+.PARAM XS19CF File:Mcetriac.lib
+
+*200V If=1.6A Igt=.2mA Vgt=.8V
+.PARAM X2N2326 File:Mcetriac.lib
+
+*300V 8A pkg:TO-220 2,3,1
+.PARAM X2N4171 File:Mcetriac.lib
+
+*100V 4A pkg:TO-126 2,3,1
+.PARAM XC106A File:Mcetriac.lib
+
+*200V 4A pkg:TO-126 2,3,1
+.PARAM XC106B File:Mcetriac.lib
+
+*400V 4A pkg:TO-126 2,3,1
+.PARAM XC106D File:Mcetriac.lib
+
+*50V 4A pkg:TO-126 2,3,1
+.PARAM XC106F File:Mcetriac.lib
+
+*600V 4A pkg:TO-126 2,3,1
+.PARAM XC106M File:Mcetriac.lib
+
+*
+.PARAM XC149M10 File:Mcetriac.lib
+
+*100V 800mA pkg:TO-92B 1,2,3
+.PARAM XMCR100-3 File:Mcetriac.lib
+
+*200V 800mA pkg:TO-92B 1,2,3
+.PARAM XMCR100-4 File:Mcetriac.lib
+
+*400V 800mA pkg:TO-92B 1,2,3
+.PARAM XMCR100-6 File:Mcetriac.lib
+
+*600V 800mA pkg:TO-92B 1,2,3
+.PARAM XMCR100-8 File:Mcetriac.lib
+
+*60V 4A pkg:TO-126 2,3,1
+.PARAM XMCR106-2 File:Mcetriac.lib
+
+*100V 4A pkg:TO-126 2,3,1
+.PARAM XMCR106-3 File:Mcetriac.lib
+
+*200V 4A pkg:TO-126 2,3,1
+.PARAM XMCR106-4 File:Mcetriac.lib
+
+*400V 4A pkg:TO-126 2,3,1
+.PARAM XMRC106-6 File:Mcetriac.lib
+
+*600V 4A pkg:TO-126 2,3,1
+.PARAM XMRC106-8 File:Mcetriac.lib
+
+*30V 1A pkg:TO-92B 1,2,3
+.PARAM X2N5060 File:Mcetriac.lib
+
+*60V 1A pkg:TO-92B 1,2,3
+.PARAM X2N5061 File:Mcetriac.lib
+
+*100V 1A pkg:TO-92B 1,2,3
+.PARAM X2N5062 File:Mcetriac.lib
+
+*200V 1A pkg:TO-92B 1,2,3
+.PARAM X2N5064 File:Mcetriac.lib
+
+*50V 3A pkg:TO-126 2,3,1
+.PARAM X2N6237 File:Mcetriac.lib
+
+*100V 3A pkg:TO-126 2,3,1
+.PARAM X2N6238 File:Mcetriac.lib
+
+*200V 3A pkg:TO-126 2,3,1
+.PARAM X2N6239 File:Mcetriac.lib
+
+*400V 3A pkg:TO-126 2,3,1
+.PARAM X2N6240 File:Mcetriac.lib
+
+*600V 3A pkg:TO-126 2,3,1
+.PARAM X2N6241 File:Mcetriac.lib
+
+*30V 1A pkg:TO-92A 1,1,1
+.PARAM XBRX44 File:Mcetriac.lib
+
+*60V 1A pkg:TO-92A 1,1,1
+.PARAM XBRX45 File:Mcetriac.lib
+
+*100V 1A pkg:TO-92A 1,1,1
+.PARAM XBRX46 File:Mcetriac.lib
+
+*200V 1A pkg:TO-92A 1,1,1
+.PARAM XBRX47 File:Mcetriac.lib
+
+*400V 1A pkg:TO-92A 1,1,1
+.PARAM XBRX49 File:Mcetriac.lib
+
+*30V 1A pkg:TO-92A 1,1,1
+.PARAM XBRY55-30 File:Mcetriac.lib
+
+*60V 1A pkg:TO-92A 1,1,1
+.PARAM XBRY55-60 File:Mcetriac.lib
+
+*100V 1A pkg:TO-92A 1,1,1
+.PARAM XBRY55-100 File:Mcetriac.lib
+
+*200V 1A pkg:TO-92A 1,1,1
+.PARAM XBRY55-200 File:Mcetriac.lib
+
+*400V 1A pkg:TO-92A 1,1,1
+.PARAM XBRY55-400 File:Mcetriac.lib
+
+*500V 1A pkg:TO-92A 1,1,1
+.PARAM XBRY55-500 File:Mcetriac.lib
+
+*600V 1A pkg:TO-92A 1,1,1
+.PARAM XBRY55-600 File:Mcetriac.lib
+
+*50V 2A pkg:TO-92B 1,2,3
+.PARAM XMCR22-2 File:Mcetriac.lib
+
+*100V 2A pkg:TO-92B 1,2,3
+.PARAM XMCR22-3 File:Mcetriac.lib
+
+*200V 2A pkg:TO-92B 1,2,3
+.PARAM XMCR22-4 File:Mcetriac.lib
+
+*400V 2A pkg:TO-92B 1,2,3
+.PARAM XMCR22-6 File:Mcetriac.lib
+
+*600V 2A pkg:TO-92B 1,2,3
+.PARAM XMCR22-8 File:Mcetriac.lib
+
+*30V 1A pkg:TO-92B 1,2,3
+.PARAM XMCR102 File:Mcetriac.lib
+
+*60V 1A pkg:TO-92B 1,2,3
+.PARAM XMCR103 File:Mcetriac.lib
+
+*50V 6A pkg:TO-126 2,3,1
+.PARAM XMCR506-2 File:Mcetriac.lib
+
+*100V 6A pkg:TO-126 2,3,1
+.PARAM XMCR506-3 File:Mcetriac.lib
+
+*200V 6A pkg:TO-126 2,3,1
+.PARAM XMCR506-4 File:Mcetriac.lib
+
+*400V 6A pkg:TO-126 2,3,1
+.PARAM XMCR506-6 File:Mcetriac.lib
+
+*600V 6A pkg:TO-126 2,3,1
+.PARAM XMCR506-8 File:Mcetriac.lib
+
+*100V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103A  File:Mcetriac.lib
+
+*200V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103B  File:Mcetriac.lib
+
+*300V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103C  File:Mcetriac.lib
+
+*400V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103D  File:Mcetriac.lib
+
+*500V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103E  File:Mcetriac.lib
+
+*600V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103M  File:Mcetriac.lib
+
+*100V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103A1 File:Mcetriac.lib
+
+*200V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103B1 File:Mcetriac.lib
+
+*300V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103C1 File:Mcetriac.lib
+
+*400V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103D1 File:Mcetriac.lib
+
+*500V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103E1 File:Mcetriac.lib
+
+*600V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103M1 File:Mcetriac.lib
+
+*100V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103A2 File:Mcetriac.lib
+
+*200V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103B2 File:Mcetriac.lib
+
+*300V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103C2 File:Mcetriac.lib
+
+*400V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103D2 File:Mcetriac.lib
+
+*500V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103E2 File:Mcetriac.lib
+
+*600V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103M2 File:Mcetriac.lib
+
+*100V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103A3 File:Mcetriac.lib
+
+*200V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103B3 File:Mcetriac.lib
+
+*300V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103C3 File:Mcetriac.lib
+
+*400V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103D3 File:Mcetriac.lib
+
+*500V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103E3 File:Mcetriac.lib
+
+*600V 1A pkg:TO-92B 1,2,3
+.PARAM XEC103M3 File:Mcetriac.lib
+
+*100V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113A  File:Mcetriac.lib
+
+*200V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113B  File:Mcetriac.lib
+
+*300V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113C  File:Mcetriac.lib
+
+*400V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113D  File:Mcetriac.lib
+
+*500V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113E  File:Mcetriac.lib
+
+*600V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113M  File:Mcetriac.lib
+
+*100V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113A3 File:Mcetriac.lib
+
+*200V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113B3 File:Mcetriac.lib
+
+*300V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113C3 File:Mcetriac.lib
+
+*400V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113D3 File:Mcetriac.lib
+
+*500V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113E3 File:Mcetriac.lib
+
+*600V 1A pkg:TO-92B 1,2,3
+.PARAM XEC113M3 File:Mcetriac.lib
+
+*150V 1A pkg:TO-92B 1,2,3
+.PARAM X2N5063  File:Mcetriac.lib
+
+*300V 1A pkg:TO-92B 1,2,3
+.PARAM X2N6564  File:Mcetriac.lib
+
+*400V 1A pkg:TO-92B 1,2,3
+.PARAM X2N6565  File:Mcetriac.lib
+
+*50V 2A pkg:TO-92B 1,2,3
+.PARAM XTCR22-2 File:Mcetriac.lib
+
+*100V 2A  pkg:TO-92B 1,2,3
+.PARAM XTCR22-3 File:Mcetriac.lib
+
+*200V 2A pkg:TO-92B 1,2,3
+.PARAM XTCR22-4 File:Mcetriac.lib
+
+*400V 2A pkg:TO-92B 1,2,3
+.PARAM XTCR22-6 File:Mcetriac.lib
+
+*600V 2A pkg:TO-92B 1,2,3
+.PARAM XTCR22-8 File:Mcetriac.lib
+
+*50V 3A pkg:TO-220 2,3,1
+.PARAM XS0503LS1 File:Mcetriac.lib
+
+*50V 3A pkg:TO-220 2,3,1
+.PARAM XS0503LS2 File:Mcetriac.lib
+
+*50V 3A pkg:TO-220 2,3,1
+.PARAM XS0503LS3 File:Mcetriac.lib
+
+*100V 3A pkg:TO-220 2,3,1
+.PARAM XS1003LS1 File:Mcetriac.lib
+
+*100V 3A pkg:TO-220 2,3,1
+.PARAM XS1003LS2 File:Mcetriac.lib
+
+*100V 3A pkg:TO-220 2,3,1
+.PARAM XS1003LS3 File:Mcetriac.lib
+
+*200V 3A pkg:TO-220 2,3,1
+.PARAM XS2003LS1 File:Mcetriac.lib
+
+*200V 3A pkg:TO-220 2,3,1
+.PARAM XS2003LS2 File:Mcetriac.lib
+
+*200V 3A pkg:TO-220 2,3,1
+.PARAM XS2003LS3 File:Mcetriac.lib
+
+*400V 3A pkg:TO-220 2,3,1
+.PARAM XS4003LS1 File:Mcetriac.lib
+
+*400V 3A pkg:TO-220 2,3,1
+.PARAM XS4003LS2 File:Mcetriac.lib
+
+*400V 3A pkg:TO-220 2,3,1
+.PARAM XS4003LS3 File:Mcetriac.lib
+
+*600V 3A pkg:TO-220 2,3,1
+.PARAM XS6003LS1 File:Mcetriac.lib
+
+*600V 3A pkg:TO-220 2,3,1
+.PARAM XS6003LS2 File:Mcetriac.lib
+
+*600V 3A pkg:TO-220 2,3,1
+.PARAM XS6003LS3 File:Mcetriac.lib
+
+*50V 4A pkg:TO-202 2,3,1
+.PARAM XT106F1  File:Mcetriac.lib
+
+*100V 4A pkg:TO-202 2,3,1
+.PARAM XT106A1  File:Mcetriac.lib
+
+*200V 4A pkg:TO-202 2,3,1
+.PARAM XT106B1  File:Mcetriac.lib
+
+*300V 4A pkg:TO-202 2,3,1
+.PARAM XT106C1  File:Mcetriac.lib
+
+*400V 4A pkg:TO-202 2,3,1
+.PARAM XT106D1  File:Mcetriac.lib
+
+*500V 4A pkg:TO-202 2,3,1
+.PARAM XT106E1  File:Mcetriac.lib
+
+*600V 4A pkg:TO-202 2,3,1
+.PARAM XT106M1  File:Mcetriac.lib
+
+*50V 4A pkg:TO-202 2,3,1
+.PARAM XT107F1  File:Mcetriac.lib
+
+*100V 4A pkg:TO-202 2,3,1
+.PARAM XT107A1  File:Mcetriac.lib
+
+*200V 4A pkg:TO-202 2,3,1
+.PARAM XT107B1  File:Mcetriac.lib
+
+*300V 4A pkg:TO-202 2,3,1
+.PARAM XT107C1  File:Mcetriac.lib
+
+*400V 4A pkg:TO-202 2,3,1
+.PARAM XT107D1  File:Mcetriac.lib
+
+*500V 4A  pkg:TO-202 2,3,1
+.PARAM XT107E1  File:Mcetriac.lib
+
+*600V 4A pkg:TO-202 2,3,1
+.PARAM XT107M1  File:Mcetriac.lib
+
+*100V 25A pkg:TO-126 1,2,3
+.PARAM X10RIA10  File:Mcetriac.lib
+
+*200V 25A pkg:TO-126 1,2,3
+.PARAM X10RIA20  File:Mcetriac.lib
+
+*400V 25A pkg:TO-126 1,2,3
+.PARAM X10RIA40  File:Mcetriac.lib
+
+*600V 25A pkg:TO-126 1,2,3
+.PARAM X10RIA60  File:Mcetriac.lib
+
+*800V 25A pkg:TO-126 1,2,3
+.PARAM X10RIA80  File:Mcetriac.lib
+
+*100V 25A pkg:TO-126 1,2,3
+.PARAM X10RIA100 File:Mcetriac.lib
+
+*1200V 25A pkg:TO-126 1,2,3
+.PARAM X10RIA120 File:Mcetriac.lib
+
+*25V 25A pkg:TO-126 1,2,3
+.PARAM X2N681    File:Mcetriac.lib
+
+*50V 25A pkg:TO-126 1,2,3
+.PARAM X2N682    File:Mcetriac.lib
+
+*100V 25A pkg:TO-126 1,2,3
+.PARAM X2N683    File:Mcetriac.lib
+
+*150V 25A pkg:TO-126 1,2,3
+.PARAM X2N684    File:Mcetriac.lib
+
+*200V 25A pkg:TO-126 1,2,3
+.PARAM X2N685    File:Mcetriac.lib
+
+*250V 25A pkg:TO-126 1,2,3
+.PARAM X2N686    File:Mcetriac.lib
+
+*300V 25A pkg:TO-126 1,2,3
+.PARAM X2N687    File:Mcetriac.lib
+
+*400V 25A pkg:TO-126 1,2,3
+.PARAM X2N688    File:Mcetriac.lib
+
+*500V 25A pkg:TO-126 1,2,3
+.PARAM X2N689    File:Mcetriac.lib
+
+*600V 25A pkg:TO-126 1,2,3
+.PARAM X2N690    File:Mcetriac.lib
+
+*700V 25A pkg:TO-126 1,2,3
+.PARAM X2N691    File:Mcetriac.lib
+
+*800V 25A pkg:TO-126 1,2,3
+.PARAM X2N692    File:Mcetriac.lib
+
+*100V 35A pkg:TO-126 1,2,3
+.PARAM X16RIA10  File:Mcetriac.lib
+
+*200V 35A pkg:TO-126 1,2,3
+.PARAM X16RIA20  File:Mcetriac.lib
+
+*400V 35A pkg:TO-126 1,2,3
+.PARAM X16RIA40  File:Mcetriac.lib
+
+*600V 35A pkg:TO-126 1,2,3
+.PARAM X16RIA60  File:Mcetriac.lib
+
+*800V 35A pkg:TO-126 1,2,3
+.PARAM X16RIA80  File:Mcetriac.lib
+
+*1000V 35A pkg:TO-126 1,2,3
+.PARAM X16RIA100 File:Mcetriac.lib
+
+*1200V 35A pkg:TO-126 1,2,3
+.PARAM X16RIA120 File:Mcetriac.lib
+
+*1400V 35A pkg:TO-126 1,2,3
+.PARAM X16RIA140 File:Mcetriac.lib
+
+*1600V 35A pkg:TO-126 1,2,3
+.PARAM X16RIA160 File:Mcetriac.lib
+
+*600V 35A pkg:TO-126 1,2,3
+.PARAM X2N5204   File:Mcetriac.lib
+
+*800V 35A pkg:TO-126 1,2,3
+.PARAM X2N5205   File:Mcetriac.lib
+
+*1000V 35A pkg:TO-126 1,2,3
+.PARAM X2N5206   File:Mcetriac.lib
+
+*1200V 35A pkg:TO-126 1,2,3
+.PARAM X2N5207   File:Mcetriac.lib
+
+*100V 35A pkg:TO-126 1,2,3
+.PARAM X22RIA10  File:Mcetriac.lib
+
+*200V 35A pkg:TO-126 1,2,3
+.PARAM X22RIA20  File:Mcetriac.lib
+
+*400V 35A pkg:TO-126 1,2,3
+.PARAM X22RIA40  File:Mcetriac.lib
+
+*600V 35A pkg:TO-126 1,2,3
+.PARAM X22RIA60  File:Mcetriac.lib
+
+*800V 35A pkg:TO-126 1,2,3
+.PARAM X22RIA80  File:Mcetriac.lib
+
+*1000V 35A pkg:TO-126 1,2,3
+.PARAM X22RIA100 File:Mcetriac.lib
+
+*1200V 35A pkg:TO-126 1,2,3
+.PARAM X22RIA120 File:Mcetriac.lib
+
+*1400V 35A pkg:TO-126 1,2,3
+.PARAM X22RIA140 File:Mcetriac.lib
+
+*1600V 35A pkg:TO-126 1,2,3
+.PARAM X22RIA160 File:Mcetriac.lib
+
+*100V 40A pkg:TO-126 1,2,3
+.PARAM X25RIA10  File:Mcetriac.lib
+
+*200V 40A pkg:TO-126 1,2,3
+.PARAM X25RIA20  File:Mcetriac.lib
+
+*400V 40A pkg:TO-126 1,2,3
+.PARAM X25RIA40  File:Mcetriac.lib
+
+*600V 40A pkg:TO-126 1,2,3
+.PARAM X25RIA60  File:Mcetriac.lib
+
+*800V 40A pkg:TO-126 1,2,3
+.PARAM X25RIA80  File:Mcetriac.lib
+
+*100V 40A pkg:TO-126 1,2,3
+.PARAM X25RIA100 File:Mcetriac.lib
+
+*1200V 40A pkg:TO-126 1,2,3
+.PARAM X25RIA120 File:Mcetriac.lib
+
+*1400V 40A pkg:TO-126 1,2,3
+.PARAM X25RIA140 File:Mcetriac.lib
+
+*1600V 40A pkg:TO-126 1,2,3
+.PARAM X25RIA160 File:Mcetriac.lib
+
+*100V 80A pkg:TO-126 1,2,3
+.PARAM X50RIA10  File:Mcetriac.lib
+
+*200V 80A pkg:TO-126 1,2,3
+.PARAM X50RIA20  File:Mcetriac.lib
+
+*400V 80A pkg:TO-126 1,2,3
+.PARAM X50RIA40  File:Mcetriac.lib
+
+*600V 80A pkg:TO-126 1,2,3
+.PARAM X50RIA60  File:Mcetriac.lib
+
+*800V 80A pkg:TO-126 1,2,3
+.PARAM X50RIA80  File:Mcetriac.lib
+
+*1000V 80A pkg:TO-126 1,2,3
+.PARAM X50RIA100 File:Mcetriac.lib
+
+*1200V 80A pkg:TO-126 1,2,3
+.PARAM X50RIA120 File:Mcetriac.lib
+
+*1400V 80A pkg:TO-126 1,2,3
+.PARAM X50RIA140 File:Mcetriac.lib
+
+*1600V 80A pkg:TO-126 1,2,3
+.PARAM X50RIA160 File:Mcetriac.lib
+
+*50V 110A pkg:TO-126 1,2,3
+.PARAM X2N1792   File:Mcetriac.lib
+
+*100V 110A pkg:TO-126 1,2,3
+.PARAM X2N1793   File:Mcetriac.lib
+
+*150V 110A pkg:TO-126 1,2,3
+.PARAM X2N1794   File:Mcetriac.lib
+
+*200V 110A pkg:TO-126 1,2,3
+.PARAM X2N1795   File:Mcetriac.lib
+
+*250V 110A pkg:TO-126 1,2,3
+.PARAM X2N1796   File:Mcetriac.lib
+
+*300V 110A pkg:TO-126 1,2,3
+.PARAM X2N1797   File:Mcetriac.lib
+
+*400V 110A pkg:TO-126 1,2,3
+.PARAM X2N1798   File:Mcetriac.lib
+
+*500V 110A pkg:TO-126 1,2,3
+.PARAM X2N1799   File:Mcetriac.lib
+
+*600V 110A pkg:TO-126 1,2,3
+.PARAM X2N1800   File:Mcetriac.lib
+
+*700V 110A pkg:TO-126 1,2,3
+.PARAM X2N1801   File:Mcetriac.lib
+
+*800V 110A pkg:TO-126 1,2,3
+.PARAM X2N1802   File:Mcetriac.lib
+
+*900V 110A pkg:TO-126 1,2,3
+.PARAM X2N1803   File:Mcetriac.lib
+
+*1000V 110A pkg:TO-126 1,2,3
+.PARAM X2N1804   File:Mcetriac.lib
+
+*600V 110A pkg:TO-126 1,2,3
+.PARAM X2N3091   File:Mcetriac.lib
+
+*700V 110A pkg:TO-126 1,2,3
+.PARAM X2N3092   File:Mcetriac.lib
+
+*800V 110A pkg:TO-126 1,2,3
+.PARAM X2N3093   File:Mcetriac.lib
+
+*900V 110A pkg:TO-126 1,2,3
+.PARAM X2N3094   File:Mcetriac.lib
+
+*1000V 110A pkg:TO-126 1,2,3
+.PARAM X2N3095   File:Mcetriac.lib
+
+*1100V 110A pkg:TO-126 1,2,3
+.PARAM X2N3096   File:Mcetriac.lib
+
+*1200V 110A pkg:TO-126 1,2,3
+.PARAM X2N3097   File:Mcetriac.lib
+
+*1300V 110A pkg:TO-126 1,2,3
+.PARAM X2N3098   File:Mcetriac.lib
+
+*25V 110A pkg:TO-126 1,2,3
+.PARAM X2N1909   File:Mcetriac.lib
+
+*50V 110A pkg:TO-126 1,2,3
+.PARAM X2N1910   File:Mcetriac.lib
+
+*100V 110A pkg:TO-126 1,2,3
+.PARAM X2N1911   File:Mcetriac.lib
+
+*150V 110A pkg:TO-126 1,2,3
+.PARAM X2N1912   File:Mcetriac.lib
+
+*200V 110A pkg:TO-126 1,2,3
+.PARAM X2N1913   File:Mcetriac.lib
+
+*250V 110A pkg:TO-126 1,2,3
+.PARAM X2N1914   File:Mcetriac.lib
+
+*300V 110A pkg:TO-126 1,2,3
+.PARAM X2N1915   File:Mcetriac.lib
+
+*400V 110A pkg:TO-126 1,2,3
+.PARAM X2N1916   File:Mcetriac.lib
+
+*500V 110A pkg:TO-126 1,2,3
+.PARAM X2N1805   File:Mcetriac.lib
+
+*600V 110A pkg:TO-126 1,2,3
+.PARAM X2N1806   File:Mcetriac.lib
+
+*700V 110A pkg:TO-126 1,2,3
+.PARAM X2N1807   File:Mcetriac.lib
+
+*100V 110A pkg:TO-126 1,2,3
+.PARAM X70RIA10  File:Mcetriac.lib
+
+*200V 110A pkg:TO-126 1,2,3
+.PARAM X70RIA20  File:Mcetriac.lib
+
+*400V 110A pkg:TO-126 1,2,3
+.PARAM X70RIA40  File:Mcetriac.lib
+
+*600V 110A pkg:TO-126 1,2,3
+.PARAM X70RIA60  File:Mcetriac.lib
+
+*800V 110A pkg:TO-126 1,2,3
+.PARAM X70RIA80  File:Mcetriac.lib
+
+*1000V 110A pkg:TO-126 1,2,3
+.PARAM X70RIA100 File:Mcetriac.lib
+
+*1200V 110A pkg:TO-126 1,2,3
+.PARAM X70RIA120 File:Mcetriac.lib
+
+*25V 110A pkg:TO-126 1,2,3
+.PARAM X2N2023   File:Mcetriac.lib
+
+*50V 110A pkg:TO-126 1,2,3
+.PARAM X2N2024   File:Mcetriac.lib
+
+*100V 110A pkg:TO-126 1,2,3
+.PARAM X2N2025   File:Mcetriac.lib
+
+*150V 110A pkg:TO-126 1,2,3
+.PARAM X2N2026   File:Mcetriac.lib
+
+*200V 110A pkg:TO-126 1,2,3
+.PARAM X2N2027   File:Mcetriac.lib
+
+*250V 110A pkg:TO-126 1,2,3
+.PARAM X2N2028   File:Mcetriac.lib
+
+*300V 110A pkg:TO-126 1,2,3
+.PARAM X2N2029   File:Mcetriac.lib
+
+*400V 110A pkg:TO-126 1,2,3
+.PARAM X2N2030   File:Mcetriac.lib
+
+*100V 125A pkg:TO-126 1,2,3
+.PARAM X80RIA10  File:Mcetriac.lib
+
+*200V 125A pkg:TO-126 1,2,3
+.PARAM X80RIA20  File:Mcetriac.lib
+
+*400V 125A pkg:TO-126 1,2,3
+.PARAM X80RIA40  File:Mcetriac.lib
+
+*600V 125A pkg:TO-126 1,2,3
+.PARAM X80RIA60  File:Mcetriac.lib
+
+*800V 125A pkg:TO-126 1,2,3
+.PARAM X80RIA80  File:Mcetriac.lib
+
+*1000V 125A pkg:TO-126 1,2,3
+.PARAM X80RIA100 File:Mcetriac.lib
+
+*1200V 125A pkg:TO-126 1,2,3
+.PARAM X80RIA120 File:Mcetriac.lib
+
+*100V 125A pkg:TO-126 1,2,3
+.PARAM X80RKI10  File:Mcetriac.lib
+
+*200V 125A pkg:TO-126 1,2,3
+.PARAM X80RKI20  File:Mcetriac.lib
+
+*400V 125A pkg:TO-126 1,2,3
+.PARAM X80RKI40  File:Mcetriac.lib
+
+*600V 125A pkg:TO-126 1,2,3
+.PARAM X80RKI60  File:Mcetriac.lib
+
+*800V 125A pkg:TO-126 1,2,3
+.PARAM X80RKI80  File:Mcetriac.lib
+
+*1000V 125A pkg:TO-126 1,2,3
+.PARAM X80RKI100 File:Mcetriac.lib
+
+*1200V 125A pkg:TO-126 1,2,3
+.PARAM X80RKI120 File:Mcetriac.lib
+
+*100V 172A pkg:TO-126 1,2,3
+.PARAM X110RKI10 File:Mcetriac.lib
+
+*200V 172A pkg:TO-126 1,2,3
+.PARAM X110RKI20 File:Mcetriac.lib
+
+*400V 172A pkg:TO-126 1,2,3
+.PARAM X110RKI40 File:Mcetriac.lib
+
+*600V 172A pkg:TO-126 1,2,3
+.PARAM X110RKI60 File:Mcetriac.lib
+
+*800V 172A pkg:TO-126 1,2,3
+.PARAM X110RKI80 File:Mcetriac.lib
+
+*1000V 172A pkg:TO-126 1,2,3
+.PARAM X110RKI100 File:Mcetriac.lib
+
+*1200V 172A pkg:TO-126 1,2,3
+.PARAM X110RKI120 File:Mcetriac.lib
+
+*200V 175A pkg:TO-126 1,2,3
+.PARAM XST110S02P0V File:Mcetriac.lib
+
+*400V 175A pkg:TO-126 1,2,3
+.PARAM XST110S04P0V File:Mcetriac.lib
+
+*600V 175A pkg:TO-126 1,2,3
+.PARAM XST110S06P0V File:Mcetriac.lib
+
+*800V 175A pkg:TO-126 1,2,3
+.PARAM XST110S08P0V File:Mcetriac.lib
+
+*1000V 175A pkg:TO-126 1,2,3
+.PARAM XST110S10P0V File:Mcetriac.lib
+
+*1200V 175A pkg:TO-126 1,2,3
+.PARAM XST110S12P0V File:Mcetriac.lib
+
+*1400V 175A pkg:TO-126 1,2,3
+.PARAM XST110S14P0 File:Mcetriac.lib
+
+*1600V 175A pkg:TO-126 1,2,3
+.PARAM XST110S16P0 File:Mcetriac.lib
+
+*200V 285A pkg:TO-126 1,2,3
+.PARAM X180RKI20 File:Mcetriac.lib
+
+*400V 285A pkg:TO-126 1,2,3
+.PARAM X180RKI40 File:Mcetriac.lib
+
+*600V 285A pkg:TO-126 1,2,3
+.PARAM X180RKI60 File:Mcetriac.lib
+
+*800V 285A pkg:TO-126 1,2,3
+.PARAM X180RKI80 File:Mcetriac.lib
+
+*1000V 285A pkg:TO-126 1,2,3
+.PARAM X180RKI100 File:Mcetriac.lib
+
+*200V 314A pkg:TO-126 1,2,3
+.PARAM XST180S02P0V File:Mcetriac.lib
+
+*400V 314A pkg:TO-126 1,2,3
+.PARAM XST180S04P0V File:Mcetriac.lib
+
+*600V 314A pkg:TO-126 1,2,3
+.PARAM XST180S06P0V File:Mcetriac.lib
+
+*800V 314A pkg:TO-126 1,2,3
+.PARAM XST180S08P0V File:Mcetriac.lib
+
+*1000V 314A pkg:TO-126 1,2,3
+.PARAM XST180S10P0V File:Mcetriac.lib
+
+*1200V 314A pkg:TO-126 1,2,3
+.PARAM XST180S12P0V File:Mcetriac.lib
+
+*1400V 314A pkg:TO-126 1,2,3
+.PARAM XST180S14P0 File:Mcetriac.lib
+
+*1600V 314A pkg:TO-126 1,2,3
+.PARAM XST180S16P0 File:Mcetriac.lib
+
+*1800V 314A pkg:TO-126 1,2,3
+.PARAM XST180S18P0 File:Mcetriac.lib
+
+*2000V 314A pkg:TO-126 1,2,3
+.PARAM XST180S20P0 File:Mcetriac.lib
+
+*200V 361A pkg:TO-126 1,2,3
+.PARAM XST230S02P0V File:Mcetriac.lib
+
+*400V 361A pkg:TO-126 1,2,3
+.PARAM XST230S04P0V File:Mcetriac.lib
+
+*600V 361A pkg:TO-126 1,2,3
+.PARAM XST230S06P0V File:Mcetriac.lib
+
+*800V 361A pkg:TO-126 1,2,3
+.PARAM XST230S08P0V File:Mcetriac.lib
+
+*1000V 361A pkg:TO-126 1,2,3
+.PARAM XST230S10P0V File:Mcetriac.lib
+
+*1200V 361A pkg:TO-126 1,2,3
+.PARAM XST230S12P0V File:Mcetriac.lib
+
+*1400V 361A pkg:TO-126 1,2,3
+.PARAM XST230S14P0 File:Mcetriac.lib
+
+*1600V 361A pkg:TO-126 1,2,3
+.PARAM XST230S16P0 File:Mcetriac.lib
+
+*200V 440A pkg:TO-126 1,2,3
+.PARAM XST280S02P0V File:Mcetriac.lib
+
+*400V 440A pkg:TO-126 1,2,3
+.PARAM XST280S04P0V File:Mcetriac.lib
+
+*600V 440A pkg:TO-126 1,2,3
+.PARAM XST280S06P0V File:Mcetriac.lib
+
+*200V 470A pkg:TO-126 1,2,3
+.PARAM XST300S02P0 File:Mcetriac.lib
+
+*400V 470A pkg:TO-126 1,2,3
+.PARAM XST300S04P0 File:Mcetriac.lib
+
+*600V 470A pkg:TO-126 1,2,3
+.PARAM XST300S06P0 File:Mcetriac.lib
+
+*800V 470A pkg:TO-126 1,2,3
+.PARAM XST300S08P0 File:Mcetriac.lib
+
+*1000V 470A pkg:TO-126 1,2,3
+.PARAM XST300S10P0 File:Mcetriac.lib
+
+*1200V 470A pkg:TO-126 1,2,3
+.PARAM XST300S12P0 File:Mcetriac.lib
+
+*1400V 470A pkg:TO-126 1,2,3
+.PARAM XST300S14P0 File:Mcetriac.lib
+
+*1600V 470A pkg:TO-126 1,2,3
+.PARAM XST300S16P0 File:Mcetriac.lib
+
+*1800V 470A pkg:TO-126 1,2,3
+.PARAM XST300S18P0 File:Mcetriac.lib
+
+*2000V 470A pkg:TO-126 1,2,3
+.PARAM XST300S20P0 File:Mcetriac.lib
+
+*200V 520A pkg:TO-126 1,2,3
+.PARAM XST330S02P0 File:Mcetriac.lib
+
+*400V 520A pkg:TO-126 1,2,3
+.PARAM XST330S04P0 File:Mcetriac.lib
+
+*600V 520A pkg:TO-126 1,2,3
+.PARAM XST330S06P0 File:Mcetriac.lib
+
+*800V 520A pkg:TO-126 1,2,3
+.PARAM XST330S08P0 File:Mcetriac.lib
+
+*1000V 520A pkg:TO-126 1,2,3
+.PARAM XST330S10P0 File:Mcetriac.lib
+
+*1200V 520A pkg:TO-126 1,2,3
+.PARAM XST330S12P0 File:Mcetriac.lib
+
+*1400V 520A pkg:TO-126 1,2,3
+.PARAM XST330S14P0 File:Mcetriac.lib
+
+*1600V 520A pkg:TO-126 1,2,3
+.PARAM XST330S16P0 File:Mcetriac.lib
+
+*200V 500A pkg:TO-126 1,2,3
+.PARAM XST110C02C0 File:Mcetriac.lib
+
+*400V 500A pkg:TO-126 1,2,3
+.PARAM XST110C04C0 File:Mcetriac.lib
+
+*600V 500A pkg:TO-126 1,2,3
+.PARAM XST110C06C0 File:Mcetriac.lib
+
+*800V 500A pkg:TO-126 1,2,3
+.PARAM XST110C08C0 File:Mcetriac.lib
+
+*1000V 500A pkg:TO-126 1,2,3
+.PARAM XST110C10C0 File:Mcetriac.lib
+
+*1200V 500A pkg:TO-126 1,2,3
+.PARAM XST110C12C0 File:Mcetriac.lib
+
+*1400V 500A pkg:TO-126 1,2,3
+.PARAM XST110C14C0 File:Mcetriac.lib
+
+*1600V 500A pkg:TO-126 1,2,3
+.PARAM XST110C16C0 File:Mcetriac.lib
+
+*200V 660A pkg:TO-126 1,2,3
+.PARAM XST180C02C0 File:Mcetriac.lib
+
+*400V 660A pkg:TO-126 1,2,3
+.PARAM XST180C04C0 File:Mcetriac.lib
+
+*600V 660A pkg:TO-126 1,2,3
+.PARAM XST180C06C0 File:Mcetriac.lib
+
+*800V 660A pkg:TO-126 1,2,3
+.PARAM XST180C08C0 File:Mcetriac.lib
+
+*1000V 660A pkg:TO-126 1,2,3
+.PARAM XST180C10C0 File:Mcetriac.lib
+
+*1200V 660A pkg:TO-126 1,2,3
+.PARAM XST180C12C0 File:Mcetriac.lib
+
+*1400V 660A pkg:TO-126 1,2,3
+.PARAM XST180C14C0 File:Mcetriac.lib
+
+*1600V 660A pkg:TO-126 1,2,3
+.PARAM XST180C16C0 File:Mcetriac.lib
+
+*1800V 660A pkg:TO-126 1,2,3
+.PARAM XST180C18C0 File:Mcetriac.lib
+
+*2000V 660A pkg:TO-126 1,2,3
+.PARAM XST180C20C0 File:Mcetriac.lib
+
+*200V 780A pkg:TO-126 1,2,3
+.PARAM XST230C02C0 File:Mcetriac.lib
+
+*400V 780A pkg:TO-126 1,2,3
+.PARAM XST230C04C0 File:Mcetriac.lib
+
+*600V 780A pkg:TO-126 1,2,3
+.PARAM XST230C06C0 File:Mcetriac.lib
+
+*800V 780A pkg:TO-126 1,2,3
+.PARAM XST230C08C0 File:Mcetriac.lib
+
+*1000V 780A pkg:TO-126 1,2,3
+.PARAM XST230C10C0 File:Mcetriac.lib
+
+*1200V 780A pkg:TO-126 1,2,3
+.PARAM XST230C12C0 File:Mcetriac.lib
+
+*1400V 780A pkg:TO-126 1,2,3
+.PARAM XST230C14C0 File:Mcetriac.lib
+
+*1600V 780A pkg:TO-126 1,2,3
+.PARAM XST230C16C0 File:Mcetriac.lib
+
+*200V 960A pkg:TO-126 1,2,3
+.PARAM XST280C02C0 File:Mcetriac.lib
+
+*400V 960A pkg:TO-126 1,2,3
+.PARAM XST280C04C0 File:Mcetriac.lib
+
+*600V 960A pkg:TO-126 1,2,3
+.PARAM XST280C06C0 File:Mcetriac.lib
+
+*200V 1130A pkg:TO-126 1,2,3
+.PARAM XST280CH02C0 File:Mcetriac.lib
+
+*400V 1130A pkg:TO-126 1,2,3
+.PARAM XST280CH04C0 File:Mcetriac.lib
+
+*600V 1130A pkg:TO-126 1,2,3
+.PARAM XST280CH06C0 File:Mcetriac.lib
+
+*200V 1290A pkg:TO-126 1,2,3
+.PARAM XST300C02C0 File:Mcetriac.lib
+
+*400V 1290A pkg:TO-126 1,2,3
+.PARAM XST300C04C0 File:Mcetriac.lib
+
+*600V 1290A pkg:TO-126 1,2,3
+.PARAM XST300C06C0 File:Mcetriac.lib
+
+*800V 1290A pkg:TO-126 1,2,3
+.PARAM XST300C08C0 File:Mcetriac.lib
+
+*1000V 1290A pkg:TO-126 1,2,3
+.PARAM XST300C10C0 File:Mcetriac.lib
+
+*1200V 1290A pkg:TO-126 1,2,3
+.PARAM XST300C12C0 File:Mcetriac.lib
+
+*1400V 1290A pkg:TO-126 1,2,3
+.PARAM XST300C14C0 File:Mcetriac.lib
+
+*1600V 1290A pkg:TO-126 1,2,3
+.PARAM XST300C16C0 File:Mcetriac.lib
+
+*1800V 1290A pkg:TO-126 1,2,3
+.PARAM XST300C18C0 File:Mcetriac.lib
+
+*2000V 1290A pkg:TO-126 1,2,3
+.PARAM XST300C20C0 File:Mcetriac.lib
+
+*200V 1420A pkg:TO-126 1,2,3
+.PARAM XST330C02C0 File:Mcetriac.lib
+
+*400V 1420A pkg:TO-126 1,2,3
+.PARAM XST330C04C0 File:Mcetriac.lib
+
+*600V 1420A pkg:TO-126 1,2,3
+.PARAM XST330C06C0 File:Mcetriac.lib
+
+*800V 1420A pkg:TO-126 1,2,3
+.PARAM XST330C08C0 File:Mcetriac.lib
+
+*1000V 1420A pkg:TO-126 1,2,3
+.PARAM XST330C10C0 File:Mcetriac.lib
+
+*1200V 1420A pkg:TO-126 1,2,3
+.PARAM XST330C12C0 File:Mcetriac.lib
+
+*1400V 1420A pkg:TO-126 1,2,3
+.PARAM XST330C14C0 File:Mcetriac.lib
+
+*1600V 1420A pkg:TO-126 1,2,3
+.PARAM XST330C16C0 File:Mcetriac.lib
+
+*200V 1900A pkg:TO-126 1,2,3
+.PARAM XST380C02C0 File:Mcetriac.lib
+
+*400V 1900A pkg:TO-126 1,2,3
+.PARAM XST380C04C0 File:Mcetriac.lib
+
+*600V 1900A pkg:TO-126 1,2,3
+.PARAM XST380C06C0 File:Mcetriac.lib
+
+*200V 2220A pkg:TO-126 1,2,3
+.PARAM XST380CH02C0 File:Mcetriac.lib
+
+*400V 2220A pkg:TO-126 1,2,3
+.PARAM XST380CH04C0 File:Mcetriac.lib
+
+*600V 2220A pkg:TO-126 1,2,3
+.PARAM XST380CH06C0 File:Mcetriac.lib
+
+*200V 1115A pkg:TO-126 1,2,3
+.PARAM XST300C02L0 File:Mcetriac.lib
+
+*400V 1115A pkg:TO-126 1,2,3
+.PARAM XST300C04L0 File:Mcetriac.lib
+
+*600V 1115A pkg:TO-126 1,2,3
+.PARAM XST300C06L0 File:Mcetriac.lib
+
+*800V 1115A pkg:TO-126 1,2,3
+.PARAM XST300C08L0 File:Mcetriac.lib
+
+*1000V 1115A pkg:TO-126 1,2,3
+.PARAM XST300C10L0 File:Mcetriac.lib
+
+*1200V 1115A pkg:TO-126 1,2,3
+.PARAM XST300C12L0 File:Mcetriac.lib
+
+*1400V 1115A pkg:TO-126 1,2,3
+.PARAM XST300C14L0 File:Mcetriac.lib
+
+*1600V 1115A pkg:TO-126 1,2,3
+.PARAM XST300C16L0 File:Mcetriac.lib
+
+*1800V 1115A pkg:TO-126 1,2,3
+.PARAM XST300C18L0 File:Mcetriac.lib
+
+*2000V 1115A pkg:TO-126 1,2,3
+.PARAM XST300C20L0 File:Mcetriac.lib
+
+*200V 1230A pkg:TO-126 1,2,3
+.PARAM XST330C02L0 File:Mcetriac.lib
+
+*400V 1230A pkg:TO-126 1,2,3
+.PARAM XST330C04L0 File:Mcetriac.lib
+
+*600V 1230A pkg:TO-126 1,2,3
+.PARAM XST330C06L0 File:Mcetriac.lib
+
+*800V 1230A pkg:TO-126 1,2,3
+.PARAM XST330C08L0 File:Mcetriac.lib
+
+*1000V 1230A pkg:TO-126 1,2,3
+.PARAM XST330C10L0 File:Mcetriac.lib
+
+*1200V 1230A pkg:TO-126 1,2,3
+.PARAM XST330C12L0 File:Mcetriac.lib
+
+*1400V 1230A pkg:TO-126 1,2,3
+.PARAM XST330C14L0 File:Mcetriac.lib
+
+*1600V 1230A pkg:TO-126 1,2,3
+.PARAM XST330C16L0 File:Mcetriac.lib
+
+*400V 1857A pkg:TO-126 1,2,3
+.PARAM XST700C04L0 File:Mcetriac.lib
+
+*600V 1857A pkg:TO-126 1,2,3
+.PARAM XST700C06L0 File:Mcetriac.lib
+
+*800V 1857A pkg:TO-126 1,2,3
+.PARAM XST700C08L0 File:Mcetriac.lib
+
+*1000V 1857A pkg:TO-126 1,2,3
+.PARAM XST700C10L0 File:Mcetriac.lib
+
+*1200V 1857A pkg:TO-126 1,2,3
+.PARAM XST700C12L0 File:Mcetriac.lib
+
+*1400V 1857A pkg:TO-126 1,2,3
+.PARAM XST700C14L0 File:Mcetriac.lib
+
+*1600V 1857A pkg:TO-126 1,2,3
+.PARAM XST700C16L0 File:Mcetriac.lib
+
+*1800V 1857A pkg:TO-126 1,2,3
+.PARAM XST700C18L0 File:Mcetriac.lib
+
+*2000V 1857A pkg:TO-126 1,2,3
+.PARAM XST700C20L0 File:Mcetriac.lib
+
+*2200V 1857A pkg:TO-126 1,2,3
+.PARAM XST700C22L0 File:Mcetriac.lib
+
+*400V 2000A pkg:TO-126 1,2,3
+.PARAM XST730C04L0 File:Mcetriac.lib
+
+*600V 2000A pkg:TO-126 1,2,3
+.PARAM XST730C06L0 File:Mcetriac.lib
+
+*800V 2000A pkg:TO-126 1,2,3
+.PARAM XST730C08L0 File:Mcetriac.lib
+
+*1000V 2000A pkg:TO-126 1,2,3
+.PARAM XST730C10L0 File:Mcetriac.lib
+
+*1200V 2000A pkg:TO-126 1,2,3
+.PARAM XST730C12L0 File:Mcetriac.lib
+
+*1400V 2000A pkg:TO-126 1,2,3
+.PARAM XST730C14L0 File:Mcetriac.lib
+
+*1600V 2000A pkg:TO-126 1,2,3
+.PARAM XST730C16L0 File:Mcetriac.lib
+
+*1800V 2000A pkg:TO-126 1,2,3
+.PARAM XST730C18L0 File:Mcetriac.lib
+
+*200V 2700A pkg:TO-126 1,2,3
+.PARAM XST780C02L0 File:Mcetriac.lib
+
+*400V 2700A pkg:TO-126 1,2,3
+.PARAM XST780C04L0 File:Mcetriac.lib
+
+*600V 2700A pkg:TO-126 1,2,3
+.PARAM XST780C06L0 File:Mcetriac.lib
+
+*400V 3080A pkg:TO-126 1,2,3
+.PARAM XST1200C04K0 File:Mcetriac.lib
+
+*600V 3080A pkg:TO-126 1,2,3
+.PARAM XST1200C06K0 File:Mcetriac.lib
+
+*800V 3080A pkg:TO-126 1,2,3
+.PARAM XST1200C08K0 File:Mcetriac.lib
+
+*1000V 3080A pkg:TO-126 1,2,3
+.PARAM XST1200C10K0 File:Mcetriac.lib
+
+*1200V 3080A pkg:TO-126 1,2,3
+.PARAM XST1200C12K0 File:Mcetriac.lib
+
+*1400V 3080A pkg:TO-126 1,2,3
+.PARAM XST1200C14K0 File:Mcetriac.lib
+
+*1600V 3080A pkg:TO-126 1,2,3
+.PARAM XST1200C16K0 File:Mcetriac.lib
+
+*1800V 3080A pkg:TO-126 1,2,3
+.PARAM XST1200C18K0 File:Mcetriac.lib
+
+*2000V 3080A pkg:TO-126 1,2,3
+.PARAM XST1200C20K0 File:Mcetriac.lib
+
+*400V 2310A pkg:TO-126 1,2,3
+.PARAM XST1230C04K0 File:Mcetriac.lib
+
+*600V 2310A pkg:TO-126 1,2,3
+.PARAM XST1230C06K0 File:Mcetriac.lib
+
+*800V 2310A pkg:TO-126 1,2,3
+.PARAM XST1230C08K0 File:Mcetriac.lib
+
+*1000V 2310A pkg:TO-126 1,2,3
+.PARAM XST1230C10K0 File:Mcetriac.lib
+
+*1200V 2310A pkg:TO-126 1,2,3
+.PARAM XST1230C12K0 File:Mcetriac.lib
+
+*1400V 2310A pkg:TO-126 1,2,3
+.PARAM XST1230C14K0 File:Mcetriac.lib
+
+*1600V 2310A pkg:TO-126 1,2,3
+.PARAM XST1230C16K0 File:Mcetriac.lib
+
+*200V 2300A pkg:TO-126 1,2,3
+.PARAM XST1280C02K0 File:Mcetriac.lib
+
+*400V 2300A pkg:TO-126 1,2,3
+.PARAM XST1280C04K0 File:Mcetriac.lib
+
+*600V 2300A pkg:TO-126 1,2,3
+.PARAM XST1280C06K0 File:Mcetriac.lib
+
+*4500V 3500A pkg:TO-126 1,2,3
+.PARAM XST1900C45R0 File:Mcetriac.lib
+
+*4600V 3500A pkg:TO-126 1,2,3
+.PARAM XST1900C46R0 File:Mcetriac.lib
+
+*4800V 3500A pkg:TO-126 1,2,3
+.PARAM XST1900C48R0 File:Mcetriac.lib
+
+*5000V 3500A pkg:TO-126 1,2,3
+.PARAM XST1900C50R0 File:Mcetriac.lib
+
+*5200V 3500A pkg:TO-126 1,2,3
+.PARAM XST1900C52R0 File:Mcetriac.lib
+
+*3500V 3850A pkg:TO-126 1,2,3
+.PARAM XST2100C35R0 File:Mcetriac.lib
+
+*3600V 3850A pkg:TO-126 1,2,3
+.PARAM XST2100C36R0 File:Mcetriac.lib
+
+*3800V 3850A pkg:TO-126 1,2,3
+.PARAM XST2100C38R0 File:Mcetriac.lib
+
+*4000V 3850A pkg:TO-126 1,2,3
+.PARAM XST2100C40R0 File:Mcetriac.lib
+
+*4200V 3850A pkg:TO-126 1,2,3
+.PARAM XST2100C42R0 File:Mcetriac.lib
+
+*4400V 3850A pkg:TO-126 1,2,3
+.PARAM XST2100C44R0 File:Mcetriac.lib
+
+*4500V 3850A pkg:TO-126 1,2,3
+.PARAM XST2100C45R0 File:Mcetriac.lib
+
+*2000V 4800A pkg:TO-126 1,2,3
+.PARAM XST2600C20R0 File:Mcetriac.lib
+
+*2200V 4800A pkg:TO-126 1,2,3
+.PARAM XST2600C22R0 File:Mcetriac.lib
+
+*2400V 4800A pkg:TO-126 1,2,3
+.PARAM XST2600C24R0 File:Mcetriac.lib
+
+*2600V 4800A pkg:TO-126 1,2,3
+.PARAM XST2600C26R0 File:Mcetriac.lib
+
+*2800V 4800A pkg:TO-126 1,2,3
+.PARAM XST2600C28R0 File:Mcetriac.lib
+
+*3000V 4800A pkg:TO-126 1,2,3
+.PARAM XST2600C30R0 File:Mcetriac.lib
+
+*1000V 5950A pkg:TO-126 1,2,3
+.PARAM XST3230C10R0 File:Mcetriac.lib
+
+*1200V 5950A pkg:TO-126 1,2,3
+.PARAM XST3230C12R0 File:Mcetriac.lib
+
+*1400V 5950A pkg:TO-126 1,2,3
+.PARAM XST3230C14R0 File:Mcetriac.lib
+
+*1600V 5950A pkg:TO-126 1,2,3
+.PARAM XST3230C16R0 File:Mcetriac.lib
+
+*1800V 5950A pkg:TO-126 1,2,3
+.PARAM XST3230C18R0 File:Mcetriac.lib
+
+

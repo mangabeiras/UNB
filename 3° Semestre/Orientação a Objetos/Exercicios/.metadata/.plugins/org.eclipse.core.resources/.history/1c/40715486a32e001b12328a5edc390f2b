@@ -1,0 +1,26 @@
+package interfaceGrafica;
+
+
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class cadastroIdade extends JFrame implements ActionListener {
+	public cadastroIdade() {
+		
+		pack();
+		
+		
+		getContentPane().setLayout(null);
+		
+		setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+}

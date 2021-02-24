@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov 16 11:26:54 2020
+# Process ID: 10860
+# Current directory: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4004 C:\Users\robeg\OneDrive - unb.br\UnB\3 Semestre\trabalho_6\trabalho_6.xpr
+# Log file: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/vivado.log
+# Journal file: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.xpr}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close [ open {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/clock.vhd} w ]
+add_files {{C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/clock.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/somador4bit.vhd} w ]
+add_files {{C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/somador4bit.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/somador1bit.vhd} w ]
+add_files {{C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/somador1bit.vhd}}
+update_compile_order -fileset sources_1
+close_project
+create_project trabalho_8 {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8} -part xc7a35tcpg236-1
+file mkdir C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.srcs/sources_1/new
+add_files -norecurse {{C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/displayMux.vhd} {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/mux2.vhd} {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/decodificadorBCD.vhd} {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/somador1bit.vhd} {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/clock.vhd} {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/somador4bit.vhd}}
+file mkdir C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.srcs/sources_1/new
+file mkdir {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.srcs/sources_1/new}
+close [ open {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.srcs/sources_1/new/calculadora.vhd} w ]
+add_files {{C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.srcs/sources_1/new/calculadora.vhd}}
+import_files -fileset constrs_1 -force -norecurse {{C:/Users/robeg/OneDrive - unb.br/UnB/3° Semestre/Basys3_Master.xdc}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top calculadora [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close [ open {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.srcs/sources_1/new/transformador.vhd} w ]
+add_files {{C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.srcs/sources_1/new/transformador.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.srcs/sources_1/new/OverFlow.vhd} w ]
+add_files {{C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.srcs/sources_1/new/OverFlow.vhd}}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+launch_simulation
+reset_run impl_1 -prev_step 

@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Nov 19 23:18:13 2020
+# Process ID: 6868
+# Current directory: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6812 C:\Users\robeg\OneDrive - unb.br\UnB\3 Semestre\trabalho_8\trabalho_8.xpr
+# Log file: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/vivado.log
+# Journal file: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8\vivado.jou
+#-----------------------------------------------------------
+ERROR: [Common 17-356] Failed to install all user apps.
+start_gui
+open_project {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xinlinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:01:30 . Memory (MB): peak = 1000.273 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+[Thu Nov 19 23:29:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1001.637 ; gain = 0.000
+launch_runs impl_1 -jobs 2
+[Thu Nov 19 23:36:08 2020] Launched impl_1...
+Run output will be captured here: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Nov 19 23:41:31 2020] Launched impl_1...
+Run output will be captured here: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1001.637 ; gain = 0.000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Nov 19 23:54:12 2020] Launched impl_1...
+Run output will be captured here: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1001.637 ; gain = 0.000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Nov 19 23:54:55 2020] Launched impl_1...
+Run output will be captured here: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_8/trabalho_8.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 20 00:02:57 2020...

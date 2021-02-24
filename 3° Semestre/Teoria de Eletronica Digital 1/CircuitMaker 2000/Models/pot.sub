@@ -1,1 +1,13 @@
-unsupported reparse point
+*XPOT:Potentiometer Subcircuit Parameters
+*XPOT:VALUE:|Total resistance [1,]|1k
+*XPOT:WIPER:|Percent on [1,100]%|50
+*{VALUE=1k WIPER=50}
+*Generic type:potentiometer
+.SUBCKT XPOT 1 2 3
+R1 1 2 {((VALUE * WIPER)/100)}
+R2 2 3 {(VALUE - ((VALUE * WIPER)/100))}
+.ENDS XPOT
+
+*alias:XPOT {VALUE=1k WIPER=50}
+.PARAM A1k
+

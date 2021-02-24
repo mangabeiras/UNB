@@ -1,0 +1,82 @@
+package interfaceGrafica;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+
+public class Entrada extends JFrame implements ActionListener, KeyListener {
+	private String entrada;
+	JButton botao;
+	JTextField texto;
+	Container conteiner;
+	public Entrada(String mensagem, String titulo) {
+		setBounds(200,200,200,200);
+		setTitle(titulo);
+		conteiner = getContentPane();
+		conteiner.setLayout(new GridLayout(2,2));
+
+		texto = new JTextField();
+		texto.setEnabled(false);
+		
+		botao = new JButton("Ok");
+		botao.setEnabled(true);
+		botao.addActionListener(this);
+		
+		this.addWindowListener(new WindowAdapter() {
+			public void windowOpened(WindowEvent evJanela) {
+				leEntrada();
+			}
+			public void windowClosing(WindowEvent evJanela) {
+				System.exit(0);
+			}
+		});
+	
+		conteiner.add(texto);
+		conteiner.add(botao);
+		
+		setVisible(true); 
+	}
+	public String getEntrada() {
+		return this.entrada;
+	}
+	@Override
+	public void actionPerformed(ActionEvent acao) {
+		if (acao.getSource() == botao)
+			this.entrada = this.texto.getText();
+	}
+	public void leEntrada() {
+		botao.addActionListener(this);
+	}
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

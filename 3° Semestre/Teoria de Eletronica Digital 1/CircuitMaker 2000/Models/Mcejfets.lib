@@ -1,1 +1,1003 @@
-unsupported reparse point
+*==============================================
+*NJFET Pinout: 1=D, 2=G, 3=S
+*Copyright (c) 1997 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*NJFET
+*Default N-Ch J-FET pkg:TO-92B 3,1,2
+.MODEL NJFET~ NJF()
+
+*2N4393
+*40V 30mA Dep-Mode pkg:TO-18 2,3,1
+.MODEL 2N4393 NJF(VTO=-1.422 BETA=0.009109 LAMBDA=0.006 RD=1 RS=1 
++ CGS=4.06E-12 CGD=4.57E-12 IS=2.052E-13 KF=1.23E-16 )
+
+*2N5457 MCE 7-10-95
+*Ref: Motorola Small-Signal Databook, Q4/94
+*25V  25mA  250 ohm Dep-Mode pkg:TO-92B 3,1,2
+.MODEL 2N5457 NJF(VTO=-1.8 BETA=0.00135 LAMBDA=0.001 RD=35 RS=31.5 
++ CGS=2.25E-12 CGD=6E-12 KF=6.5E-17 AF=0.5 )
+
+*2N5459 MCE 7-10-95
+*25V  25mA  250 ohm Dep-Mode pkg:TO-92B 3,1,2
+.MODEL 2N5459 NJF(VTO=-3 BETA=0.00135 LAMBDA=0.001 RD=35 RS=31.5 
++ CGS=2.25E-12 CGD=6E-12 KF=6.5E-17 AF=0.5 )
+
+*2N5484 MCE 7-10-95
+*Ref: Motorola Small-Signal Databook, Q4/94
+*25V  30mA  175 ohm Dep-Mode pkg:TO-92B 3,1,2
+.MODEL 2N5484 NJF(VTO=-1.8 BETA=0.004 LAMBDA=0.01 RD=24.5 RS=22 
++ CGS=2.5E-12 CGD=4E-12 IS=9.48E-15 )
+
+*2N5486 MCE
+*Ref: Motorola Small-Signal Databook, Q4/94
+*25V  30mA  28.8ohm  Dep-Mode pkg:TO-92B 3,1,2
+.MODEL 2N5486 NJF(VTO=-4 BETA=0.0065 LAMBDA=0.00266 RD=4.04 RS=3.63 
++ CGS=2E-12 CGD=3.03E-12 IS=9.48E-15 )
+
+*2N5640 MCE
+*Ref: Motorola Small-Signal Databook, Q4/94
+*30V  20mA  35.3ohm  Dep-Mode pkg:TO-92B 3,1,2
+.MODEL 2N5640 NJF(VTO=-2.5 BETA=0.005 LAMBDA=0.001 RD=4.95 RS=4.45 
++ CGS=1.92E-11 CGD=5.12E-12 IS=5.26E-15 )
+
+*2N5668 MCE
+*Ref: Motorola Small-Signal Databook, Q4/94
+*25V  20mA  35.3ohm  Dep-Mode pkg:TO-92B 3,1,2
+.MODEL 2N5668 NJF(VTO=-2.5 BETA=0.0015 LAMBDA=0.0012 RD=4.95 RS=4.45 
++ CGS=2.35E-12 CGD=4E-12 IS=6.32E-15 )
+
+*2N5669 MCE
+*Ref: Motorola Small-Signal Databook, Q4/94
+*25V  20mA  35.3ohm  Dep-Mode pkg:TO-92B 3,1,2
+.MODEL 2N5669 NJF(VTO=-3.5 BETA=0.0035 LAMBDA=0.0012 RD=4.95 RS=4.45 
++ CGS=2.35E-12 CGD=4E-12 IS=6.32E-15 )
+
+*2N5670 MCE
+*Ref: Motorola Small-Signal Databook, Q4/94
+*25V  20mA  35.3ohm  Dep-Mode pkg:TO-92B 3,1,2
+.MODEL 2N5670 NJF(VTO=-5 BETA=0.0065 LAMBDA=0.0012 RD=4.95 RS=4.45 
++ CGS=2.35E-12 CGD=4E-12 IS=6.32E-15 )
+
+*2N4416
+*30V 150mA Depl pkg:TO-92B 1,2,3
+.MODEL 2N4416 NJF (VTO=-6 BETA=3.75M LAMBDA=1M RD=5.72
++ RS=5.14 IS=3.95F PB=1 FC=.5 CGS=11.5P CGD=2.88P)
+
+*BF244A MCE 5-9-97
+*Ref: National Discrete Products Databook, 1996
+*30V 50mA Depl pkg:TO-92B 1,2,3
+.MODEL BF244A NJF (VTO=-2.5 BETA=5.6M LAMBDA=1.6M RD=3.13
++ RS=2.82 IS=13.2F PB=1 FC=.5 CGS=2.12P CGD=3.13P)
+
+*BF244B MCE 5-9-97
+*Ref: National Discrete Products Databook, 1996
+*30V 50mA Depl pkg:TO-92B 1,2,3
+.MODEL BF244B NJF (VTO=-2.5 BETA=5.6M LAMBDA=1.6M RD=3.13
++ RS=2.82 IS=13.2F PB=1 FC=.5 CGS=2.12P CGD=3.13P)
+
+*BF244C MCE 5-9-97
+*Ref: National Discrete Products Databook, 1996
+*30V 50mA Depl pkg:TO-92B 1,2,3
+.MODEL BF244C NJF (VTO=-2.5 BETA=5.6M LAMBDA=1.6M RD=3.13
++ RS=2.82 IS=13.2F PB=1 FC=.5 CGS=2.12P CGD=3.13P)
+
+*BF245 MCE 3/6/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*30V 0.1A 15.8ohm TO-92B 1,3,2
+.MODEL BF245 NJF (VTO=-4 BETA=5.6M LAMBDA=800U RD=2.21
++ RS=1.99 IS=26.3F PB=1 FC=.5 CGS=2.12P CGD=2.52P)
+
+*BF245A MCE 3/9/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*30V 0.1A 15.8ohm TO-92B 1,3,2
+.MODEL BF245A NJF (VTO=-4 BETA=5.6M LAMBDA=800U RD=2.21
++ RS=1.99 IS=26.3F PB=1 FC=.5 CGS=2.12P CGD=2.52P)
+
+*BF245B MCE 3/9/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*30V 0.1A 15.8ohm TO-92B 1,3,2
+.MODEL BF245B NJF (VTO=-4 BETA=5.6M LAMBDA=800U RD=2.21
++ RS=1.99 IS=26.3F PB=1 FC=.5 CGS=2.12P CGD=2.52P)
+
+*BF245C 3/9/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*30V 0.1A 15.8ohm TO-92B 1,3,2
+.MODEL BF245C NJF (VTO=-4 BETA=5.6M LAMBDA=800U RD=2.21
++ RS=1.99 IS=26.3F PB=1 FC=.5 CGS=2.12P CGD=2.52P)
+
+*BF246A 3/9/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*25V 0.1A 15.8ohm TO-92B 1,2,3
+.MODEL BF246A NJF (VTO=-7.5 BETA=23M LAMBDA=1.2M RD=2.21
++ RS=1.99 IS=31.6F PB=1 FC=.5 CGS=40.4P CGD=11.9P)
+
+*BF246B 3/9/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*25V 0.1A 15.8ohm TO-92B 1,2,3
+.MODEL BF246B NJF (VTO=-7.5 BETA=23M LAMBDA=1.2M RD=2.21
++ RS=1.99 IS=31.6F PB=1 FC=.5 CGS=40.4P CGD=11.9P)
+
+*BF247B 3/9/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*25V 0.1A 15.8ohm TO-92B 3,1,2
+.MODEL BF247B NJF (VTO=-7.5 BETA=23M LAMBDA=1.2M RD=2.21
++ RS=1.99 IS=31.6F PB=1 FC=.5 CGS=40.4P CGD=11.9P)
+
+*BF256B 3/9/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*30V 0.1A 15.8ohm TO-92B 1,3,2
+.MODEL BF256B NJF (VTO=-4 BETA=5M LAMBDA=1M RD=2.21
++ RS=1.99 IS=26.3F PB=1 FC=.5 CGS=49.8P CGD=2.52P)
+
+*BF256 3/9/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*30V 0.1A 15.8ohm TO-92B 1,3,2
+.MODEL BF256C NJF (VTO=-4 BETA=5M LAMBDA=1M RD=2.21
++ RS=1.99 IS=26.3F PB=1 FC=.5 CGS=49.8P CGD=2.52P)
+
+*MPF3821 3/9/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*50V 0.01A 50ohm TO-92B 3,1,2
+.MODEL MPF3821 NJF (VTO=-4 BETA=3M LAMBDA=2M RD=7
++ RS=6.3 IS=1.58F PB=1 FC=.5 CGS=4.82P CGD=10.8P)
+
+*MPF3822 3/9/98
+*Ref: Motorola Small-Signal Databook, Rev. 5 DL126/D
+*50V 0.01A 50ohm TO-92B 3,1,2
+.MODEL MPF3822 NJF (VTO=-6 BETA=4.75M LAMBDA=4M RD=7
++ RS=6.3 IS=1.58F PB=1 FC=.5 CGS=4.82P CGD=10.8P
+
+*2N3370 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-92B 2,1,3
+.model 2N3370 NJF(Beta=766.8u Rd=1 Rs=1 Lambda=9m Vto=-.65
++Is=114.5f Cgd=2.8p Pb=.5 Fc=.5 Cgs=2.916p Kf=2.863E-18 Af=1)
+
+*2N3458 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18
+.model 2N3458 NJF(Beta=700u Rd=1 Rs=1 Lambda=6m Vto=-3.05
++Is=114.5f Cgd=2.8p Pb=.5 Fc=.5 Cgs=2.916p Kf=2.59E-18 Af=1)
+
+*2N3459 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18
+.model 2N3459 NJF(Beta=1.265m Rd=1 Rs=1 Lambda=4m Vto=-1.4
++Is=114.5f Cgd=2.8p Pb=.5 Fc=.5 Cgs=2.916p Kf=4.791E-18 Af=1)
+
+*2N3684 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 2,3,1
+.model 2N3684 NJF(Beta=348.1u Rd=1 Rs=1 Lambda=11.67m Vto=-3.18
++Is=114.5f Cgd=2p Pb=.5 Fc=.5 Cgs=2.083p Kf=1.259E-18 Af=1)
+
+*2N3685 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N3685 NJF(Beta=543.4u Rd=1 Rs=1 Lambda=5.833m Vto=-1.691
++Is=114.5f Cgd=2p Pb=.5 Fc=.5 Cgs=2.083p Kf=2.004E-18 Af=1)
+
+*2N3686 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N3686 NJF(Beta=723.7u Rd=1 Rs=1 Lambda=2.333m Vto=-.957
++Is=114.5f Cgd=2p Pb=.5 Fc=.5 Cgs=2.083p Kf=2.697E-18 Af=1)
+
+*2N3687 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N3687 NJF(Beta=840u Rd=1 Rs=1 Lambda=1.167m Vto=-.5102
++Is=114.5f Cgd=2p Pb=.5 Fc=.5 Cgs=2.083p Kf=3.146E-18 Af=1)
+
+*2N3821 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 2,3,1
+.model 2N3821 NJF(Beta=1.517m Rd=1 Rs=1 Lambda=2.045m Vto=-.8467
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=4.627p Kf=14.3E-18 Af=1)
+
+*2N3822 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 2,3,1
+.model 2N3822 NJF(Beta=1.1m Rd=1 Rs=1 Lambda=4.09m Vto=-1.962
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=4.627p Kf=10.2E-18 Af=1)
+
+*2N3823 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 2,3,1
+.model 2N3823 NJF(Beta=1.17m Rd=1 Rs=1 Lambda=4m Vto=-3.3
++Is=33.57f Cgd=1.6p Pb=1 Fc=.5 Cgs=2.414p Kf=8.841E-18 Af=1)
+
+*2N3824 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 2,3,1
+.model 2N3824 NJF(Beta=436.4u Rd=1 Rs=1 Lambda=5.333m Vto=-2.139
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=4.627p Kf=3.783E-18 Af=1)
+
+*2N3921 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N3921 NJF(Beta=1.57m Rd=1 Rs=1 Lambda=4m Vto=-1.799
++Is=24.55f Cgd=8.8p Pb=1 Fc=.5 Cgs=4.4p Kf=33.92E-18 Af=1)
+
+*2N3922 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N3922 NJF(Beta=1.57m Rd=1 Rs=1 Lambda=4m Vto=-1.799
++Is=24.55f Cgd=8.8p Pb=1 Fc=.5 Cgs=4.4p Kf=33.92E-18 Af=1)
+
+*2N3954 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N3954 NJF(Beta=768.3u Rd=1 Rs=1 Lambda=4.25m Vto=-2.033
++Is=24.55f Cgd=1.71p Pb=1 Fc=.5 Cgs=.86p Kf=26.36E-18 Af=1)
+
+*2N3954A 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N3954A NJF(Beta=768.3u Rd=1 Rs=1 Lambda=4.25m Vto=-2.033
++Is=24.55f Cgd=1.71p Pb=1 Fc=.5 Cgs=.86p Kf=26.36E-18 Af=1)
+
+*2N3955 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N3955 NJF(Beta=768.3u Rd=1 Rs=1 Lambda=4.25m Vto=-2.033
++Is=24.55f Cgd=1.71p Pb=1 Fc=.5 Cgs=.86p Kf=26.36E-18 Af=1)
+
+*2N3955A 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N3955A NJF(Beta=768.3u Rd=1 Rs=1 Lambda=4.25m Vto=-2.033
++Is=24.55f Cgd=1.71p Pb=1 Fc=.5 Cgs=.86p Kf=26.36E-18 Af=1)
+
+*2N3956 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N3956 NJF(Beta=768.3u Rd=1 Rs=1 Lambda=4.25m Vto=-2.033
++Is=24.55f Cgd=1.71p Pb=1 Fc=.5 Cgs=.86p Kf=26.36E-18 Af=1)
+
+*2N3957 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*Dual pkg: TO-71 (A:2,3,1)(B:6,7,5)
+.model 2N3957 NJF(Beta=768.3u Rd=1 Rs=1 Lambda=4.25m Vto=-2.033
++Is=24.55f Cgd=1.71p Pb=1 Fc=.5 Cgs=.86p Kf=26.36E-18 Af=1)
+
+*2N3958 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N3958 NJF(Beta=768.3u Rd=1 Rs=1 Lambda=4.25m Vto=-2.033
++Is=24.55f Cgd=1.71p Pb=1 Fc=.5 Cgs=.86p Kf=26.36E-18 Af=1)
+
+*2N3966 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 
+.model 2N3966 NJF(Beta=650u Rd=1 Rs=1 Lambda=15m Vto=-4.876
++Is=33.57f Cgd=1.6p Pb=1 Fc=.5 Cgs=2.414p Kf=7.589E-18 Af=1)
+
+*2N3967 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N3967 NJF(Beta=754.7u Rd=1 Rs=1 Lambda=3.667m Vto=-2.49
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=3.742p Kf=6.839E-18 Af=1)
+
+*2N3970 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N3970 NJF(Beta=4.032m Rd=1 Rs=1 Lambda=23m Vto=-4.514
++Is=205.2f Cgd=10.48p Pb=1 Fc=.5 Cgs=9.31p Kf=53.18E-18 Af=1)
+
+*2N3971 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N3971 NJF(Beta=6.313m Rd=1 Rs=1 Lambda=13m Vto=-2.598
++Is=205.2f Cgd=10.48p Pb=1 Fc=.5 Cgs=9.31p Kf=84.47E-18 Af=1)
+
+*2N3972 5/4/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N3972 NJF(Beta=9.109m Rd=1 Rs=1 Lambda=6m Vto=-1.403
++Is=205.2f Cgd=10.48p Pb=1 Fc=.5 Cgs=9.31p Kf=123E-18	Af=1)
+
+*2N4084 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N4084 NJF(Beta=1.57m Rd=1 Rs=1 Lambda=4m Vto=-1.799
++Is=24.55f Cgd=8.8p Pb=1 Fc=.5 Cgs=4.4p Kf=33.92E-18 Af=1)
+
+*2N4091 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1 
+.model 2N4091 NJF(Beta=2.658m Rd=1 Rs=1 Lambda=11m Vto=-5.743
++Is=205.2f Cgd=7.94p Pb=1 Fc=.5 Cgs=7.06p Kf=34.43E-1 Af=1)
+
+*2N4092 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1 
+.model 2N4092 NJF(Beta=4.032m Rd=1 Rs=1 Lambda=10m Vto=-2.933
++Is=205.2f Cgd=7.94p Pb=1 Fc=.5 Cgs=7.06p Kf=53.18E-18 Af=1)
+
+*2N4093 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1 
+.model 2N4093 NJF(Beta=5.695m Rd=1 Rs=1 Lambda=8m Vto=-1.989
++Is=205.2f Cgd=7.94p Pb=1 Fc=.5 Cgs=7.06p Kf=75.98E-18 Af=1)
+
+*2N4117 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 
+.model 2N4117 NJF(Beta=33.07u Rd=1 Rs=1 Lambda=13m Vto=-1.2
++Is=5.261f Cgd=3.94p Pb=1 Fc=.5 Cgs=4.93p Kf=45.61E-18 Af=1)
+
+*2N4117A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 
+.model 2N4117A NJF(Beta=49.01u Rd=1 Rs=1 Lambda=13m Vto=-1.1
++Is=5.261f Cgd=3.94p Pb=1 Fc=.5 Cgs=4.93p Kf=70.97E-18 Af=1)
+
+*2N4118 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 
+.model 2N4118 NJF(Beta=52.58u Rd=1 Rs=1 Lambda=15m Vto=-1.732
++Is=5.261f Cgd=3.94p Pb=1 Fc=.5 Cgs=4.93p Kf=76.7E-18 Af=1)
+
+*2N4118A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 
+.model 2N4118A NJF(Beta=52.58u Rd=1 Rs=1 Lambda=15m Vto=-1.732
++Is=5.261f Cgd=3.94p Pb=1 Fc=.5 Cgs=4.93p Kf=76.7E-18 Af=1)
+
+*2N4119 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 
+.model 2N4119 NJF(Beta=68.08u Rd=1 Rs=1 Lambda=19m Vto=-2.536
++Is=5.261f Cgd=3.94p Pb=1 Fc=.5 Cgs=4.93p Kf=101.8E-18 Af=1)
+
+*2N4119A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 
+.model 2N4119A NJF(Beta=68.08u Rd=1 Rs=1 Lambda=19m Vto=-2.536
++Is=5.261f Cgd=3.94p Pb=1 Fc=.5 Cgs=4.93p Kf=101.8E-18 Af=1)
+
+*2N4220 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N4220 NJF(Beta=819.8u Rd=1 Rs=1 Lambda=3.266m Vto=-1.195
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=4.627p Kf=7.47E-18 Af=1)
+
+*2N4220A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N4220A NJF(Beta=819.8u Rd=1 Rs=1 Lambda=3.266m Vto=-1.195
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=4.627p Kf=7.47E-18 Af=1)
+
+*2N4221 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N4221 NJF(Beta=726.3u Rd=1 Rs=1 Lambda=4.15m Vto=-2.139
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=4.627p Kf=6.564E-18 Af=1)
+
+*2N4221A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N4221A NJF(Beta=726.3u Rd=1 Rs=1 Lambda=4.15m Vto=-2.139
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=4.627p Kf=6.564E-18 Af=1)
+
+*2N4222 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N4222 NJF(Beta=436.4u Rd=1 Rs=1 Lambda=5.333m Vto=-4.1
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=4.627p Kf=3.783E-18 Af=1)
+
+*2N4222A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N4222A NJF(Beta=436.4u Rd=1 Rs=1 Lambda=5.333m Vto=-4.1
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=4.627p Kf=3.783E-18 Af=1)
+
+*2N4223 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 1,3,2
+.model 2N4223 NJF(Beta=1.04m Rd=1 Rs=1 Lambda=5.5m Vto=-3.05
++Is=33.57f Cgd=1.6p Pb=1 Fc=.5 Cgs=2.414p Kf=7.839E-18 Af=1)
+
+*2N4338 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 1,3,2
+.model 2N4338 NJF(Beta=781u Rd=1 Rs=1 Lambda=1.167m Vto=-.6606
++Is=114.5f Cgd=2.8p Pb=.5 Fc=.5 Cgs=2.916p Kf=2.918E-18 Af=1)
+
+*2N4339 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 
+.model 2N4339 NJF(Beta=555.8u Rd=1 Rs=1 Lambda=3.5m Vto=-1.218
++Is=114.5f Cgd=2.8p Pb=.5 Fc=.5 Cgs=2.916p Kf=2.052E-18 Af=1)
+
+*2N4340 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4340 NJF(Beta=471u Rd=1 Rs=1 Lambda=7m Vto=-2.001
++Is=114.5f Cgd=2.8p Pb=.5 Fc=.5 Cgs=2.916p Kf=1.727E-18 Af=1)
+
+*2N4341 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 
+.model 2N4341 NJF(Beta=387.1u Rd=1 Rs=1 Lambda=14m Vto=-3.336
++Is=114.5f Cgd=2.8p Pb=.5 Fc=.5 Cgs=2.916p Kf=1.407E-18 Af=1)
+
+*2N4391 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4391 NJF(Beta=2.658m Rd=1 Rs=1 Lambda=13m Vto=-5.803
++Is=205.2f Cgd=5.35p Pb=1 Fc=.5 Cgs=4.76p Kf=34.43E-18 Af=1)
+
+*2N4392 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4392 NJF(Beta=5.108m Rd=1 Rs=1 Lambda=10m Vto=-3.018
++Is=205.2f Cgd=4.83p Pb=1 Fc=.5 Cgs=4.29p Kf=67.93E-18 Af=1)
+
+*2N4416A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 2,3,1
+.model 2N4416A NJF(Beta=989.4u Rd=1 Rs=1 Lambda=5.5m Vto=-3.06
++Is=33.57f Cgd=1.6p Pb=1 Fc=.5 Cgs=2.414p Kf=7.445E-18 Af=1)
+
+*2N4856 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4856 NJF(Beta=3.084m Rd=1 Rs=1 Lambda=11m Vto=-5.517
++Is=205.2f Cgd=15.92p Pb=1 Fc=.5 Cgs=14.16p Kf=40.23E-18 Af=1)
+
+*2N4856A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4856A NJF(Beta=3.084m Rd=1 Rs=1 Lambda=11m Vto=-5.517
++Is=205.2f Cgd=5.71p Pb=1 Fc=.5 Cgs=5.07p Kf=40.23E-18 Af=1)
+
+*2N4857 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4857 NJF(Beta=6.313m Rd=1 Rs=1 Lambda=9.5m Vto=-3.05
++Is=205.2f Cgd=15.92p Pb=1 Fc=.5 Cgs=14.16p Kf=84.47E-18 Af=1)
+
+*2N4857A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4857A NJF(Beta=6.313m Rd=1 Rs=1 Lambda=9.5m Vto=-3.05
++Is=205.2f Cgd=5.34p Pb=1 Fc=.5 Cgs=4.74p Kf=84.47E-18 Af=1)
+
+*2N4858 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4858 NJF(Beta=7.646m Rd=1 Rs=1 Lambda=8m Vto=-2.387
++Is=205.2f Cgd=15.92p Pb=1 Fc=.5 Cgs=14.16p Kf=102.8E-18 Af=1)
+
+*2N4858A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4858A NJF(Beta=7.646m Rd=1 Rs=1 Lambda=8m Vto=-2.387
++Is=205.2f Cgd=5.34p Pb=1 Fc=.5 Cgs=4.74p Kf=102.8E-18 Af=1)
+
+*2N4859 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4859 NJF(Beta=3.084m Rd=1 Rs=1 Lambda=12m Vto=-5.431
++Is=205.2f Cgd=15.92p Pb=1 Fc=.5 Cgs=14.16p Kf=40.23E-18 Af=1)
+
+*2N4859A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4859A NJF(Beta=3.084m Rd=1 Rs=1 Lambda=12m Vto=-5.431
++Is=205.2f Cgd=5.71p Pb=1 Fc=.5 Cgs=5.07p Kf=40.23E-18 Af=1)
+
+*2N4860 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4860 NJF(Beta=6.313m Rd=1 Rs=1 Lambda=10m Vto=-2.998
++Is=205.2f Cgd=15.92p Pb=1 Fc=.5 Cgs=14.16p Kf=84.47E-18 Af=1)
+
+*2N4860A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4860A NJF(Beta=6.313m Rd=1 Rs=1 Lambda=10m Vto=-2.998
++Is=205.2f Cgd=5.34p Pb=1 Fc=.5 Cgs=4.74p Kf=84.47E-18 Af=1)
+
+*2N4861 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4861 NJF(Beta=8.362m Rd=1 Rs=1 Lambda=8m Vto=-2.308
++Is=205.2f Cgd=15.92p Pb=1 Fc=.5 Cgs=14.16p Kf=112.7E-18 Af=1)
+
+*2N4861A 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,3,1
+.model 2N4861A NJF(Beta=8.362m Rd=1 Rs=1 Lambda=8m Vto=-2.308
++Is=205.2f Cgd=5.34p Pb=1 Fc=.5 Cgs=4.74p Kf=112.7E-18 Af=1)
+
+*2N5045 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 1,3,2
+.model 2N5045 NJF(Beta=1.271m Rd=1 Rs=1 Lambda=3.5m Vto=-1.95
++Is=24.55f Cgd=5.71p Pb=1 Fc=.5 Cgs=2.85p Kf=45.18E-18 Af=1)
+
+*2N5046 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 1,3,2
+.model 2N5046 NJF(Beta=1.271m Rd=1 Rs=1 Lambda=3.5m Vto=-1.95
++Is=24.55f Cgd=5.71p Pb=1 Fc=.5 Cgs=2.85p Kf=45.18E-18 Af=1)
+
+*2N5047 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: Dual TO-71 (A:2,3,1)(B:6,7,5)
+.model 2N5047 NJF(Beta=1.271m Rd=1 Rs=1 Lambda=3.5m Vto=-1.95
++Is=24.55f Cgd=5.71p Pb=1 Fc=.5 Cgs=2.85p Kf=45.18E-18 Af=1)
+
+*2N5078 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 2,3,1
+.model 2N5078 NJF(Beta=850.8u Rd=1 Rs=1 Lambda=6.75m Vto=-3.97
++Is=33.57f Cgd=1.6p Pb=1 Fc=.5 Cgs=2.414p Kf=6.375E-18 Af=1)
+
+*2N5103 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 
+.model 2N5103 NJF(Beta=1.426m Rd=1 Rs=1 Lambda=3.167m Vto=-1.85
++Is=33.57f Cgd=1.6p Pb=1 Fc=.5 Cgs=2.414p Kf=10.82E-18 Af=1)
+
+*2N5105 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 
+.model 2N5105 NJF(Beta=1.464m Rd=1 Rs=1 Lambda=3.167m Vto=-2.5
++Is=33.57f Cgd=1.6p Pb=1 Fc=.5 Cgs=2.414p Kf=11.11E-18 Af=1)
+
+*2N5196 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: Dual TO-71 (A:2,3,1)(B:6,7,5)
+.model 2N5196 NJF(Beta=812.9u Rd=1 Rs=1 Lambda=5m Vto=-2.257
++Is=24.55f Cgd=3.28p Pb=1 Fc=.5 Cgs=1.64p Kf=3.664E-18 Af=1)
+
+*2N5197 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: Dual TO-71 (A:2,3,1)(B:6,7,5)
+.model 2N5197 NJF(Beta=812.9u Rd=1 Rs=1 Lambda=5m Vto=-2.257
++Is=24.55f Cgd=3.28p Pb=1 Fc=.5 Cgs=1.64p Kf=3.664E-18 Af=1)
+
+*2N5199 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: Dual TO-71 (A:2,3,1)(B:6,7,5)
+.model 2N5199 NJF(Beta=812.9u Rd=1 Rs=1 Lambda=5m Vto=-2.257
++Is=24.55f Cgd=3.28p Pb=1 Fc=.5 Cgs=1.64p Kf=3.664E-18 Af=1)
+
+*2N5358 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 
+.model 2N5358 NJF(Beta=1.064m Rd=1 Rs=1 Lambda=2.571m Vto=-.8005
++Is=181.3f Cgd=4p Pb=.5 Fc=.5 Cgs=4.627p Kf=9.852E-18 Af=1)
+
+*2N5397 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 2,3,1
+.model 2N5397 NJF(Beta=1.242m Rd=1 Rs=1 Lambda=8m Vto=-3.679
++Is=101.9f Cgd=2.6p Pb=1 Fc=.5 Cgs=3.598p Kf=19.52E-18 Af=1)
+
+*2N5397 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 2,3,1
+.model 2N5398 NJF(Beta=1.242m Rd=1 Rs=1 Lambda=8m Vto=-3.323
++Is=101.9f Cgd=3p Pb=1 Fc=.5 Cgs=3.383p Kf=19.52E-18 Af=1)
+
+*2N5432 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-52 
+.model 2N5432 NJF(Beta=9.109m Rd=1 Rs=1 Lambda=50m Vto=-5.397
++Is=533.7f Cgd=35.6p Pb=1 Fc=.5 Cgs=35.6p Kf=124.3E-18 Af=1)
+
+*2N5433 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-52 
+.model 2N5433 NJF(Beta=12.42m Rd=1 Rs=1 Lambda=40m Vto=-4.16
++Is=533.7f Cgd=35.6p Pb=1 Fc=.5 Cgs=35.6p Kf=169.9E-18 Af=1)
+
+*2N5434 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-52 
+.model 2N5434 NJF(Beta=18.37m Rd=1 Rs=1 Lambda=25m Vto=-1.906
++Is=533.7f Cgd=35.6p Pb=1 Fc=.5 Cgs=35.6p Kf=251.7E-18 Af=1)
+
+*2N5452 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: Dual TO-71 (A:2,3,1)(B:6,7,5)
+.model 2N5452 NJF(Beta=768.3u Rd=1 Rs=1 Lambda=2.5m Vto=-2.017
++Is=24.55f Cgd=1.71p Pb=1 Fc=.5 Cgs=.86p Kf=3.664E-18 Af=1)
+
+*2N5454 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: Dual TO-71 (A:2,3,1)(B:6,7,5)
+.model 2N5454 NJF(Beta=768.3u Rd=1 Rs=1 Lambda=2.5m Vto=-2.017
++Is=24.55f Cgd=1.71p Pb=1 Fc=.5 Cgs=.86p Kf=3.664E-18 Af=1)
+
+*2N5515 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5515 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=17.2E-18 Af=1)
+
+*2N5516 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5516 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=17.2E-18 Af=1)
+
+*2N5517 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5517 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=17.2E-18 Af=1)
+
+*2N5518 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5518 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=17.2E-18 Af=1)
+
+*2N5519 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5519 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=17.2E-18 Af=1)
+
+*2N5520 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5520 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=3.9E-18	Af=1)
+
+*2N5521 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5521 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=3.9E-18 Af=1)
+
+*2N5522 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5522 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=3.9E-18 Af=1)
+
+*2N5523 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5523 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=3.9E-18 Af=1)
+
+*2N5524 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5524 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=3.9E-18 Af=1)
+
+*2N5545 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: Dual TO-71 (A:2,3,1)(B:6,7,5)
+.model 2N5545 NJF(Beta=1.271m Rd=1 Rs=1 Lambda=4m Vto=-2
++Is=24.55f Cgd=3.28p Pb=1 Fc=.5 Cgs=1.64p Kf=55.84E-18 Af=1)
+
+*2N5556 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 3,2,1
+.model 2N5556 NJF(Beta=2.194m Rd=1 Rs=1 Lambda=3.8m Vto=-.875
++Is=33.57f Cgd=1.6p Pb=1 Fc=.5 Cgs=2.414p Kf=17E-18 Af=1)
+
+*2N5557 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 3,2,1
+.model 2N5557 NJF(Beta=1.307m Rd=1 Rs=1 Lambda=4m Vto=-1.805
++Is=33.57f Cgd=1.6p Pb=1 Fc=.5 Cgs=2.414p Kf=10.03E-18 Af=1)
+
+*2N5558 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-72 3,2,1
+.model 2N5558 NJF(Beta=864u Rd=1 Rs=1 Lambda=6.75m Vto=-2.91
++Is=33.57f Cgd=1.6p Pb=1 Fc=.5 Cgs=2.414p Kf=6.718E-18 Af=1)
+
+*2N5565 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5565 NJF(Beta=9.109m Rd=1 Rs=1 Lambda=7.5m Vto=-1.447
++Is=94.42f Cgd=8.67p Pb=1 Fc=.5 Cgs=9.76p Kf=67.86E-18 Af=1)
+
+*2N5566 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N5566 NJF(Beta=9.109m Rd=1 Rs=1 Lambda=7.5m Vto=-1.447
++Is=94.42f Cgd=8.67p Pb=1 Fc=.5 Cgs=9.76p Kf=67.86E-18 Af=1)
+
+*2N5902 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-78 
+.model 2N5902 NJF(Beta=120u Rd=1 Rs=1 Lambda=900u Vto=-1.652
++Is=16.33f Cgd=1.23p Pb=1 Fc=.5 Cgs=1.23p Kf=304.7E-18 Af=1)
+
+*2N5904 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-78 
+.model 2N5904 NJF(Beta=120u Rd=1 Rs=1 Lambda=900u Vto=-1.652
++Is=16.33f Cgd=1.23p Pb=1 Fc=.5 Cgs=1.23p Kf=304.7E-18 Af=1)
+
+*2N5905 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-78 
+.model 2N5905 NJF(Beta=120u Rd=1 Rs=1 Lambda=700u Vto=-1.652
++Is=16.33f Cgd=1.23p Pb=1 Fc=.5 Cgs=1.23p Kf=304.7E-18 Af=1)
+
+*2N5906 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-78 
+.model 2N5906 NJF(Beta=120u Rd=1 Rs=1 Lambda=900u Vto=-1.652
++Is=16.33f Cgd=1.23p Pb=1 Fc=.5 Cgs=1.23p Kf=304.7E-18 Af=1)
+
+*2N5907 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-78 
+.model 2N5907 NJF(Beta=120u Rd=1 Rs=1 Lambda=900u Vto=-1.652
++Is=16.33f Cgd=1.23p Pb=1 Fc=.5 Cgs=1.23p Kf=304.7E-18 Af=1)
+
+*2N5909 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-78 
+.model 2N5909 NJF(Beta=120u Rd=1 Rs=1 Lambda=900u Vto=-1.652
++Is=16.33f Cgd=1.23p Pb=1 Fc=.5 Cgs=1.23p Kf=304.7E-18 Af=1)
+
+*2N5911 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-78 
+.model 2N5911 NJF(Beta=2.203m Rd=1 Rs=1 Lambda=12m Vto=-2.694
++Is=94.35f Cgd=2.822p Pb=1 Fc=.5 Cgs=3.65p Kf=36.4E-18 Af=1)
+
+*2N5912 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-78 
+.model 2N5912 NJF(Beta=2.203m Rd=1 Rs=1 Lambda=12m Vto=-2.694
++Is=94.35f Cgd=2.822p Pb=1 Fc=.5 Cgs=3.65p Kf=36.4E-18 Af=1)
+
+*2N6483 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N6483 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=3.9E-18 Af=1)
+
+*2N6483 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N6484 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=3.9E-18 Af=1)
+
+*2N6485 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model 2N6485 NJF(Beta=518.5u Rd=1 Rs=1 Lambda=300u Vto=-2.5
++Is=52.8f Cgd=8p Pb=.5 Fc=.5 Cgs=14.64p Kf=3.9E-18 Af=1)
+
+*J401 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: DIP8 
+.model J401 NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*J402 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: DIP8 
+.model J402 NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*J403 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: DIP8 
+.model J403	NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*J404 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: DIP8 
+.model J404	NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*J405 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: DIP8 
+.model J405	NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*J406 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: DIP8 
+.model J406	NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*J410 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: DIP8 
+.model J410	NJF(Beta=858.8u Rd=1 Rs=1 Lambda=3.5m Vto=-2
++Is=24.55f Cgd=2p Pb=1 Fc=.5 Cgs=1p Kf=8.821E-18 Af=1)
+
+*J411 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: DIP8 
+.model J411	NJF(Beta=858.8u Rd=1 Rs=1 Lambda=3.5m Vto=-2
++Is=24.55f Cgd=2p Pb=1 Fc=.5 Cgs=1p Kf=8.821E-18 Af=1)
+
+*J412 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: DIP8 
+.model J412	NJF(Beta=858.8u Rd=1 Rs=1 Lambda=3.5m Vto=-2
++Is=24.55f Cgd=2p Pb=1 Fc=.5 Cgs=1p Kf=8.821E-18 Af=1)
+
+*NDF9406 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model NDF9406 NJF(Beta=1.004m Rd=1 Rs=1 Lambda=2m Vto=-2.25
++Is=32.73f Cgd=4.2p Pb=1 Fc=.5 Cgs=2.1p Kf=5.278E-18 Af=1)
+
+*NDF9407 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model NDF9407 NJF(Beta=1.004m Rd=1 Rs=1 Lambda=2m Vto=-2.25
++Is=32.73f Cgd=4.2p Pb=1 Fc=.5 Cgs=2.1p Kf=5.278E-18 Af=1)
+
+*NDF9409 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model NDF9409 NJF(Beta=1.004m Rd=1 Rs=1 Lambda=2m Vto=-2.25
++Is=32.73f Cgd=4.2p Pb=1 Fc=.5 Cgs=2.1p Kf=5.278E-18 Af=1)
+
+*NDF9410 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model NDF9410 NJF(Beta=1.004m Rd=1 Rs=1 Lambda=2m Vto=-2.25
++Is=32.73f Cgd=4.2p Pb=1 Fc=.5 Cgs=2.1p Kf=5.278E-18 Af=1)
+
+*U257 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-78 
+.model U257	NJF(Beta=2.203m Rd=1 Rs=1 Lambda=12m Vto=-2.475
++Is=94.35f Cgd=2.822p Pb=1 Fc=.5 Cgs=3.65p Kf=86E-18 Af=1)
+
+*U308 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-52 
+.model U308	NJF(Beta=4.337m Rd=1 Rs=1 Lambda=16m Vto=-2.852
++Is=193.9f Cgd=5p Pb=1 Fc=.5 Cgs=5p Kf=59.4E-18	Af=1)
+
+*U309 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-52 
+.model U309	NJF(Beta=5.04m Rd=1 Rs=1 Lambda=14m Vto=-2.026
++Is=193.9f Cgd=5p Pb=1 Fc=.5 Cgs=5p Kf=69.01E-18 Af=1)
+
+*U310 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-52 
+.model U310	NJF(Beta=3.688m Rd=1 Rs=1 Lambda=17m Vto=-3.324
++Is=193.9f Cgd=7.4p Pb=1 Fc=.5 Cgs=7.4p Kf=50.51E-18 Af=1)
+
+*U401 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model U401	NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*U402 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model U402	NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*U403 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model U403	NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*U404 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model U404	NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*U405 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model U405	NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*U406 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model U406	NJF(Beta=1.577m Rd=1 Rs=1 Lambda=10m Vto=-1.316
++Is=19.73f Cgd=5.6p Pb=.5 Fc=.5 Cgs=6.044p Kf=4.592E-18 Af=1)
+
+*U440 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model U440	NJF(Beta=1.978m Rd=1 Rs=1 Lambda=30m Vto=-2.839
++Is=36.18f Cgd=2.11p Pb=1 Fc=.5 Cgs=2.47p Kf=27.88E-18 Af=1)
+
+*U441 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-71 
+.model U441	NJF(Beta=1.978m Rd=1 Rs=1 Lambda=30m Vto=-2.839
++Is=36.18f Cgd=2.11p Pb=1 Fc=.5 Cgs=2.47p Kf=27.88E-18 Af=1)
+
+*===========================
+*PJFET Pinout: 1=D, 2=G, 3=S
+*===========================
+
+*PJFET
+*Default P-Ch J-FET parameters pkg:TO-92B 2,1,3
+.MODEL PJFET~ PJF()
+
+*2N5460
+*Motorola Dep-Mode 20V 20mA 35.3ohm pkg:TO-92B 2,1,3
+.MODEL 2N5460 PJF(VTO=-3.2 BETA=0.0017 LAMBDA=0.00563 RD=49.4 RS=44.5 
++ CGS=9E-12 CGD=4E-12 IS=1.95E-15 KF=1.104E-17 )
+
+*2N2608 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 2,1,3
+.model 2N2608 PJF(Beta=423.6u Rd=1 Rs=1 Lambda=15m Vto=-2.45
++Is=222.4f Cgd=6.7p Pb=1 Fc=.5 Cgs=8.37p Kf=286.4E-18 Af=1)
+
+*2N2609 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 3,2,1
+.model 2N2609 PJF(Beta=3.2m Rd=1 Rs=1 Lambda=18.5m Vto=-1.408
++Is=461.5f Cgd=6.5p Pb=1 Fc=.5 Cgs=9p Kf=206.2E-18 Af=1)
+
+*2N4381 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 3,2,1
+.model 2N4381 PJF(Beta=2.658m Rd=1 Rs=1 Lambda=15m Vto=-1.8
++Is=222.4f Cgd=6.61p Pb=1 Fc=.5 Cgs=8.26p Kf=1.17f Af=1)
+
+*2N5018 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 
+.model 2N5018 PJF(Beta=772.5u Rd=1 Rs=1 Lambda=40m Vto=-4.15
++Is=461.5f Cgd=6.5p Pb=1 Fc=.5 Cgs=9p Kf=49.93E-18 Af=1)
+
+*2N5019 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 
+.model 2N5019 PJF(Beta=1.775m Rd=1 Rs=1 Lambda=24m Vto=-2.229
++Is=461.5f Cgd=6.5p Pb=1 Fc=.5 Cgs=9p Kf=114.5E-18 Af=1)
+
+*2N5020 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 
+.model 2N5020 PJF(Beta=1.004m Rd=1 Rs=1 Lambda=10m Vto=-.8406
++Is=222.4f Cgd=8.55p Pb=1 Fc=.5 Cgs=10.68p Kf=556.7E-18 Af=1)
+
+*2N5021 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 
+.model 2N5021 PJF(Beta=2.658m Rd=1 Rs=1 Lambda=12m Vto=-.9996
++Is=222.4f Cgd=8.55p Pb=1 Fc=.5 Cgs=10.68p Kf=1.544f Af=1)
+
+*2N5114 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 
+.model 2N5114 PJF(Beta=510.2u Rd=1 Rs=1 Lambda=40m Vto=-8.095
++Is=461.5f Cgd=6.5p Pb=1 Fc=.5 Cgs=9p Kf=32.96E-18 Af=1)
+
+*2N5115 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 
+.model 2N5115 PJF(Beta=1.031m Rd=1 Rs=1 Lambda=32m Vto=-4.896
++Is=461.5f Cgd=6.5p Pb=1 Fc=.5 Cgs=9p Kf=66.61E-18 Af=1)
+
+*2N5116 5/6/98
+*Ref: Fairchild Discrete Power & Sig. Tech. Models 4/30/98
+*pkg: TO-18 
+.model 2N5116 PJF(Beta=1.71m Rd=1 Rs=1 Lambda=25m Vto=-2.373
++Is=461.5f Cgd=6.5p Pb=1 Fc=.5 Cgs=9p Kf=110.4E-18 Af=1)

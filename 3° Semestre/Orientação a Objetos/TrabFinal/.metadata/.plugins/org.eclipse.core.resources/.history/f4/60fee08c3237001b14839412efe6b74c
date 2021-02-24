@@ -1,0 +1,73 @@
+package DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import conector.Conexao;
+import dados.Homem;
+import dados.Mulher;
+import dados.Pessoa;
+
+public class PessoaDao {
+	private Connection con = Conexao.getConnection();
+
+	public void cadastrar(Pessoa pessoa) {
+		String sql = "INSERT INTO pandemia.pessoa (nome, saude, gestante, idade) VALUES (?, ?, ?, ?)";
+
+		try {
+			PreparedStatement preparador = con.prepareStatement(sql);
+			preparador.setString(1, pessoa.getNome());
+			preparador.setString(2, pessoa.getSituacao().toString());
+			preparador.setString(3, pessoa.getSituacaoGestacao());
+			preparador.setString(4, pessoa.getIdade());
+			preparador.execute();
+			preparador.close();
+			System.out.println("Cadastrado com sucesso!");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			if (con != null) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					System.out.print("Falha ao fechar a conexão.");
+					System.out.println("Causa: " + e.getMessage());
+				}
+			}
+		}
+	}
+
+	public Pessoa getPessoa(int codigo) {
+		String sql = "SELECT * FROM PESSOA WHERE idPessoa = ?";
+		Pessoa pessoa = null;
+		try {
+			PreparedStatement preparador = con.prepareStatement(sql);
+			preparador.setString(1, String.valueOf(codigo));
+			ResultSet resultado = preparador.executeQuery();
+			resultado.getString();
+			if (resultado.getString("gestante") == null && resultado.next()) {
+				pessoa = new Homem(resultado.getString("nome"), resultado.getString("saude").charAt(0), resultado.getInt("idade"));
+			}
+			else if (resultado.next()){
+				pessoa = new Mulher(resultado.getString("nome"), resultado.getString("saude").charAt(0), resultado.getString("gestante").charAt(0));
+			}
+			preparador.execute();
+			preparador.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			if (con != null) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					System.out.print("Falha ao fechar a conexão.");
+					System.out.println("Causa: " + e.getMessage());
+				}
+			}
+		}
+		return pessoa;
+	}
+}

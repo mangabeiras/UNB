@@ -1,1 +1,296 @@
-unsupported reparse point
+:Base TmHelp.HLP>Main
+1 Chapter 1: Getting Started
+2 Introduction=Introduction
+2 TraxMaker Capabilities=TraxMaker_Capabilities
+2 Differences with Other Applications=Differences_with_Other_Applications
+2 Getting Ready to Install=Getting_Ready_to_Install
+2 Read the README File=Read_the_README_File
+2 System Requirements=System_Requirements
+2 Installing TraxMaker=Installing_TraxMaker
+2 Installing TraxMaker on a LAN=Installing_TraxMaker_on_a_LAN
+2 Technical Support=Technical_Support
+2 About the Documentation=About_the_Documentation
+2 User Manual Contents=User_Manual_Contents
+2 Manual Conventions=Manual_Conventions
+2 Using On-line Help=Using_On_line_Help
+1 Chapter 2: Overview of TraxMaker
+2 Introduction
+3 Introduction to PCB Design=Introduction_to_PCB_Design
+3 Connectivity=Connectivity
+3 About TraxMaker Layers=About_TraxMaker_Layers
+3 TraxMaker Conventions=TraxMaker_Conventions
+3 Starting TraxMaker=Starting_TraxMaker
+2 The TraxMaker Workspace
+3 The TraxMaker Workspace=The_TraxMaker_Workspace
+3 Board Layers=Board_Layers
+3 What is the Current Layer?=What_is_the_Current_Layer?
+3 Layers: A Closer Look=Layers:_A_Closer_Look
+3 Using the Mouse=Using_the_Mouse
+2 Units, Grids & Coordinates
+3 Units, Grids & Coordinates=Units_Grids_&_Coordinates
+3 Changing the Units of Measure=Changing_the_Units_of_Measure
+3 Snap Grid vs. Visible Grid=Snap_Grid_vs._Visible_Grid
+3 The Coordinate System=The_Coordinate_System
+3 Absolute vs. Relative Origin=Absolute_vs._Relative_Origin
+3 Setting a Relative Origin=Setting_a_Relative_Origin
+3 Finding the Origin=Finding_the_Origin
+3 Finding a Location=Finding_a_Location
+2 Tool Bar
+3 Tool Bar=Tool_Bar
+2 Shortcut Keys
+3 Shortcut Keys=Shortcut_Keys
+2 TraxMaker Files
+3 TraxMaker Files=TraxMaker_Files
+3 Library (.LIB) Files=Library_(.LIB)_Files
+3 Autotrax Compatibility=Autotrax_Compatibility
+2 TraxMaker Preferences
+3 TraxMaker Preferences=TraxMaker_Preferences
+3 Loading a Different Preferences File=Loading_a_Different_Preferences_File
+3 Saving Preferences to a New File=Saving_Preferences_to_a_New_File
+3 Restoring Factory Defaults=Restoring_Factory_Defaults
+2 Basic PCB File Management
+3 Basic PCB File Management=Basic_PCB_File_Management
+3 Starting, Saving & Closing a PCB File=Starting_Saving_&_Closing_a_PCB_File
+3 Opening and Reopening a PCB File=Opening_and_Reopening_a_PCB_File
+3 Reverting to Previously Saved File=Reverting_to_Previously_Saved_File
+3 Merging Files=Merging_Files
+1 Chapter 3: Tutorials
+2 Tutorials=Tutorials
+2 Tutorial 1: Manual Board Creation
+3 Manual Board Creation=Tutorial_1:_Manual_Board_Creation
+3 Step 1: Getting Started=Step_1:_Getting_Started
+3 Step 2: Setting Up the Board Layers=Step_2:_Setting_Up_the_Board_Layers
+3 Step 3: Defining a Board Outline=Step_3:_Defining_a_Board_Outline
+3 Step 4: Placing Components=Step_4:_Placing_Components
+3 Step 5: Connecting the Components=Step_5:_Connecting_the_Components
+3 Selecting a New Track Size=Selecting_a_New_Track_Size
+3 Selecting the Via Size=Selecting_the_Via_Size
+3 Identifying Components and Pins=Identifying_Components_and_Pins
+3 Placing Tracks=Placing_Tracks
+3 Using the Pad-to-Pad Router=Using_the_Pad-to-Pad_Router
+3 Step 6: Checking Your Work=Step_6:_Checking_Your_Work
+2 Tutorial 2: Automated Board Creation
+3 Automated Board Creation=Tutorial_2:_Automated_Board_Creation
+3 Step 1: Creating a Netlist in CircuitMaker=Step_1:_Creating_a_Netlist_in_CircuitMaker
+3 Step 2: Defining a Keep Out Layer=Step_2:_Defining_a_Keep_Out_Layer
+3 Step 3: Loading a Netlist=Step_3:_Loading_a_Netlist
+3 Step 4: Using AutoPlacement=Step_4:_Using_AutoPlacement
+3 Displaying the Ratsnest=Displaying_the_Ratsnest
+3 Step 5: Using the Auto Router=Step_5:_Using_the_Auto_Router
+3 What if the Router Doesn't Complete 100%?=What_if_the_Router_Doesn_t_Complete_100_?
+2 Tutorial 3: Creating New Components
+3 Creating New Components=Tutorial_3:_Creating_New_Components
+3 Step 1: Creating a component from scratch=Step_1:_Creating_a_component_from_scratch
+3 Step 2: Creating a Component Based on an Existing One=Step_2:_Creating_a_Component_Based_on_an_Existing_One
+1 Chapter 4: Placing and Editing Features
+2 Placing and Editing Features=Placing_and_Editing_Features
+2 The Full Screen Cross Cursor
+3 The Full Screen Cross Cursor=The_Full_Screen_Cross_Cursor
+2 The Measurement Tool
+3 The Measurement Tool=The_Measurement_Tool
+2 The Arrow Tool
+3 The Arrow Tool=The_Arrow_Tool
+3 Selecting an Item=Selecting_an_Item
+3 Selecting Multiple Items=Selecting_Multiple_Items
+3 Selecting Connections and Nets=Selecting_Connections_and_Nets
+3 Global Select Options=Global_Select_Options
+3 Including Different Layers in a Selection=Including_Different_Layers_in_a_Selection
+3 Moving Items=Moving_Items
+3 Dragging Tracks=Dragging_Tracks
+2 Cut, Copy, Paste, & Delete
+3 Cut, Copy, Paste, & Delete=Cut_Copy_Paste_&_Delete
+3 Cutting Items=Cutting_Items
+3 Copying Items=Copying_Items
+3 Pasting Items=Pasting_Items
+3 Deleting Items=Deleting_Items
+3 Refreshing the Screen=Refreshing_the_Screen
+3 Duplicating an Item or Group of Items=Duplicating_an_Item_or_Group_of_Items
+3 Panning=Panning
+2 Component
+3 The Place Component Tool=The_Place_Component_Tool
+3 Editing a Component=Editing_a_Component
+3 Finding Components=Finding_Components
+2 Rotating
+3 The Rotate 90 Button=The_Rotate_90_Button
+3 Rotating Items While Moving=Rotating_Items_While_Moving
+3 Rotating Text=Rotating_Text
+2 Mirroring
+3 The Mirror Button=The_Mirror_Button_
+3 Mirroring Items While Moving=Mirroring_Items_While_Moving
+2 Pads
+3 The Place Pad Tool=The_Place_Pad_Tool
+3 Linear Copy of a Pad=Linear_Copy_of_a_Pad
+3 Radial Copy of a Pad=Radial_Copy_of_a_Pad
+3 Rotating a Pad=Rotating_a_Pad
+3 Finding a Pad=Finding_a_Pad
+3 Editing a Pad=Editing_a_Pad
+3 About Thermal Relief Pads=About_Thermal_Relief_Pads
+3 Tagging an SMD Pad to Ground or Power Plane=Tagging_an_SMD_Pad_to_Ground_or_Power_Plane
+2 Tracks
+3 The Route Pad-to-Pad Without Net Tool=The_Route_Pad_to_Pad_Without_Net_Tool
+3 The Place Track Tool=The_Place_Track_Tool
+3 Changing Track Settings=Changing_Track_Settings
+3 Editing a Track=Editing_a_Track
+3 The Break Track Tool=The_Break_Track_Tool
+3 The Re-Route Track Tool=The_Re-Route_Track_Tool
+2 Vias
+3 The Place Via Tool=The_Place_Via_Tool
+3 Editing a Via=Editing_a_Via
+2 Text
+3 The Place Text Tool=The_Place_Text_Tool
+3 Finding Text=Finding_Text
+3 Editing Text=Editing_Text
+3 Setting Text Size Defaults=Setting_Text_Size_Defaults
+2 Arcs
+3 The Place Arc Tool=The_Place_Arc_Tool
+3 Editing an Arc=Editing_an_Arc
+2 Fills
+3 The Place Fill Tool=The_Place_Fill_Tool
+3 Editing Fills=Editing_Fills
+2 External Planes
+3 The Place External Plane Tool=The_Place_External_Plane_Tool
+3 Anatomy of an External Plane=Anatomy_of_an_External_Plane
+3 Changing External Plane Settings=Changing_External_Plane_Settings
+3 Placing an External Plane=Placing_an_External_Plane
+3 Editing External Planes=Editing_External_Planes
+2 Zooming
+3 The Zoom Tool=The_Zoom_Tool
+3 The Select Area and Zoom Tool=The_Select_Area_and_Zoom_Tool
+3 The Fit Board to Window Tool=The_Fit_Board_to_Window_Tool
+2 Setting up the Draw Mode
+3 Setting Up the Draw Mode=Setting_Up_the_Draw_Mode
+1 Chapter 5: Managing Libraries
+2 Managing Libraries=Managing_Libraries
+2 Managing Component Libraries
+3 Managing Component Libraries=Managing_Component_Libraries
+3 About Components=About_Components
+3 Browsing Component Libraries=Browsing_Component_Libraries
+3 Adding a New Component=Adding_a_New_Component
+3 Creating a component from scratch=Creating_a_component_from_scratch
+3 Creating a Component Based on Another=Creating_a_Component_Based_on_Another
+3 Deleting a Component from the Library=Deleting_a_Component_from_the_Library
+3 Compacting the Component Library=Compacting_the_Component_Library
+3 Creating a New Component Library=Creating_a_New_Component_Library
+3 Opening a Different Component Library=Opening_a_Different_Component_Library
+3 Merging Component Libraries=Merging_Component_Libraries
+2 Managing Pad Libraries
+3 Managing Pad Libraries=Managing_Pad_Libraries
+3 About Pads=About_Pads
+3 Pad Hole Sizes=Pad_Hole_Sizes
+3 SMD Pad Holes=SMD_Pad_Holes
+3 Browsing Pad Libraries=Browsing_Pad_Libraries
+3 Creating or Editing a Pad=Creating_or_Editing_a_Pad
+3 Deleting a Pad from the Library=Deleting_a_Pad_from_the_Library
+3 Creating a New Pad Library=Creating_a_New_Pad_Library
+3 Opening a Different Pad Library=Opening_a_Different_Pad_Library
+3 Copying Pads from Library to Library=Copying_Pads_from_Library_to_Library
+1 Chapter 6: Nets and Netlists
+2 Nets and Netlists
+3 Nets and Netlists=Nets_and_Netlists
+3 What is a Net?=What_is_a_Net?
+3 What is a Netlist?=What_is_a_Netlist?
+3 TraxMaker Netlist Format=TraxMaker_Netlist_Format
+3 Other Netlist Formats=Other_Netlist_Formats
+3 Viewing and Editing Netlists=Viewing_and_Editing_Netlists
+3 Netlist Limits=Netlist_Limits
+3 Loading a Netlist=Loading_a_Netlist
+3 Making a Netlist=Making_a_Netlist
+3 Showing/Hiding Nets=Showing/Hiding_Nets
+3 Finding a Net=Finding_a_Net
+3 Identifying a Net=Identifying_a_Net
+3 Getting Information About the Board=Getting_Information_About_the_Board
+2 AutoPlacement
+3 AutoPlacement=AutoPlacement
+3 Before You Run AutoPlacement=Before_You_Run_AutoPlacement
+3 Defining a Keep Out Layer=Defining_a_Keep_Out_Layer
+3 Setting Up Grids and Clearances=Setting_Up_Grids_and_Clearances
+3 Working with Power/Ground Planes=Working_with_Power/Ground_Planes
+3 AutoPlacement Strategies=AutoPlacement_Strategies
+3 Using AutoPlacement=Using_AutoPlacement
+3 Moving Components to Grid=Moving_Components_to_Grid
+3 AutoPlacement Tips=AutoPlacement_Tips
+3 Multiple Libraries with AutoPlacement=Multiple_Libraries_with_AutoPlacement
+1 Chapter 7: Routing
+2 Setting Up the Autorouter
+3 Routing=Routing
+3 Setting Up the Router=Setting_Up_the_Router
+3 Layer Routing Setup=Layer_Routing_Setup
+3 Enable Viewing of Routing Layers=Enable_Viewing_of_Routing_Layers
+3 Assigning Routing Layers and Bias=Assigning_Routing_Layers_and_Bias
+3 Routing Passes=Routing_Passes
+3 About SMD Routing=About_SMD_Routing
+3 Smoothing=Smoothing_Passes
+3 Clearances=Clearances
+3 Grid/Clearance Tips=Grid/Clearance_Tips
+2 Using the Autorouter
+3 Using the Autorouter=Using_the_Autorouter
+3 Autorouting the Entire Board=Autorouting_the_Board
+3 Routing Manually With Net=Routing_Manually_With_Net
+3 Autorouting Pad-to-Pad Without Net=Autorouting_Pad-to-Pad_Without_Net
+3 Autorouting a Net=Autorouting_a_Net
+3 Autorouting a Net by Name=Autorouting_a_Net_by_Name
+3 Autorouting a Connection=Autorouting_a_Connection
+3 Unrouting All=Unrouting_All
+3 Unrouting a Net=Unrouting_a_Net
+3 Unrouting a Connection=Unrouting_a_Connection
+3 Netlists and AutoRouting=Netlists_and_AutoRouting
+3 Getting the Best Result from Autorouting=Getting_the_Best_Result_from_Autorouting
+3 Example Boards=Example_Boards
+3 Optimizing Netlists=Optimizing_Netlists
+3 TRAXEDIT.LOG=TRAXEDIT.LOG
+2 Design Rules Checking
+3 Design Rules Checking=Design_Rules_Checking
+3 DRC Error Messages=DRC_Error_Messages
+1 Chapter 8: Printing and Plotting
+2 Printing and Plotting=Printing_and_Plotting
+2 Printing PCB Artwork=Printing_PCB_Artwork
+2 PostScript Printers=PostScript_Printers
+2 Photoplotting=Photoplotting
+2 Before You Print a PCB=Before_You_Print_a_PCB
+2 Setting Up the Printer=Setting_Up_the_Printer
+2 Printing the PCB=Printing_the_PCB
+2 Producing Quality Printouts=Producing_Quality_Printouts
+2 Postscript Printing=Postscript_Printing
+2 Print Options
+3 Setting Up Print Options=Setting_Up_Print_Options
+3 Pad Hole Guide Size=Pad_Hole_Guide_Size
+3 Drill Draw Symbol Size=Drill_Draw_Symbol_Size
+3 Pwr/Gnd, Solder, and Paste Mask Enlargements=Pwr/Gnd_Solder_and_Paste_Mask_Enlargements
+3 The Plot Layers=The_Plot_Layers
+1 Chapter 9: Importing and Exporting Files
+2 Importing and Exporting Files=Importing_and_Exporting_Files
+2 AutoCAD DXF Files (.DXF)
+3 AutoCAD DXF Files (.DXF)=AutoCAD_DXF_Files_(.DXF)
+3 Importing DXF files=Importing_DXF_files
+3 Creating a .SET file=Creating_a_.SET_file
+3 Exporting DXF files=Exporting_DXF_files
+2 Protel Text PCB Files (.PCB)
+3 Protel Text PCB Files (.PCB)=Protel_Text_PCB_Files_(.PCB)
+2 Pick and Place Report
+3 Pick and Place Report=Pick_and_Place_Report
+2 Bill of Materials Report
+3 Bill of Materials Report=Bill_of_Materials_Report
+2 Gerber and N/C Drill Files
+3 Gerber and N/C Drill Files=Gerber_and_N/C_Drill_Files
+3 Gerber Files
+4 The Gerber Photoplotting Process=The_Gerber_Photoplotting_Process
+4 Vector vs. Raster Photoplotters=Vector_vs._Raster_Photoplotters
+4 Creating Gerber Photoplot Files=Creating_Gerber_Photoplot_Files
+4 Before You Begin=Before_You_Begin
+4 The Gerber Setup Dialog Box=The_Gerber_Setup_Dialog_Box
+4 Adjusting Gerber Defaults=Adjusting_Gerber_Defaults
+4 Selecting the Photoplot Layers=Selecting_the_Photoplot_Layers
+4 Naming Gerber Files=Naming_Gerber_Files
+4 Using a Photoplot Bureau=Using_a_Photoplot_Bureau
+4 About the Gerber File Format=About_the_Gerber_File_Format
+4 Apertures
+5 About Aperture Files=About_Aperture_Files
+5 Creating Custom Aperture Files=Creating_Custom_Aperture_Files
+5 Setting Up Aperture Matching=Setting_Up_Aperture_Matching
+5 Matching Apertures=Matching_Apertures
+3 N/C Drill Files
+4 Numeric Control Drilling=Numeric_Control_Drilling
+4 About the .DRL and .TXT Files=About_the_.DRL_and_.TXT_Files
+4 About Drilling Tools and the .TOL File=About_Drilling_Tools_and_the_.TOL_File
+4 Creating N/C Drill Files=Creating_N/C_Drill_Files
+4 ASCII to Hex Translation=ASCII_to_Hex_Translation

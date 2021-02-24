@@ -1,1 +1,2 @@
-unsupported reparse point
+*Default current-controlled switch
+.MODEL WCSW~ CSW()

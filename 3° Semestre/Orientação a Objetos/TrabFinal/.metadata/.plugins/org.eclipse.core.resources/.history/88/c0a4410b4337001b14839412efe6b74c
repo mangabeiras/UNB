@@ -1,0 +1,121 @@
+package visao;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.table.TableModel;
+
+import DAO.PessoaDao;
+import dados.Pessoa;
+import javax.swing.JTable;
+import java.awt.Font;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JButton;
+import javax.swing.ScrollPaneConstants;
+
+public class Listar extends JFrame {
+	private TelaPrincipal principal;
+	private JScrollPane barraRolagem;
+	private JTable tabela;
+	private DefaultTableModel modelo;
+	private JPanel painelTabela;
+	private JButton voltar;
+	
+	public Listar() {
+		initComponents();
+	}
+	
+	private void criaPainelTabela() {
+		painelTabela = new JPanel();
+		painelTabela.setMinimumSize(new Dimension(800, 400));
+		painelTabela.setMaximumSize(new Dimension(800, 400));
+		painelTabela.setBounds(0, 0, 784, 397);
+		getContentPane().add(painelTabela);		
+	}
+	
+	private void criaVoltar() {
+		voltar = new JButton("Voltar");
+		voltar.setFont(new Font("Arial", Font.BOLD, 12));
+		voltar.setBounds(399, 415, 89, 23);
+		getContentPane().add(voltar);
+	}
+	
+	private void configuraFrame() {
+		setTitle("Cadastros");
+		setResizable(false);
+		setMinimumSize(new Dimension(800, 500));
+		setMaximumSize(new Dimension(800, 500));
+		setAlwaysOnTop(false);
+		setLocationRelativeTo(null);
+		getContentPane().setLayout(null);
+
+	}
+	
+
+	private void criaTabela() {
+		modelo = new DefaultTableModel();
+		modelo.addColumn("ID Pessoa");
+		modelo.addColumn("Nome");
+		modelo.addColumn("Saude");
+		modelo.addColumn("Gestacao");
+		modelo.addColumn("Idade");
+		tabela = new JTable(modelo);
+		tabela.setBounds(1, 1, 782, 0);
+		tabela.setEnabled(false);
+		
+		tabela.getColumnModel().getColumn(0).setPreferredWidth(80);
+		tabela.getColumnModel().getColumn(1).setPreferredWidth(150);
+		tabela.getColumnModel().getColumn(2).setPreferredWidth(150);
+		tabela.getColumnModel().getColumn(3).setPreferredWidth(80);
+		tabela.getColumnModel().getColumn(4).setPreferredWidth(40);
+		preencheTabela();
+		painelTabela.setLayout(null);
+		painelTabela.add(tabela);
+		
+		barraRolagem = new JScrollPane(tabela);
+		barraRolagem.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		barraRolagem.doLayout();
+		barraRolagem.setBounds(0, 0, 784, 461);
+		painelTabela.add(barraRolagem);
+	}
+	
+	private void preencheTabela() {
+		modelo.setNumRows(0);
+		PessoaDao dao = new PessoaDao();
+		
+		for (Pessoa p : dao.getGrupo()) {
+			if (p.getSituacaoGestacao() == null)
+				modelo.addRow(new Object[] {p.getId(), p.getNome().toLowerCase(), p.getSituacaoExtenso(), "--", p.getIdade()});
+			else
+				modelo.addRow(new Object[] {p.getId(), p.getNome().toLowerCase(), p.getSituacaoExtenso(), p.getSituacaoGExtenso(), "--"});
+		}
+	}
+	
+	private void menuPrincipal() {
+		principal = new TelaPrincipal();
+		principal.setVisible(true);
+		setVisible(false);
+	}
+	
+	private void addEscutadores() {
+		voltar.addActionListener(evt -> menuPrincipal());
+	}
+	
+	private void initComponents() {
+		
+		configuraFrame();
+		
+		criaPainelTabela();
+		
+		criaTabela();
+		
+		criaVoltar();
+		
+		addEscutadores();
+	}
+	
+}

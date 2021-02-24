@@ -1,1 +1,505 @@
-unsupported reparse point
+;Custom.mac
+;
+; Assign   Apnum   Dcode
+.ASSIGN       1    10
+.ASSIGN       2    11
+.ASSIGN       3    12
+.ASSIGN       4    13
+.ASSIGN       5    14
+.ASSIGN       6    15
+.ASSIGN       7    16
+.ASSIGN       8    17
+.ASSIGN       9    18
+.ASSIGN       10   19
+.ASSIGN       11    70
+.ASSIGN       12    71
+.ASSIGN       13    20
+.ASSIGN       14    21
+.ASSIGN       15    22
+.ASSIGN       16    23
+.ASSIGN       17    24
+.ASSIGN       18    25
+.ASSIGN       19    26
+.ASSIGN       20    27
+.ASSIGN       21    28
+.ASSIGN       22    29
+.ASSIGN       23    72
+.ASSIGN       24    73
+.ASSIGN       25    30
+.ASSIGN       26    31
+.ASSIGN       27    32
+.ASSIGN       28    33
+.ASSIGN       29    34
+.ASSIGN       30    35
+.ASSIGN       31    36
+.ASSIGN       32    37
+.ASSIGN       33    38
+.ASSIGN       34    39
+.ASSIGN       35    40
+.ASSIGN       36    41
+.ASSIGN       37    42
+.ASSIGN       38    43
+.ASSIGN       39    44
+.ASSIGN       40    45
+.ASSIGN       41    46
+.ASSIGN       42    47
+.ASSIGN       43    48
+.ASSIGN       44    49
+.ASSIGN       45    50
+.ASSIGN       46    51
+.ASSIGN       47    52
+.ASSIGN       48    53
+.ASSIGN       49    54
+.ASSIGN       50    55
+.ASSIGN       51    56
+.ASSIGN       52    57
+.ASSIGN       53    58
+.ASSIGN       54    59
+.ASSIGN       55    60
+.ASSIGN       56    61
+.ASSIGN       57    62
+.ASSIGN       58    63
+.ASSIGN       59    64
+.ASSIGN       60    65
+.ASSIGN       61    66
+.ASSIGN       62    67
+.ASSIGN       63    68
+.ASSIGN       64    69
+.ASSIGN       65    74
+.ASSIGN       66    75
+.ASSIGN       67    76
+.ASSIGN       68    77
+.ASSIGN       69    78
+.ASSIGN       70    79
+.ASSIGN       71    80
+.ASSIGN       72    81
+.ASSIGN       73    82
+.ASSIGN       74    83
+.ASSIGN       75    84
+.ASSIGN       76    85
+.ASSIGN       77    86
+.ASSIGN       78    87
+.ASSIGN       79    88
+.ASSIGN       80    89
+.ASSIGN       81    90
+.ASSIGN       82    91
+.ASSIGN       83    92
+.ASSIGN       84    93
+.ASSIGN       85    94
+.ASSIGN       86    95
+.ASSIGN       87    96
+.ASSIGN       88    97
+.ASSIGN       89    98
+.ASSIGN       90    99
+.ASSIGN       91    100
+.ASSIGN       92    101
+.ASSIGN       93    102
+.ASSIGN       94    103
+.ASSIGN       95    104
+.ASSIGN       96    105
+.ASSIGN       97    106
+.ASSIGN       98    107
+.ASSIGN       99    108
+.ASSIGN       100    109
+.ASSIGN       101    110
+.ASSIGN       102    111
+.ASSIGN       103    112
+.ASSIGN       104    113
+.ASSIGN       105    114
+.ASSIGN       106    115
+.ASSIGN       107    116
+.ASSIGN       108    117
+.ASSIGN       109    118
+.ASSIGN       110    119
+.ASSIGN       111    120
+.ASSIGN       112    121
+.ASSIGN       113    122
+.ASSIGN       114    123
+.ASSIGN       115    124
+.ASSIGN       116    125
+.ASSIGN       117    126
+.ASSIGN       118    127
+.ASSIGN       119    128
+.ASSIGN       120    129
+.ASSIGN       121    130
+.ASSIGN       122    131
+.ASSIGN       123    132
+.ASSIGN       124    133
+.ASSIGN       125    134
+.ASSIGN       126    135
+.ASSIGN       127    136
+.ASSIGN       128    137
+.ASSIGN       129    138
+.ASSIGN       130    139
+.ASSIGN       131    140
+.ASSIGN       132    141
+.ASSIGN       133    142
+.ASSIGN       134    143
+.ASSIGN       135    144
+.ASSIGN       136    145
+.ASSIGN       137    146
+.ASSIGN       138    147
+.ASSIGN       139    148
+.ASSIGN       140    149
+.ASSIGN       141    150
+.ASSIGN       142    151
+.ASSIGN       143    152
+.ASSIGN       144    153
+.ASSIGN       145    154
+.ASSIGN       146    155
+.ASSIGN       147    156
+.ASSIGN       148    157
+.ASSIGN       149    158
+.ASSIGN       150    159
+.ASSIGN       151    160
+.ASSIGN       152    161
+.ASSIGN       153    162
+.ASSIGN       154    163
+.ASSIGN       155    164
+.ASSIGN       156    165
+.ASSIGN       157    166
+.ASSIGN       158    167
+.ASSIGN       159    168
+.ASSIGN       160    169
+.ASSIGN       161    170
+.ASSIGN       162    171
+.ASSIGN       163    172
+.ASSIGN       164    173
+.ASSIGN       165    174
+.ASSIGN       166    175
+.ASSIGN       167    176
+.ASSIGN       168    177
+.ASSIGN       169    178
+.ASSIGN       170    179
+.ASSIGN       171    180
+.ASSIGN       172    181
+.ASSIGN       173    182
+.ASSIGN       174    183
+.ASSIGN       175    184
+.ASSIGN       176    185
+.ASSIGN       177    186
+.ASSIGN       178    187
+.ASSIGN       179    188
+.ASSIGN       180    189
+.ASSIGN       181    190
+.ASSIGN       182    191
+.ASSIGN       183    192
+.ASSIGN       184    193
+.ASSIGN       185    194
+.ASSIGN       186    195
+.ASSIGN       187    196
+.ASSIGN       188    197
+.ASSIGN       189    198
+.ASSIGN       190    199
+.ASSIGN       191    200
+.ASSIGN       192    201
+.ASSIGN       193    202
+.ASSIGN       194    203
+.ASSIGN       195    204
+.ASSIGN       196    205
+.ASSIGN       197    206
+.ASSIGN       198    207
+.ASSIGN       199    208
+.ASSIGN       200    209
+;
+; If more aperture number to dcode mapping
+; is needed, Simply follow the pattern above
+;
+;
+.STARTDEF ALLEGRO
+        .UNITS=MIL
+        .TEXTDELIMETER   ()
+        .WORDDELIMETER " "  // inside bracket
+        .FORM_ROUND      LINE
+        .FORM_ROUND      CIRCLE
+        .FORM_SQUARE     SQUARE
+        .FORM_DONUT      DONUT
+        .FORM_THERM      THERM
+        .FORM_THERM      THERMAL
+        .FORM_OCTAGON    OCTAGON
+        .FORM_RECT       RECTANGLE
+        .FORM_OBLONG     OBLONG
+        .FORM_BLANK      BLANK
+; all different possibilities.
+        .SCANLINE .MUST_FORM_RECT .XSIZE .YSIZE .SKIPWORD .DCODE
+        .SCANLINE .MUST_FORM_OBLONG .XSIZE .YSIZE .SKIPWORD .DCODE
+        .SCANLINE .MUST_FORM_SQUARE .XSIZE .SKIPWORD .DCODE
+        .SCANLINE .MUST_FORM_ROUND  .XSIZE .DCODE
+;       
+;  
+.ENDDEF
+;
+.STARTDEF CUSTOM
+        .UNITS=MIL
+        .TEXTDELIMETER   ()
+        .IGNORE ""            // inside bracket
+        .WORDDELIMETER " "  // inside bracket
+        .FORM_ROUND        CIRCLE
+        .FORM_SQUARE       SQUARE 
+        .FORM_RECT         RECTANGLE
+        .FORM_THERM        THERMAL 
+        ; all different possibilities.
+        .SCANLINE .SKIPWORD .SKIPWORD .MUST_FORM_ROUND .XSIZE .SKIPWORD  .DCODE
+        .SCANLINE .SKIPWORD .SKIPWORD .MUST_FORM_SQUARE .XSIZE .SKIPWORD  .DCODE
+        .SCANLINE .SKIPWORD .SKIPWORD .MUST_FORM_THERM .XSIZE .YSIZE .DCODE
+        .SCANLINE .SKIPWORD .SKIPWORD .MUST_FORM_RECT .XSIZE .YSIZE .DCODE
+.ENDDEF
+;
+.STARTDEF CUSTOM1
+        .UNITS=inch
+        .TEXTDELIMETER   ()
+        .IGNORE "XID"            // inside bracket
+        .WORDDELIMETER " "  // inside bracket
+        .FORM_ROUND        C
+        .FORM_ROUND        l
+        .FORM_SQUARE       SQ 
+        .FORM_RECT         RECT
+        .FORM_THERM        THERMAL 
+        ; all different possibilities.
+        .SCANLINE .DCODE .MUST_FORM_ROUND .XSIZE  
+        .SCANLINE .DCODE .MUST_FORM_SQUARE .XSIZE  
+        .SCANLINE .DCODE .MUST_FORM_THERM .XSIZE .YSIZE 
+        .SCANLINE .DCODE .SKIPWORD .MUST_FORM_RECT .XSIZE .YSIZE 
+.ENDDEF
+;
+.STARTDEF EXCELLON
+        .UNITS=mm
+        .TEXTDELIMETER   ()
+        .IGNORE "D"            // inside bracket
+        .WORDDELIMETER " "  // inside bracket
+        .FORM_ROUND      CIR
+        .FORM_SQUARE     SQR
+; all different possibilities.
+        .SCANLINE .DCODE .MUST_FORM_ROUND .XSIZE
+        .SCANLINE .DCODE .MUST_FORM_SQUARE .XSIZE
+;
+.ENDDEF
+;
+.STARTDEF GAP1
+        .UNITS=inch
+        .TEXTDELIMETER   ()
+        .IGNORE "*"            // inside bracket
+        .WORDDELIMETER " "  // inside bracket
+         .FORM_ROUND      Draw
+        .FORM_ROUND      Round
+        .FORM_RECT       Rect  
+        .FORM_SQUARE     Square
+        .FORM_THERM      Thermal
+        .form_OBLONG     Oblong
+        ; all different possibilities.
+        .SCANLINE .DCODE .SKIPWORD .SKIPWORD .SKIPWORD .SKIPWORD .MUST_FORM_RECT .XSIZE .YSIZE
+        .SCANLINE .DCODE .SKIPWORD .SKIPWORD .SKIPWORD .SKIPWORD .MUST_FORM_ROUND .XSIZE 
+        .SCANLINE .DCODE .MUST_FORM_ROUND .SKIPWORD .XSIZE 
+.ENDDEF
+;
+.STARTDEF CUSTOM2
+        .UNITS=inch
+        .TEXTDELIMETER   ()
+        .IGNORE "XY="            // inside bracket
+        .WORDDELIMETER "- "  // inside bracket
+        .FORM_ROUND      Draw
+        .FORM_ROUND      Round
+        .FORM_RECT       Rectangle  
+        .FORM_SQUARE     Square
+        .FORM_THERM      Thermal
+        .form_OBLONG     Oblong
+        ; all different possibilities.
+        .SCANLINE .DCODE .MUST_FORM_RECT .XSIZE .SKIPWORD .YSIZE 
+        .SCANLINE .DCODE .MUST_FORM_OBLONG .XSIZE .SKIPWORD .YSIZE 
+        .SCANLINE .DCODE .MUST_FORM_ROUND .XSIZE
+        .SCANLINE .DCODE .MUST_FORM_SQUARE .XSIZE 
+        .SCANLINE .DCODE .MUST_FORM_THERM .XSIZE 
+        
+        
+.ENDDEF
+;
+.STARTDEF ORCAD1
+        .UNITS=MIL
+        .TEXTDELIMETER   ()
+        .IGNORE "("            // inside bracket
+        .WORDDELIMETER ") "  // inside bracket
+        .FORM_ROUND      round
+        .FORM_ROUND      draw
+        .FORM_SQUARE     square
+        .FORM_RECT       rectangle
+        .FORM_THERM      thermal
+; all different possibilities.
+        .SCANLINE .SKIPWORD .SKIPWORD .DCODE .SKIPWORD .MUST_FORM_ROUND .SKIPWORD .XSIZE
+        .SCANLINE .SKIPWORD .SKIPWORD .DCODE .SKIPWORD .MUST_FORM_ROUND .SKIPWORD .XSIZE
+        .SCANLINE .SKIPWORD .SKIPWORD .DCODE .SKIPWORD .MUST_FORM_SQUARE .SKIPWORD .XSIZE
+        .SCANLINE .SKIPWORD .SKIPWORD .DCODE .SKIPWORD .MUST_FORM_RECT .SKIPWORD .XSIZE .SKIPWORD .YSIZE
+        .SCANLINE .SKIPWORD .SKIPWORD .DCODE .SKIPWORD .MUST_FORM_THERM .SKIPWORD .XSIZE .SKIPWORD .YSIZE   
+;
+.ENDDEF
+;
+.STARTDEF PFW
+        .UNITS=MIL
+        .WORDDELIMETER " "  // inside bracket
+        .FORM_ROUND      ROUNDED
+        .FORM_THERM      RELIEF
+        .FORM_RECT       RECTANGULAR
+; all different possibilities.
+        .SCANLINE .DCODE .MUST_FORM_RECT .XSIZE .YSIZE
+        .SCANLINE .DCODE .MUST_FORM_ROUND .XSIZE .YSIZE
+        .SCANLINE .DCODE .MUST_FORM_THERM .XSIZE .YSIZE
+;	
+.ENDDEF
+;
+.STARTDEF CUSTOM3
+        .UNITS=inch
+        .TEXTDELIMETER   ()
+        .IGNORE "xXW/"            // inside bracket
+        .WORDDELIMETER " "  // inside bracket
+        .FORM_ROUND      LINE
+        .FORM_ROUND      CIRCLE
+        .FORM_DONUT      DONUT  
+        .FORM_RECT       RECTANGLE
+        .FORM_SQUARE     SQUARE
+        .FORM_OBLONG     OVAL
+        .FORM_THERM      GAP 
+        ; all different possibilities.
+        .SCANLINE .DCODE .SKIPWORD .XSIZE .MUST_FORM_ROUND 
+        .SCANLINE .DCODE .SKIPWORD .XSIZE .MUST_FORM_ROUND 
+        .SCANLINE .DCODE .SKIPWORD .XSIZE .MUST_FORM_SQUARE
+        .SCANLINE .DCODE .SKIPWORD .XSIZE .YSIZE .MUST_FORM_OBLONG 
+        .SCANLINE .DCODE .SKIPWORD .XSIZE .YSIZE .MUST_FORM_RECT
+        .SCANLINE .DCODE .SKIPWORD .XSIZE .SKIPWORD .YSIZE .SKIPWORD .MUST_FORM_DONUT   
+        .SCANLINE .DCODE .SKIPWORD .XSIZE .SKIPWORD .YSIZE .SKIPWORD .SKIPWORD .MUST_FORM_THERM  
+;
+.ENDDEF
+;
+.STARTDEF TANGO1
+        .UNITS=MIL
+        .IGNORE ","            // inside bracket
+        .WORDDELIMETER "\""  // inside bracket
+        .FORM_ROUND      Mounting
+        .FORM_RECT       Rectangle
+        .FORM_SQUARE     SQ
+        .FORM_OBLONG     Ellipse
+; all different possibilities.
+	.SCANLINE .DCODE .MUST_FORM_OBLONG .XSIZE .YSIZE
+	.SCANLINE .DCODE .MUST_FORM_RECT .XSIZE .YSIZE
+	.SCANLINE .DCODE .MUST_FORM_ROUND .SKIPWORD .XSIZE .YSIZE
+	.SCANLINE .DCODE .MUST_FORM_SQUARE .XSIZE .YSIZE
+;	
+.ENDDEF
+;
+.STARTDEF CUSTOM4
+        .UNITS=inch
+        .TEXTDELIMETER   ()
+        .IGNORE ""            // inside bracket
+        .WORDDELIMETER " "  // inside bracket
+        .FORM_ROUND      CIRCLE
+;        .FORM_SQUARE     SQUARE
+;        .FORM_TARGET     TARGET
+;        .FORM_DONUT      DONUT
+;        .FORM_THERM      THERMAL
+;        .FORM_OCTAGON    OCTAGON
+        .FORM_RECT       RECTANGLE
+;        .FORM_OBLONG     OBLONG
+        ; all different possibilities.
+        .SCANLINE .SKIPWORD .DCODE .MUST_FORM_ROUND .SKIPWORD .XSIZE 
+        .SCANLINE .SKIPWORD .DCODE .MUST_FORM_RECT .SKIPWORD .XSIZE .YSIZE 
+        .SCANLINE .SKIPWORD .DCODE .MUST_FORM_ROUND .SKIPWORD .SKIPWORD .XSIZE 
+;
+.ENDDEF
+;
+.STARTDEF CUSTOM5
+        .UNITS=inch
+        .TEXTDELIMETER   ()
+        .IGNORE ""            // inside bracket
+        .WORDDELIMETER "= "  // inside bracket
+        .FORM_ROUND      ROUND
+        .FORM_ROUND      DRAW 
+        .FORM_RECT       RECT 
+        ; all different possibilities.
+        .SCANLINE .DCODE .MUST_FORM_ROUND .SKIPWORD .XSIZE
+        .SCANLINE .DCODE .SKIPWORD .SKIPWORD .SKIPWORD .SKIPWORD .SKIPWORD .MUST_FORM_ROUND .XSIZE
+        .SCANLINE .DCODE .SKIPWORD .SKIPWORD .SKIPWORD .SKIPWORD .SKIPWORD .MUST_FORM_RECT .XSIZE .YSIZE
+;
+.ENDDEF
+;
+.STARTDEF CUSTOM6
+        .UNITS=MIL
+        .TEXTDELIMETER   ()
+        .IGNORE ""            // inside bracket
+        .WORDDELIMETER " "  // inside bracket
+        .FORM_ROUND      ROUND
+        .FORM_SQUARE     SQUARE
+        .FORM_TARGET     TARGET
+        .FORM_DONUT      DONUT
+        .FORM_THERM      THERMAL
+        .FORM_OCTAGON    OCTAGON
+        .FORM_RECT       RECTANGLE
+        .FORM_OBLONG     OBLONG
+        ; all different possibilities.
+        .SCANLINE .DCODE .MUST_FORM_ROUND .XSIZE 
+        .SCANLINE .DCODE .MUST_FORM_SQUARE .XSIZE  
+        .SCANLINE .DCODE .MUST_FORM_TARGET .XSIZE
+        .SCANLINE .DCODE .MUST_FORM_DONUT .XSIZE  .YSIZE 
+        .SCANLINE .DCODE .MUST_FORM_THERM .XSIZE  .YSIZE 
+        .SCANLINE .DCODE .MUST_FORM_OCTAGON .XSIZE
+        .SCANLINE .DCODE .MUST_FORM_OBLONG .XSIZE  .YSIZE 
+        .SCANLINE .DCODE .MUST_FORM_RECT .XSIZE  .YSIZE 
+;
+.Enddef
+;
+.STARTDEF APT1
+	.UNITS=MIL
+	.TEXTDELIMETER   ()
+	.WORDDELIMETER " "  // inside bracket
+	.FORM_ROUND      CIRCLE
+	.FORM_ROUND      LINE
+	.FORM_SQUARE     SQUARE
+	.FORM_RECT       RECTANGLE
+	.FORM_OBLONG     OBLONG
+; all different possibilities.
+	.SCANLINE .MUST_FORM_RECT .XSIZE .YSIZE .DCODE  
+	.SCANLINE .MUST_FORM_OBLONG .XSIZE .YSIZE .DCODE
+	.SCANLINE .MUST_FORM_SQUARE .XSIZE .DCODE
+	.SCANLINE .MUST_FORM_ROUND .XSIZE .DCODE
+.ENDDEF
+;
+.STARTDEF CUSTOM7
+        .UNITS=MIL
+        .IGNORE "XYmil"            // inside bracket
+	.TEXTDELIMETER   ()
+        .WORDDELIMETER " "  // inside bracket
+        .FORM_ROUND      MH
+        .FORM_RECT       SQ
+        .FORM_OBLONG     EL
+; all different possibilities.
+	.SCANLINE .DCODE .MUST_FORM_OBLONG .XSIZE .YSIZE
+	.SCANLINE .DCODE .MUST_FORM_RECT .XSIZE .YSIZE
+	.SCANLINE .DCODE .MUST_FORM_ROUND .XSIZE .YSIZE
+.ENDDEF
+;
+.STARTDEF Mentor8
+        .UNITS=INCH
+        .IGNORE ""            // inside bracket
+	.TEXTDELIMETER   ()
+        .WORDDELIMETER " "  // inside bracket
+        .FORM_ROUND      CIRCLE
+        .FORM_RECT       RECTANGLE
+; all different possibilities.
+	.SCANLINE .SKIPWORD .MUST_FORM_RECT .SKIPWORD .YSIZE .XSIZE .SKIPWORD .SKIPWORD .SKIPWORD .DCODE .SKIPWORD
+	.SCANLINE .SKIPWORD .MUST_FORM_ROUND .SKIPWORD .XSIZE .YSIZE .SKIPWORD .SKIPWORD .SKIPWORD .DCODE .SKIPWORD
+.ENDDEF
+;
+.STARTDEF custom8
+        .UNITS=MIL
+        .TEXTDELIMETER   ()
+        .IGNORE ""            // inside bracket
+        .WORDDELIMETER "x "  // inside bracket
+        .FORM_ROUND      circle
+        .FORM_RECT       rectangle 
+        ; all different possibilities.
+        .SCANLINE .DCODE .MUST_FORM_ROUND .XSIZE
+        .SCANLINE .DCODE .MUST_FORM_RECT .XSIZE .YSIZE
+.ENDDEF
+;
+;
+;end
+
+
+

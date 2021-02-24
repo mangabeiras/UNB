@@ -1,0 +1,35 @@
+package dados;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Campeonato {
+	private ArrayList<Time> campeonato;
+	
+	public Campeonato () {
+		this.campeonato = new ArrayList<>();
+	}
+
+	public List<Time> getCampeonato() {
+		return this.campeonato;
+	}
+
+	public void addTime(Time time) {
+		this.campeonato.add(time);
+	}
+	
+	public List<Time> getCampeonatoOrdem(){
+		ArrayList<Time> campeonatoOrdem = new ArrayList<Time>(getCampeonato());
+		Collections.sort(campeonatoOrdem, new OrdenaCampeonato());
+		return campeonatoOrdem;
+	}
+	
+	private class OrdenaCampeonato implements Comparator<Time>{
+		@Override
+		public int compare(Time time1, Time time2) {
+			return time1.getNome().compareTo(time2.getNome()); 
+		}
+	}
+}	

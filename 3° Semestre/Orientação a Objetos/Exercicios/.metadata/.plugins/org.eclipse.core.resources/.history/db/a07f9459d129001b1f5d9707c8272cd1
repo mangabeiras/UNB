@@ -1,0 +1,35 @@
+package principal;
+
+import dados.Campeonato;
+import dados.Time;
+import leitura.Leitura;
+import saida.Saida;
+import validacao.Validacao;
+
+public class Principal {
+	public static void main(String[] args) {
+		Campeonato campeonato = new Campeonato();
+		
+		campeonato.addTime(new Time(Validacao.validaNome(campeonato), Validacao.validaConjuntoAnos()));
+		while (menu(campeonato));
+		
+		Saida.mostraQtdTimes(campeonato.getCampeonato().size());
+	}
+	
+	public static boolean menu(Campeonato campeonato) {
+		try {
+			switch (Validacao.validaMenu(campeonato)) {
+			case 0:
+				campeonato.addTime(new Time(Validacao.validaNome(campeonato), Validacao.validaConjuntoAnos()));
+				return true;
+			case 1:
+				Saida.mostraOrdem(campeonato);
+				return true;
+			default:
+				return !Validacao.validaTermino(campeonato);
+			}
+		} catch(NullPointerException excecao) {
+			return true;
+		}
+	}
+}

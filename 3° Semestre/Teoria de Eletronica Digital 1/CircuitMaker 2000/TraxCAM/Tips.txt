@@ -1,1 +1,25 @@
-unsupported reparse point
+Check out the Database Navigator.  Find out about attributes, block types, block hiearchy, net lists, etc.
+Need different File Extensions : Look in default.set and change where needed.
+Hot Tip ! To Select All : Clear Select - than Reverse Select.
+Dockable Tool Bars allow the customization of the User Interface.
+Toolbar environment and placement will be automatically saved. Next session will bring back your last toolbar environment.
+You can dowload the latest version of CAMCAD on the Internet at http://www.rsi-inc.com!
+Right click for a context sensitive Popup menu (SHIFT-F10 for Windows 3.x users).
+Windows 3.1 does not support "right mouse click" for context sensitive menus. Try it on Windows 95 or NT - you will like it.
+Let us know your needs. We are continously updating CAMCAD - our e-mail camcad@rsi-inc.com
+Need to view / print / translate IPC350 / IPC356 data? Check CAMCAD options.
+Our EXCELLON reader does step and repeat, and macro files.
+To report errors - call 714-721-1017 or email camcad@rsi-inc.com.
+Did you register your products with us? We will keep you informed about new stuff.
+New Multiline Text allows you to CUT and PASTE portions or complete Text files into CAMCAD.
+What's New will tell you the latest about your current Version of CAMCAD.
+CAMCAD wins the prestigous "EDA Innovation 1995" award for the most outstanding EDA product.
+Clipboard copy allows you to copy drawings from CAMCAD to other true Windows Applications. (Word, Paint...)
+Need to view / print / translate EXCELLON data? Check our CAMCAD options.
+Our new BMP file writer allows to select Color depth and compressions.
+Allegro Intermediate Plot file reader option allows to quickly view, plot and translate Allegro Plot files.
+Our GENCAD File and Panel reader option can be field upgrated - just give us a call for more info. 1-800 766 1230 PST.
+New IPC350 writer option - you can upgrate your CAMCAD over the phone.
+CEDIT, CAMCAD's built in editor, now includes mulitlevel UNDO / REDO.
+Check out the PAN to TEXT function. Instant Search and Display of Text in Drawings.
+Reverse Mark - advanced feature to do faster selections.

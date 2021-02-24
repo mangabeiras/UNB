@@ -1,0 +1,42 @@
+package interfaceGrafica;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import dados.Grupo;
+import dados.Homem;
+import dados.Pessoa;
+
+public class TelaPrincipal extends JFrame{
+	private JButton novo;
+	public Grupo grupo;
+	
+	public TelaPrincipal(Pessoa pessoa) {
+		setTitle("Menu");
+		setAlwaysOnTop(true);
+		setLocationRelativeTo(null);
+		setBounds(500,300,500,300);
+		
+		setLayout(null);
+		novo = new JButton("Novo");
+		novo.setBounds(170, 118, 90, 20);
+		
+		novo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evento) {
+				JFrame janela = new JanelaSexo(new Homem(new StringBuilder().append("null"), '0', 0, 0));
+				janela.setVisible(true);
+				setVisible(false);
+				addPessoa(pessoa);
+			}
+		});
+		
+		add(novo);
+		setVisible(true);
+	}
+	public void addPessoa(Pessoa pessoa) {
+		grupo.addPessoa(pessoa);
+	}
+}

@@ -1,0 +1,24 @@
+package leitura;
+
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.JOptionPane;
+
+import interfaceGrafica.Entrada;
+
+public class Leitura {
+	public static String leEntrada(String msg, String titulo) {
+		Entrada janela = new Entrada(msg, titulo);
+		janela.setVisible(true);
+		
+		return janela.getTexto();
+	}
+	public static int leOpcoes(String mensagem, String []opcoes) {
+		return JOptionPane.showOptionDialog(null, mensagem, "Marque uma Opcao", 0, JOptionPane.INFORMATION_MESSAGE, null, opcoes, opcoes[0]);
+	}
+	public static int leConfirma(String msg) {
+		String opcoes[] = {"Sim", "Nao"};
+		return JOptionPane.showOptionDialog(null, msg, "Confirmacao", 0, JOptionPane.INFORMATION_MESSAGE, null, opcoes, opcoes[0]);
+	}
+}

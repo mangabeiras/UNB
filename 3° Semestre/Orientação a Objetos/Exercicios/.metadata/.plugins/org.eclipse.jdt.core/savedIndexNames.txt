@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\.metadata\.plugins\org.eclipse.jdt.core
+649261952.index
+3460880079.index
+1187090591.index

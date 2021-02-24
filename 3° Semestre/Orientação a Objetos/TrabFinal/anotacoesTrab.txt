@@ -1,0 +1,12 @@
+Victor Buendia
+- Problema na validacao do botao mostra
+
+Victor de Souza Cabral
+ - Criou classe apenas para registrar
+ - 
+
+Victor Silva
+ - Dois cliques no erro
+
+Fernando Cali
+ - 

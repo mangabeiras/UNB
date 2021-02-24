@@ -1,0 +1,97 @@
+package interfaceGrafica;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JRadioButton;
+
+import dados.Pessoa;
+import visao.Visao;
+
+import javax.swing.JLabel;
+
+public class CadastraSituacao extends JFrame {
+	private char situacao = 'P';
+	JButton confirma, cancela;
+	JRadioButton botao1, botao2, botao3, botao4;
+	
+	CadastraSituacao(Pessoa pessoa){
+		getContentPane().setLayout(null);
+		setAlwaysOnTop(true);
+		setLocationRelativeTo(null);
+		setBounds(500,300,500,300);
+		
+		JButton confirma = new JButton("Ok");
+		confirma.setBounds(69, 191, 89, 23);
+		confirma.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (situacao != 'P') {
+					pessoa.setSituacao(situacao);
+					JFrame janela = new TelaPrincipal(pessoa);
+				}
+				else
+					Visao.mostraMensagemErro("Marque uma opcao!");			
+			}
+		});
+		getContentPane().add(confirma);
+		
+		JButton cancela = new JButton("Cancela");
+		cancela.setBounds(261, 191, 89, 23);
+		getContentPane().add(cancela);
+		
+		botao1 = new JRadioButton("Contaminada em Tratamento");
+		botao1.setBounds(23, 64, 172, 23);
+		botao1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				botao2.setSelected(false);
+				botao3.setSelected(false);
+				botao4.setSelected(false);
+				situacao = 'T';
+			}
+		});
+		getContentPane().add(botao1);
+		
+		botao2 = new JRadioButton("Contaminada Falecida");
+		botao2.setBounds(23, 112, 172, 23);
+		botao2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				botao1.setSelected(false);
+				botao3.setSelected(false);
+				botao4.setSelected(false);
+				situacao = 'F';
+			}
+		});
+		getContentPane().add(botao2);
+		
+		botao3 = new JRadioButton("Contaminada Curada");
+		botao3.setBounds(245, 64, 153, 23);
+		botao3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				botao1.setSelected(false);
+				botao2.setSelected(false);
+				botao4.setSelected(false);
+				situacao = 'C';
+			}
+		});
+		getContentPane().add(botao3);
+		
+		botao4 = new JRadioButton("Nao Contaminada");
+		botao4.setBounds(245, 112, 136, 23);
+		botao4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				botao1.setSelected(false);
+				botao2.setSelected(false);
+				botao3.setSelected(false);
+				situacao = 'S';
+			}
+		});
+		getContentPane().add(botao4);
+		
+		JLabel cabecalho = new JLabel("Situacao");
+		cabecalho.setBounds(23, 23, 153, 14);
+		getContentPane().add(cabecalho);
+		
+	}
+}

@@ -1,1 +1,71 @@
-unsupported reparse point
+*==============================================
+*PNP Darling3 Pinout: C,B,E
+*Copyright (c) 1997 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*Default PNP Darlington Transistor pkg:TO-92B 1,2,3
+.PARAM XPNP3 File:Mcebjt.lib
+
+*60V 8A PNP Darlington Transistor
+.PARAM X2N6040 File:Mcebjt.lib
+
+*100V 8A PNP Darlington Transistor
+.PARAM X2N6042 File:Mcebjt.lib
+
+*Si 1500mW 80V 8A pkg:TO-3 3,2,1
+.PARAM XECG244   File:Mcebjt.lib
+
+*Si 1500mW 80V 10A pkg:TO-3 3,2,1
+.PARAM XECG246   File:Mcebjt.lib
+
+*Si 1500mW 100V 12A pkg:TO-3 3,2,1
+.PARAM XECG248   File:Mcebjt.lib
+
+*Si 1500mW 100V 16A pkg:TO-3 3,2,1
+.PARAM XECG250   File:Mcebjt.lib
+
+*Si 1500mW 100V 20A pkg:TO-3 3,2,1
+.PARAM XECG252   File:Mcebjt.lib
+
+*Si 1500mW 120V 50A pkg:TO-3 3,2,1
+.PARAM XECG2350  File:Mcebjt.lib
+
+*Si 1500mW 80V 4A pkg:TO-66 3,1,2
+.PARAM XECG275   File:Mcebjt.lib
+
+*Si 1500mW 120V 25A pkg:TO-3 2,1,3
+.PARAM XECG2542  File:Mcebjt.lib
+
+*Si 1500mW 120V 16A pkg:TO-3 2,1,3
+.PARAM XECG2560  File:Mcebjt.lib
+
+*Si 1500mW 60V 7A pkg:TO-220 2,1,3
+.PARAM XECG2555  File:Mcebjt.lib
+
+*Si 1500mW 60V 5A pkg:TO-220 2,1,3
+.PARAM XECG2546  File:Mcebjt.lib
+
+*Si 1500mW 100V 8A pkg:TO-220 2,1,3
+.PARAM XECG262   File:Mcebjt.lib
+
+*Si 1500mW 100V 10A pkg:TO-220 2,1,3
+.PARAM XECG264   File:Mcebjt.lib
+
+*Si 1500mW 120V 10A pkg:TO-220 2,1,3
+.PARAM XECG2344  File:Mcebjt.lib
+
+*Si 1500mW 60V 10A pkg:TO-220 2,1,3
+.PARAM XECG2552  File:Mcebjt.lib
+
+*Si 1500mW 100V 8A pkg:TO-220 2,1,3
+.PARAM XECG2548  File:Mcebjt.lib
+
+*Si 1500mW 80V 4A pkg:TO-126 2,3,1
+.PARAM XECG254   File:Mcebjt.lib
+
+*Si 1500mW 120V 6A pkg:SOT-82 2,1,3
+.PARAM XECG2346  File:Mcebjt.lib
+
+*Si 1500mW 80V 4A pkg:TO-126 2,1,3
+.PARAM XECG2352  File:Mcebjt.lib

@@ -1,0 +1,44 @@
+package interfaceGrafica;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
+public class JanelaSexo extends JPanel implements ActionListener{
+	private JButton homem, mulher;
+	private char item;
+	public Entrada() {
+		initComponents();
+	}
+	
+	private void initComponents() {
+		setLayout(null);
+		homem = new JButton("Homem");
+		homem.setBounds(170, 118, 90, 20);
+		homem.addActionListener(this);
+		add(homem);
+		
+		setLayout(null);
+		mulher = new JButton("Mulher");
+		mulher.setBounds(170, 118, 90, 20);
+		mulher.addActionListener(this);
+		add(mulher);
+		
+		setVisible(true);
+	}
+	
+	public char getItem() {
+		return this.item;
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == homem)
+			item = 0;
+		if (e.getSource() == mulher)
+			item = 1;	
+	}
+}

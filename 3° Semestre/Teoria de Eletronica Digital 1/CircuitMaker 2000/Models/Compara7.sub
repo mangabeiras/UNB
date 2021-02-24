@@ -1,1 +1,15 @@
-unsupported reparse point
+*==============================================
+*Compara7 pinout: IN+ IN- V+ V- HYST. REF. OUT.
+*Copyright (c) 1998 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*==============================================
+*Maxim
+
+*MAX Sngl TTL Comp. pkg:DIP8 3,4,7,2,5,6,8
+.PARAM XMAX921 File:Maxim.lib
+
+*MAX Sngl TTL Comp. pkg:DIP8 3,4,7,2,5,6,8
+.PARAM XMAX931 File:Maxim.lib
+

@@ -1,0 +1,52 @@
+	public static int validaAno(int contador) {
+		int ano;
+		final int MIN = 1900, ATUAL = 2020;
+		
+		if(contador > 0)
+			Saida.limpaTela(20);
+		Saida.interage(0, contador);
+		try {
+			Saida.interage(1, contador);
+			ano = Leitura.leInt();
+			if(ano <= MIN || ano >= ATUAL) {
+				Saida.erroEntrada(1);
+				ano = validaAno(contador);
+			}
+		} catch (InputMismatchException e) {
+			Saida.erroEntrada(0);
+			ano = validaAno(contador);
+		}
+		return ano;		
+	}
+----------------------------------------------------------------------------------------
+	public String toString() {
+		String formato = "%-13s%-15s%-20s%-13s%-10s\n";
+		
+		return String.format(formato, this.getNome().split(" ")[0],
+				String.format("%011d", this.getCpf()),
+				this.getNascimento()[0]
+				+"/"+ this.getNascimento()[1]
+				+"/"+this.getNascimento()[2], 
+				"NDA",
+				"NDA");
+	}
+----------------------------------------------------------------------------------------
+	public static char validaChar(String caracteresValidos) {
+		char caracter;
+
+		caracter = Leitura.leChar();
+		if (!caracteresValidos.contains(Character.toString(caracter))) {
+			Visao.mostraMensagem("Entrada invalida! tente novamente:");
+			caracter = validaChar(caracteresValidos);
+		}
+		return caracter;
+	}
+----------------------------------------------------------------------------------------
+	public static char leChar() {
+		return new Scanner(System.in).next().trim().toLowerCase().charAt(0);
+	}
+----------------------------------------------------------------------------------------
+	public static long leLong() {
+		return new Scanner(System.in).nextLong();
+	}
+	

@@ -1,1 +1,171 @@
-unsupported reparse point
+*==============================================
+*Triac pinout: MT2 G MT1
+*Copyright (c) 1997 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*==============================================
+*MicroCode Engineering
+
+*400V 15A pkg:TO-220 2,3,1
+.PARAM XMAC15A6 File:Mcetriac.lib
+
+*600V 15A pkg:TO-220 2,3,1
+.PARAM XMAC15A8 File:Mcetriac.lib
+
+*200V 10A pkg:TO-220 2,3,1
+.PARAM XMAC210-4 File:Mcetriac.lib
+
+*400V 10A pkg:TO-220 2,3,1
+.PARAM XMAC210-6 File:Mcetriac.lib
+
+*600V 10A pkg:TO-220 2,3,1
+.PARAM XMAC210-8 File:Mcetriac.lib
+
+*800V 10A pkg:TO-220 2,3,1
+.PARAM XMAC210-10 File:Mcetriac.lib
+
+*200V 1A pkg:TO-92B 1,2,3
+.PARAM XQ201E3 File:Mcetriac.lib
+
+*400V 1A pkg:TO-92B 1,2,3
+.PARAM XQ401E3 File:Mcetriac.lib
+
+*500V 1A pkg:TO-92B 1,2,3
+.PARAM XQ501E3   File:Mcetriac.lib
+
+*600V 1A pkg:TO-92B 1,2,3
+.PARAM XQ601E3   File:Mcetriac.lib
+
+*200V 1A pkg:TO-92B 1,2,3
+.PARAM XQ201E4   File:Mcetriac.lib
+
+*400V 1A pkg:TO-92B 1,2,3
+.PARAM XQ401E4   File:Mcetriac.lib
+
+*500V 1A pkg:TO-92B 1,2,3
+.PARAM XQ501E4   File:Mcetriac.lib
+
+*600V 1A pkg:TO-92B 1,2,3
+.PARAM XQ601E4   File:Mcetriac.lib
+
+*200V 4A pkg:TO-220 2,3,1
+.PARAM XQ2004L3  File:Mcetriac.lib
+
+*400V 4A pkg:TO-220 2,3,1
+.PARAM XQ4004L3  File:Mcetriac.lib
+
+*500V 4A pkg:TO-220 2,3,1
+.PARAM XQ5004L3  File:Mcetriac.lib
+
+*600V 4A pkg:TO-220 2,3,1
+.PARAM XQ6004L3  File:Mcetriac.lib
+
+*200V 4A pkg:TO-220 2,3,1
+.PARAM XQ2004L4  File:Mcetriac.lib
+
+*400V 4A pkg:TO-220 2,3,1
+.PARAM XQ4004L4  File:Mcetriac.lib
+
+*500V 4A pkg:TO-220 2,3,1
+.PARAM XQ5004L4  File:Mcetriac.lib
+
+*600V 4A pkg:TO-220 2,3,1
+.PARAM XQ6004L4  File:Mcetriac.lib
+
+*700V 4A pkg:TO-220 2,3,1
+.PARAM XQ7004L4  File:Mcetriac.lib
+
+*800V 4A pkg:TO-220 2,3,1
+.PARAM XQ8004L4  File:Mcetriac.lib
+
+*200V 6A pkg:TO-220 2,3,1
+.PARAM XQ2006L4  File:Mcetriac.lib
+
+*400V 6A pkg:TO-220 2,3,1
+.PARAM XQ4006L4  File:Mcetriac.lib
+
+*500V 6A pkg:TO-220 2,3,1
+.PARAM XQ5006L4  File:Mcetriac.lib
+
+*600V 6A pkg:TO-220 2,3,1
+.PARAM XQ6006L5  File:Mcetriac.lib
+
+*700V 6A pkg:TO-220 2,3,1
+.PARAM XQ7006L5  File:Mcetriac.lib
+
+*800V 6A pkg:TO-220 2,3,1
+.PARAM XQ8006L5  File:Mcetriac.lib
+
+*200V 8A pkg:TO-220 2,3,1
+.PARAM XQ2008L4  File:Mcetriac.lib
+
+*400V 8A pkg:TO-220 2,3,1
+.PARAM XQ4008L4  File:Mcetriac.lib
+
+*500V 8A pkg:TO-220 2,3,1
+.PARAM XQ5008L4  File:Mcetriac.lib
+
+*600V 8A pkg:TO-220 2,3,1
+.PARAM XQ6008L5  File:Mcetriac.lib
+
+*700V 8A pkg:TO-220 2,3,1
+.PARAM XQ7008L5  File:Mcetriac.lib
+
+*800V 8A pkg:TO-220 2,3,1
+.PARAM XQ8008L5  File:Mcetriac.lib
+
+*200V 10A pkg:TO-220 2,3,1
+.PARAM XQ2010L5   File:Mcetriac.lib
+
+*400V 10A pkg:TO-220 2,3,1
+.PARAM XQ4010L5   File:Mcetriac.lib
+
+*500V 10A pkg:TO-220 2,3,1
+.PARAM XQ5010L5   File:Mcetriac.lib
+
+*600V 10A pkg:TO-220 2,3,1
+.PARAM XQ6010L5   File:Mcetriac.lib
+
+*700V 10A pkg:TO-220 2,3,1
+.PARAM XQ7010L5   File:Mcetriac.lib
+
+*800V 10A pkg:TO-220 2,3,1
+.PARAM XQ8010L5   File:Mcetriac.lib
+
+*200V 15A pkg:TO-220 2,3,1
+.PARAM XQ2015L5   File:Mcetriac.lib
+
+*400V 15A pkg:TO-220 2,3,1
+.PARAM XQ4015L5   File:Mcetriac.lib
+
+*500V 15A pkg:TO-220 2,3,1
+.PARAM XQ5015L5   File:Mcetriac.lib
+
+*600V 15A pkg:TO-220 2,3,1
+.PARAM XQ6015L5   File:Mcetriac.lib
+
+*700V 15A pkg:TO-220 2,3,1
+.PARAM XQ7015L5   File:Mcetriac.lib
+
+*800V 15A pkg:TO-220 2,3,1
+.PARAM XQ8015L5   File:Mcetriac.lib
+
+*200V 25A pkg:TO-220 2,3,1
+.PARAM XQ2025R5   File:Mcetriac.lib
+
+*400V 25A pkg:TO-220 2,3,1
+.PARAM XQ4025R5   File:Mcetriac.lib
+
+*500V 25A pkg:TO-220 2,3,1
+.PARAM XQ5025R5   File:Mcetriac.lib
+
+*600V 25A pkg:TO-220 2,3,1
+.PARAM XQ6025R5   File:Mcetriac.lib
+
+*700V 25A pkg:TO-220 2,3,1
+.PARAM XQ7025R5   File:Mcetriac.lib
+
+*800V 25A pkg:TO-220 2,3,1
+.PARAM XQ8025R5   File:Mcetriac.lib
+

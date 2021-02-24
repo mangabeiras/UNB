@@ -1,1 +1,17 @@
-unsupported reparse point
+;
+; this command covers the CI, AA, AR, WG, EW, but not
+; these commands in the HP POLYGON Mode
+; Units are in Page units.
+; pennr = all for all or a number for 1..32
+;.CIRCLE_2_APERTURE       smallsize largesize pennr
+;
+; 
+.CIRCLE_2_APERTURE      0.01    0.1     all
+;
+; Char space ratio
+; CAMCAD does a 10% character to folling whitespace ratio.
+; HP says that the default on their system is 15%.
+.CHAR_SPACERATIO        1.1
+; Display log file
+.DISPLAYLOG               n
+;

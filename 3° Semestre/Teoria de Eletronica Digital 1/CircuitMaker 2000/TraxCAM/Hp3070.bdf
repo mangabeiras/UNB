@@ -1,1 +1,86 @@
-unsupported reparse point
+! CAMCAD			
+! Router Solutions Incorporated 
+! For questions please E-mail tech@rsi-inc.com
+!
+! hp3070.bdf 
+! 06/19/97 Phase I release
+! This board_default file is for use with CAMCAD only.
+! This file is copied into the begining of the board file. None of the
+! values or other settings in this file will have any effect upon the
+! CAMCAD translation process.
+
+GLOBAL OPTIONS
+  Fixture Type    EXPRESS;
+  Fixture Size    FULL;
+  Top Probes Allowed  OFF;
+  Heavy Probe Force      8;
+  Light Probe Force      4;
+  Mechanical Density Threshold    800;
+  Vacuum Density Threshold    104;
+  Test Strategy COMBINATIONAL;
+  WireWrapping MANUAL;
+  Metric Units OFF;
+  Common Lead Resistance      0.5;    ! (ohms) from probe to component.
+  Common Lead Inductance       1u;    ! (Henries) from probe to component.
+  Capacitance Compensation ON;
+  IPG Digital Resistance Threshold       42;    ! (ohms)
+  Preconditioning Levels    1;
+  Boundary Scan Overdrive  OFF;
+
+DEVICE OPTIONS
+  Tolerance Multiplier    5;
+  Remote Sensing  ON;
+  Fuse Threshold    10;
+  Diode Current     5m;
+  Zener Current  10m;
+  Adjust  FAST;
+  Upstream Disable  OFF;
+  Upstream Condition  OFF;
+  END
+
+FAMILY OPTIONS
+  CMOS
+    Drive High       4;
+    Drive Low      0.2;
+    Receive High   3.6;
+    Receive Low    1.3;
+    Edge Speed      50;
+    Open Input Default  X;
+    Load        NONE;
+  TTL
+    Drive High     3.5;
+    Drive Low      0.2;
+    Receive High     2;
+    Receive Low    0.8;
+    Edge Speed     100;
+    Open Input Default  X;
+    Load        UP;
+  ECL
+    Drive High    -0.5;
+    Drive Low     -2.7;
+    Receive High  -1.2;
+    Receive Low   -1.5;
+    Edge Speed     150;
+    Open Input Default  0;
+    Load        DOWN;
+
+CARD OPTIONS
+  CMOS
+    HYBRID;
+  TTL
+    HYBRID;
+  ECL
+    HYBRID;
+
+LIBRARY OPTIONS
+  "/hp3070/library/ttl"
+  "/hp3070/library/lsi"
+  "/hp3070/library/cmos"
+  "/hp3070/library/ecl"
+  "/hp3070/library/supplemental/ttl"
+  "/hp3070/library/supplemental/lsi"
+  "/hp3070/library/supplemental/cmos"
+  "/hp3070/library/supplemental/ecl"
+  "/hp3070/library/setup"
+  "/hp3070/library/supplemental/setup";
+

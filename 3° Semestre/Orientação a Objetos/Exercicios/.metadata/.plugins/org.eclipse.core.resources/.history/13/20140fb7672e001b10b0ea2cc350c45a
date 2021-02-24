@@ -1,0 +1,67 @@
+package interfaceGrafica;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextPane;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import java.awt.Font;
+
+public class Entrada extends JFrame{
+	private String entrada;
+	public Entrada(String mensagem, String titulo) {
+		setTitle(titulo);
+		JTextPane textPane = new JTextPane();
+		textPane.setFont(new Font("Times New Roman", Font.PLAIN, 11));
+		
+		JButton btnNewButton = new JButton("Ok");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				entrada = textPane.getText();
+				setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+			}
+		});
+		
+		JButton btnNewButton_1 = new JButton("Cancelar");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+				throw new NullPointerException();
+			}
+		});
+		
+		GroupLayout groupLayout = new GroupLayout(getContentPane());
+		groupLayout.setHorizontalGroup(
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(groupLayout.createSequentialGroup()
+					.addGap(43)
+					.addComponent(btnNewButton, GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(btnNewButton_1, GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+					.addGap(41))
+				.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
+					.addGap(10)
+					.addComponent(textPane, GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
+					.addGap(10))
+		);
+		
+		groupLayout.setVerticalGroup(
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
+					.addGap(22)
+					.addComponent(textPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addGap(18)
+					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+						.addComponent(btnNewButton)
+						.addComponent(btnNewButton_1))
+					.addContainerGap())
+		);
+		getContentPane().setLayout(groupLayout);
+	}
+	public String getEntrada() {
+		return this.entrada;
+	}
+}

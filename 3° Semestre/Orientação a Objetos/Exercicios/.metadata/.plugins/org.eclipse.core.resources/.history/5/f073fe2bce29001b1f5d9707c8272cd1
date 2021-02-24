@@ -1,0 +1,31 @@
+package principal;
+
+import dados.Campeonato;
+import dados.Time;
+import leitura.Leitura;
+import saida.Saida;
+import validacao.Validacao;
+
+public class Principal {
+	public static void main(String[] args) {
+		Campeonato campeonato = new Campeonato();
+		
+		while (menu(campeonato));
+		
+		Saida.mostraQtdTimes(campeonato.getCampeonato().size());
+	}
+	
+	public static boolean menu(Campeonato campeonato) {
+		String menu[] = {"Cadastrar Time", "Visualizar Time", "Sair"};
+		switch (Leitura.leMenu(menu)) {
+		case 0:
+			campeonato.addTime(new Time(Validacao.validaNome(campeonato), Validacao.validaConjuntoAnos()));
+			return true;
+		case 1:
+			Saida.mostraOrdem(campeonato);
+			return true;
+		default:
+			return false;
+		}
+	}
+}

@@ -1,1 +1,197 @@
-unsupported reparse point
+*==============================================
+*IGBT Pinout: 1=C, 2=G, 3=E
+*Copyright (c) 1997 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*600V 19A 16.8ns pkg:TO-220 2,1,3
+.PARAM XIRGBC20S File:Mceigbts.lib
+
+*600V 34A 22.4ns pkg:TO-220 2,1,3
+.PARAM XIRGBC30S File:Mceigbts.lib
+
+*600V 50A 27.2ns pkg:TO-220 2,1,3
+.PARAM XIRGBC40S File:Mceigbts.lib
+
+*600V 60A 29.8ns pkg:TO-247 2,1,3
+.PARAM XIRGPC40S File:Mceigbts.lib
+
+*600V 70A 32.2ns pkg:TO-247 2,1,3
+.PARAM XIRGPC50S File:Mceigbts.lib
+
+*600V 16A 15.4ns pkg:TO-220 2,1,3
+.PARAM XIRGBC20F File:Mceigbts.lib
+
+*600V 31A 21.4ns pkg:TO-220 2,1,3
+.PARAM XIRGBC30F File:Mceigbts.lib
+
+*600V 49A 26.9ns pkg:TO-220 2,1,3
+.PARAM XIRGBC40F File:Mceigbts.lib
+
+*600V 49A 26.9ns pkg:TO-247 2,1,3
+.PARAM XIRGPC40F File:Mceigbts.lib
+
+*600V 70A 32.2ns pkg:TO-247 2,1,3
+.PARAM XIRGPC50M File:Mceigbts.lib
+
+*600V 70A 32.2ns pkg:TO-247 2,1,3
+.PARAM XIRGPC50F File:Mceigbts.lib
+
+*900V  9A 11.5ns pkg:TO-220 2,1,3
+.PARAM XIRGBF20F File:Mceigbts.lib
+
+*900V 20A 17.2ns pkg:TO-220 2,1,3
+.PARAM XIRGBF30F File:Mceigbts.lib
+
+*900V  9A 11.5ns pkg:TO-247 2,1,3
+.PARAM XIRGPF20F File:Mceigbts.lib
+
+*900V 20A 17.2ns pkg:TO-247 2,1,3
+.PARAM XIRGPF30F File:Mceigbts.lib
+
+*900V 31A 21.4ns pkg:TO-247 2,1,3
+.PARAM XIRGPF40F File:Mceigbts.lib
+
+*900V 51A 27.5ns pkg:TO-247 2,1,3
+.PARAM XIRGPF50F File:Mceigbts.lib
+
+*1200V 26A 19.6ns pkg:TO-247 2,1,3
+.PARAM XIRGPH40M File:Mceigbts.lib
+
+*1200V 40A 24.3ns pkg:TO-247 2,1,3
+.PARAM XIRGPH50M File:Mceigbts.lib
+
+*1200V 40A 24.3ns pkg:TO-247 2,1,3
+.PARAM XIRGPH40F File:Mceigbts.lib
+
+*1200V 50A 27.2ns pkg:TO-247 2,1,3
+.PARAM XIRGBH50F File:Mceigbts.lib
+
+*500V 14A 14.4ns pkg:TO-220 2,1,3
+.PARAM XIRGB420U File:Mceigbts.lib
+
+*500V 25A 19.2ns pkg:TO-220 2,1,3
+.PARAM XIRGB430U File:Mceigbts.lib
+
+*500V 40A 24.3ns pkg:TO-220 2,1,3
+.PARAM XIRGB440U File:Mceigbts.lib
+
+*600V 13A 13.8ns pkg:TO-220 2,1,3
+.PARAM XIRGBC20U File:Mceigbts.lib
+
+*600V 23A 18.4ns pkg:TO-220 2,1,3
+.PARAM XIRGBC30U File:Mceigbts.lib
+
+*600V  40A  24.3ns pkg:TO-220 2,1,3
+.PARAM XIRGBC40U File:Mceigbts.lib
+
+*500V 14A 14.4ns pkg:TO-247 2,1,3
+.PARAM XIRGP420U File:Mceigbts.lib
+
+*500V 25A 19.2ns pkg:TO-247 2,1,3
+.PARAM XIRGP430U File:Mceigbts.lib
+
+*500V 40A 24.3ns pkg:TO-247 2,1,3
+.PARAM XIRGP440U File:Mceigbts.lib
+
+*600V 40A 24.3ns pkg:TO-247 2,1,3
+.PARAM XIRGPC40U File:Mceigbts.lib
+
+*600V 55A 28.5ns pkg:TO-247 2,1,3
+.PARAM XIRGPC50K File:Mceigbts.lib
+
+*600V 55A 28.5ns pkg:TO-247 2,1,3
+.PARAM XIRGPC50U File:Mceigbts.lib
+
+*1200V 40A 24.3ns pkg:TO-247 2,1,3
+.PARAM XIRGPH50U File:Mceigbts.lib
+
+*1200V 20A 57.8ns pkg:TO-247 2,1,3
+.PARAM XMGW12N120 File:Mceigbts.lib
+
+*1200V 28A 71ns pkg:TO-247 2,1,3
+.PARAM XMGW20N120 File:Mceigbts.lib
+
+*600V 50A 47ns pkg:TO-247 2,1,3
+.PARAM XMGW30N60 File:Mceigbts.lib
+
+*1200V 38A 77.5ns pkg:TO-247 2,1,3
+.PARAM XMGY25N120 File:Mceigbts.lib
+
+*600V 66A 45ns pkg:TO-247 2,1,3
+.PARAM XMGY40N60 File:Mceigbts.lib
+
+*400V 10A 12.2ns pkg:TO-220 2,1,3
+.PARAM XECG3300 File:Mceigbts.lib
+
+*400V 15A 14.9ns pkg:TO-220 2,1,3
+.PARAM XECG3301 File:Mceigbts.lib
+
+*600V 8A 10.9ns pkg:TO-220 2,1,3
+.PARAM XECG3302 File:Mceigbts.lib
+
+*600V 15A 14.9ns pkg:TO-220 2,1,3
+.PARAM XECG3303 File:Mceigbts.lib
+
+*600V 15A 14.9ns pkg:TO-3 3,2,1
+.PARAM XECG3310 File:Mceigbts.lib
+
+*600V 25A 19.3ns pkg:TO-3 3,2,1
+.PARAM XECG3311 File:Mceigbts.lib
+
+*1200V 8A 10.9ns pkg:TO-3 3,2,1
+.PARAM XECG3312 File:Mceigbts.lib
+
+*600V 50A 27.2ns pkg:TO-3 3,2,1
+.PARAM XECG3320 File:Mceigbts.lib
+
+*600V 80A 34.5ns pkg:TO-3 3,2,1
+.PARAM XECG3321 File:Mceigbts.lib
+
+*900V 60A 29.8ns pkg:TO-3 3,2,1
+.PARAM XECG3322 File:Mceigbts.lib
+
+*1200V 25A 19.3ns pkg:TO-3 3,2,1
+.PARAM XECG3323 File:Mceigbts.lib
+
+*600V 23A 18.5ns pkg:TO-3 3,2,1
+.PARAM XIRGAC30F File:Mceigbts.lib
+
+*600V 17A 15.9ns pkg:TO-3 3,2,1
+.PARAM XIRGAC30U File:Mceigbts.lib
+
+*600V 38A 23.7ns pkg:TO-3 3,2,1
+.PARAM XIRGAC40F File:Mceigbts.lib
+
+*600V 31A 21.4ns pkg:TO-3 3,2,1
+.PARAM XIRGAC40U File:Mceigbts.lib
+
+*600V 45A 25.8ns pkg:TO-3 3,2,1
+.PARAM XIRGAC50F File:Mceigbts.lib
+
+*600V 41A 24.7ns pkg:TO-3 3,2,1
+.PARAM XIRGAC50U File:Mceigbts.lib
+
+*600V 23A 18.5ns pkg:TO-254 1,3,2
+.PARAM XIRGMC30F File:Mceigbts.lib
+
+*600V 17A 15.9ns pkg:TO-254 1,3,2
+.PARAM XIRGMC30U File:Mceigbts.lib
+
+*600V 35A 22.8ns pkg:TO-254 1,3,2
+.PARAM XIRGMC40F File:Mceigbts.lib
+
+*600V 31A 21.4ns pkg:TO-254 1,3,2
+.PARAM XIRGMC40U File:Mceigbts.lib
+
+*600V 35A 22.8ns pkg:TO-254 1,3,2
+.PARAM XIRGMC50F File:Mceigbts.lib
+
+*600V 35A 22.8ns pkg:TO-254 1,3,2
+.PARAM XIRGMC50U File:Mceigbts.lib
+
+*1200V 45A 25.8ns pkg:TO-258 1,3,2
+.PARAM XIRGVH50F File:Mceigbts.lib
+
+*1200V 45A 25.8ns pkg:TO-259 1,3,2
+.PARAM XIRGIH50F File:Mceigbts.lib

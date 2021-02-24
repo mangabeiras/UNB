@@ -1,1 +1,2 @@
-unsupported reparse point
+* Default - type:limiter
+.MODEL ALIMITER limit()

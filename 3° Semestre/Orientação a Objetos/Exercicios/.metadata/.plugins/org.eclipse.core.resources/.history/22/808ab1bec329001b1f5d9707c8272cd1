@@ -1,0 +1,47 @@
+package dados;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Time {
+	private String nome;
+	private List<Integer> anosCampeao;
+	
+	public Time(String nome, ArrayList<Integer> anos) {
+		setNome(nome);
+		anosCampeao = anos;
+	}
+	public List<Integer> getAnos(){
+		return this.anosCampeao;
+	}
+	
+	public void addAno(int ano) {
+		this.anosCampeao.add(ano);
+	}
+
+	public String getNome() {
+		return this.nome.toString();
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public List<Integer> getAnosOrdem(){
+		List<Integer> anosOrdem = new ArrayList<Integer>(this.anosCampeao);
+		Collections.sort(anosOrdem, null);
+		Collections.reverse(anosOrdem);
+		return anosOrdem;
+	}
+	
+	public String toString() {
+		String anos = null;
+		
+		for (Integer ano : this.anosCampeao) {
+			anos += "\t" +ano;
+		}
+		return String.format("%-15s%-10s\n", this.nome.toUpperCase(), anos);
+	}
+
+}

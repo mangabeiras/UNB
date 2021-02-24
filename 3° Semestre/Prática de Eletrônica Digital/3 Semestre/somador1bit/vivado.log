@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Oct 15 19:04:15 2020
+# Process ID: 2424
+# Current directory: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/somador1bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5136 C:\Users\robeg\OneDrive - unb.br\UnB\3 Semestre\somador1bit\somador1bit.xpr
+# Log file: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/somador1bit/vivado.log
+# Journal file: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/somador1bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/somador1bit/somador1bit.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Livia/Desktop/unb/PED/somador1bit' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xinlinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 997.598 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 15 19:19:21 2020...

@@ -1,1 +1,47 @@
-unsupported reparse point
+:Base  camcad.HLP>main
+:Title CAMCAD Help Reference
+1 Beyond This Help File=Beyond_This_Help_File
+1 Welcome To CAMCAD
+2 Getting Started With CAMCAD=Getting_Started
+2 About CAMCAD Modules & Editions=About_CAMCAD_Modules
+2 Entering Access Codes=Entering_Access_Codes
+2 Help On Help=Help_On_Help
+2 Single User VS Network Setups=Single_User_VS_Network_Setups
+2 Installation/Uninstallation=Installation_Uninstallation
+2 QuickStart
+3 Importing A Sample DXF File=Importing_A_Sample_DXF_File
+3 Importing A Sample Gerber File=Importing_A_Sample_Gerber_File
+1 CAMCAD Reference
+2 CAMCAD Concepts
+3 Working With Files=Working_With_Files
+3 Working With Layers=Working_With_Layers
+3 Working With Apertures=Working_With_Apertures
+3 Aperture Macro Generator=automatic_macro_file_generation
+3 Working With Geometries=Working_With_Geometries
+3 Working With Attributes=Working_With_Attributes
+3 Working With Netlists=Working_With_Netlists
+3 Adding New Entities=adding_new_entities
+3 Editing Entities=Editing_Entities
+3 Selecting Entities=Selecting_Entities
+3 Display Rules For Polylines=Polyline_Display_Rules
+3 CAMCAD Hotkeys=CAMCAD_Hotkeys
+2 Frequently Asked Questions
+3 Top Ten Frequently Asked Questions=Top_Ten_Frequently_Asked_Questions
+2 Read/Import Modules
+3 DXF=rdxf
+3 HPGL / HPGL2=rhpgl
+3 Gerber / Gerber-X=rgerber
+3 Accel=raccel
+3 Orcad=rorcad
+3 PADS=rpads
+3 PCAD=rpcad
+3 Protel For Windows=rpfw
+3 VeriBest EIF=rveribest
+3 Visula & Cadstar-NT=rvisula_cadstar
+3 Allegro=rallegro
+3 Mentor 4 File=rmentor4
+3 Mentor Neutral=rmentorneu
+3 Incases Theda=rtheda
+3 Scicards/Harris-EDA=rscicards
+1 CAMCAD Toolbars=All_Toolbars
+1 CAMCAD Menu Commands=All_Menu_Commands

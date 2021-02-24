@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov 16 11:51:36 2020
+# Process ID: 6292
+# Current directory: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.runs/synth_1
+# Command line: vivado.exe -log displayMux.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source displayMux.tcl
+# Log file: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.runs/synth_1/displayMux.vds
+# Journal file: C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source displayMux.tcl -notrace

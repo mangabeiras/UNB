@@ -1,0 +1,50 @@
+package visao;
+
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JTable;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+public class Pesquisa extends JFrame {
+	private JTextField textField;
+	private JTable table;
+	
+	Pesquisa(JTable tabela) {
+		setTitle("Cadastros");
+		setResizable(false);
+		setMinimumSize(new Dimension(800, 500));
+		setMaximumSize(new Dimension(800, 500));
+		setAlwaysOnTop(false);
+		setLocationRelativeTo(null);
+		getContentPane().setLayout(null);
+		
+		JLabel label = new JLabel("Insira o nome para Pesquisar");
+		label.setFont(new Font("Arial", Font.BOLD, 12));
+		label.setBounds(24, 21, 174, 14);
+		getContentPane().add(label);
+		
+		textField = new JTextField();
+		textField.setFont(new Font("Arial", Font.BOLD, 12));
+		textField.setBounds(135, 46, 251, 20);
+		getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JButton pesquisar = new JButton("Pesquisar");
+		pesquisar.setFont(new Font("Arial", Font.BOLD, 12));
+		pesquisar.setBounds(448, 45, 111, 23);
+		getContentPane().add(pesquisar);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 124, 774, 337);
+		getContentPane().add(panel);
+		
+		table = tabela;
+		panel.setLayout(null);
+		panel.add(table);
+	}
+}

@@ -1,1 +1,9 @@
-unsupported reparse point
+*LS Hex Inverter - type:digital pkg:DIP14 (A:1,2)(B:3,4)(C:5,6)(D:9,8)(E:11,10)(F:13,12)
+.SUBCKT Xinv PWR GND IN OUT
+A1 [PWR GND IN] [DIPWR DIGND DIN] adc_mod
+A2 [DIPWR DIGND DIN][DOPWR DOIN DOUT] A74LS04
+A3 [DOPWR DOIN DOUT] [PWR IN OUT] dac_mod
+.model dac_mod xdac
+.model adc_mod xadc
+.model A74LS04 xsimcode(file=C:\CM50_32\MODEL\LS.txt func=ls04 )
+.ENDS Xinv

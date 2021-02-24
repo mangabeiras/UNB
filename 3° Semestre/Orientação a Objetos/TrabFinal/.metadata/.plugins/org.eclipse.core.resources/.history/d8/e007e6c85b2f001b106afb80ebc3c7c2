@@ -1,0 +1,97 @@
+package validacao;
+
+import dados.Grupo;
+import visao.Avisos;
+
+public class Validacao {
+	// VERIFICA SE O QUE FOI DIGITADO E INTEIRO
+	public static boolean validaInt(String lido) {
+		int num = 0;
+		try {
+			num = Integer.parseInt(lido);
+			if (num < 0) {
+				new Avisos("Nao pode ser menor que zero!", "Erro");
+				return false;
+			}
+		} catch (NumberFormatException e) {
+			new Avisos("A idade deve conter apenas numeros!","Erro" );	
+			return false;
+		}
+		return true;
+	}
+	
+	// VERIFICA SE A GESTACAO FOI MARCADA
+	public static char validaGestacao(String gestacao) {
+		if (gestacao.equals("Nao tem Certeza"))
+			return 'T';
+		else if (gestacao.equals("Sim"))
+			return 'S';
+		else if (gestacao.equals("Nao"))
+			return 'N';
+		new Avisos("Marque uma Opcao para Gestacao!", "Erro");
+		return 0;
+	}
+	
+	// VERIFICA SE O NOME INSERIDO E VALIDO
+	public static boolean validaNome(String nome) {
+		return (validaLength(nome) && isAlfabetico(nome));
+	}
+	
+	// VERIFICA TAMANHO DE STRING
+	public static boolean validaLength(String lido) {
+		if (lido.length() < 3) {
+			new Avisos("O nome precisa ter no minimo 3 caracteres!", "Erro");
+			return false;
+		}
+		return true;
+	}
+	// VERIFICA SE UMA STRING POSSUI NUMEROS
+	public static boolean isAlfabetico(String lido) {
+		for (char c : lido.toCharArray()) {
+			if (Character.isDigit(c)) {
+				new Avisos("O nome nao pode conter numeros!", "Erro");
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	// VERIFICA SE A SITUACAO INSERIDA E VALIDA 
+	public static char validaSituacao(String situacao) {
+		if (situacao.equals("Contaminada em Tratamento")) {
+			return 'T';
+		}
+		else if (situacao.equals("Contaminada Falecida")) {
+			return 'F';
+		}
+		else if (situacao.equals("Contaminada Curada")) {
+			return 'C';
+		}
+		else if (situacao.equals("Nao Contaminada")) {
+			return 'S';
+		}
+		new Avisos("Marque uma Situacao!", "Erro");
+		return 0;
+	}
+	
+	// VERIFICA SE IDADE E VALIDA
+	public static boolean validaIdade(String idade) {
+		final int MAXIMO = 150;
+		if (!validaInt(idade))
+			return false;
+		
+		if (Integer.parseInt(idade) > MAXIMO) {
+			new Avisos("A idade nao pode ser maior que 150", "Erro");
+			return false;
+		}
+		return true;
+	}
+	
+	// GERA CODIGO DE IDENTIFICACAO
+	public static int validaCodigo(Grupo grupo) {
+		final int MAIOR = 100;
+		int codigo = grupo.getGrupo().size() + MAIOR + 1;
+		new Avisos("Codigo gerado para a Pessoa: " +codigo, "Erro");
+		return codigo;
+	}
+}

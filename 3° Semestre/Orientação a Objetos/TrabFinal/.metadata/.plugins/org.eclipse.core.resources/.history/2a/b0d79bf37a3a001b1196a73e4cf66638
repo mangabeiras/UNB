@@ -1,0 +1,19 @@
+package visao;
+
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JTable;
+
+public class Pesquisa extends JFrame {
+	
+	Pesquisa(JTable tabela) {
+		setTitle("Cadastros");
+		setResizable(false);
+		setMinimumSize(new Dimension(800, 500));
+		setMaximumSize(new Dimension(800, 500));
+		setAlwaysOnTop(false);
+		setLocationRelativeTo(null);
+		getContentPane().setLayout(null);
+	}
+}

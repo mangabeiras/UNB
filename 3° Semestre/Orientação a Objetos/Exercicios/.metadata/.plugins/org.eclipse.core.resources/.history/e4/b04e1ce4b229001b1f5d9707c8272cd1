@@ -1,0 +1,47 @@
+package dados;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Time {
+	private StringBuilder nome;
+	private List<Integer> anosCampeao;
+	
+	public Time(String pNome) {
+		nome = new StringBuilder(pNome);
+		anosCampeao = new ArrayList<Integer>();
+	}
+	
+	public void addAno(int ano) {
+		this.anosCampeao.add(ano);
+	}
+	
+	public int getAnoAt(int i) {
+		return this.anosCampeao.get(i);
+	}
+	
+	public String getNome() {
+		return this.nome.toString();
+	}
+	
+	public int getVezesCampeao() {
+		return this.anosCampeao.size();
+	}
+	
+	public String toString() {
+		StringBuilder str = new StringBuilder(this.nome.toString().toUpperCase());
+		
+		if (this.getVezesCampeao() == 0) {
+			str.append("\nAinda não foi campeão brasileiro");
+		}
+		else {
+			this.anosCampeao.sort(null);
+			str.append("\nTitulos conquistados:");
+			for (int i = 0; i < this.getVezesCampeao(); i++) {
+				str.append("\n" + this.anosCampeao.get(i));
+			}
+		}
+		
+		return str.toString();
+	}
+}

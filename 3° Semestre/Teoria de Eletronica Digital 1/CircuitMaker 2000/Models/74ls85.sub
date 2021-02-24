@@ -1,1 +1,10 @@
-unsupported reparse point
+*Simcode 74LS85 with adc inputs vcdac outputs
+.SUBCKT XLS85 31 30 29 28 27 26 25 24 23 22 21 14 15 16
+V6 20 0 DC 5V
+A1 [10 9 8 7 6 5 4 3 11 12 13] [17 18 19] ls85
+.model ls85 simcode(sim_file=c:\cm40_32\sim_ckt\simcode.txt func_name=ls85)
+A2 [21 22 23 24 25 26 27 28 29 30 31] [13 12 11 3 4 5 6 7 8 9 10] adc1
+.model adc1 adc_bridge (in_low = 0.7 in_high = 2.2)
+A3 20 0 [17 18 19] [14 15 16] da_out
+.model da_out vcdac
+.ENDS XLS85

@@ -1,1 +1,2 @@
-unsupported reparse point
+*Default N-Channel MESFET parameter values
+.MODEL ZNMESFET~ NMF()

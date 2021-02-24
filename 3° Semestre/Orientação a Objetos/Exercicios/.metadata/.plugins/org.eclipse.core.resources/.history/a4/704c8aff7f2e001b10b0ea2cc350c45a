@@ -1,0 +1,64 @@
+package principal;
+
+
+
+import javax.swing.JPanel;
+
+// ROBERTO GABRIEL MANGABEIRA SANTANA / 190019620
+import dados.Grupo;
+import dados.Homem;
+import dados.Mulher;
+import interfaceGrafica.Entrada;
+import interfaceGrafica.Janela;
+import interfaceGrafica.MenuPrincipal;
+import leitura.Leitura;
+import validacao.Validacao;
+import visao.Visao;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Grupo grupo = new Grupo();
+			
+		
+		MenuPrincipal menu = new MenuPrincipal();
+		Janela janela = new Janela();
+		janela.setContentPane(menu);
+		
+		if (menu.getItem() == 'F') {
+			janela.setVisible(false);
+			Janela janela1 = new Janela();
+			Entrada entrada = new Entrada();
+			janela1.setContentPane(entrada);
+		}
+		/*do {
+			switch (menu.getItem()) {
+			case 'F':
+				cadastroPessoa(grupo);
+				break;
+			default:
+				if (Leitura.leConfirma("Realmente deseja encerrar o programa?") == 0)
+					Visao.mostraRelatorio(grupo);
+			}
+		} while (true); */
+
+	}
+/*
+	public static void cadastroPessoa(Grupo grupo) {
+		String menu[] = { "Cadastro de Homem", "Cadastro de Mulher" };
+		try {
+			switch (Leitura.leOpcoes("Escolha de Cadastro", menu)) {
+			case 0:
+				grupo.addPessoa(new Homem(Validacao.validaNome(), Validacao.validaSituacao(), Validacao.validaIdade(),
+						Validacao.validaCodigo(grupo)));
+				break;
+			case 1:
+				grupo.addPessoa(new Mulher(Validacao.validaNome(), Validacao.validaSituacao(),
+						Validacao.validaGestacao(), Validacao.validaCodigo(grupo)));
+			}
+		} catch (NullPointerException e) {
+			Visao.mostraMensagem("Cadastro Cancelado!", "Cancelado");
+		}
+	} */
+}
+

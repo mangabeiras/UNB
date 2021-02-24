@@ -1,1 +1,284 @@
-unsupported reparse point
+;
+; character setup file
+; x arcstep in degree
+;x arcstep 15
+; macros for character on matix 4 x 8
+; m number xstart ystart xend yend $$ end > coninue
+;
+; Setup File for CAMCAD
+;
+;
+;
+; ***** Character Set Definintions *****
+;
+;m Character Number   X Y Coordinates in 4 X 8 box with  -2 in Y permitted
+;     ( X Range [0..4] ,  Y Range [-2..8] )
+;  Each stroke is defined as a beginning XY and ending XY
+;  > used to continue line
+;  $$ used for end of character definition
+;  ; used for comments
+;
+;  NOTE: These characters have been defined to correspond to the HP Plotter
+;        ASCII Code Definitions in Character Sets, Set ) (ANSI, ASCII) for
+;        decimal values 32 through 126.
+;
+;  NOTE: Maximum line length = 80
+;
+; Character 32 = ' '
+m 32  $$
+; Character 33 = !
+m 33  2 2  2 7   2 7  3 7   3 7  3 2   3 2  2 2   2 1  3 1   3 1  3 0   >
+      3 0  2 0   2 0  2 1 $$
+; Character 34 = "
+m 34  1 7  0 7   0 7  0 8   0 8  1 8   1 8  1 6   3 7  2 7   2 7  2 8   >
+      2 8  3 8   3 8  3 6 $$
+; Character 35 = #
+m 35  1 2  1 6   3 6  3 2   4 3  0 3   0 5  4 5 $$
+; Character 36 = $
+m 36  0 2  1 1   1 1  3 1   3 1  4 2   4 2  4 3   4 3  3 4   3 4  1 4   >
+      1 4  0 5   0 5  0 6   0 6  1 7   1 7  3 7   3 7  4 6   2 8  2 0 $$
+; Character 37 = %
+m 37  0 5  0 6   0 6  1 6   1 6  1 5   1 5  0 5   4 7  0 1   4 2  3 2   >
+      3 2  3 3   3 3  4 3   4 3  4 2 $$
+; Character 38 = &
+m 38  4 6  3 7   3 7  1 7   1 7  0 6   0 6  0 5   0 5  4 1   1 4  0 3   >
+      0 3  0 2   0 2  1 1   1 1  3 1   3 1  4 2   4 2  4 3 $$
+; Character 39 = '
+m 39  1 7  0 7   0 7  0 8   0 8  1 8   1 8  1 7   1 7  0 6 $$
+; Character 40 = (
+m 40  4 8  3 7   3 7  3 1   3 1  4 0 $$
+; Character 41 = )
+m 41  0 8  1 7   1 7  1 1   1 1  0 0 $$
+; Character 42 = *
+m 42  4 7  0 1   4 1  0 7   0 4  4 4 $$
+; Character 43 = +
+m 43  2 7  2 1   0 4  4 4 $$
+; Character 44 = ,
+m 44  1 0  0 0   0 0  0 1   0 1  1 1   1 1  1 -1 $$
+; Character 45 = -
+m 45  0 4  4 4 $$
+; Character 46 = .
+m 46  1 0  0 0   0 0  0 1   0 1  1 1   1 1  1 0 $$
+; Character 47 = /
+m 47  4 8  0 0 $$
+; Character 48 = 0
+m 48  3 0  4 1   4 1  4 7   4 7  3 8   3 8  1 8   1 8  0 7   0 7  0 1   >
+      0 1  1 0   1 0  3 0 $$
+; Character 49 = 1
+m 49  1 6  2 8   2 8  2 0   1 0  3 0 $$
+; Character 50 = 2
+m 50  0 6  0 7   0 7  1 8   1 8  3 8   3 8  4 7   4 7  4 5   4 5  3 4   >
+      3 4  1 3   1 3  0 2   0 2  0 0   0 0  4 0 $$
+; Character 51 = 3
+m 51  0 6  0 7   0 7  1 8   1 8  3 8   3 8  4 7   4 7  4 5   4 5  3 4   >
+      3 4  2 4   3 4  4 3   4 3  4 1   4 1  3 0   3 0  1 0   1 0  0 1   >
+      0 1  0 2 $$
+; Character 52 = 4
+m 52  3 0  3 8   3 8  0 2   0 2  4 2 $$
+; Character 53 = 5
+m 53  4 8  0 8   0 8  0 4   0 4  1 5   1 5  3 5   3 5  4 4   4 4  4 1   >
+      4 1  3 0   3 0  1 0   1 0  0 1 $$
+; Character 54 = 6
+m 54  4 7  3 8   3 8  1 8   1 8  0 7   0 7  0 1   0 1  1 0   1 0  3 0   >
+      3 0  4 1   4 1  4 4   4 4  3 5   3 5  1 5   1 5  0 4 $$
+; Character 55 = 7
+m 55  0 8  4 8   4 8  0 0 $$
+; Character 56 = 8
+m 56  1 0  0 1   0 1  0 3   0 3  1 4   1 4  3 4   1 4  0 5   0 5  0 7   >
+      0 7  1 8   1 8  3 8   3 8  4 7   4 7  4 5   4 5  3 4   3 4  4 3   >
+      4 3  4 1   4 1  3 0   3 0  1 0 $$
+; Character 57 = 9
+m 57  0 1  1 0   1 0  3 0   3 0  4 1   4 1  4 7   4 7  3 8   3 8  1 8   >
+      1 8  0 7   0 7  0 4   0 4  1 3   1 3  3 3   3 3  4 4 $$
+; Character 58 = :
+m 58  0 5  1 5   1 5  1 6   1 6  0 6   0 6  0 5   0 2  1 2   1 2  1 3   >
+      1 3  0 3   0 3  0 2 $$
+; Character 59 = ;
+m 59  0 4  1 4   1 4  1 5   1 5  0 5   0 5  0 4   1 0  0 0   0 0  0 1   >
+      0 1  1 1   1 1  1 -1 $$
+; Character 60 = <
+m 60  4 6  0 4   0 4  4 2 $$
+; Character 61 = =
+m 61  4 5  0 5   0 3  4 3 $$
+; Character 62 = >
+m 62  0 6  4 4   4 4  0 2 $$
+; Character 63 = ?
+m 63  0 7  1 8   1 8  3 8   3 8  4 7   4 7  4 5   4 5  2 3   2 3  2 2   >
+      3 0  3 1   3 1  2 1   2 1  2 0   2 0  3 0 $$
+; Character 64 = @
+m 64  4 6  2 6   2 6  1 5   1 5  1 4   1 4  2 3   2 3  3 3   3 3  4 4   >
+      4 4  4 6   4 6  3 7   3 7  1 7   1 7  0 6   0 6  0 3   0 3  1 2   >
+      1 2  4 2 $$
+; Character 65 = A
+m 65  0 0  2 8   2 8  4 0   1 3  3 3 $$
+; Character 66 = B
+m 66  0 0  0 8   0 8  3 8   3 8  4 7   4 7  4 5   4 5  3 4   3 4  4 3   >
+      4 3  4 1   4 1  3 0   3 0  0 0   0 4  3 4 $$
+; Character 67 = C
+m 67  4 6  4 7   4 7  3 8   3 8  1 8   1 8  0 7  0 7  0 1  0 1  1 0   >
+      1 0  3 0   3 0  4 1   4 1  4 2 $$
+; Character 68 = D
+m 68  3 0  0 0   0 0  0 8   0 8  3 8   3 8  4 7   4 7  4 1   4 1  3 0 $$
+; Character 69 = E
+m 69  4 8  0 8   0 8  0 0   0 0  4 0   0 4  3 4 $$
+; Character 70 = F
+m 70  4 8  0 8   0 8  0 0  0 4  4 4  0 4 0 0 $$
+; Character 71 = G
+m 71  4 7  3 8   3 8  1 8    1 8  0 7   0 7  0 1   0 1  1 0   1 0  3 0   >
+      3 0  4 1   4 1 4 2  4 2 2 2 $$
+; Character 72 = H
+m 72  0 8  0 0   4 8  4 0   0 4  4 4 $$
+; Character 73 = I
+m 73  1 8  3 8   2 8  2 0   1 0  3 0 $$
+; Character 74 = J
+m 74  4 8  4 1   4 1  3 0   3 0  1 0   1 0  0 1   0 1  0 2 $$
+; Character 75 = K
+m 75  0 8  0 0   4 8  1 4   1 4  0 4   1 4  4 0 $$
+; Character 76 = L
+m 76  0 8  0 0   0 0  4 0 $$
+; Character 77 = M
+m 77  0 0  0 8   0 8  2 3   2 3  4 8   4 8  4 0 $$
+; Character 78 = N
+m 78  0 0  0 8   0 8  4 0   4 0  4 8 $$
+; Character 79 = O
+m 79  1 0  0 1   0 1  0 7   0 7  1 8   1 8  3 8   3 8  4 7   4 7  4 1   >
+      4 1  3 0   3 0  1 0 $$
+; Character 80 = P
+m 80  0 0  0 8   0 8  3 8   3 8  4 7   4 7  4 5   4 5  3 4   3 4  0 4 $$
+; Character 81 = Q
+m 81  1 0  0 1   0 1  0 7   0 7  1 8   1 8  3 8   3 8  4 7   4 7  4 1   >
+      4 1  3 0   3 0  1 0   3 2  4 -1 $$
+; Character 82 = R
+m 82  0 0  0 8   0 8  3 8   3 8  4 7   4 7  4 5   4 5  3 4   3 4  0 4   >
+      3 4  4 3   4 3  4 0 $$
+; Character 83 = S
+m 83  0 2  0 1   0 1  1 0   1 0  3 0   3 0  4 1   4 1  4 3   4 3  3 4   >
+      3 4  1 4   1 4  0 5   0 5  0 7   0 7  1 8   1 8  3 8   3 8  4 7   >
+      4 7  4 6 $$
+; Character 84 = T
+m 84  0 8  4 8   2 8  2 0 $$
+; Character 85 = U
+m 85  0 8  0 1   0 1  1 0   1 0  3 0   3 0  4 1   4 1  4 8 $$
+; Character 86 = V
+m 86  0 8  2 0   2 0  4 8 $$
+; Character 87 = W
+m 87  0 8  1 0   1 0  2 5   2 5  3 0   3 0  4 8 $$
+; Character 88 = X
+m 88  0 8  4 0   0 0  4 8 $$
+; Character 89 = Y
+m 89  0 8  2 4   2 4  4 8   2 4  2 0 $$
+; Character 90 = Z
+m 90  0 8  4 8   4 8  0 0   0 0  4 0 $$
+; Character 91 = [
+m 91  4 8  3 8   3 8  3 0   3 0  4 0 $$
+; Character 92 = \
+m 92  0 8  4 0 $$
+; Character 93 = ]
+m 93  0 8  1 8   1 8  1 0   1 0  0  0 $$
+; Character 94 = ^
+m 94  0 6  2 8   2 8  4 6 $$
+; Character 95 = _
+m 95  0 0  4 0 $$
+; Character 96 = `
+m 96  0 8  2 6 $$
+; Character 97 = a
+m 97  0 4  1 5   1 5  3 5   3 5  4 4   4 4  4 0   4 3  1 3   1 3  0 2   >
+      0 2  0 1   0 1  1 0   1 0  3 0   3 0  4 1 $$
+; Character 98 = b
+m 98  0 7  0 0   0 4  1 5   1 5  3 5   3 5  4 4   4 4  4 1   4 1  3 0   >
+      3 0  1 0   1 0  0 1 $$
+; Character 99 = c
+m 99  4 4  3 5   3 5  1 5   1 5  0 4   0 4  0 1   0 1  1 0   1 0  3 0   >
+      3 0  4 1 $$
+; Character 100 = d
+m 100 4 4  3 5   3 5  1 5   1 5  0 4   0 4  0 1   0 1  1 0   1 0  3 0   >
+      3 0  4 1   4 7  4 0 $$
+; Character 101 = e
+m 101 0 2  3 2   3 2  4 3   4 3  4 4   4 4  3 5   3 5  1 5   1 5  0 4   >
+      0 4  0 1   0 1  1 0   1 0  3 0   3 0  4 1 $$
+; Character 102 = f
+m 102 4 7  3 7   3 7  2 6   2 6  2 0   1 4  4 4 $$
+; Character 103 = g
+m 103 4 1  3 0   3 0  1 0   1 0  0 1   0 1  0 3   0 3  1 4   1 4  3 4   >
+      3 4  4 3   4 3  4 -1   4 -1  3 -2   3 -2  1 -2   1 -2  1 -1 $$
+; Character 104 = h
+m 104 0 7  0 0   0 4  1 5   1 5  3 5   3 5  4 4   4 4  4 0 $$
+; Character 105 = i
+m 105 1 5  2 5   2 5  2 0   1 0  3 0   2 7  2 6 $$
+; Character 106 = j
+m 106 1 5  2 5   2 5  2 -1   2 -1  1 -2   1 -2  0 -2   2 7  2 6 $$
+; Character 107 = k
+m 107 0 7  0 0   3 4  1 3   1 3  0 3   1 3  4 0 $$
+; Character 108 = l
+m 108 1 7  2 7   2 7  2 0   1 0  3 0 $$
+; Character 109 = m
+m 109 0 0  0 5   0 4  1 5   1 5  2 4   2 4  2 0   2 4  3 5   3 5  4 4   >
+      4 4  4 0 $$
+; Character 110 = n
+m 110 0 5  0 0   0 4  1 5   1 5  3 5   3 5  4 4   4 4  4 0 $$
+; Character 111 = o
+m 111 1 0  0 1   0 1  0 4   0 4  1 5   1 5  3 5   3 5  4 4   4 4  4 1   >
+      4 1  3 0   3 0  1 0 $$
+; Character 112 = p
+m 112 0 5  0 -2   0 4  1 5   1 5  3 5   3 5  4 4   4 4  4 1   4 1  3 0   >
+      3 0  1 0   1 0  0 1 $$
+; Character 113 = q
+m 113 4 4  3 5   3 5  1 5   1 5  0 4   0 4  0 1   0 1  1 0   1 0  3 0   >
+      3 0  4 1   4 5  4 -2 $$
+; Character 114 = r
+m 114 0 5  0 0   0 4  1 5   1 5  3 5   3 5  4 4 $$
+; Character 115 = s
+m 115 0 1  1 0   1 0  3 0   3 0  4 1   4 1  4 2   4 2  3 3   3 3  1 3   >
+      1 3  0 4   0 4  1 5   1 5  3 5   3 5  4 4 $$
+; Character 116 = t
+m 116 1 7  1 1   1 1  2 0   2 0  3 0   3 0  4 1   0 5  3 5 $$
+; Character 117 = u
+m 117 0 5  0 1   0 1  1 0   1 0  3 0   3 0  4 1   4 5  4 0 $$
+; Character 118 = v
+m 118 0 5  2 0   2 0  4 5 $$
+; Character 119 = w
+m 119 0 5  1 0   1 0  2 3   2 3  3 0   3 0  4 5 $$
+; Character 120 = x
+m 120 0 5  4 0   0 0  4 5 $$
+; Character 121 = y
+m 121 0 5  2 0   4 5  1 -2   1 -2  0 -2 $$
+; Character 122 = z
+m 122 0 5  4 5   4 5  0 0   0 0  4 0 $$
+; Character 123 = {
+m 123 4 8  3 7   3 7  3 5   3 5  2 4   2 4  3 4   3 4  3 1   3 1  4 0 $$
+; Character 124 = |
+m 124 0 0  0 3   0 4  0 7 $$
+; Character 125 = }
+m 125 0 8  1 7   1 7  1 5   1 5  2 4   2 4  1 4   1 4  1 1   1 1  0 0 $$
+; Character 126 = ~
+m 126 0 7  1 8   1 8  3 7   3 7  4 8 $$
+;
+; Windows NotePad Char < thats what gets displayed
+; Character 196 = Ž
+m 196 0 0  2 8   2 8  4 0   1 3  3 3   0 7  0 8   4 7  4 8 $$
+; Character 214 = ™
+m 214 1 0  0 1   0 1  0 6   0 6  1 7   1 7  3 7   3 7  4 6   4 6  4 1   >
+      4 1  3 0   3 0  1 0   0 7  0 8   4 7  4 8 $$
+; Character 220 = š 
+m 220 0 7  0 1   0 1  1 0   1 0  3 0   3 0  4 1   4 1  4 7 >
+      1 7  1 8   3 7  3 8 $$
+; Character 228 = „
+m 228 0 4  1 5   1 5  3 5   3 5  4 4   4 4  4 0   4 3  1 3   1 3  0 2   >
+      0 2  0 1   0 1  1 0   1 0  3 0   3 0  4 1   1 6  1 7   3 6  3 7 $$
+; Character 246 = ™
+m 246 1 0  0 1   0 1  0 4   0 4  1 5   1 5  3 5   3 5  4 4   4 4  4 1   >
+      4 1  3 0   3 0  1 0   0 6  0 7   4 6  4 7   $$
+; Character 252 = 
+m 252 0 5  0 1   0 1  1 0   1 0  3 0   3 0  4 1   4 5  4 0 >
+      1 6  1 7   3 6  3 7 $$
+;
+; Windows NotePad Char <- thats what gets dsiplayed
+; Character 177 = ñ
+m 177 0 1 4 1 0 5 4 5 2 3 2 7 $$
+; Character 176 = ø
+m 176 0 3 3 3 3 3 3 7 3 7 0 7 0 7 0 3 $$
+; Character 248 = í
+m 248 1 1  0 2   0 2  0 5   0 5  1 6   1 6  3 6   3 6  4 5   4 5  4 2   >
+      4 2  3 1   3 1  1 1   0 1  4 6 $$
+;end
+

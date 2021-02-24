@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TF2-fim_RobertoSantana/modelagem/TF2-3_RobertoSantana.asta&apos; to &apos;TF2-fim_RobertoSantana.asta&apos;" description="Rename resource &apos;TF2-3_RobertoSantana.asta&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="modelagem/TF2-3_RobertoSantana.asta" name="TF2-fim_RobertoSantana.asta" stamp="1607564127776" updateReferences="true"/>
+</session>

@@ -1,0 +1,101 @@
+package validacao;
+
+import dados.Grupo;
+import leitura.Leitura;
+import visao.Visao;
+
+public class Validacao {
+	public static String validaString(String mensagem, String titulo) {
+		String lido;
+				
+		lido = Leitura.leEntrada(mensagem, titulo);
+		if (lido.isEmpty()) {
+			Visao.mostraMensagemErro("Nao pode ser vazio!");
+			return validaString(mensagem, titulo);
+		}
+		return lido;
+	}
+	
+	public static int validaInt(String mensagem, String titulo) {
+		int lido;
+		
+		try {
+			lido = Integer.parseInt(validaString(mensagem, titulo));
+		} catch (NumberFormatException e) {
+			Visao.mostraMensagemErro("Insira apenas numeros!");
+			return validaInt(mensagem, titulo);
+		}
+		return lido;
+	}
+	
+	public static StringBuilder validaNome() {
+		String nome = validaString("Insira o Nome", "Nome");
+		return (validaLength(nome) && isAlfabetico(nome)) ? new StringBuilder().append(nome) : validaNome();
+	}
+	
+	public static boolean validaLength(String lido) {
+		if (lido.length() < 3) {
+			Visao.mostraMensagemErro("O nome precisa ter no minimo 3 caracteres!");
+			return false;
+		}
+		return true;
+	}
+	
+	public static boolean isAlfabetico(String lido) {
+		for (char c : lido.toCharArray()) {
+			if (Character.isDigit(c)) {
+				Visao.mostraMensagemErro("O nome nao pode conter numeros!");
+				return false;
+			}
+		}
+		return true;
+	}
+	public static char validaSituacao() {
+		String opcoes[] = {"Contaminada em Tratamento", "Contaminada Falecida", "Contaminada Curada", "Nao Contaminada"};
+		switch(Leitura.leOpcoes("Insira a situacao:", opcoes)) {
+		case 0:
+			return 'T';
+		case 1:
+			return 'F';
+		case 2:
+			return 'C';
+		case 3:
+			return 'S';
+		default:
+			if (Leitura.leConfirma("Realmente deseja cancelar o cadastro?") == 0)
+				throw new NullPointerException();
+			return validaSituacao();
+		}
+	}
+	public static int validaIdade() {
+		final int MAXIMO = 150;
+		int idade = validaInt("Insira a Idade", "Idade");
+		if (idade > MAXIMO) {
+			Visao.mostraMensagemErro("A idade nao pode ser maior que 150");
+			return validaIdade();
+		}
+		return idade;
+	}
+	
+	public static char validaGestacao() {
+		String opcoes[] = {"Sim", "Nao", "Nao tem Certeza"};
+		switch(Leitura.leOpcoes("Ja foi gestante?", opcoes)) {
+		case 0:
+			return 'S';
+		case 1:
+			return 'N';
+		case 2: 
+			return 'T';
+		default:
+			if (Leitura.leConfirma("Realmente deseja cancelar o cadastro?") == 0)
+				throw new NullPointerException();
+			return validaGestacao();
+		}
+	}
+	public static int validaCodigo(Grupo grupo) {
+		final int MAIOR = 100;
+		int codigo = grupo.getGrupo().size() + MAIOR + 1;
+		Visao.mostraMensagem("Codigo gerado para a Pessoa: " +codigo, "Codigo");
+		return codigo;
+	}
+}

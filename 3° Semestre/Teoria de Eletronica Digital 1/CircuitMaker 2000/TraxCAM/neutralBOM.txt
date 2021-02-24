@@ -1,1 +1,23 @@
-unsupported reparse point
+Sample Bill of Materials file
+Created for use with neutral.cc & BOM Explorer
+Router Solutions, Inc.  1998
+
+Partnumber    	Reference Designators			Remarks
+
+70232001834		C200-206, C300-311				100V, .01uF, CAP, 1%
+
+702938451234		C315, 316					100V, 4.7pF, CAP, 5%
+
+912784882822		C318-321, 500, 502-511			100V, 22pF, CAP, 1%
+			C701, 702, C703, 704-719
+
+
+73290284745		R200-R221, R300-330				.1W, 2.21K, RES, 10%
+			R340, 355
+
+238904212138		R500, 502-510					.1W, 90.9 OHM, RES, 1%
+
+1920488392000	R511-515, 517-519					.1W, 0.00, RES, 1%
+				
+			
+

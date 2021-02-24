@@ -1,0 +1,32 @@
+package interfaceGrafica;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+public class MenuPrincipal extends JPanel implements ActionListener {
+	private JButton novo;
+	private char item = 'P';
+	public MenuPrincipal() {
+		setLayout(null);
+		novo = new JButton("Novo");
+		novo.setBounds(170, 118, 90, 20);
+		novo.addActionListener(this);
+		
+		
+	}
+
+	public char getItem() {
+		return this.item;
+	}
+	
+	public void actionPerformed(ActionEvent evento) {
+		if (evento.getSource() == novo) {
+			item = 'F';
+		}
+	}
+	public boolean leItem() {
+		return this.item != 0;
+	}	
+}

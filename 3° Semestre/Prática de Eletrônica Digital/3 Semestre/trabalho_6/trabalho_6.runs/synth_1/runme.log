@@ -1,0 +1,43 @@
+
+*** Running vivado
+    with args -log displayMux.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source displayMux.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source displayMux.tcl -notrace
+Command: synth_design -top displayMux -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8560
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1185.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'displayMux' [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/displayMux.vhd:11]
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/mux2.vhd:4' bound to instance 'mux01' of component 'mux2' [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/displayMux.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/mux2.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux2' (1#1) [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/mux2.vhd:11]
+WARNING: [Synth 8-5640] Port 'sw' is missing in component declaration [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/displayMux.vhd:21]
+WARNING: [Synth 8-5640] Port 'seg' is missing in component declaration [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/displayMux.vhd:21]
+WARNING: [Synth 8-5640] Port 'an' is missing in component declaration [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/displayMux.vhd:21]
+INFO: [Synth 8-3491] module 'decodificadorBCD' declared at 'C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/decodificadorBCD.vhd:4' bound to instance 'deco01' of component 'decodificadorBCD' [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/displayMux.vhd:28]
+ERROR: [Synth 8-3493] module 'decodificadorbcd' declared at 'C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/decodificadorBCD.vhd:4' does not have matching formal port for component port 'a' [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/displayMux.vhd:28]
+ERROR: [Synth 8-3493] module 'decodificadorbcd' declared at 'C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/decodificadorBCD.vhd:4' does not have matching formal port for component port 's' [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/displayMux.vhd:28]
+ERROR: [Synth 8-285] failed synthesizing module 'displayMux' [C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/trabalho_6/trabalho_6.srcs/sources_1/new/displayMux.vhd:11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1185.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 3 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 11:54:45 2020...

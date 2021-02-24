@@ -1,0 +1,26 @@
+package interfaceGrafica;
+
+
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class TelaEscolhaSexo extends JFrame implements ActionListener {
+	public TelaEscolhaSexo() {
+		
+		pack();
+		
+		setBounds(500,300,500,300);
+		getContentPane().setLayout(null);
+		
+		setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+}

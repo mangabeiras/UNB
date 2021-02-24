@@ -1,0 +1,68 @@
+package visao;
+
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+import dados.Grupo;
+import dados.Pessoa;
+
+public class Console {
+	// MOSTRA MSG POR JOPTION
+	public static void mostraMensagem(String mensagem, String titulo) {
+		JOptionPane.showMessageDialog(null, mensagem, titulo, JOptionPane.INFORMATION_MESSAGE);
+	}
+
+	// LIMPA A TELA DA CONSOLE
+	private static void limpaTela(int saltos) {
+		for (int contador = 0; contador < saltos; contador++)
+			System.out.println();
+	}
+
+	// RELATORIO
+	public static void mostraRelatorio(List<Pessoa> grupo) {
+		String formato = "%-20s%-30s%-30s%-13s%-10s\n";
+
+		limpaTela(50);
+		System.out.format(formato, "CODIGO", "NOME COMPLETO", "SITUACAO  DE SAUDE", "IDADE", "GESTACAO");
+
+		for (Pessoa pessoa : grupo)
+			System.out.print(pessoa);
+	}
+
+	// RESULTADO
+	public static void mostraResultado(List<Pessoa> grupo) {
+		DecimalFormat mascara = new DecimalFormat("00");
+
+		limpaTela(50);
+		System.out.println(mascara.format(calculaCasos(grupo, 'C')) + " = CONTAMINADOS CURADOS");
+		System.out.println(mascara.format(calculaCasos(grupo, 'T')) + " = CONTAMINADOS EM TRATAMENTO");
+		System.out.println(mascara.format(calculaCasos(grupo, 'F')) + " = CONTAMINADOS FALECIDOS");
+		System.out.println(mascara.format(pessoasSemContaminacao(grupo, 'h')) + " = HOMENS SEM CONTAMINAÇÃO");
+		System.out.println(mascara.format(pessoasSemContaminacao(grupo, 'm')) + " = MULHERES SEM CONTAMINAÇÃO");
+		System.err.println(mascara.format(grupo.size()) + " = TOTAL DE REGISTRO DE PESSOAS");
+	}
+
+	// QUANTIDADE DE MULHERES OU HOMENS SEM CONTAMINACAO
+	private static int pessoasSemContaminacao(List<Pessoa> grupo, char a) {
+		int casos = 0;
+		for (Pessoa pessoa : grupo) {
+			if (pessoa.getIdade() == null && a == 'm' && pessoa.getSituacao() == 'S')
+				casos++;
+			if (pessoa.getSituacaoGestacao() == null && a == 'h' && pessoa.getSituacao() == 'S')
+				casos++;
+		}
+		return casos;
+	}
+
+	// QUANTIDADE DE CASOS POR TIPO
+	private static int calculaCasos(List<Pessoa> grupo, char a) {
+		int casos = 0;
+		for (Pessoa pessoa : grupo) {
+			if (pessoa.getSituacao() == a)
+				casos++;
+		}
+		return casos;
+	}
+}

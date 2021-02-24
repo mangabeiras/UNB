@@ -1,1 +1,37 @@
-unsupported reparse point
+Juros Simples
+
+M = C + J
+J = C.i.t - 
+-----------------------------------------------------
+
+Juros Compostos
+
+S = P (1+i)^n 
+S = Montante | P=principal | i=taxa | n=periodo
+
+-----------------------------------------------------
+
+Equivalencia de Capital (Pagar antecipado)
+
+P = V/(1+i)^n 
+P = pagamento | V = valor da divida | fazer n = (mes final de vencimento) - (mes que foi pago)
+
+Obs: Usar sempre uma linha temporal(facilita), como nos exemplos: https://matematicafinanceira.webnode.com.br/capitaliza%C3%A7%C3%A3o%20composta/%20equival%C3%AAncia%20de%20capitais%20a%20juros%20compostos/#:~:text=1)%20(PARENTE%2C%201996),com%20vencimento%20para%205%20meses.
+
+----------------------------------------------------
+
+Equivalencia de Capital (Pagar atrasado) (Mudou de div para multiplicacao)
+
+P = V*(1+i)^n
+P = pagamento | V = valor da divida
+
+-----------------------------------------------------
+
+TAXA ACUMULADA
+taxa acumulada = {[(i+1)*(i+1)*...*(i+1)] - 1}*100;
+
+--------------------------------------------------
+
+"Quanto do salario foi desvalorizado..." - Usar isso!
+QUANDO A QUESTAO TRATAR DE INFLACAO
+Taxa Real = [(1+taxaAparente)/(1+inflacao) - 1]*100

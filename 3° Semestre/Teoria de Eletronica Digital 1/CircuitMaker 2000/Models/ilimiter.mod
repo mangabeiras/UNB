@@ -1,1 +1,2 @@
-unsupported reparse point
+* Default - type:ilimiter
+.MODEL AILIMIT ilimit()

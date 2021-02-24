@@ -1,0 +1,167 @@
+package visao;
+
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.awt.event.WindowAdapter;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+import javax.swing.JMenuBar;
+import dados.Grupo;
+import dados.Pessoa;
+import dao.PessoaDao;
+
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.Component;
+import javax.swing.SwingConstants;
+
+
+// TELA PRINCIPAL DA APLICACAO
+public class TelaPrincipal extends JFrame {
+	// COMPONENTS PRINCIPAIS
+	private CadastroHomem cadastroHomem;
+	private CadastroMulher cadastroMulher;
+	private Lista listar;
+	private JComboBox novo;
+	private JButton lista, sair, mostra;
+	private JMenuBar menuBar;
+	
+	// CONSTRUTOR
+	public TelaPrincipal(){
+		configuraFrame();
+		criaBotoesCadastro();
+		criaBotaoLista();
+		criaBotaoMostra();
+		criaBotaoPesquisa();
+		criaBotaoSair();
+		setImgFundo();
+		addEscutadores();
+	}
+	
+	// CARACTERISTICAS DA JANELA
+	private void configuraFrame() {
+		setTitle("Menu");
+		setResizable(false);
+		setMinimumSize(new Dimension(500, 500));
+		setMaximumSize(new Dimension(500, 500));
+		setAlwaysOnTop(false);
+		setLocationRelativeTo(null);
+		getContentPane().setLayout(null);
+	}
+	
+	// BOTOES DE CADASTRO
+	private void criaBotoesCadastro() {
+		menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		novo = new JComboBox();
+		novo.setToolTipText("Clique para cadastrar");
+		novo.setMaximumSize(new Dimension(100, 30));
+		novo.setFont(new Font("Arial", Font.PLAIN, 14));
+		novo.setModel(new DefaultComboBoxModel(new String[] {"Novo"}));
+		novo.addItem("Homem");
+		novo.addItem("Mulher");
+		menuBar.add(novo);
+	}
+	
+	// BOTAO LISTA
+	private void criaBotaoLista() {
+		lista = new JButton("Lista");
+		setCaracteristicas(lista);
+		lista.setToolTipText("Clique para Visualizar todos os Cadastros");
+		menuBar.add(lista);
+	}
+	
+	// BOTAO PESQUISA
+	private void criaBotaoPesquisa() {
+		JButton pesquisa = new JButton("Pesquisa");
+		setCaracteristicas(pesquisa);
+		menuBar.add(pesquisa);
+	}
+	
+	// BOTAO SAIR
+	private void criaBotaoSair() {
+		sair = new JButton("Sair");
+		setCaracteristicas(sair);
+		menuBar.add(sair);
+	}
+	
+	// BOTAO MOSTRA
+	private void criaBotaoMostra() {
+		mostra = new JButton("Mostra");
+		setCaracteristicas(mostra);
+		menuBar.add(mostra);
+	}
+	
+	// IMG DA TELA DE FUNDO
+	private void setImgFundo() {
+		JLabel imgTela = new JLabel("");
+		imgTela.setMinimumSize(new Dimension(500, 500));
+		imgTela.setMaximumSize(new Dimension(500, 500));
+		imgTela.setIcon(new ImageIcon("img\\telaPrincipal.png"));
+		imgTela.setBounds(0, 0, 544, 436);
+		getContentPane().add(imgTela);
+	}
+	
+	// LISTENERS
+	private void addEscutadores() {
+		lista.addActionListener(evt -> lista());
+		sair.addActionListener(evt -> fecha());
+		novo.addItemListener(evt -> defineCadastro(evt));
+		mostra.addActionListener(evt -> mostra());
+	}
+	
+	private void mostra() {
+		Mostra mostra = new Mostra();
+		mostra.setVisible(true);
+		setVisible(false);
+	}
+	
+	// LISTA PESSOAS CADASTRADAS
+	private void lista() {
+		listar = new Lista();
+		listar.setVisible(true);
+		setVisible(false);
+	}
+	
+	// FECHA A JANELA
+	private void fecha() {
+		if (lista.isEnabled())
+			Console.mostraResultado(new PessoaDao().getGrupo());
+		System.exit(0);		
+	}
+	
+	// UM HOMEM OU UMA MULHER
+	private void defineCadastro(ItemEvent e) {
+		if (e.getItem().equals("Homem")) {
+			cadastroHomem = new CadastroHomem();
+			cadastroHomem.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			cadastroHomem.setVisible(true);
+			setVisible(false);
+		}
+		if (e.getItem().equals("Mulher")) {
+			cadastroMulher = new CadastroMulher();
+			cadastroMulher.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			cadastroMulher.setVisible(true);
+			setVisible(false);
+		}
+	}
+	
+	// CARACTERISTICAS DOS BOTOES
+	private void setCaracteristicas(JButton botao) {
+		botao.setPreferredSize(new Dimension(30, 22));
+		botao.setMinimumSize(new Dimension(30, 22));
+		botao.setMaximumSize(new Dimension(100, 30));
+		botao.setHorizontalTextPosition(SwingConstants.LEFT);
+		botao.setHorizontalAlignment(SwingConstants.LEFT);
+		botao.setFont(new Font("Arial", Font.PLAIN, 14));
+	}
+	
+}

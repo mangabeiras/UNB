@@ -1,1 +1,651 @@
-unsupported reparse point
+*=====================================================
+*Diode AKA pinout: 1=Anode1, 2=CommonCathode, 3=Anode2
+*=====================================================
+
+* 70V 200mA 6ns Si Dual Switching Diode pkg:SOT-23 2,1,3
+.PARAM XBAV70 File:Mcediode.lib
+
+* 50V 200mA 4ns Si Dual Switching Diode pkg:SOT-23 2,1,3
+.PARAM XBAV74 File:Mcediode.lib
+
+* 70V 200mA 3us Si Dual Switching Diode pkg:SOT-23 2,1,3
+.PARAM XBAV170 File:Mcediode.lib
+
+* 70V 200mA 4ns Si Dual Switching Diode pkg:SOT-23 2,1,3
+.PARAM XMMBD6100 File:Mcediode.lib
+
+*100V 200mA 4ns Si Dual Switching Diode pkg:SOT-23 2,1,3
+.PARAM XMSD6100 File:Mcediode.lib
+
+* 30V 6.6A 3us pkg:DPAK 1,2,3
+.PARAM X6CWQ03F File:Mcediode.lib
+
+* 40V 6.6A 3us pkg:DPAK 1,2,3
+.PARAM X6CWQ04F File:Mcediode.lib
+
+* 50V 6.6A 3us pkg:DPAK 1,2,3
+.PARAM X6CWQ05F File:Mcediode.lib
+
+* 60V 6.6A 3us pkg:DPAK 1,2,3
+.PARAM X6CWQ06F File:Mcediode.lib
+
+* 90V 6.6A 3us pkg:DPAK 1,2,3
+.PARAM X6CWQ09F File:Mcediode.lib
+
+* 100V 6.6A 3us pkg:DPAK 1,2,3
+.PARAM X6CWQ10F File:Mcediode.lib
+
+* 150V 10A 3us pkg:D2PAK 1,2,3
+.PARAM X10CTQ150S File:Mcediode.lib
+
+* 35V 12A 3us pkg:D2PAK 1,2,3
+.PARAM X12CTQ035S File:Mcediode.lib
+
+* 45V 12A 3us pkg:D2PAK 1,2,3
+.PARAM X12CTQ045S File:Mcediode.lib
+
+* 35V 15A 3us pkg:D2PAK 1,2,3
+.PARAM X15CTQ035S File:Mcediode.lib
+
+* 45V 15A 3us pkg:D2PAK 1,2,3
+.PARAM X15CTQ045S File:Mcediode.lib
+
+* 35V 15A 3us pkg:D2PAK 1,2,3
+.PARAM XMBRB1535CT File:Mcediode.lib
+
+* 45V 15A 3us pkg:D2PAK 1,2,3
+.PARAM XMBRB1545CT File:Mcediode.lib
+
+* 80V 16A 3us pkg:D2PAK 1,2,3
+.PARAM X16CTQ080S File:Mcediode.lib
+
+* 100V 16A 3us pkg:D2PAK 1,2,3
+.PARAM X16CTQ100S File:Mcediode.lib
+
+* 35V 20A 3us pkg:D2PAK 1,2,3
+.PARAM X20CTQ035S File:Mcediode.lib
+
+* 45V 20A 3us pkg:D2PAK 1,2,3
+.PARAM X20CTQ045S File:Mcediode.lib
+
+* 80V 10A 3us pkg:D2PAK 1,2,3
+.PARAM XMBRB2080CTS File:Mcediode.lib
+
+* 90V 10A 3us pkg:D2PAK 1,2,3
+.PARAM XMBRB2090CTS File:Mcediode.lib
+
+* 100V 10A 3us pkg:D2PAK 1,2,3
+.PARAM XMBRB2100CTS File:Mcediode.lib
+
+* 35V 30A 3us pkg:D2PAK 1,2,3
+.PARAM X25CTQ035S File:Mcediode.lib
+
+* 45V 30A 3us pkg:D2PAK 1,2,3
+.PARAM X25CTQ045S File:Mcediode.lib
+
+* 35V 30A 3us pkg:D2PAK 1,2,3
+.PARAM X30CTQ035S File:Mcediode.lib
+
+* 45V 30A 3us pkg:D2PAK 1,2,3
+.PARAM X30CTQ045S File:Mcediode.lib
+
+* 50V 30A 3us pkg:D2PAK 1,2,3
+.PARAM X30CTQ050S File:Mcediode.lib
+
+* 60V 30A 3us pkg:D2PAK 1,2,3
+.PARAM X30CTQ060S File:Mcediode.lib
+
+* 30V 30A 3us pkg:D2PAK 1,2,3
+.PARAM X32CTQ030S File:Mcediode.lib
+
+* 150V 10A 3us pkg:TO-220 1,2,3
+.PARAM X10CTQ150 File:Mcediode.lib
+
+* 35V 12A 3us pkg:TO-220 1,2,3
+.PARAM X12CTQ035 File:Mcediode.lib
+
+* 40V 12A 3us pkg:TO-220 1,2,3
+.PARAM X12CTQ040 File:Mcediode.lib
+
+* 45V 12A 3us pkg:TO-220 1,2,3
+.PARAM X12CTQ045 File:Mcediode.lib
+
+* 35V 15A 3us pkg:TO-220 1,2,3
+.PARAM X15CTQ035 File:Mcediode.lib
+
+* 40V 15A 3us pkg:TO-220 1,2,3
+.PARAM X15CTQ040 File:Mcediode.lib
+
+* 45V 15A 3us pkg:TO-220 1,2,3
+.PARAM X15CTQ045 File:Mcediode.lib
+
+* 35V 15A 3us pkg:TO-220 1,2,3
+.PARAM XMBR1535CT File:Mcediode.lib
+
+* 45V 15A 3us pkg:TO-220 1,2,3
+.PARAM XMBR1545CT File:Mcediode.lib
+
+* 80V 16A 3us pkg:TO-220 1,2,3
+.PARAM X16CTQ080 File:Mcediode.lib
+
+* 100V 16A 3us pkg:TO-220 1,2,3
+.PARAM X16CTQ100 File:Mcediode.lib
+
+* 35V 20A 3us pkg:TO-220 1,2,3
+.PARAM X20CTQ035 File:Mcediode.lib
+
+* 40V 20A 3us pkg:TO-220 1,2,3
+.PARAM X20CTQ040 File:Mcediode.lib
+
+* 45V 20A 3us pkg:TO-220 1,2,3
+.PARAM X20CTQ045 File:Mcediode.lib
+
+* 35V 20A 3us pkg:TO-220 1,2,3
+.PARAM XMBR2035CT File:Mcediode.lib
+
+* 45V 20A 3us pkg:TO-220 1,2,3
+.PARAM XMBR2045CT File:Mcediode.lib
+
+* 80V 10A 3us pkg:TO-220 1,2,3
+.PARAM XMBR2080CT File:Mcediode.lib
+
+* 90V 10A 3us pkg:TO-220 1,2,3
+.PARAM XMBR2090CT File:Mcediode.lib
+
+* 100V 10A 3us pkg:TO-220 1,2,3
+.PARAM XMBR2100CT File:Mcediode.lib
+
+* 35V 30A 3us pkg:TO-220 1,2,3
+.PARAM XMBR2535CT File:Mcediode.lib
+
+* 45V 30A 3us pkg:TO-220 1,2,3
+.PARAM XMBR2545CT File:Mcediode.lib
+
+* 35V 30A 3us pkg:TO-220 1,2,3
+.PARAM X25CTQ035 File:Mcediode.lib
+
+* 40V 30A 3us pkg:TO-220 1,2,3
+.PARAM X25CTQ040 File:Mcediode.lib
+
+* 45V 30A 3us pkg:TO-220 1,2,3
+.PARAM X25CTQ045 File:Mcediode.lib
+
+* 35V 30A 3us pkg:TO-220 1,2,3
+.PARAM X30CTQ035 File:Mcediode.lib
+
+* 40V 30A 3us pkg:TO-220 1,2,3
+.PARAM X30CTQ040 File:Mcediode.lib
+
+* 45V 30A 3us pkg:TO-220 1,2,3
+.PARAM X30CTQ045 File:Mcediode.lib
+
+* 50V 30A 3us pkg:TO-220 1,2,3
+.PARAM X30CTQ050 File:Mcediode.lib
+
+* 60V 30A 3us pkg:TO-220 1,2,3
+.PARAM X30CTQ060 File:Mcediode.lib
+
+* 30V 30A 3us pkg:TO-220 1,2,3
+.PARAM X32CTQ030 File:Mcediode.lib
+
+* 35V 30A 3us pkg:TO-247 1,2,3
+.PARAM X30CPQ035 File:Mcediode.lib
+
+* 40V 30A 3us pkg:TO-247 1,2,3
+.PARAM X30CPQ040 File:Mcediode.lib
+
+* 45V 30A 3us pkg:TO-247 1,2,3
+.PARAM X30CPQ045 File:Mcediode.lib
+
+* 50V 30A 3us pkg:TO-247 1,2,3
+.PARAM X30CPQ050 File:Mcediode.lib
+
+* 60V 30A 3us pkg:TO-247 1,2,3
+.PARAM X30CPQ060 File:Mcediode.lib
+
+* 80V 30A 3us pkg:TO-247 1,2,3
+.PARAM X30CPQ080 File:Mcediode.lib
+
+* 100V 30A 3us pkg:TO-247 1,2,3
+.PARAM X30CPQ100 File:Mcediode.lib
+
+* 150V 30A 3us pkg:TO-247 1,2,3
+.PARAM X30CPQ150 File:Mcediode.lib
+
+* 35V 30A 3us pkg:TO-247 1,2,3
+.PARAM XMBR3035PT File:Mcediode.lib
+
+* 45V 30A 3us pkg:TO-247 1,2,3
+.PARAM XMBR3045PT File:Mcediode.lib
+
+* 35V 40A 3us pkg:TO-247 1,2,3
+.PARAM X40CPQ035 File:Mcediode.lib
+
+* 40V 40A 3us pkg:TO-247 1,2,3
+.PARAM X40CPQ040 File:Mcediode.lib
+
+* 45V 40A 3us pkg:TO-247 1,2,3
+.PARAM X40CPQ045 File:Mcediode.lib
+
+* 50V 40A 3us pkg:TO-247 1,2,3
+.PARAM X40CPQ050 File:Mcediode.lib
+
+* 60V 40A 3us pkg:TO-247 1,2,3
+.PARAM X40CPQ060 File:Mcediode.lib
+
+* 80V 40A 3us pkg:TO-247 1,2,3
+.PARAM X40CPQ080 File:Mcediode.lib
+
+* 100V 40A 3us pkg:TO-247 1,2,3
+.PARAM X40CPQ100 File:Mcediode.lib
+
+* 45V 40A 3us pkg:TO-247 1,2,3
+.PARAM XMBR4045PT File:Mcediode.lib
+
+* 60V 40A 3us pkg:TO-247 1,2,3
+.PARAM XMBR4060PT File:Mcediode.lib
+
+* 45V 60A 3us pkg:TO-247 1,2,3
+.PARAM XMBR6045WT File:Mcediode.lib
+
+* 35V 30A 3us pkg:TO-3 1,3,2
+.PARAM XMBR3035CT File:Mcediode.lib
+
+* 45V 30A 3us pkg:TO-3 1,3,2
+.PARAM XMBR3045CT File:Mcediode.lib
+
+* 35V 40A 3us pkg:TO-3 1,3,2
+.PARAM X40CDQ035 File:Mcediode.lib
+
+* 40V 40A 3us pkg:TO-3 1,3,2
+.PARAM X40CDQ040 File:Mcediode.lib
+
+* 45V 40A 3us pkg:TO-3 1,3,2
+.PARAM X40CDQ045 File:Mcediode.lib
+
+* 35V 60A 3us pkg:TO-3 1,3,2
+.PARAM XSD241 File:Mcediode.lib
+
+* 35V 60A 3us pkg:TO-3 1,3,2
+.PARAM X60CDQ035 File:Mcediode.lib
+
+* 40V 60A 3us pkg:TO-3 1,3,2
+.PARAM X60CDQ040 File:Mcediode.lib
+
+* 45V 60A 3us pkg:TO-3 1,3,2
+.PARAM X60CDQ045 File:Mcediode.lib
+
+* 35V 60A 3us pkg:D61-6 1,2,3
+.PARAM X60CNQ035 File:Mcediode.lib
+
+* 40V 60A 3us pkg:D61-6 1,2,3
+.PARAM X60CNQ040 File:Mcediode.lib
+
+* 45V 60A 3us pkg:D61-6 1,2,3
+.PARAM X60CNQ045 File:Mcediode.lib
+
+*35V 60A 3us pkg:D61-6 1,2,3
+.PARAM X60CNQ045 File:Mcediode.lib
+
+* 35V 60A 3us pkg:D61-6 1,2,3
+.PARAM X61CNQ035 File:Mcediode.lib
+
+* 40V 60A 3us pkg:D61-6 1,2,3
+.PARAM X61CNQ040 File:Mcediode.lib
+
+* 45V 60A 3us pkg:D61-6 1,2,3
+.PARAM X61CNQ045 File:Mcediode.lib
+
+* 30V 60A 3us pkg:D61-6 1,2,3
+.PARAM X62CNQ030 File:Mcediode.lib
+
+* 80V 60A 3us pkg:D61-6 1,2,3
+.PARAM X63CNQ080 File:Mcediode.lib
+
+* 100V 60A 3us pkg:D61-6 1,2,3
+.PARAM X63CNQ100 File:Mcediode.lib
+
+* 45V 60A 3us pkg:SMD61-6 1,2,3
+.PARAM X60CNQ045SM File:Mcediode.lib
+
+*45V 60A 3us pkg:SMD61-6 1,2,3
+.PARAM X61CNQ045SM File:Mcediode.lib
+
+* 30V 60A 3us pkg:SMD61-6 1,2,3
+.PARAM X62CNQ030SM File:Mcediode.lib
+
+* 100V 60A 3us pkg:SMD61-6 1,2,3
+.PARAM X63CNQ100SM File:Mcediode.lib
+
+*45V 60A 3us pkg:SLD61-6 1,2,3
+.PARAM X60CNQ045SL File:Mcediode.lib
+
+* 45V 60A 3us pkg:SLD61-6 1,2,3
+.PARAM X61CNQ045SL File:Mcediode.lib
+
+* 30V 60A 3us pkg:SLD61-6 1,2,3
+.PARAM X62CNQ030SL File:Mcediode.lib
+
+* 100V 60A 3us pkg:SLD61-6 1,2,3
+.PARAM X63CNQ100SL File:Mcediode.lib
+
+* 35V 80A 3us pkg:D61-8 1,2,3
+.PARAM X80CNQ035 File:Mcediode.lib
+
+* 40V 80A 3us pkg:D61-8 1,2,3
+.PARAM X80CNQ040 File:Mcediode.lib
+
+* 45V 80A 3us pkg:D61-8 1,2,3
+.PARAM X80CNQ045 File:Mcediode.lib
+
+* 35V 80A 3us pkg:D61-8 1,2,3
+.PARAM X81CNQ035 File:Mcediode.lib
+
+* 40V 80A 3us pkg:D61-8 1,2,3
+.PARAM X81CNQ040 File:Mcediode.lib
+
+* 45V 80A 3us pkg:D61-8 1,2,3
+.PARAM X81CNQ045 File:Mcediode.lib
+
+* 50V 80A 3us pkg:D61-8 1,2,3
+.PARAM X81CNQ050 File:Mcediode.lib
+
+* 30V 80A 3us pkg:D61-8 1,2,3
+.PARAM X82CNQ030 File:Mcediode.lib
+
+* 80V 80A 3us pkg:D61-8 1,2,3
+.PARAM X83CNQ080 File:Mcediode.lib
+
+* 80V 100A 3us pkg:D61-8 1,2,3
+.PARAM X83CNQ100 File:Mcediode.lib
+
+* 35V 80A 3us pkg:D61-8 1,2,3
+.PARAM X84CNQ035 File:Mcediode.lib
+
+* 40V 80A 3us pkg:D61-8 1,2,3
+.PARAM X84CNQ040 File:Mcediode.lib
+
+* 45V 80A 3us pkg:D61-8 1,2,3
+.PARAM X84CNQ045 File:Mcediode.lib
+
+* 15V 80A 3us pkg:D61-8 1,2,3
+.PARAM X85CNQ015 File:Mcediode.lib
+
+* 60V 80A 3us pkg:D61-8 1,2,3
+.PARAM X88CNQ060 File:Mcediode.lib
+
+* 150V 80A 3us pkg:D61-8 1,2,3
+.PARAM X89CNQ150 File:Mcediode.lib
+
+* 45V 80A 3us pkg:SMD61-8 1,2,3
+.PARAM X80CNQ045SM File:Mcediode.lib
+
+* 45V 80A 3us pkg:SMD61-8 1,2,3
+.PARAM X81CNQ045SM File:Mcediode.lib
+
+* 50V 80A 3us pkg:SMD61-8 1,2,3
+.PARAM X81CNQ050SM File:Mcediode.lib
+
+* 30V 80A 3us pkg:SMD61-8 1,2,3
+.PARAM X82CNQ030SM File:Mcediode.lib
+
+* 100V 80A 3us pkg:SMD61-8 1,2,3
+.PARAM X83CNQ100SM File:Mcediode.lib
+
+* 45V 80A 3us pkg:SMD61-8 1,2,3
+.PARAM X84CNQ045SM File:Mcediode.lib
+
+* 15V 80A 3us pkg:SMD61-8 1,2,3
+.PARAM X85CNQ015SM File:Mcediode.lib
+
+* 45V 80A 3us pkg:SLD61-8 1,2,3
+.PARAM X80CNQ045SL File:Mcediode.lib
+
+* 45V 80A 3us pkg:SLD61-8 1,2,3
+.PARAM X81CNQ045SL File:Mcediode.lib
+
+* 50V 80A 3us pkg:SLD61-8 1,2,3
+.PARAM X81CNQ050SL File:Mcediode.lib
+
+* 30V 80A 3us pkg:SLD61-8 1,2,3
+.PARAM X82CNQ030SL File:Mcediode.lib
+
+* 100V 80A 3us pkg:SLD61-8 1,2,3
+.PARAM X83CNQ100SL File:Mcediode.lib
+
+* 45V 80A 3us pkg:SLD61-8 1,2,3
+.PARAM X84CNQ045SL File:Mcediode.lib
+
+* 15V 80A 3us pkg:SLD61-8 1,2,3
+.PARAM X85CNQ015SL File:Mcediode.lib
+
+* 35V 150A 3us pkg:D-60 1,2,3
+.PARAM X150CMQ035 File:Mcediode.lib
+
+* 40V 150A 3us pkg:D-60 1,2,3
+.PARAM X150CMQ040 File:Mcediode.lib
+
+* 45V 150A 3us pkg:D-60 1,2,3
+.PARAM X150CMQ045 File:Mcediode.lib
+
+* 35V 150A 3us pkg:D-60 1,2,3
+.PARAM X151CMQ035 File:Mcediode.lib
+
+* 40V 150A 3us pkg:D-60 1,2,3
+.PARAM X151CMQ040 File:Mcediode.lib
+
+* 45V 150A 3us pkg:D-60 1,2,3
+.PARAM X151CMQ045 File:Mcediode.lib
+
+* 30V 150A 3us pkg:D-60 1,2,3
+.PARAM X152CMQ030 File:Mcediode.lib
+
+* 80V 150A 3us pkg:D-60 1,2,3
+.PARAM X153CMQ080 File:Mcediode.lib
+
+* 100V 150A 3us pkg:D-60 1,2,3
+.PARAM X153CMQ100 File:Mcediode.lib
+
+* 45V 150A 3us pkg:D-60 1,2,3
+.PARAM X150CNQ045 File:Mcediode.lib
+
+* 45V 150A 3us pkg:D-60 1,2,3
+.PARAM X151CNQ045 File:Mcediode.lib
+
+* 100V 150A 3us pkg:D-60 1,2,3
+.PARAM X153CNQ100 File:Mcediode.lib
+
+* 35V 160A 3us pkg:TO-249 1,2,3
+.PARAM X160CMQ035 File:Mcediode.lib
+
+* 40V 160A 3us pkg:TO-249 1,2,3
+.PARAM X160CMQ040 File:Mcediode.lib
+
+* 45V 160A 3us pkg:TO-249 1,2,3
+.PARAM X160CMQ045 File:Mcediode.lib
+
+* 35V 160A 3us pkg:TO-249 1,2,3
+.PARAM X161CMQ035 File:Mcediode.lib
+
+* 40V 160A 3us pkg:TO-249 1,2,3
+.PARAM X161CMQ040 File:Mcediode.lib
+
+* 45V 160A 3us pkg:TO-249 1,2,3
+.PARAM X161CMQ045 File:Mcediode.lib
+
+* 30V 160A 3us pkg:TO-249 1,2,3
+.PARAM X162CMQ030 File:Mcediode.lib
+
+* 80V 160A 3us pkg:TO-249 1,2,3
+.PARAM X163CMQ080 File:Mcediode.lib
+
+* 100V 160A 3us pkg:TO-249 1,2,3
+.PARAM X163CMQ100 File:Mcediode.lib
+
+* 60V 160A 3us pkg:TO-249 1,2,3
+.PARAM X168CMQ060 File:Mcediode.lib
+
+* 45V 160A 3us pkg:TO-249 1,2,3
+.PARAM X160CNQ045 File:Mcediode.lib
+
+* 45V 160A 3us pkg:TO-249 1,2,3
+.PARAM X161CNQ045 File:Mcediode.lib
+
+* 30V 160A 3us pkg:TO-249 1,2,3
+.PARAM X162CNQ030 File:Mcediode.lib
+
+* 100V 160A 3us pkg:TO-249 1,2,3
+.PARAM X163CNQ100 File:Mcediode.lib
+
+* 35V 200A 3us pkg:TO-244 1,2,3
+.PARAM X200CNQ035 File:Mcediode.lib
+
+* 40V 200A 3us pkg:TO-244 1,2,3
+.PARAM X200CNQ040 File:Mcediode.lib
+
+* 45V 200A 3us pkg:TO-244 1,2,3
+.PARAM X200CNQ045 File:Mcediode.lib
+
+* 35V 200A 3us pkg:TO-244 1,2,3
+.PARAM X201CNQ035 File:Mcediode.lib
+
+* 40V 200A 3us pkg:TO-244 1,2,3
+.PARAM X201CNQ040 File:Mcediode.lib
+
+* 45V 200A 3us pkg:TO-244 1,2,3
+.PARAM X201CNQ045 File:Mcediode.lib
+
+* 50V 200A 3us pkg:TO-244 1,2,3
+.PARAM X201CNQ050 File:Mcediode.lib
+
+* 80V 200A 3us pkg:TO-244 1,2,3
+.PARAM X203CNQ080 File:Mcediode.lib
+
+* 100V 200A 3us pkg:TO-244 1,2,3
+.PARAM X203CNQ100 File:Mcediode.lib
+
+* 60V 200A 3us pkg:TO-244 1,2,3
+.PARAM X208CNQ060 File:Mcediode.lib
+
+* 150V 200A 3us pkg:TO-244 1,2,3
+.PARAM X209CNQ150 File:Mcediode.lib
+
+* 25V 220A 3us pkg:TO-244 1,2,3
+.PARAM X220CNQ025 File:Mcediode.lib
+
+* 30V 220A 3us pkg:TO-244 1,2,3
+.PARAM X220CNQ030 File:Mcediode.lib
+
+* 35V 220A 3us pkg:TO-244 1,2,3
+.PARAM X224CNQ035 File:Mcediode.lib
+
+* 40V 220A 3us pkg:TO-244 1,2,3
+.PARAM X224CNQ040 File:Mcediode.lib
+
+* 45V 220A 3us pkg:TO-244 1,2,3
+.PARAM X224CNQ045 File:Mcediode.lib
+
+* 15V 220A 3us pkg:TO-244 1,2,3
+.PARAM X225CNQ015 File:Mcediode.lib
+
+* 35V 300A 3us pkg:TO-244 1,2,3
+.PARAM X300CNQ035 File:Mcediode.lib
+
+* 40V 300A 3us pkg:TO-244 1,2,3
+.PARAM X300CNQ040 File:Mcediode.lib
+
+* 45V 300A 3us pkg:TO-244 1,2,3
+.PARAM X300CNQ045 File:Mcediode.lib
+
+* 35V 300A 3us pkg:TO-244 1,2,3
+.PARAM X301CNQ035 File:Mcediode.lib
+
+* 40V 300A 3us pkg:TO-244 1,2,3
+.PARAM X301CNQ040 File:Mcediode.lib
+
+* 45V 300A 3us pkg:TO-244 1,2,3
+.PARAM X301CNQ045 File:Mcediode.lib
+
+* 50V 300A 3us pkg:TO-244 1,2,3
+.PARAM X301CNQ050 File:Mcediode.lib
+
+* 80V 300A 3us pkg:TO-244 1,2,3
+.PARAM X303CNQ080 File:Mcediode.lib
+
+* 100V 300A 3us pkg:TO-244 1,2,3
+.PARAM X303CNQ100 File:Mcediode.lib
+
+* 150V 300A 3us pkg:TO-244 1,2,3
+.PARAM X309CNQ150 File:Mcediode.lib
+
+* 35V 400A 3us pkg:TO-244 1,2,3
+.PARAM X400CNQ035 File:Mcediode.lib
+
+* 40V 400A 3us pkg:TO-244 1,2,3
+.PARAM X400CNQ040 File:Mcediode.lib
+
+* 45V 400A 3us pkg:TO-244 1,2,3
+.PARAM X400CNQ045 File:Mcediode.lib
+
+* 35V 400A 3us pkg:TO-244 1,2,3
+.PARAM X401CNQ035 File:Mcediode.lib
+
+* 40V 400A 3us pkg:TO-244 1,2,3
+.PARAM X401CNQ040 File:Mcediode.lib
+
+* 45V 400A 3us pkg:TO-244 1,2,3
+.PARAM X401CNQ045 File:Mcediode.lib
+
+* 80V 400A 3us pkg:TO-244 1,2,3
+.PARAM X403CNQ080 File:Mcediode.lib
+
+* 100V 400A 3us pkg:TO-244 1,2,3
+.PARAM X403CNQ100 File:Mcediode.lib
+
+* 60V 400A 3us pkg:TO-244 1,2,3
+.PARAM X408CNQ060 File:Mcediode.lib
+
+* 150V 400A 3us pkg:TO-244 1,2,3
+.PARAM X409CNQ150 File:Mcediode.lib
+
+* 30V 400A 3us pkg:TO-244 1,2,3
+.PARAM X440CNQ030 File:Mcediode.lib
+
+* 35V 400A 3us pkg:TO-244 1,2,3
+.PARAM X444CNQ035 File:Mcediode.lib
+
+* 40V 400A 3us pkg:TO-244 1,2,3
+.PARAM X444CNQ040 File:Mcediode.lib
+
+* 45V 440A 3us pkg:TO-244 1,2,3
+.PARAM X444CNQ045 File:Mcediode.lib
+
+* 15V 440A 3us pkg:TO-244 1,2,3
+.PARAM X445CNQ015 File:Mcediode.lib
+
+* 45V 200A 3us pkg:TO-244 1,2,3
+.PARAM X201CMQ045 File:Mcediode.lib
+
+* 100V 200A 3us pkg:TO-244 1,2,3
+.PARAM X203CMQ100 File:Mcediode.lib
+
+* 60V 200A 3us pkg:TO-244 1,2,3
+.PARAM X208CMQ060 File:Mcediode.lib
+
+* 150V 200A 3us pkg:TO-244 1,2,3
+.PARAM X209CMQ150 File:Mcediode.lib
+
+* 30V 200A 3us pkg:TO-244 1,2,3
+.PARAM X220CMQ030 File:Mcediode.lib
+
+* 45V 400A 3us pkg:TO-244 1,2,3
+.PARAM X401CMQ045 File:Mcediode.lib
+
+* 100V 400A 3us pkg:TO-244 1,2,3
+.PARAM X403CMQ100 File:Mcediode.lib
+
+* 60V 400A 3us pkg:TO-244 1,2,3
+.PARAM X408CMQ060 File:Mcediode.lib
+
+* 30V 440A 3us pkg:TO-244 1,2,3
+.PARAM X440CMQ030 File:Mcediode.lib

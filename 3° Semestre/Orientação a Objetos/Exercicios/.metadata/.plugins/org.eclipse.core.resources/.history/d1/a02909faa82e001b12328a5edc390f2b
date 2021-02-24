@@ -1,0 +1,21 @@
+package principal;
+
+
+
+import javax.swing.JFrame;
+
+
+// ROBERTO GABRIEL MANGABEIRA SANTANA / 190019620
+import dados.Grupo;
+import interfaceGrafica.TelaPrincipal;
+import validacao.Validacao;
+
+
+public class Principal {
+	
+	public static void main(String[] args) {
+		Grupo grupo = new Grupo();
+		JFrame janela = new TelaPrincipal(grupo);
+	}
+}
+

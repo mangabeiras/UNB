@@ -1,1 +1,218 @@
-unsupported reparse point
+End User License Agreement for CircuitMaker 2000
+
+WARNING: THE SOFTWARE AND PRODUCT CONTAINED HEREIN IS PROTECTED 
+BY U.S. COPYRIGHT AND APPLICABLE LOCAL COPYRIGHT LAWS, PURSUANT 
+TO THE BERNE CONVENTION FOR THE PROTECTION OF LITERARY AND 
+ARTISTIC WORKS AND OTHER APPLICABLE CONVENTIONS.  ANY VIOLATION 
+SHALL BE SUBJECT TO PROSECUTION. 
+PROTEL AND ITS LICENSORS ARE THE SOLE OWNERS OF SUCH COPYRIGHT 
+AND ANY OTHER PROPRIETARY RIGHTS RELATING TO THE EXPRESSION OF 
+THE SOFTWARE AND PRODUCT AND TRADEMARKS RELATING THERETO. THIS 
+SOFTWARE SHOULD ONLY BE USED WITH THE APPLICABLE OPERATING 
+ENVIRONMENT BY AUTHORIZED USERS AND AS PROVIDED IN THE LICENSE 
+AGREEMENT.
+
+For further information please inquire with any Protel office 
+or authorized CircuitMaker reseller.
+
+IMPORTANT - CAREFULLY READ ALL TERMS AND CONDITIONS OF THIS 
+LICENSE AGREEMENT BEFORE CONTINUING WITH THE INSTALLATION. 
+CONTINUING WITH THE INSTALLTION INDICATES YOUR ACCEPTANCE OF 
+THESE TERMS AND CONDITIONS. PROTEL IS WILLING TO LICENSE THE 
+ENCLOSED SOFTWARE TO YOU ONLY UPON THE PREREQUISITE THAT YOU 
+ACCEPT ALL OF THE TERMS AND CONDITIONS CONTAINED IN THIS LICENSE 
+AGREEMENT.  IF YOU DO NOT AGREE TO ALL OF THESE TERMS AND 
+CONDITIONS, THEN YOU SHOULD TERMINATE THE INSTALLATION PROCESS 
+AND PROMPTLY RETURN THE PRODUCT TO THE PLACE OF PURCHASE FROM 
+WHICH IT WAS OBTAINED, AND YOUR MONEY WILL BE REFUNDED.
+
+The CircuitMaker Product, consisting of the media 
+(containing the "Software"), the "User Documentation" and 
+the "Security Device" (if one is included with the product) is 
+the sole property of Protel International Limited.  ("Protel"), 
+and is protected by United States and international copyright 
+law, trademark and international trade provisions. THIS 
+LICENSE IS NOT A SALE and conveys no right or interest 
+other than a right to use solely as provided herein.  The title 
+and all ownership rights including copyright for the Product 
+remains with Protel and its suppliers.
+Under this License Agreement, the user receives a non-exclusive 
+license to use the CircuitMaker Product for a non-fixed term, 
+WHICH CAN BE REVOKED BY PROTEL IF ANY TERMS OR CONDITIONS OF 
+THIS LICENSE AGREEMENT ARE VIOLATED.  The Software and User 
+Documentation are provided with RESTRICTED RIGHTS.  
+The use, duplication, or disclosure by the U.S. Government 
+is subject to restrictions as set forth in subparagraph (c)(1)(ii) 
+of the Rights in Technical Data and Computer Software 
+clause at DFARS 252.227-7013 or paragraphs (c)(1) and (2) 
+of the Commercial Software Restricted Rights at 48CFR 
+52.227-19, as applicable. Contractor/manufacturer is Protel 
+International Limited, 12a Rodborough Rd Frenchs Forest 
+2086 Australia.
+You agree to use best efforts to ensure that no governmental 
+entity shall acquire any rights to the Product of any kind 
+under any governmental laws, rules or regulations pertaining 
+to government acquisition or otherwise.  By returning the 
+Registration Card, registering with the appropriate Protel 
+Registration Agency, OR BY USING THE PRODUCT, you 
+accept all of the terms and conditions of this License.  If you 
+do not agree to these terms and conditions, you may return 
+the Product within (30) days for a full refund.
+
+Permitted Uses - You May
+
+1)  Use Software on a single computer at any one time.  If 
+you have multiple licenses of the software, then at any time 
+you may have as many copies of the software in use as you 
+have licenses.  "In use" shall be defined as loaded into 
+temporary memory (i.e., RAM).
+
+2)  Transfer the Software from computer to computer 
+provided that it is not used on more than one computer at 
+any one time.
+
+3)  Install the Software on a network server, only if the sole 
+purpose is for the distribution to other computers using the 
+Software in a single site, defined as a 1 Kilometer radius 
+from the server, in accordance with the terms and conditions 
+of this License Agreement.
+
+4)  Produce a single copy of the Software media exclusively 
+for back-up or archive purposes.  If at any time the back-up 
+or archive copy is damaged, a second copy can be 
+produced, if the damaged back-up or archive media is 
+destroyed or erased.
+
+5)  Use the Software only in the machine executable form is 
+which it is provided.
+
+Prohibited Uses - You May Not
+
+1)  Use this Software in a computer system or network which 
+allows the program to be operated by more than one user at 
+a time, without the appropriate number of Product Licenses.
+
+2)  Use any program module of the Software with a Security 
+Device provided by an entity other than Protel, or a source 
+authorized by Protel, or modify any program module so that 
+it may be used without a Security Device (if included with 
+Product).
+
+3)  Except as specified in this Agreement, use, modify, copy, 
+sell, transfer, distribute, or disseminate (including translation 
+in another language)  any Software program module or User 
+Documentation, or any copy thereof.
+
+4)  Reverse engineer, translate, decompile or disassemble 
+any Software program module or Security Device, provided 
+that you shall not be prohibited from achieving 
+interoperability of the Software with its operating 
+environment to the extent you have such right under Articles 
+5 and 6 of the EC Council Software Directive of May 14, 
+1991 and reasonable information and assistance to achieve 
+such interoperability is not available from Protel.
+
+5) Rent, lease or sublicense the product software, user 
+documentation, security device, or any portion thereof 
+without Protel's prior written consent.
+
+Limited Warranty 
+
+If you discover physical defects in the Protel product, 
+Security Device (if any), or media on which the Software was 
+distributed, Protel will, at its option, either replace the 
+defective components or refund your license fee for the 
+Protel product.  These are your exclusive remedies for 
+breach of this limited warranty.  However, in order to 
+exercise such remedies, you must return the defective item 
+to the place of purchase, WITH PROOF OF PAYMENT, 
+during the warranty period of ninety (90) days from the date 
+you take delivery.  If failure of the media (containing the 
+Software) or Security Device has resulted from accident, 
+abuse, or misapplication of the product, then Protel shall 
+have no responsibility to replace these items under warranty.
+
+PROTEL DISCLAIMS ALL OTHER EXPRESS WARRANTIES AND ALL IMPLIED 
+WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES 
+OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. THE 
+SOFTWARE, USER DOCUMENTATION, AND SECURITY DEVICE ARE LICENSED 
+ON AN "AS IS" BASIS AND YOU ASSUME THE ENTIRE RISK AS TO THEIR 
+PERFORMANCE.
+
+UNDER NO CIRCUMSTANCES, SHALL PROTEL BE LIABLE FOR ANY 
+CONSEQUENTIAL, INCIDENTAL, OR SPECIAL DAMAGES ARISING OUT OF 
+THE SUPPLY, USE OF OR INABILITY TO USE THIS PRODUCT, INCLUDING, 
+WITHOUT LIMITATION, DAMAGES, LOSS OF PROFITS, BUSINESS 
+INTERRUPTION, OR LOSS OF INFORMATION, EVEN IF PROTEL HAS BEEN 
+ADVISED TO THE POSSIBILITY OF SUCH LOSSES.  IN NO EVENT WILL 
+PROTEL'S LIABILITY FOR ANY DAMAGES TO YOU OR ANY OTHER PERSON 
+EVER EXCEED THE LOWER OF THE SUGGESTED LIST PRICE OR ACTUAL 
+PRICE PAID FOR THE LICENSE TO USE THE SOFTWARE, REGARDLESS OF 
+ANY FORM OF THE CLAIM.  YOU ACKNOWLEDGE THAT THE LICENSE FEE 
+REFLECTS THIS ALLOCATION OF RISK.
+
+Some jurisdictions may not allow the exclusion or limitation 
+of liability for consequential or incidental damages, so the 
+above limitation may not apply to you.  This limited warranty 
+gives you specific legal rights. You may also have other 
+rights which vary by jurisdiction.
+
+Governing Law; Other
+
+This License Agreement is the complete and exclusive 
+statement of your agreement with Protel and supersedes 
+any prior agreement and any other communications, oral or 
+written, between you, the user, and Protel regarding its 
+subject matter.  This License Agreement shall be construed 
+and exclusively enforced in accordance with its English 
+language version and all disputes relating in any way to this 
+License Agreement shall be governed by the internal laws of 
+the State of California, except to the extent required 
+otherwise under the laws of your jurisdiction. The 
+International Sale of Goods Convention shall not apply to 
+this License Agreement.  In the event of any dispute, you  
+consent to non-exclusive jurisdiction and venue in a 
+competent court in the State of California.
+This License Agreement is subject to and conditional upon 
+compliance with United States export regulations and you 
+shall comply with all applicable laws and regulations of the 
+United States, including export, relating to the Product and 
+the your use thereof, and you shall provide such 
+documentation and assurances as are required from time to 
+time to comply herewith. You shall pay any and all taxes, 
+export/import customs fees, duties, excise or other charges 
+of whatever nature as or now may hereafter be imposed 
+upon or levied in connection with the license, use, 
+possession, exportation, or importation, or servicing of the 
+Product (except for taxes imposed on the net income of 
+Protel) and any such taxes, fees, duties or such similar costs 
+imposed on Protel shall be promptly reimbursed to Protel by 
+you upon demand and may be added to the price for this 
+license at Protel's option.
+This License Agreement shall inure to the benefit of and be 
+binding upon Protel, the user and their respective 
+successors, heirs, administrators and assigns. If any 
+provision of this License Agreement is found void or 
+unenforceable, that provision will be enforced to the 
+maximum extent possible in the applicable jurisdiction 
+without invalidating or rendering unenforceable such 
+provision in any other jurisdiction, and the remaining 
+provisions of this License Agreement will remain in full force 
+and effect. If any remedy provided in this License Agreement 
+is determined to have failed of its essential purpose, all 
+limitations of liability and exclusions of damages set forth 
+above shall remain in full force and effect.
+
+Termination
+
+THIS LICENSE IS EFFECTIVE UNTIL TERMINATED.  You may terminate 
+it by destroying or returning the magnetic media (containing 
+the Software), User Documentation, Security Device and all 
+copies thereof (including destruction of all electronically 
+stored copies).  THIS LICENSE WILL TERMINATE IF YOU FAIL TO 
+COMPLY WITH ANY TERM OR CONDITION OF THIS AGREEMENT.
+
+Protel International Limited.
+End User License Agreement. 
+Copyright (c) 1992-2000 Protel International Limited.  All 
+rights reserved.

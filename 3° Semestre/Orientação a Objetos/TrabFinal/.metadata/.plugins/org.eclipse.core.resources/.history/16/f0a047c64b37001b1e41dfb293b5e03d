@@ -1,0 +1,125 @@
+package visao;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+import DAO.PessoaDao;
+import dados.Pessoa;
+import validacao.Validacao;
+
+public class Mostra extends JFrame {
+	private TelaPrincipal principal;
+	private JButton mostra, voltar;
+	private JLabel erroCodigo;
+	private JTextField codigo;
+
+	public Mostra() {
+		initComponents();
+	}
+
+	private void configuraFrame() {
+		setTitle("Mostra");
+		setResizable(false);
+		setMinimumSize(new Dimension(500, 200));
+		setMaximumSize(new Dimension(500, 200));
+		setAlwaysOnTop(false);
+		setLocationRelativeTo(null);
+		getContentPane().setFont(new Font("Arial", Font.PLAIN, 12));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	// CRIA TEXTO NA JANELA
+	private void criaLabel(String nome, int eixoY) {
+		getContentPane().setLayout(null);
+		JLabel nova = new JLabel(nome);
+		nova.setFont(new Font("Arial", Font.PLAIN, 14));
+		nova.setForeground(Color.BLACK);
+		nova.setBounds(58, 43, 190, 15);
+		getContentPane().add(nova);
+	}
+
+	private void criaCodigo() {
+		criaLabel("Insira o codigo da pessoa", 50);
+		codigo = new JTextField();
+		codigo.setToolTipText("Digite o Nome");
+		codigo.setForeground(Color.BLACK);
+		codigo.setFont(new Font("Arial", Font.BOLD, 14));
+		codigo.setBounds(127, 76, 233, 20);
+		erroCodigo = new JLabel();
+		erroCodigo.setBounds(137, 96, 131, 20);
+		getContentPane().add(codigo);
+		codigo.setColumns(10);
+		getContentPane().add(erroCodigo);		
+	}
+	
+	private void validaCodigo(String codigo) {
+		erroCodigo.setText("");
+		erroCodigo.setFont(new Font("Arial", Font.BOLD, 12));
+		erroCodigo.setBounds(150, 155, 250, 20);
+		if (!Validacao.validaInt(codigo)) {
+			erroCodigo.setText("Insira apenas Numeros!");
+			erroCodigo.setForeground(Color.RED);
+			mostra.setEnabled(false);
+		}
+		else {
+			erroCodigo.setText("Valo valido");
+			erroCodigo.setForeground(Color.BLUE);
+			mostra.setEnabled(true);
+		}
+	}
+	
+	private void criaMostra() {
+		mostra = new JButton("Mostra");
+		mostra.setBounds(254, 127, 89, 23);
+		getContentPane().add(mostra);
+	}
+	
+	private void criaVoltar() {
+		voltar = new JButton("Voltar");
+		voltar.setBounds(147, 127, 89, 23);
+		getContentPane().add(voltar);
+	}
+	
+	private void mostraPessoa() {
+		PessoaDao dao = new PessoaDao();
+		int codigo = Integer.parseInt(this.codigo.getText());
+		Pessoa mostra = dao.getPessoaId(codigo);
+		
+		if (mostra.getSituacaoGestacao() == null)
+			JOptionPane.showMessageDialog(null, "Nome: " +mostra.getNome() + "\nSaude: "+ mostra.getSituacaoExtenso() +"\nIdade: "+mostra.getIdade());
+		else
+			JOptionPane.showMessageDialog(null, "Nome: " +mostra.getNome() + "\nSaude: "+ mostra.getSituacaoExtenso() +"\nGestacao: "+mostra.getSituacaoGExtenso());
+		
+	}
+	
+	private void menuPrincipal() {
+		principal = new TelaPrincipal();
+		principal.setVisible(true);
+		setVisible(false);
+	}
+	
+	private void addEscutadores() {
+		codigo.addCaretListener(evt -> validaCodigo(codigo.getText()));
+		mostra.addActionListener(evt -> mostraPessoa());
+		voltar.addActionListener(evt -> menuPrincipal());
+	}
+
+	private void initComponents() {
+		configuraFrame();
+
+		criaCodigo();
+		
+		criaMostra();
+		
+		criaVoltar();
+		
+		addEscutadores();
+	}
+}

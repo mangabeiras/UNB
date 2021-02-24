@@ -1,1 +1,2582 @@
-unsupported reparse point
+*==============================================
+*OPAMP5 pinout: +IN, -IN, +V, -V, OUT
+*Copyright (c) 1997 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*=================================
+*MicroCode Engineering
+
+*IDEAL Sngl OpAmp OpenLoopGain=100k pkg:DIP8 3,2,7,4,6
+.PARAM XOPAMP5 File:Mcemods2.lib
+
+*Quad WideBW JFET OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLF347 File:Mcemods2.lib
+
+*Sngl WideBW JFET OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF351 File:Mcemods2.lib
+
+*Dual WideBW JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLF353 File:Mcemods2.lib
+
+*Sngl LoOffset LoDrift JFET OpAmp pkg:DIP8 3,2,8,4,6
+.PARAM XLF411C File:Mcemods2.lib
+
+*Dual LoOffset LoDrift JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLF412C File:Mcemods2.lib
+
+*Sngl GenPurpose OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM307 File:Mcemods2.lib
+
+*Quad LoPwr SnglSup OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLM324 File:Mcemods2.lib
+
+*Quad 741 OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLM348 File:Mcemods2.lib
+
+*Dual LoPwr, HiGain, SnglSup OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM358 File:Mcemods2.lib
+
+*Quad LoPwr SnglSup OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLM2902 File:Mcemods2.lib
+
+*Quad SnglSup OpAmp pkg:DIP14 (A:1,6,14,7,5)(B:2,3,14,7,4)(C:13,8,14,7,9)(D:12,11,14,7,10)
+.PARAM XLM3900 File:Mcemods2.lib
+
+*Dual 741 OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC1458 File:Mcemods2.lib
+
+*Quad LoPwr SnglSup OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC3403 File:Mcemods2.lib
+
+*Dual LoPwr OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTL022C File:Mcemods2.lib
+
+*Sngl LoPwr LoOffset OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL031 File:Mcemods2.lib
+
+*Dual LoPwr LoOffset OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTL032 File:Mcemods2.lib
+
+*Quad LoPwr LoOffset OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XTL034 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL044C File:Mcemods2.lib
+
+*Sngl Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL051 File:Mcemods2.lib
+
+*Dual Precison OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTL052 File:Mcemods2.lib
+
+*Quad Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XTL054 File:Mcemods2.lib
+
+*Sngl LoPwr JFETinput OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL061 File:Mcemods2.lib
+
+*Dual LoPwr JFETInput OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTL062 File:Mcemods2.lib
+
+*Quad LoPwr JFETInput OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XTL064 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL066 File:Mcemods2.lib
+
+*Sngl LoNoise JFETInput OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL071 File:Mcemods2.lib
+
+*Dual LoNoise JFETInput OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTL072 File:Mcemods2.lib
+
+*Quad LoNoise JFETInput OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XTL074 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL075 File:Mcemods2.lib
+
+*Sngl WideBW JFETInput OpAmp pkg:DIP8 3,2,7,4,6.
+.PARAM XTL081 File:Mcemods2.lib
+
+*Dual WideBW JFETInput OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTL082 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL083 File:Mcemods2.lib
+
+*Quad JFETInput OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XTL084 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL085 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL087 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL088 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL321 File:Mcemods2.lib
+
+*OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XTL322 File:Mcemods2.lib
+
+*Sngl GenPurpose OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XUA741 File:Mcemods2.lib
+
+*Dual GenPurpose OpAmp pkg:DIP14 (A:2,1,13,4,12)(B:6,7,9,4,10)
+.PARAM XUA747 File:Mcemods2.lib
+
+*====================================================
+*Motorola
+
+*MOT Sngl LoPwr JFET OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF441 File:Mot.lib
+
+*MOT Dual LoPwr JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLF442 File:Mot.lib
+
+*MOT Quad LoPwr JFET OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLF444 File:Mot.lib
+
+*MOT Sngl Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM11 File:Mot.lib
+
+*MOT Dual LoNoise Audio OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM833 File:Mot.lib
+
+*MOT OpAmp
+.PARAM XLM2904  File:Mot.lib
+
+*MOT OpAmp
+.PARAM XMC1536  File:Mot.lib
+
+*MOT OpAmp
+.PARAM XMC1747   File:Mot.lib
+
+*MOT Dual LoPwr OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC3458   File:Mot.lib
+
+*MOT Dual WideBW OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC4558   File:Mot.lib
+
+*MOT Quad 741 OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC4741   File:Mot.lib
+
+*MOT Sngl OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMC33071  File:Mot.lib
+
+*MOT Sngl OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC33072  File:Mot.lib
+
+*MOT Quad OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC33074  File:Mot.lib
+
+*MOT Dual HiIout LoPwr LoNoise OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC33076  File:Mot.lib
+
+*MOT Dual LoNoise OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC33077  File:Mot.lib
+
+*MOT Dual LoNoise OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC33078  File:Mot.lib
+
+*MOT Quad LoNoise OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC33079  File:Mot.lib
+
+*MOT Sngl LoPwr SnglSup OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMC33171  File:Mot.lib
+
+*MOT Dual LoPwr SnglSup OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC33172  File:Mot.lib
+
+*MOT Quad LoPwr SnglSup OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC33174  File:Mot.lib
+
+*MOT Dual HiIout LoPwr LoNoise OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC33178  File:Mot.lib
+
+*MOT Quad HiIout LoPwr LoNoise OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC33179  File:Mot.lib
+
+*MOT Sngl LoPwr HiSlewRt WideBW OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMC33181  File:Mot.lib
+
+*MOT Dual LoPwr HiSlewRt WideBW OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC33182  File:Mot.lib
+
+*MOT Quad LoPwr HiSlewRt WideBW OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC33184  File:Mot.lib
+
+*MOT Quad Rail-to-Rail OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC33204  File:Mot.lib
+
+*MOT Dual SnglSup HiSlewRt LoOffset OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC33272  File:Mot.lib
+
+*MOT Quad SnglSup HiSlewRt LoOffset OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC33274  File:Mot.lib
+
+*MOT Dual LoOffset HiSlewRt WideBW OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMC33282  File:Mot.lib
+
+*MOT Quad LoOffset HiSlewRt WideBW OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC33284 File:Mot.lib
+
+*MOT Sngl JFETInput OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMC34001  File:Mot.lib
+
+*MOT Quad HiSlewRt WideBW OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC34084  File:Mot.lib
+
+*MOT Quad LoPwr HiSlewRt WideBW OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMC34184  File:Mot.lib
+
+*MOT Dual Power OpAmp pkg:DIP16 (A:7,8,2,4,1)(B:6,5,2,4,3). pkg:DIP16 (A:9,10,1,13,16)(B:8,7,1,4,2).
+.PARAM XTCA0372  File:Mot.lib
+
+*====================================================
+*Comlinear
+
+*COM Sngl LoGain Fast14bitSettling OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XCLC402  File:Comlin.lib
+
+*COM Sngl WideBW HiSlewRt OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XCLC404 File:Comlin.lib
+
+*COM Sngl LoPwr WideBW OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XCLC406 File:Comlin.lib
+
+*COM Sngl VeryWideBW LoDisto OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XCLC409 File:Comlin.lib
+
+*COM Dual WideB Video OpAmp pkg:DIP8 (A:3,2,7,4,1)(B:5,6,8,4,7)
+.PARAM XCLC412 File:Comlin.lib
+
+*COM Quad LoPwr OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XCLC414 File:Comlin.lib
+
+*COM Quad WideBW OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XCLC415 File:Comlin.lib
+
+*COM Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XCLC420 File:Comlin.lib
+
+*COM Dual LoNoise WideB VoltageFB OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XCLC428 File:Comlin.lib
+
+*COM Dual WideB HiSlewRt CurrentFB OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XCLC432 File:Comlin.lib
+
+*COM Sngl HiSpeed LoPwr OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XCLC440 File:Comlin.lib
+
+*COM 1.2GHz UltraHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XCLC449 File:Comlin.lib
+
+*====================================================
+*Harris
+
+*HAR Sngl Precision HiSlewRt OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2500 File:Harris.lib
+
+*HAR Sngl Precision HiSlewRt OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2502 File:Harris.lib
+
+*HAR Sngl HiSlewRt OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2510 File:Harris.lib
+
+*HAR Sngl HiSlewRt OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2512 File:Harris.lib
+
+*HAR Sngl HiSlewRt OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2520 File:Harris.lib
+
+*HAR Sngl HiSlewRt OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2522 File:Harris.lib
+
+*HAR Sngl VeryHiSlewRt WideBW OpAmp pkg:DIP14 1,14,19,3,8
+.PARAM XHA2539  File:Harris.lib
+
+*HAR Sngl FastSettl WideBW OpAmp pkg:DIP14 5,4,11,6,10
+.PARAM XHA2540  File:Harris.lib
+
+*HAR Sngl FastSettl WideBW UnityGainStab OpAmp pkg:DIP14 5,4,11,6,10
+.PARAM XHA2541 File:Harris.lib
+
+*HAR Sngl HiSlewRt WideBW HiIOut OpAmp pkg:DIP14 5,4,11,6,10
+.PARAM XHA2542  File:Harris.lib
+
+*HAR Sngl Video OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2544  File:Harris.lib
+
+*HAR Sngl Precision HiSlewRt WideB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2548 File:Harris.lib
+
+*HAR Sngl WideB HiZ OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2600 File:Harris.lib
+
+*HAR Sngl WideB HiZ OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2602 File:Harris.lib
+
+*HAR Sngl VeryWideB Uncomp OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2620 File:Harris.lib
+
+*HAR Sngl VeryWideB Uncomp OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2622 File:Harris.lib
+
+*HAR Sngl VeryHiSlewRt WideB OpAmp pkg:DIP14 1,14,10,3,8
+.PARAM XHA2839 File:Harris.lib
+
+*HAR Sngl VeryHiSlewRt WideB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2840 File:Harris.lib
+
+*HAR Sngl WideB FastSettl UniGainStab OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2841 File:Harris.lib
+
+*HAR Sngl WideB HiSlewRt HiIOut Video OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2842 File:Harris.lib
+
+*HAR Sngl WideB HiSlewRt LoPwr OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA2850 File:Harris.lib
+
+*HAR Sngl 100MHz CurrentFB Amp pkg:DIP14 11,12,5,13,2
+.PARAM XHA5004  File:Harris.lib
+
+*HAR Sngl 100MHz CurrenFB Video Amp pkg:DIP8 3,2,7,4,6
+.PARAM XHA5020 File:Harris.lib
+
+*HAR Sngl LoNoise HiPerformance OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA5101  File:Harris.lib
+
+*HAR Dual LoNoise HiPerformance OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XHA5102 File:Harris.lib
+
+*HAR Quad LoNoise HiPerformance OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XHA5104 File:Harris.lib
+
+*HAR Dual LoNoise HiPerformance OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XHA5112  File:Harris.lib
+
+*HAR Quad LoNoise HiPerformance OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XHA5114  File:Harris.lib
+
+*HAR UltraLoNoise Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA5127 File:Harris.lib
+
+*HAR UltraLoNoise Precision WideB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA5137 File:Harris.lib
+
+*HAR UltraLoNoise HiSlewRt WideB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA5147 File:Harris.lib
+
+*HAR Sngl WideB FastSettl OpAmp pkg:DIP14 5,4,11,6,10
+.PARAM XHA5190  File:Harris.lib
+
+*HAR Sngl WideB LoNoise Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XHA5221 File:Harris.lib
+
+*HAR Dual WideB LoNoise Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XHA5222 File:Harris.lib
+
+*====================================================
+*Linear Technology
+
+*LTC Sngl SnglSup Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1006 File:Ltc.lib
+
+*LTC Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM318 File:Ltc.lib
+
+*LTC Sngl HiSpeed OpAmp pkg:SMD8A 3,2,7,4,6
+.PARAM XLM318S8 File:Ltc.lib
+
+*LTC Sngl JFETin LoSupCurrent OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF155 File:Ltc.lib
+
+*LTC Sngl JFETin LoSupCurrent OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF155A File:Ltc.lib
+
+*LTC Sngl JFETin HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF156 File:Ltc.lib
+
+*LTC Sngl JFETin HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF156A File:Ltc.lib
+
+*LTC Sngl JFETin LoSupCurrent OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF355 File:Ltc.lib
+
+*LTC Sngl JFETin LoSupCurrent OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF355A File:Ltc.lib
+
+*LTC Sngl JFETin HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF356 File:Ltc.lib
+
+*LTC Sngl JFETin HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF356A File:Ltc.lib
+
+*LTC Dual JFETin Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLF412 File:Ltc.lib
+
+*LTC Dual JFETin Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLF412A File:Ltc.lib
+
+*LTC Sngl GenPurpose OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM107 File:Ltc.lib
+
+*LTC Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM118 File:Ltc.lib
+
+*LTC Sngl Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1001 File:Ltc.lib
+
+*LTC Dual Matched Precision OpAmp pkg:DIP14 (A:4,3,14,12,13)(B:11,10,7,5,6)
+.PARAM XLT1002 File:Ltc.lib
+
+*LTC Sngl Precision OpAmp pkg:SMD8A 3,2,7,4,6
+.PARAM XLT1001S8 File:Ltc.lib
+
+*LTC Sngl Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1001A File:Ltc.lib
+
+*LTC Dual Matched Precision OpAmp pkg:DIP14 (A:4,3,14,12,13)(B:11,10,7,5,6)
+.PARAM XLT1002A File:Ltc.lib
+
+*LTC Sngl SnglSup Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1006 File:Ltc.lib
+
+*LTC Sngl SnglSup Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1006A File:Ltc.lib
+
+*LTC Sngl SnglSup Precision OpAmp pkg:SMD8A 3,2,7,4,6
+.PARAM XLT1006S8 File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1007 File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:SMD16B 5,4,13,6,12
+.PARAM XLT1007CS File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1007A File:Ltc.lib
+
+*LTC Sngl pA uV LoNoise OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1012 File:Ltc.lib
+
+*LTC Dual Matched pA uV LoNoise OpAmp pkg:DIP14 (A:4,3,14,12,13)(B:11,10,7,5,6)
+.PARAM XLT1024 File:Ltc.lib
+
+*LTC Sngl pA uV LoNoise OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1012A File:Ltc.lib
+
+*LTC Dual Matched pA uV LoNoise OpAmp pkg:DIP14 (A:4,3,14,12,13)(B:11,10,7,5,6)
+.PARAM XLT1024A File:Ltc.lib
+
+*LTC Sngl pA uV LoNoise OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1012D File:Ltc.lib
+
+*LTC Sngl pA uV LoNoise OpAmp pkg:SMD8A 3,2,7,4,6
+.PARAM XLT1012S8 File:Ltc.lib
+
+*LTC Dual SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1013  File:Ltc.lib
+
+*LTC Quad SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1014 File:Ltc.lib
+
+*LTC Dual SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1013A File:Ltc.lib
+
+*LTC Quad SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1014A File:Ltc.lib
+
+*LTC Dual SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1013D File:Ltc.lib
+
+*LTC Quad SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1014D File:Ltc.lib
+
+*LTC Sngl HiSpeed Precision JFET OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1022 File:Ltc.lib
+
+*LTC Sngl HiSpeed Precision JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLT1022A File:Ltc.lib
+
+*LTC Sngl UltraLoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1028 File:Ltc.lib
+
+*LTC Sngl UltraLoNoise HiSpeed Precision OpAmp pkg:SMD16B 5,4,13,6,12
+.PARAM XLT1028CS File:Ltc.lib
+
+*LTC Sngl UltraLoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1028A File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1037 File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:SMD16B 5,4,13,6,12
+.PARAM XLT1037CS File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1037A File:Ltc.lib
+
+*LTC Sngl HiSpeed Precision JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLT1055 File:Ltc.lib
+
+*LTC Sngl HiSpeed Precision JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLT1055A File:Ltc.lib
+
+*LTC Sngl HiSpeed Precision JFET OpAmp pkg:SMD8A 3,2,7,4,6
+.PARAM XLT1055S8 File:Ltc.lib
+
+*LTC Sngl HiSpeed Precision JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLT1056 File:Ltc.lib
+
+*LTC Sngl HiSpeed Precision JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLT1056A File:Ltc.lib
+
+*LTC Sngl HiSpeed Precision JFET OpAmp pkg:SMD8A 3,2,7,4,6
+.PARAM XLT1056S8 File:Ltc.lib
+
+*LTC Dual HiSpeed Precision JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1057 File:Ltc.lib
+
+*LTC Quad HiSpeed Precision JFET OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1058 File:Ltc.lib
+
+*LTC Dual HiSpeed Precision JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1057A File:Ltc.lib
+
+*LTC Quad HiSpeed Precision JFET OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1058A File:Ltc.lib
+
+*LTC Dual HiSpeed Precision JFET OpAmp pkg:SMD16B (A:5,4,14,6,3)(B:11,12,14,6,13)
+.PARAM XLT1057S File:Ltc.lib
+
+*LTC Dual uPwr SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1078 File:Ltc.lib
+
+*LTC Quad uPwr SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1079 File:Ltc.lib
+
+*LTC Sngl uPwr SnglSup Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1077 File:Ltc.lib
+
+*LTC Dual uPwr SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1078A File:Ltc.lib
+
+*LTC Quad uPwr SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1079A File:Ltc.lib
+
+*LTC Sngl LoCost LoPwr Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1097 File:Ltc.lib
+
+*LTC Sngl UltraLoNoise LoDisto Audio OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1115 File:Ltc.lib
+
+*LTC Sngl FastSettling JFET OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1122 File:Ltc.lib
+
+*LTC Dual 17uAMax SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1178 File:Ltc.lib
+
+*LTC Quad 17uAMax SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1179 File:Ltc.lib
+
+*LTC Dual 17uAMax SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1178A File:Ltc.lib
+
+*LTC Quad 17uAMax SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1179A File:Ltc.lib
+
+*LTC Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT118A File:Ltc.lib
+
+*LTC Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT318A File:Ltc.lib
+
+*LTC Sngl UltraHiSpeed SnglSup OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1190 File:Ltc.lib
+
+*LTC Sngl UltraHiSpeed SnglSup OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1191 File:Ltc.lib
+
+*LTC Sngl UltraHiSpeed SnglSup OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1192 File:Ltc.lib
+
+*LTC Sngl LoPwr HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1195 File:Ltc.lib
+
+*LTC Sngl LoPwr HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1200 File:Ltc.lib
+
+*LTC Dual 1mA 12MHz 50V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1201 File:Ltc.lib
+
+*LTC Quad 1mA 12MHz 50V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1202 File:Ltc.lib
+
+*LTC Dual 45MHz 400V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1208 File:Ltc.lib
+
+*LTC Quad 45MHz 400V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1209 File:Ltc.lib
+
+*LTC Sngl LoPwr 10MHz CurrentFB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1217 File:Ltc.lib
+
+*LTC Sngl VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1220 File:Ltc.lib
+
+*LTC Sngl VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1221 File:Ltc.lib
+
+*LTC Sngl 100MHz CurrentFB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1223 File:Ltc.lib
+
+*LTC Sngl VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1224 File:Ltc.lib
+
+*LTC Sngl VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1225 File:Ltc.lib
+
+*LTC Sngl LoNoise VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1226 File:Ltc.lib
+
+*LTC Sngl 140MHz Video CurrentFB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1227 File:Ltc.lib
+
+*LTC Dual 100MHz CurrentFB Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1229 File:Ltc.lib
+
+*LTC Quad 100MHz CurrentFB Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1230 File:Ltc.lib
+
+*LTC Sngl CurrentFB VideoAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1252 File:Ltc.lib
+
+*LTC Dual CurrentFB VideoAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1253 File:Ltc.lib
+
+*LTC Quad CurrentFB VideoAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1254 File:Ltc.lib
+
+*LTC Dual 130MHz CurrentFB Amp w/Shutdown pkg:DIP14 (A:2,1,12,10,13)(B:6,7,12,10,9)
+.PARAM XLT1259 File:Ltc.lib
+
+*LTC Trpl 130MHz CurrentFB Amp w/Shutdown pkg:DIP16 (A:2,1,14,11,15)(B:7,8,14,11,10)(C:5,4,14,11,12)
+.PARAM XLT1260 File:Ltc.lib
+
+*LTC Sngl 12MHz 400V/us OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1354 File:Ltc.lib
+
+*LTC Dual 12MHz 400V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1355 File:Ltc.lib
+
+*LTC Quad 12MHz 400V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1356 File:Ltc.lib
+
+*LTC Sngl 25MHz 600V/us OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1357 File:Ltc.lib
+
+*LTC Dual 25MHz 600V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1358 File:Ltc.lib
+
+*LTC Quad 25MHz 600V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1359 File:Ltc.lib
+
+*LTC Sngl 50MHz 800V/us OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1360 File:Ltc.lib
+
+*LTC Dual 50MHz 800V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1361 File:Ltc.lib
+
+*LTC Quad 50MHz 800V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1362 File:Ltc.lib
+
+*LTC Sngl 70MHz 1000V/us OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLT1363 File:Ltc.lib
+
+*LTC Dual 70MHz 1000V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLT1364 File:Ltc.lib
+
+*LTC Quad 70MHz 1000V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLT1365 File:Ltc.lib
+
+*LTC Dual uPwr ChopStab SnglSup OpAmp w/intCaps pkg:DIP14 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLTC1047 File:Ltc.lib
+
+*LTC Sngl LoPwr ChopStab SnglSup OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLTC1049 File:Ltc.lib
+
+*LTC Sngl Precision ChopStab OpAmp w/intCaps pkg:DIP8 3,2,7,4,6
+.PARAM XLTC1050 File:Ltc.lib
+
+*LTC Sngl Precision ChopStab OpAmp w/intCaps pkg:DIP8 3,2,7,4,6
+.PARAM XLTC1050A File:Ltc.lib
+
+*LTC Dual Precision ChopStab OpAmp w/intCaps pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLTC1051 File:Ltc.lib
+
+*LTC Sngl ChopStab OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLTC1052 File:Ltc.lib
+
+*LTC Sngl ChopStab OpAmp pkg:SMD16B 5,4,13,7,12
+.PARAM XLTC1052CS File:Ltc.lib
+
+*LTC Sngl ChopStab OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLTC7652 File:Ltc.lib
+
+*LTC Quad Precision ChopStab OpAmp w/intCaps pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLTC1053 File:Ltc.lib
+
+*LTC Sngl +/-15V ChopStab OpAmp w/intCaps pkg:DIP8 3,2,7,4,6
+.PARAM XLTC1150 File:Ltc.lib
+
+*LTC Sngl OpAmp Vos=200uV pkg:DIP8 3,2,7,4,6
+.PARAM XOP05 File:Ltc.lib
+
+*LTC Sngl OpAmp Vos=70uV pkg:DIP8 3,2,7,4,6
+.PARAM XOP05A File:Ltc.lib
+
+*LTC Sngl OpAmp Vos=300uV pkg:DIP8 3,2,7,4,6
+.PARAM XOP05C File:Ltc.lib
+
+*LTC Sngl OpAmp Vos=200uV pkg:DIP8 3,2,7,4,6
+.PARAM XOP05E File:Ltc.lib
+
+*LTC Sngl Precision OpAmp Vos=30uV pkg:DIP8 3,2,7,4,6
+.PARAM XOP07 File:Ltc.lib
+
+*LTC Sngl Precision OpAmp Vos=10uV pkg:DIP8 3,2,7,4,6
+.PARAM XOP07A File:Ltc.lib
+
+*LTC Sngl Precision OpAmp Vos=60uV pkg:DIP8 3,2,7,4,6
+.PARAM XOP07C File:Ltc.lib
+
+*LTC Sngl Precision OpAmp Vos=60uV pkg:SMD8A 3,2,7,4,6
+.PARAM XOP07CS8 File:Ltc.lib
+
+*LTC Sngl Precision OpAmp Vos=30uV pkg:DIP8 3,2,7,4,6
+.PARAM XOP07E File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=200uV pkg:CAN8 3,2,7,4,6
+.PARAM XOP15A File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=200uV pkg:CAN8 3,2,7,4,6
+.PARAM XOP15E File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=400uV pkg:CAN8 3,2,7,4,6
+.PARAM XOP15B File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=400uV pkg:CAN8 3,2,7,4,6
+.PARAM XOP15F File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=500uV pkg:CAN8 3,2,7,4,6
+.PARAM XOP15C File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=500uV pkg:DIP8 3,2,7,4,6
+.PARAM XOP15G File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=200uV pkg:CAN8 3,2,7,4,6
+.PARAM XOP16A File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=200uV pkg:CAN8 3,2,7,4,6
+.PARAM XOP16E File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=400uV pkg:CAN8 3,2,7,4,6
+.PARAM XOP16B File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=400uV pkg:CAN8 3,2,7,4,6
+.PARAM XOP16F File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=500uV pkg:CAN8 3,2,7,4,6
+.PARAM XOP16C File:Ltc.lib
+
+*LTC Sngl HiSpd JFET Precision OpAmp Vos=500uV pkg:DIP8 3,2,7,4,6
+.PARAM XOP16G File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27A File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27C File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27E File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27G File:Ltc.lib
+
+*LTC Dual JFET Precision OpAmp Vos=200uV pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215A File:Ltc.lib
+
+*LTC Dual JFET Precision OpAmp Vos=500uV pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215C File:Ltc.lib
+
+*LTC Dual JFET Precision OpAmp Vos=200uV pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215E File:Ltc.lib
+
+*LTC Dual JFET Precision OpAmp Vos=500uV pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215G File:Ltc.lib
+
+*LTC Dual Matched LoNoise Precision OpAmp pkg:DIP14 (A:4,3,14,7,13)(B:11,10,14,7,6)
+.PARAM XOP227A File:Ltc.lib
+
+*LTC Dual Matched LoNoise Precision OpAmp pkg:DIP14 (A:4,3,14,7,13)(B:11,10,14,7,6)
+.PARAM XOP227E File:Ltc.lib
+
+*LTC Dual Matched LoNoise Precision OpAmp pkg:DIP14 (A:4,3,14,7,13)(B:11,10,14,7,6)
+.PARAM XOP227C File:Ltc.lib
+
+*LTC Dual Matched LoNoise Precision OpAmp pkg:DIP14 (A:4,3,14,7,13)(B:11,10,14,7,6)
+.PARAM XOP227G File:Ltc.lib
+
+*LTC Dual HiSpeed LoNoise Precision OpAmp pkg:DIP14 (A:4,3,14,7,13)(B:11,10,14,7,6)
+.PARAM XOP237A File:Ltc.lib
+
+*LTC Dual HiSpeed LoNoise Precision OpAmp pkg:DIP14 (A:4,3,14,7,13)(B:11,10,14,7,6)
+.PARAM XOP237E File:Ltc.lib
+
+*LTC Dual HiSpeed LoNoise Precision OpAmp pkg:DIP14 (A:4,3,14,7,13)(B:11,10,14,7,6)
+.PARAM XOP237C File:Ltc.lib
+
+*LTC Dual HiSpeed LoNoise Precision OpAmp pkg:DIP14 (A:4,3,14,7,13)(B:11,10,14,7,6)
+.PARAM XOP237G File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37A File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37C File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37E File:Ltc.lib
+
+*LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37G File:Ltc.lib
+
+*LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XOP97 File:Ltc.lib
+
+*=======================================
+*National Semiconductor
+
+*NS Sngl JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLF155/NS File:National.lib
+
+*NS Sngl JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLF156/NS File:National.lib
+
+*NS Dual WideBW JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLF353/NS File:National.lib
+
+*NS Sngl JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLF157/NS File:National.lib
+
+*NS Sngl JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLF255/NS File:National.lib
+
+*NS Sngl JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLF256/NS File:National.lib
+
+*NS Sngl JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLF257/NS File:National.lib
+
+*NS Sngl WideBW JFET OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF351/NS File:National.lib
+
+*NS Sngl JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLF355/NS File:National.lib
+
+*NS Sngl JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLF356/NS File:National.lib
+
+*NS Sngl JFET OpAmp pkg:CAN8 3,2,7,4,6
+.PARAM XLF357/NS File:National.lib
+
+*NS Sngl LoOffset LoDrift JFET OpAmp pkg:CAN8 3,2,8,4,6
+.PARAM XLF411/NS File:National.lib
+
+*NS Dual LoOffset LoDrift JFET OpAmp pkg:CAN8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLF412/NS File:National.lib
+
+*NS Sngl LoPwr JFET OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF441A/NS File:National.lib
+
+*NS Sngl LoPwr JFET OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF441B/NS File:National.lib
+
+*NS Dual LoPwr JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLF442A/NS File:National.lib
+
+*NS Dual LoPwr JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLF442B/NS File:National.lib
+
+*NS Quad LoPwr JFET OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLF444A/NS File:National.lib
+
+*NS Quad LoPwr JFET OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLF444B/NS File:National.lib
+
+*NS Sngl WideBW JFET OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLF451/NS File:National.lib
+
+*NS Dual WideBW JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLF453/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM118/NS File:National.lib
+
+*NS Quad LoPwr OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLM124/NS File:National.lib
+
+*NS Dual LoPwr OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM158/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM218/NS File:National.lib
+
+*NS Quad LoPwr OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLM224/NS File:National.lib
+
+*NS Dual LoPwr OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM258/NS File:National.lib
+
+*NS Quad LoPwr OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLM2902/NS File:National.lib
+
+*NS Dual LoPwr OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM2904/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM318/NS File:National.lib
+
+*NS Quad LoPwr OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLM324/NS File:National.lib
+
+*NS Dual LoPwr OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM358/NS File:National.lib
+
+*NS Dual FastSettling OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM6118/NS File:National.lib
+
+*NS Dual LoPwr 7MHz Rail-to-Rail I/O OpAmp pkg:SMD8A (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM6132A/NS File:National.lib
+
+*NS Dual LoPwr 7MHz Rail-to-Rail I/O OpAmp pkg:SMD8A (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM6132B/NS File:National.lib
+
+*NS Dual LoPwr 17MHz Rail-to-Rail I/O OpAmp pkg:SMD8A (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM6142A/NS File:National.lib
+
+*NS Dual LoPwr 17MHz Rail-to-Rail I/O OpAmp pkg:SMD8A (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM6142B/NS File:National.lib
+
+*NS Dual LoPwr 45MHz Rail-to-Rail I/O OpAmp pkg:SMD8A (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM6152A/NS File:National.lib
+
+*NS Dual LoPwr 45MHz Rail-to-Rail I/O OpAmp pkg:SMD8A (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM6152B/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6161/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6162/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6164/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6165/NS File:National.lib
+
+*NS Sngl HiSpeed LoPwr LoDist VFB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6171A/NS File:National.lib
+
+*NS Sngl HiSpeed LoPwr LoDist VFB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6171B/NS File:National.lib
+
+*NS OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6172/NS File:National.lib
+
+*NS 100mA 100MHz CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6181/NS File:National.lib
+
+*NS Dual FastSettling OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLM6218/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6262/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6264/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6265/NS File:National.lib
+
+*NS Sngl HiSpeed UnityGainStab VFB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6317/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6361/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6362/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6364/NS File:National.lib
+
+*NS Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM6365/NS File:National.lib
+
+*NS Sngl Tiny VeryHiSpeed LowPwr VFB OpAmp pkg:SMD8A 3,2,7,4,6
+.PARAM XLM7121/NS File:National.lib
+
+*NS Sngl Tiny HiSpeed SnglSup OpAmp pkg:SMD8A 3,2,7,4,6
+.PARAM XLM7131A/NS File:National.lib
+
+*NS Sngl Tiny HiSpeed SnglSup OpAmp pkg:SMD8A 3,2,7,4,6
+.PARAM XLM7131B/NS File:National.lib
+
+*NS Sngl VeryHiSpeed HiOutCurr VFB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM7171A/NS File:National.lib
+
+*NS Sngl VeryHiSpeed HiOutCurr VFB OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM7171B/NS File:National.lib
+
+*NS Sngl Rail-to-Rail OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM7301/NS File:National.lib
+
+*NS Sngl GenPurpose OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLM741/NS File:National.lib
+
+*NS Sngl UltraUltraLo InputCurrent OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC6001A/NS File:National.lib
+
+*NS Sngl UltraUltraLo InputCurrent OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC6001B/NS File:National.lib
+
+*NS Dual LoPwr CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6022/NS File:National.lib
+
+*NS Quad LoPwr CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6024/NS File:National.lib
+
+*NS Dual CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6032/NS File:National.lib
+
+*NS Quad CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6034/NS File:National.lib
+
+*NS Dual CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6035/NS File:National.lib
+
+*NS Quad CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6036/NS File:National.lib
+
+*NS Sngl MicroPwr CMOS OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC6041A/NS File:National.lib
+
+*NS Sngl MicroPwr CMOS OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC6041B/NS File:National.lib
+
+*NS Dual MicroPwr CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6042A/NS File:National.lib
+
+*NS Dual MicroPwr CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6042B/NS File:National.lib
+
+*NS Quad MicroPwr CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6044A/NS File:National.lib
+
+*NS Quad MicroPwr CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6044B/NS File:National.lib
+
+*NS Sngl MicroPwr Precision CMOS OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC6061A/NS File:National.lib
+
+*NS Sngl MicroPwr Precision CMOS OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC6061B/NS File:National.lib
+
+*NS Dual MicroPwr Precision CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6062A/NS File:National.lib
+
+*NS Dual MicroPwr Precision CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6062B/NS File:National.lib
+
+*NS Quad MicroPwr Precision CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6064A/NS File:National.lib
+
+*NS Quad MicroPwr Precision CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6064B/NS File:National.lib
+
+*NS Sngl CMOS Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC6081A/NS File:National.lib
+
+*NS Sngl CMOS Precision OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC6081B/NS File:National.lib
+
+*NS Dual CMOS Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6082A/NS File:National.lib
+
+*NS Dual CMOS Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6082B/NS File:National.lib
+
+*NS Quad CMOS Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6084A/NS File:National.lib
+
+*NS Quad CMOS Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6084B/NS File:National.lib
+
+*NS Dual MicroPwr RailToRail I/O CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6462A/NS File:National.lib
+
+*NS Dual MicroPwr RailToRail I/O CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6462B/NS File:National.lib
+
+*NS Quad MicroPwr RailToRail I/O CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6464A/NS File:National.lib
+
+*NS Quad MicroPwr RailToRail I/O CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6464B/NS File:National.lib
+
+*NS Dual CMOS RailToRail I/O OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6482A/NS File:National.lib
+
+*NS Quad CMOS RailToRail I/O OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6484A/NS File:National.lib
+
+*NS Dual CMOS RailToRail I/O OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6492A/NS File:National.lib
+
+*NS Dual CMOS RailToRail I/O OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6492B/NS File:National.lib
+
+*NS Quad CMOS RailToRail I/O OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6494A/NS File:National.lib
+
+*NS Quad CMOS RailToRail I/O OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6494B/NS File:National.lib
+
+*NS Dual LoVoltage CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6572A/NS File:National.lib
+
+*NS Dual LoVoltage CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6572B/NS File:National.lib
+
+*NS Quad LoVoltage CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6574A/NS File:National.lib
+
+*NS Quad LoVoltage CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6574B/NS File:National.lib
+
+*NS Dual LoVoltage CMOS RailToRail I/O OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6582A/NS File:National.lib
+
+*NS Dual LoVoltage CMOS RailToRail I/O OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6582B/NS File:National.lib
+
+*NS Quad LoVoltage CMOS RailToRail I/O OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6584A/NS File:National.lib
+
+*NS Quad LoVoltage CMOS RailToRail I/O OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC6584B/NS File:National.lib
+
+*NS Quad CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC660A/NS File:National.lib
+
+*NS Quad CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLMC660B/NS File:National.lib
+
+*NS Dual CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC662/NS File:National.lib
+
+*NS Dual CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC662A/NS File:National.lib
+
+*NS Sngl Tiny LoPwr RailToRail I/O OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC7101A/NS File:National.lib
+
+*NS Sngl Tiny LoPwr RailToRail I/O OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC7101B/NS File:National.lib
+
+*NS Sngl Tiny LoPwr RailToRail I/O OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC7111A/NS File:National.lib
+
+*NS Sngl Tiny LoPwr RailToRail I/O OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLMC7111B/NS File:National.lib
+
+*NS Quad LoPwr CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLPC660A/NS File:National.lib
+
+*NS Quad LoPwr CMOS OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XLPC660B/NS File:National.lib
+
+*NS Sngl LoPwr CMOS OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLPC661A/NS File:National.lib
+
+*NS Sngl LoPwr CMOS OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XLPC661B/NS File:National.lib
+
+*NS Dual LoPwr CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLPC662A/NS File:National.lib
+
+*NS Dual LoPwr CMOS OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLPC662B/NS File:National.lib
+
+*===================================
+*Elantec
+
+*EL Sngl 50MHz CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2020/EL File:Elantec.lib
+
+*EL pkg:DIP14 5,4,11,6,10
+.PARAM XEL2028/EL File:Elantec.lib
+
+*EL pkg:DIP14 5,4,11,6,10
+.PARAM XEL2029/EL File:Elantec.lib
+
+*EL Sngl 120MHz CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2030/EL File:Elantec.lib
+
+*EL pkg:DIP14 1,14,10,3,8
+.PARAM XEL2038/EL File:Elantec.lib
+
+*EL pkg:DIP14 1,14,10,3,8
+.PARAM XEL2039/EL File:Elantec.lib
+
+*EL pkg:DIP14 5,4,11,6,10
+.PARAM XEL2040/EL File:Elantec.lib
+
+*EL pkg:DIP14 5,4,11,6,10
+.PARAM XEL2041/EL File:Elantec.lib
+
+*EL Sngl LoPwr LoVolt 120MHz UnityGainStab OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2044/EL File:Elantec.lib
+
+*EL Sngl LoPwr 100MHz GainOf2Stable OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2045/EL File:Elantec.lib
+
+*EL Sngl 200MHz CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2070/EL File:Elantec.lib
+
+*EL Sngl 150MHz CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2071/EL File:Elantec.lib
+
+*EL Sngl 200MHz UnityGainStab OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2073/EL File:Elantec.lib
+
+*EL Sngl 400MHz GBWP GainOf2Stable OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2074/EL File:Elantec.lib
+
+*EL Sngl 2GHz GBWP GainOf10Stable OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2075/EL File:Elantec.lib
+
+*EL Sngl Video Distribution Amp pkg:TO-220-5 4,5,1,3,2
+.PARAM XEL2099/EL File:Elantec.lib
+
+*EL Sngl 100MHz CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2120/EL File:Elantec.lib
+
+*EL Sngl 130MHz CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2160/EL File:Elantec.lib
+
+*EL Sngl 110MHz CurrentFB Amp w/Disble pkg:DIP8 3,2,7,4,6
+.PARAM XEL2166/EL File:Elantec.lib
+
+*EL Sngl 70MHz 1mA CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2170/EL File:Elantec.lib
+
+*EL Sngl 120MHz Precision CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2175/EL File:Elantec.lib
+
+*EL Sngl 70MHz 1mA CurrentFB Amp w/Disable pkg:DIP8 3,2,7,4,6
+.PARAM XEL2176/EL File:Elantec.lib
+
+*EL Sngl 250MHz 3mA CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XEL2180/EL File:Elantec.lib
+
+*EL Sngl 250MHz 3mA CurrentFB Amp w/Disable pkg:DIP8 3,2,7,4,6
+.PARAM XEL2186/EL File:Elantec.lib
+
+*EL pkg:DIP14 5,4,11,6,10
+.PARAM XEL2190/EL File:Elantec.lib
+
+*EL Dual LoCost Video OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XEL2210/EL File:Elantec.lib
+
+*EL Dual LoCost Video OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XEL2211/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP8 3,2,7,4,6
+.PARAM XEL2223/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP8 3,2,7,4,6
+.PARAM XEL2224/EL File:Elantec.lib
+
+*EL Dual pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XEL2232/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP8 3,2,7,4,6
+.PARAM XEL2242/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP8 3,2,7,4,6
+.PARAM XEL2243/EL File:Elantec.lib
+
+*EL Dual LoPwr 60MHz UnityGainStab OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XEL2244/EL File:Elantec.lib
+
+*EL Dual LoPwr 100MHz GainOf2Stable OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XEL2245/EL File:Elantec.lib
+
+*EL Dual 130MHz CurrentFB Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XEL2260/EL File:Elantec.lib
+
+*EL Trpl 130MHz CurrentFB Amp pkg:DIP16 (A:1,16,14,3,15)(B:5,12,14,3,13)(C:8,9,11,3,10)
+.PARAM XEL2360/EL File:Elantec.lib
+
+*EL Trpl 250MHz CurrentFB Amp w/Disable pkg:DIP16 (A:1,16,14,3,15)(B:5,12,14,3,13)(C:8,9,11,3,10)
+.PARAM XEL2386/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP8 3,2,7,4,6
+.PARAM XEL2423/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP8 3,2,7,4,6
+.PARAM XEL2424/EL File:Elantec.lib
+
+*EL Quad LoPwr 60MHz UnityGainStab OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XEL2444/EL File:Elantec.lib
+
+*EL Quad LoPwr 100MHz GainOf2Stable OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XEL2445/EL File:Elantec.lib
+
+*EL Quad 130MHz CurrentFB Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XEL2460/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP14 1,14,10,3,8
+.PARAM XEL2539/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP14 5,4,11,6,10
+.PARAM XEL2540/EL File:Elantec.lib
+
+*EL Sngl 200MHz CurrentFB Amp pkg:DIP8 3,2,7,4,6
+.PARAM XEL400/EL File:Elantec.lib
+
+*EL Trpl 80MHz Video Amp w/Disable pkg:DIP16 (A:2,1,16,9,15)(B:5,4,16,9,13)(C:7,8,16,9,10)
+.PARAM XEL4393/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP14 5,4,11,6,10
+.PARAM XEL5190/EL File:Elantec.lib
+
+*===================================
+*Maxim
+
+*MAX Sngl OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX406Ac File:Maxim.lib
+
+*MAX Sngl OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX406Bc File:Maxim.lib
+
+*MAX Sngl OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX406Ad File:Maxim.lib
+
+*MAX Sngl vpkg:DIP8 3,2,7,4,6
+.PARAM XMAX406Bd File:Maxim.lib
+
+*MAX Dual, Unity-Gain Stable OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX407 File:Maxim.lib
+
+*MAX Sngl OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX409A File:Maxim.lib
+
+*MAX Sngl OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX409B File:Maxim.lib
+
+*MAX Dual OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX417 File:Maxim.lib
+
+*MAX Quad, Unity-Gain Stable OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX418 File:Maxim.lib
+
+*MAX Quad OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX419 File:Maxim.lib
+
+*MAX Sngl OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX410 File:Maxim.lib
+
+*MAX Sngl OpAmp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX410B File:Maxim.lib
+
+*MAX Dual OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX412 File:Maxim.lib
+
+*MAX Dual OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX412B File:Maxim.lib
+
+*MAX Quad OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX414 File:Maxim.lib
+
+*MAX Quad OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX414B File:Maxim.lib
+
+*MAX Sngl Low-Power Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX4100 File:Maxim.lib
+
+*MAX Sngl Low-Power Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX4101 File:Maxim.lib
+
+*MAX Sngl Ultra-Low-Noise Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX4106 File:Maxim.lib
+
+*MAX Sngl Ultra-Low-Noise Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX4107 File:Maxim.lib
+
+*MAX Sngl Ultra-Low-Distortion Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX4108 File:Maxim.lib
+
+*MAX Sngl Ultra-Low-Distortion Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX4109 File:Maxim.lib
+
+*MAX Sngl Low-Power Current-Mode Feedback Amplifiers pkg:DIP8 3,2,7,4,6
+.PARAM XMAX4112 File:Maxim.lib
+
+*MAX Sngl Low-Power Current-Mode Feedback Amplifiers pkg:DIP8 3,2,7,4,6
+.PARAM XMAX4113 File:Maxim.lib
+
+*MAX Sngl Unity-Gain Stable Op Amp pkg:SOT23-5 3,4,5,2,1
+.PARAM XMAX4122 File:Maxim.lib
+
+*MAX Dual Unity-Gain Stable Op Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4126 File:Maxim.lib
+
+*MAX Quad Unity-Gain Stable Op Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX4129 File:Maxim.lib
+
+*MAX Sngl Stable Op Amp pkg:SOT23-5 3,4,5,2,1
+.PARAM XMAX4124 File:Maxim.lib
+
+*MAX Dual Stable Op Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4128 File:Maxim.lib
+
+*MAX Sngl Unity-Gain Stable Op Amp pkg:SOT23-5 3,4,5,2,1
+.PARAM XMAX4130 File:Maxim.lib
+
+*MAX Dual Unity-Gain Stable Op Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4132 File:Maxim.lib
+
+*MAX Quad Unity-Gain Stable Op Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX4134 File:Maxim.lib
+
+*MAX Sngl Video Multiplexer-Amplifier pkg:DIP8 1,5,6,4,7
+.PARAM XMAX4158 File:Maxim.lib
+
+*MAX Sngl Video Multiplexer-Amplifier pkg:DIP14 3,9,11,7,12
+.PARAM XMAX4159 File:Maxim.lib
+
+*MAX Sngl Video Multiplexer-Amplifier pkg:DIP8 1,5,6,4,7
+.PARAM XMAX4258 File:Maxim.lib
+
+*MAX Sngl Video Multiplexer-Amplifier pkg:DIP14 3,9,11,7,12
+.PARAM XMAX4259 File:Maxim.lib
+
+*MAX Sngl Unity-Gain Stable Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX4162 File:Maxim.lib
+
+*MAX Dual Unity-Gain Stable Op Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4163 File:Maxim.lib
+
+*MAX Quad Unity-Gain Stable Op Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX4164 File:Maxim.lib
+
+*MAX Sngl Unity-Gain Stable Op Amp pkg:SOT23-5 3,4,5,2,1
+.PARAM XMAX4165 File:Maxim.lib
+
+*MAX Dual Unity-Gain Stable Op Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4167 File:Maxim.lib
+
+*MAX Quad Unity-Gain Stable Op Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX4169 File:Maxim.lib
+
+*MAX Sngl Gain +1 Buffer pkg:SOT23-5 3,4,5,2,1
+.PARAM XMAX4178 File:Maxim.lib
+
+*MAX Dual Current-Feedback Amplifier pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4182 File:Maxim.lib
+
+*MAX Dual Current-Feedback Amplifier pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4184 File:Maxim.lib
+
+*MAX Quad Current-Feedback Amplifier pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX4186 File:Maxim.lib
+
+*MAX Quad Current-Feedback Amplifier pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX4187 File:Maxim.lib
+
+*MAX Sngl Rail-to-Rail Op Amp pkg:SOT23-5 3,4,5,2,1
+.PARAM XMAX4212 File:Maxim.lib
+
+*MAX Dual Rail-to-Rail Op Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4216 File:Maxim.lib
+
+*MAX Quad Rail-to-Rail Op Amp pkg:DIP16 (A:3,2,4,13,1)(B:5,6,4,13,7)(C:12,11,4,13,10)(D:14,15,4,13,16)
+.PARAM XMAX4220 File:Maxim.lib
+
+*MAX Sngl Current-Feedback Amplifier pkg:DIP6 3,4,6,2,1
+.PARAM XMAX4223 File:Maxim.lib
+
+*MAX Sngl Current-Feedback Amplifier pkg:DIP6 3,4,6,2,1
+.PARAM XMAX4224 File:Maxim.lib
+
+*MAX Dual Current-Feedback Amplifier pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4225 File:Maxim.lib
+
+*MAX Dual Current-Feedback Amplifier pkg:DIP14 (A:3,2,14,4,1)(B:11,12,14,4,13)
+.PARAM XMAX4226 File:Maxim.lib
+
+*MAX Dual Current-Feedback Amplifier pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4227 File:Maxim.lib
+
+*MAX Dual Current-Feedback Amplifier pkg:DIP14 (A:3,2,14,4,1)(B:11,12,14,4,13)
+.PARAM XMAX4228 File:Maxim.lib
+
+*MAX Sngl Gain +2 Buffer pkg:SOT23-5 3,4,5,2,1
+.PARAM XMAX4278 File:Maxim.lib
+
+*MAX Sngl Low Noise, High-Precision Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX427 File:Maxim.lib
+
+*MAX Sngl Low Noise, High-Precision Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX437 File:Maxim.lib
+
+*MAX Sngl Low Power single-supply, Rail-to-Rail Op Amp pkg:SOT23-5 3,4,5,2,1
+.PARAM XMAX4330 File:Maxim.lib
+
+*MAX Dual Low Power, single-supply, Rail-to-Rail Op Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4332 File:Maxim.lib
+
+*MAX Quad Low Power, single-supply Rail-to-Rail Op Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX4334 File:Maxim.lib
+
+*MAX Single-supply Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX473 File:Maxim.lib
+
+*MAX Dual Supply Op Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX474 File:Maxim.lib
+
+*MAX Quad Supply Op Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX475 File:Maxim.lib
+
+*MAX Sngle High-Speed Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX477 File:Maxim.lib
+
+*MAX478 Dual uPwr Op Amp 15V pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX47815 File:Maxim.lib
+
+*MAX478 Dual uPwr Op Amp 5V pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4785 File:Maxim.lib
+
+*MAX478 Dual uPwr Op Amp 3V pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX4783 File:Maxim.lib
+
+*MAX479 Quad uPwr Op Amp 15V pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX47915 File:Maxim.lib
+
+*MAX479 Quad uPwr Op Amp 5V pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX4795 File:Maxim.lib
+
+*MAX479 Quad uPwr Op Amp 3V pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX4793 File:Maxim.lib
+
+*MAX Dual Rail-to-Rail Op Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX492 File:Maxim.lib
+
+*MAX Quad Rail-to-Rail Op Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX494 File:Maxim.lib
+
+*MAX Sngl Rail-to-Rail Op Amp pkg:DIP8 3,2,7,4,6
+.PARAM XMAX495 File:Maxim.lib
+
+*MAX Quad Closed-Loop Video Buffer pkg:DIP14 (A:2,1,15,13,16)(B:4,3,15,13,14)(C:6,5,9,11,12)(D:8,7,9,11,10)
+.PARAM XMAX496 File:Maxim.lib
+
+*MAX Quad Closed-Loop Video Buffer pkg:DIP14 (A:2,1,15,13,16)(B:4,3,15,13,14)(C:6,5,9,11,12)(D:8,7,9,11,10)
+.PARAM XMAX497 File:Maxim.lib
+
+*MAX Quad Video Buffer Amplifier pkg:DIP28 (A:28,1,7,9,23)(B:2,3,7,9,20)(C:4,5,7,9,18)(D:6,11,7,9,16)
+.PARAM XMAX498 File:Maxim.lib
+
+*MAX Trpl Video Buffer Amplifier pkg:DIP24 (A:1,2,6,7,19)(B:3,4,6,7,16)(C:5,9,6,7,14)
+.PARAM XMAX499 File:Maxim.lib
+
+*==========================================
+*Analog Devices
+
+*AD Low noise, low drift, FET OPAmp pkg:DIP8 3,2,7,4,6
+.PARAM XAD645 File:AD1.lib
+
+*AD Low noise, low drift, FET OPAmp -40C to +85C pkg:TO99 3,2,7,4,6
+.PARAM XAD645A File:AD1.lib
+
+*AD Low noise, low drift, FET OPAmp -40C to +85C pkg:TO99 3,2,7,4,6
+.PARAM XAD645B File:AD1.lib
+
+*AD Low noise, low drift, FET OPAmp -40C to +85C pkg:TO99 3,2,7,4,6
+.PARAM XAD645J File:AD1.lib
+
+*AD Low noise, low drift, FET OPAmp 0C to +70C pkg:DIP8 3,2,7,4,6
+.PARAM XAD645K File:AD1.lib
+
+*AD Low noise, low drift, FET OPAmp -55C to +125C pkg:TO99 3,2,7,4,6
+.PARAM XAD645S File:AD1.lib
+
+*AD Quad picoamp input currect OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD704 File:AD1.lib
+
+*AD Quad picoamp input currect OP Amp 0C to +70C pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD704A File:AD1.lib
+
+*AD Quad picoamp input currect OP Amp -40C to +85C pkg:PLCC20 (A:4,3,6,16,2)(B:8,9,6,16,10)(C:14,13,6,16,12)(D:18,19,6,16,20)
+.PARAM XAD704B File:AD1.lib
+
+*AD Quad picoamp input currect OP Amp -40C to +85C pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD704K File:AD1.lib
+
+*AD Quad picoamp input currect OP Amp -55C to +125C pkg:PLCC20 (A:4,3,6,16,2)(B:8,9,6,16,10)(C:14,13,6,16,12)(D:18,19,6,16,20)
+.PARAM XAD704T File:AD1.lib
+
+*AD Dual picoamp input currect OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD706 File:AD1.lib
+
+*AD Dual picoamp input currect OP Amp -40C to +85C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD706A File:AD1.lib
+
+*AD Dual picoamp input currect OP Amp -40C to +85C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD706B File:AD1.lib
+
+*AD Dual picoamp input currect OP Amp 0C to +70C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD706J File:AD1.lib
+
+*AD Dual picoamp input currect OP Amp 0C to +70C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD706K File:AD1.lib
+
+*AD Dual picoamp input currect OP Amp 0C to +70C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD706T File:AD1.lib
+
+*AD Low cost, high speed, BiFET OPAmp pkg:DIP8 3,2,7,4,6
+.PARAM XAD711 File:AD1.lib
+
+*AD Low cost, high speed, BiFET OPAmp -40C to +85C pkg:TO99 3,2,7,4,6
+.PARAM XAD711A File:AD1.lib
+
+*AD Low cost, high speed, BiFET OPAmp -40C to +85C pkg:TO99 3,2,7,4,6
+.PARAM XAD711B File:AD1.lib
+
+*AD Low cost, high speed, BiFET OPAmp -40C to +85C pkg:TO99 3,2,7,4,6
+.PARAM XAD711C File:AD1.lib
+
+*AD Low cost, high speed, BiFET OPAmp 0C to +70C pkg:DIP8 3,2,7,4,6
+.PARAM XAD711J File:AD1.lib
+
+*AD Low cost, high speed, BiFET OPAmp 0C to +70C pkg:DIP8 3,2,7,4,6
+.PARAM XAD711K File:AD1.lib
+
+*AD Low cost, high speed, BiFET OPAmp -55C to +125C pkg:DIP8 3,2,7,4,6
+.PARAM XAD711S File:AD1.lib
+
+*AD Low cost, high speed, BiFET OPAmp -55C to +125C pkg:DIP8 3,2,7,4,6
+.PARAM XAD711T File:AD1.lib
+
+*AD Dual low cost, high speed, BiFET OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD712 File:AD1.lib
+
+*AD Dual low cost, high speed, BiFET OP Amp -40C to +85C pkg:TO99 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD712A File:AD1.lib
+
+*AD Dual low cost, high speed, BiFET OP Amp -40C to +85C pkg:TO99 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD712B File:AD1.lib
+
+*AD Dual low cost, high speed, BiFET OP Amp -40C to +85C pkg:TO99 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD712C File:AD1.lib
+
+*AD Dual low cost, high speed, BiFET OP Amp 0C to +70C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD712J File:AD1.lib
+
+*AD Dual low cost, high speed, BiFET OP Amp 0C to +70C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD712K File:AD1.lib
+
+*AD Dual low cost, high speed, BiFET OP Amp -55C to +125C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD712S File:AD1.lib
+
+*AD Dual low cost, high speed, BiFET OP Amp -55C to +125C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD712T File:AD1.lib
+
+*AD Quad percision, low cost, high speed, BiFET OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD713 File:AD1.lib
+
+*AD Quad percision, low cost, high speed, BiFET OP Amp -40C to +85C pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD713A File:AD1.lib
+
+*AD Quad percision, low cost, high speed, BiFET OP Amp -40C to +85C pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD713B File:AD1.lib
+
+*AD Quad percision, low cost, high speed, BiFET OP Amp 0C to +70C pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD713J File:AD1.lib
+
+*AD Quad percision, low cost, high speed, BiFET OP Amp 0C to +70C pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD713K File:AD1.lib
+
+*AD Quad percision, low cost, high speed, BiFET OP Amp -55C to +125C pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD713S File:AD1.lib
+
+*AD Quad percision, low cost, high speed, BiFET OP Amp -55C to +125C pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD713T File:AD1.lib
+
+*AD Ultralow noise BiFET OP Amp pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD743 File:AD1.lib
+
+*AD Ultralow noise BiFET OP Amp -40C to +85C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD743A File:AD1.lib
+
+*AD Ultralow noise BiFET OP Amp -40C to +85C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD743B File:AD1.lib
+
+*AD Ultralow noise BiFET OP Amp 0C to +70C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD743J File:AD1.lib
+
+*AD Ultralow noise BiFET OP Amp 0C to +70C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD743K File:AD1.lib
+
+*AD Ultralow noise BiFET OP Amp -55C to +125C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD743S File:AD1.lib
+
+*AD Ultralow noise, high speed, BiFET OP Amp pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD745 File:AD1.lib
+
+*AD Ultralow noise, high speed, BiFET OP Amp -40C to +85C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD745A File:AD1.lib
+
+*AD Ultralow noise, high speed, BiFET OP Amp -40C to +85C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD745B File:AD1.lib
+
+*AD Ultralow noise, high speed, BiFET OP Amp 0C to +70C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD745J File:AD1.lib
+
+*AD Ultralow noise, high speed, BiFET OP Amp 0C to +70C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD745K File:AD1.lib
+
+*AD Ultralow noise, high speed, BiFET OP Amp -55C to +125C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD745S File:AD1.lib
+
+*AD Dual Percision, 500ns settling BiFET OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD746 File:AD1.lib
+
+*AD Dual Percision, 500ns settling BiFET OP Amp -40C to +85C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD746A File:AD1.lib
+
+*AD Dual Percision, 500ns settling BiFET OP Amp -40C to +85C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD746B File:AD1.lib
+
+*AD Dual Percision, 500ns settling BiFET OP Amp 0C to +70C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD746J File:AD1.lib
+
+*AD Dual Percision, 500ns settling BiFET OP Amp -55C to +125C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD746S File:AD1.lib
+
+*AD Low power, low noise, percision FET OP Amp pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD795 File:AD1.lib
+
+*AD Low power, low noise, percision FET OP Amp 0C to +70C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD795J File:AD1.lib
+
+*AD Low power, low noise, percision FET OP Amp 0C to +70C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD795K File:AD1.lib
+
+*AD 800MHz, 50mw current feedback OP Amp 0C to +70C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD8001A File:AD1.lib
+
+*AD 800MHz, 50mw current feedback OP Amp -40C to +85C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD8001AN File:AD1.lib
+
+*AD 800MHz, 50mw current feedback OP Amp -40C to +85C pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD8001AR File:AD1.lib
+
+*AD Dual 600MHz, 50mw current feedback OP Amp -40C to +85C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD8002A File:AD1.lib
+
+*AD Dual 600MHz, 50mw current feedback OP Amp -40C to +85C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD8002AN File:AD1.lib
+
+*AD Dual 600MHz, 50mw current feedback OP Amp -40C to +85C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD8002AR File:AD1.lib
+
+*AD Quad 3000V/us, 35mw current feedback OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD8004AN File:AD1.lib
+
+*AD 1GHz, 5500V/us low distortion OP amp pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD8009AN File:AD1.lib
+
+*AD 300MHz, 1mA current feedback OP Amp pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD8011AN File:AD1.lib
+
+*AD Dual 350MHz, low power OP amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD8012AN File:AD1.lib
+
+*AD Triple high current output video amp pkg:DIP14 (A:5,6,4,11,7)(B:10,9,4,11,8)(C:12,13,4,11,14)
+.PARAM XAD8023AN File:AD1.lib
+
+*AD 80MHz 2.7V 800uA, rail-to-rail I/O OP Amp pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD8031A File:AD1.lib
+
+*AD 160MHz rail-to-rail I/O OP Amp pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD8041A File:AD1.lib
+
+*AD 250MHz general purpose OP Amp pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD8047 File:AD1.lib
+
+*AD Low cost, high speed, rail-to-rail OP Amp pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD8051_5 File:AD1.lib
+
+*AD 300MHz, Low cost OP Amp pkg:DIP8 (A:3,2,7,4,6)
+.PARAM XAD8055AN File:AD1.lib
+
+*AD Dual low cost video OP amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD8072JN File:AD1.lib
+
+*AD High performance video OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD811 File:AD1.lib
+
+*AD Dual current feedback OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD812 File:AD1.lib
+
+*AD Dual current feedback OP Amp -40C to +85C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD812A File:AD1.lib
+
+*AD High current differential Driver OP amp -40C to +85C
+.PARAM XAD815AN File:AD1.lib
+
+*AD High speed, low power, wide supply range OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XAD817 File:AD1.lib
+
+*AD High speed, low power, wide supply range OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XAD817A File:AD1.lib
+
+*AD Low cost, low power, OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD818 File:AD1.lib
+
+*AD Low cost, low power, OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XAD818A File:AD1.lib
+
+*AD Single-supply, rail-to-rail, low power FET OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD820 File:AD1.lib
+
+*AD Single-supply, rail-to-rail, low power FET OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XAD820A File:AD1.lib
+
+*AD Single-supply, rail-to-rail, low power FET OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XAD820B File:AD1.lib
+
+*AD Dual single-supply, rail-to-rail, low power FET OP Amp pkg:(A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD822 File:AD1.lib
+
+*AD Dual single-supply, rail-to-rail, low power FET OP Amp -40C to +85C pkg:(A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD822A File:AD1.lib
+
+*AD Dual single-supply, rail-to-rail, low power FET OP Amp -40C to +85C pkg:(A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD822B File:AD1.lib
+
+*AD Dual single-supply, rail-to-rail, low power FET OP Amp -40C to +85C pkg:(A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD822S File:AD1.lib
+
+*AD Dual 16MHz, rail-to-rail, low power FET input OP Amp -40C to +85C pkg:(A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD823A File:AD1.lib
+
+*AD Dual 16MHz, rail-to-rail, low power FET input OP Amp -40C to +85C pkg:(A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD823AN File:AD1.lib
+
+*AD Quad single-supply, rail-to-rail, low power FET OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD824 File:AD1.lib
+
+*AD Quad single-supply, rail-to-rail, low power FET OP Amp -40C to +85C pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD824A File:AD1.lib
+
+*AD Quad single-supply, rail-to-rail, low power FET OP Amp -40C to +85C pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD824B File:AD1.lib
+
+*AD Dual High speed low power OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD826 File:AD1.lib
+
+*AD Dual High speed low power OP Amp -40C to +85C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD826A File:AD1.lib
+
+*AD Dual low power video OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD828 File:AD1.lib
+
+*AD Dual low power video OP Amp -40C to +85C pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD828A File:AD1.lib
+
+*AD Wide bandwidth, fast settling OP Amp pkg:DIP14 5,4,11,6,10
+.PARAM XAD840 File:AD1.lib
+
+*AD Wide bandwidth, fast settling OP Amp pkg:DIP14 5,4,11,6,10
+.PARAM XAD840J File:AD1.lib
+
+*AD Wide bandwidth, fast settling OP Amp pkg:DIP14 5,4,11,6,10
+.PARAM XAD840K File:AD1.lib
+
+*AD Wide bandwidth, fast settling OP Amp pkg:DIP14 5,4,11,6,10
+.PARAM XAD840S File:AD1.lib
+
+*AD 34MHz fast settling CBFET OP Amp pkg:DIP16 5,4,13,6,12
+.PARAM XAD843 File:AD1.lib
+
+*AD 34MHz fast settling CBFET OP Amp -40C to +85C pkg:DIP16 5,4,13,6,12
+.PARAM XAD843A File:AD1.lib
+
+*AD 34MHz fast settling CBFET OP Amp -40C to +85C pkg:DIP16 5,4,13,6,12
+.PARAM XAD843B File:AD1.lib
+
+*AD 34MHz fast settling CBFET OP Amp 0C to +70C pkg:DIP16 5,4,13,6,12
+.PARAM XAD843J File:AD1.lib
+
+*AD 34MHz fast settling CBFET OP Amp 0C to +70C pkg:DIP16 5,4,13,6,12
+.PARAM XAD843K File:AD1.lib
+
+*AD 34MHz fast settling CBFET OP Amp -55C to +155C pkg:DIP16 5,4,13,6,12
+.PARAM XAD843S File:AD1.lib
+
+*AD Precision 16MHz CBFET OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD845 File:AD1.lib
+
+*AD Precision 16MHz CBFET OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XAD845A File:AD1.lib
+
+*AD Precision 16MHz CBFET OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XAD845B File:AD1.lib
+
+*AD Precision 16MHz CBFET OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6
+.PARAM XAD845J File:AD1.lib
+
+*AD Precision 16MHz CBFET OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6
+.PARAM XAD845K File:AD1.lib
+
+*AD Precision 16MHz CBFET OP Amp -55C to +155C pkg:DIP8 3,2,7,4,6
+.PARAM XAD845S File:AD1.lib
+
+*AD High speed, low power, monolithic OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD847 File:AD1.lib
+
+*AD High speed, low power, monolithic OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XAD847A File:AD1.lib
+
+*AD High speed, low power, monolithic OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6
+.PARAM XAD847J File:AD1.lib
+
+*AD High speed, low power, monolithic OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD848 File:AD1.lib
+
+*AD High speed, low power, monolithic OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XAD848A File:AD1.lib
+
+*AD High speed, low power, monolithic OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6
+.PARAM XAD848J File:AD1.lib
+
+*AD High speed, low power, monolithic OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD848S File:AD1.lib
+
+*AD Low cost 250mA output single-supply OP Amp pkg:SOG.050/6A 3,4,6,2,1
+.PARAM XAD8531 File:AD1.lib
+
+*AD Dual Low cost 250mA output single-supply OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XAD8532_5 File:AD1.lib
+
+*AD Quad Low cost 250mA output single-supply OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XAD8534 File:AD1.lib
+
+*AD Precision, low distortion, wide bandwidth OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD9617 File:AD1.lib
+
+*AD Precision, low distortion, wide bandwidth OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD9618 File:AD1.lib
+
+*AD Ultralow distortion, wide bandwidth OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD9631AN File:AD1.lib
+
+*AD Ultralow distortion, wide bandwidth OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XAD9632AN File:AD1.lib
+
+*AD Low noise, low drift, single-supply OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP113 File:AD2.lib
+
+*AD 15MHz Rail-to-Rail OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP162 File:AD2.lib
+
+*AD Bipolar/JFET OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP176 File:AD2.lib
+
+*AD Bipolar/JFET OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XOP176G File:AD2.lib
+
+*AD Ultra precision OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP177 File:AD2.lib
+
+*AD Ultra precision OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6
+.PARAM XOP177A File:AD2.lib
+
+*AD Ultra precision OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6
+.PARAM XOP177B File:AD2.lib
+
+*AD Ultra precision OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XOP177E File:AD2.lib
+
+*AD Ultra precision OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XOP177F File:AD2.lib
+
+*AD Ultra precision OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6
+.PARAM XOP177G File:AD2.lib
+
+*AD Ultralow power, rail-to-rail OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP181 File:AD2.lib
+
+*AD 5MHz single-supply OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP183G File:AD2.lib
+
+*AD Percision, rail-to-rail input/output OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP184 File:AD2.lib
+
+*AD 5uA, rail-to-rail output OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP186 File:AD2.lib
+
+*AD Micro power, single-supply, rail-to-rail output OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP191 File:AD2.lib
+
+*AD Micro power, single-supply, rail-to-rail output -40C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP191G File:AD2.lib
+
+*AD Precision. micro power OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP193 File:AD2.lib
+
+*AD Precision. micro power -40C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP193E File:AD2.lib
+
+*AD Precision. micro power -40C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP193F File:AD2.lib
+
+*AD Dual Low offset, low power OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP200 File:AD2.lib
+
+*AD Dual Low offset, low power -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP200A File:AD2.lib
+
+*AD Dual Low offset, low power -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP200E File:AD2.lib
+
+*AD Dual Low offset, low power -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP200F File:AD2.lib
+
+*AD Dual Low offset, low power -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP200G File:AD2.lib
+
+*AD Dual Low noise, low drift OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP213 File:AD2.lib
+
+*AD Dual Low noise, low drift -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP213E File:AD2.lib
+
+*AD Dual Low noise, low drift -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP213F File:AD2.lib
+
+*AD Dual precision JFET -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215/AD File:AD2.lib
+
+*AD Dual precision JFET -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215A/AD File:AD2.lib
+
+*AD Dual precision JFET -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215B/AD File:AD2.lib
+
+*AD Dual precision JFET -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215C/AD File:AD2.lib
+
+*AD Dual precision JFET 0C to +70C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215E/AD File:AD2.lib
+
+*AD Dual precision JFET 0C to +70C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215F/AD File:AD2.lib
+
+*AD Dual precision JFET -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP215G/AD File:AD2.lib
+
+*AD Dual micro power OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP220 File:AD2.lib
+
+*AD Dual micro power -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP220A File:AD2.lib
+
+*AD Dual micro power -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP220C File:AD2.lib
+
+*AD Dual micro power -25C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP220E File:AD2.lib
+
+*AD Dual micro power -25C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP220F File:AD2.lib
+
+*AD Dual micro power -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP220G File:AD2.lib
+
+*AD Dual low power OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP221 File:AD2.lib
+
+*AD Dual low power -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP221A File:AD2.lib
+
+*AD Dual low power -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP221B File:AD2.lib
+
+*AD Dual low power -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP221C File:AD2.lib
+
+*AD Dual low power -25C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP221E File:AD2.lib
+
+*AD Dual low power -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP221G File:AD2.lib
+
+*AD Dual percistion, high speed JFET OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP249 File:AD2.lib
+
+*AD Dual percistion, high speed JFET -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP249A File:AD2.lib
+
+*AD Dual percistion, high speed JFET -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP249E File:AD2.lib
+
+*AD Dual percistion, high speed JFET -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP249F File:AD2.lib
+
+*AD Dual percistion, high speed JFET -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP249G File:AD2.lib
+
+*AD Dual single-supply, rail-to-rail, CMOS OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP250 File:AD2.lib
+
+*AD Dual high speed current-feedback OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP260 File:AD2.lib
+
+*AD Dual 15MHz rail-to-rail OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP262 File:AD2.lib
+
+*AD Percision low noise OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27/AD File:AD2.lib
+
+*AD Percision low noise -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27A/AD File:AD2.lib
+
+*AD Percision low noise -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27B/AD File:AD2.lib
+
+*AD Percision low noise -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27C/AD File:AD2.lib
+
+*AD Percision low noise -25C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27E/AD File:AD2.lib
+
+*AD Percision low noise 0C to +70C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27F/AD File:AD2.lib
+
+*AD Percision low noise -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP27G/AD File:AD2.lib
+
+*AD Dual Bipolar/JFET OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP275 File:AD2.lib
+
+*AD Dual Bipolar/JFET -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP275G File:AD2.lib
+
+*AD Dual Rail-to-rail, high current output OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP279 File:AD2.lib
+
+*AD Dual Rail-to-rail, high current output -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP279G File:AD2.lib
+
+*AD Dual Ultralow power, rail-to-rail OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP281 File:AD2.lib
+
+*AD Dual Low power, high speed, JFET OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP282 File:AD2.lib
+
+*AD Dual Low power, high speed, JFET -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP282G File:AD2.lib
+
+*AD Dual 5MHz single-supply -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP283 File:AD2.lib
+
+*AD Dual 5MHz single-supply -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP283G File:AD2.lib
+
+*AD Dual percision rail-to-rail OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP284 File:AD2.lib
+
+*AD Dual percision rail-to-rail -40C to +12C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP284E File:AD2.lib
+
+*AD Dual percision rail-to-rail -40C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP284F File:AD2.lib
+
+*AD Dual 9MHz percision OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP285 File:AD2.lib
+
+*AD Dual 9MHz percision OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP285G File:AD2.lib
+
+*AD Dual Percision low power OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP290 File:AD2.lib
+
+*AD Dual Percision low power -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP290A File:AD2.lib
+
+*AD Dual Percision low power -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP290E File:AD2.lib
+
+*AD Dual Percision low power -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP290F File:AD2.lib
+
+*AD Dual Percision low power -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP290G File:AD2.lib
+
+*AD Dual Micro power, single-supply, rail-to-rail OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP291 File:AD2.lib
+
+*AD Dual Micro power, single-supply, rail-to-rail -40C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP291G File:AD2.lib
+
+*AD Dual single-supply OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP292 File:AD2.lib
+
+*AD Dual single-supply -40C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP292G File:AD2.lib
+
+*AD Dual Percision micro power OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP293 File:AD2.lib
+
+*AD Dual Percision micro power -40C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP293E File:AD2.lib
+
+*AD Dual Percision micro power -40C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP293F File:AD2.lib
+
+*AD Dual Rail-to-rail OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP295 File:AD2.lib
+
+*AD Dual Rail-to-rail OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP295A File:AD2.lib
+
+*AD Dual Rail-to-rail -40C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP295G File:AD2.lib
+
+*AD Dual Micro power, Rail-to-rail OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP296 File:AD2.lib
+
+*AD Dual Micro power, Rail-to-rail -40C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP296G File:AD2.lib
+
+*AD Dual Low bias current precisionOP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP297 File:AD2.lib
+
+*AD Dual Low bias current precision -55C to +125C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP297A File:AD2.lib
+
+*AD Dual Low bias current precision -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP297E File:AD2.lib
+
+*AD Dual Low bias current precision -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP297F File:AD2.lib
+
+*AD Dual Low bias current precision -40C to +85C OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XOP297G File:AD2.lib
+
+*AD Percision low noise high speed -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37/AD File:AD2.lib
+
+*AD Percision low noise high speed -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37A/AD File:AD2.lib
+
+*AD Percision low noise high speed -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37B/AD File:AD2.lib
+
+*AD Percision low noise high speed -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37C/AD File:AD2.lib
+
+*AD Percision low noise high speed -25C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37E/AD File:AD2.lib
+
+*AD Percision low noise high speed -25C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37F/AD File:AD2.lib
+
+*AD Percision low noise high speed -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP37G/AD File:AD2.lib
+
+*AD Quad Low offset low power OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP400 File:AD2.lib
+
+*AD Quad Low offset low power -55C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP400A File:AD2.lib
+
+*AD Quad Low offset low power -25C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP400E File:AD2.lib
+
+*AD Quad Low offset low power -25C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP400F File:AD2.lib
+
+*AD Quad Low offset low power 0C to +70C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP400G File:AD2.lib
+
+*AD Quad Low offset low power -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP400H File:AD2.lib
+
+*AD Quad Low noise, low drift, single suply OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP413 File:AD2.lib
+
+*AD Quad Low noise, low drift, single suply -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP413E File:AD2.lib
+
+*AD Quad Low noise, low drift, single suply -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP413F File:AD2.lib
+
+*AD Percision high speed, fast settling -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP42 File:AD2.lib
+
+*AD Percision high speed, fast settling -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP42A File:AD2.lib
+
+*AD Percision high speed, fast settling -25C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP42E File:AD2.lib
+
+*AD Percision high speed, fast settling -25C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP42F File:AD2.lib
+
+*AD Percision high speed, fast settling -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP42G File:AD2.lib
+
+*AD Quad Micro power OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP420 File:AD2.lib
+
+*AD Quad Micro power -55C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP420B File:AD2.lib
+
+*AD Quad Micro power -55C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP420C File:AD2.lib
+
+*AD Quad Micro power -25C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP420F File:AD2.lib
+
+*AD Quad Micro power -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP420G File:AD2.lib
+
+*AD Quad Micro power -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP420H File:AD2.lib
+
+*AD Quad Low power OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP421 File:AD2.lib
+
+*AD Quad Low power -55C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP421B File:AD2.lib
+
+*AD Quad Low power -55C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP421C File:AD2.lib
+
+*AD Quad Low power -25C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP421F File:AD2.lib
+
+*AD Quad Low power -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP421G File:AD2.lib
+
+*AD Quad Low power -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP421H File:AD2.lib
+
+*AD Quad single-supply, rail-to-rail, CMOS OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP450 File:AD2.lib
+
+*AD Quad 15MHz, rail-to-rail OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP462 File:AD2.lib
+
+*AD Quad Precision high speed OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP467 File:AD2.lib
+
+*AD Quad Precision high speed -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP467G File:AD2.lib
+
+*AD Quad Very low noise OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP470 File:AD2.lib
+
+*AD Quad Ultralow power, rail-to-rail OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP481 File:AD2.lib
+
+*AD Quad Low power, high speed, JFET OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP482 File:AD2.lib
+
+*AD Quad Low power, high speed, JFET -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP482G File:AD2.lib
+
+*AD Quad Precision, rail-to-rail OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP484 File:AD2.lib
+
+*AD Quad Precision, rail-to-rail -40C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP484E File:AD2.lib
+
+*AD Quad Precision, rail-to-rail -40C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP484F File:AD2.lib
+
+*AD Quad Low voltage, micro power OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP490 File:AD2.lib
+
+*AD Quad Low voltage, micro power -55C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP490A File:AD2.lib
+
+*AD Quad Low voltage, micro power -25C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP490E File:AD2.lib
+
+*AD Quad Low voltage, micro power -25C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP490F File:AD2.lib
+
+*AD Quad Low voltage, micro power -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP490G File:AD2.lib
+
+*AD Quad Micro power, single-supply, rail-to-railOP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP491 File:AD2.lib
+
+*AD Quad Micro power, single-supply, rail-to-rail -40C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP491G File:AD2.lib
+
+*AD Quad single-supply OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP492 File:AD2.lib
+
+*AD Quad single-supply -40C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP492G File:AD2.lib
+
+*AD Quad Percision micro powerOP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP493 File:AD2.lib
+
+*AD Quad Percision micro power -40C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP493E File:AD2.lib
+
+*AD Quad Percision micro power -40C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP493F File:AD2.lib
+
+*AD Quad Rail-to-rail OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP495 File:AD2.lib
+
+*AD Quad Rail-to-rail OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP495A File:AD2.lib
+
+*AD Quad Rail-to-rail -40C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP495G File:AD2.lib
+
+*AD Quad Micro power,rail-to-rail OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP496 File:AD2.lib
+
+*AD Quad Micro power,rail-to-rail -40C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP496G File:AD2.lib
+
+*AD Quad Precision picoamp input current -40C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP497 File:AD2.lib
+
+*AD Quad Precision picoamp input current -55C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP497A File:AD2.lib
+
+*AD Quad Precision picoamp input current -55C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP497B File:AD2.lib
+
+*AD Quad Precision picoamp input current -55C to +125C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP497C File:AD2.lib
+
+*AD Quad Precision picoamp input current -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP497F File:AD2.lib
+
+*AD Quad Precision picoamp input current -40C to +85C OP Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XOP497G File:AD2.lib
+
+*AD Ultralow offset voltage OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP77 File:AD2.lib
+
+*AD Ultralow offset voltage -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP77A File:AD2.lib
+
+*AD Ultralow offset voltage -55C to +1285C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP77B File:AD2.lib
+
+*AD Ultralow offset voltage -25C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP77E File:AD2.lib
+
+*AD Ultralow offset voltage -25C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP77F File:AD2.lib
+
+*AD Ultralow offset voltage 0C to +70C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP77G File:AD2.lib
+
+*AD Ultralow bias current OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP80 File:AD2.lib
+
+*AD Ultralow bias current -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP80B File:AD2.lib
+
+*AD Ultralow bias current -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP80E File:AD2.lib
+
+*AD Ultralow bias current -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP80F File:AD2.lib
+
+*AD Ultralow bias current -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP80G File:AD2.lib
+
+*AD Percision, low voltage, micro power -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP90 File:AD2.lib
+
+*AD Percision, low voltage, micro power -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP90A File:AD2.lib
+
+*AD Percision, low voltage, micro power -25C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP90E File:AD2.lib
+
+*AD Percision, low voltage, micro power -25C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP90F File:AD2.lib
+
+*AD Percision, low voltage, micro power -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP90G File:AD2.lib
+
+*AD Low power, High percision OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP97/AD File:AD2.lib
+
+*AD Low power, High percision -55C to +125C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP97A/AD File:AD2.lib
+
+*AD Low power, High percision -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP97E/AD File:AD2.lib
+
+*AD Low power, High percision -40C to +85C OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP97F/AD File:AD2.lib
+
+*AD Percision, low power OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XPM1012 File:AD3.lib
+
+*AD 10MHz, 40V/us OP Amp
+.PARAM XSSM2131 File:AD3.lib
+
+*AD Dual single-supply audio OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XSSM2135 File:AD3.lib
+
+*AD Dual single-supply audio OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XSSM2135P File:AD3.lib
+
+*AD Dual rail-to-rail audio OP Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XSSM2275 File:AD3.lib
+
+*AD Micro power, Rail to Rail OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP196 File:Ad2.lib
+
+*AD Micro power, Rail to Rail OP Amp pkg:DIP8 3,2,7,4,6
+.PARAM XOP196G File:Ad2.lib

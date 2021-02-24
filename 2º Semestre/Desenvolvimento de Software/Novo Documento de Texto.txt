@@ -1,1 +1,32 @@
-unsupported reparse point
+fill(84, 5, 84);
+colorMode(HSB);
+
+var N = 568;
+var fator = 1;
+
+var cor = function(x, y) {
+    var re = 0, im = 0;
+    for (var i=0; i < 20; i++) {
+        var re_ = re*re - im*im + x;
+        var im_ = 2 * re * im + y;
+        re = re_;
+        im = im_;
+        if (re*re + im*im > 4) { 
+            return 14 * i;
+        }
+    }
+    return 255;
+}; 
+
+var zoom = 0.17;
+var dx = 128;
+var dy = -150;
+for (var i=0; i < N; i++) {
+    for (var j=0; j < N; j++) {
+        var x = (i - dx) / (N * zoom);
+        var y = (j + dy) / (N * zoom);
+        var c = cor(x, y);
+        stroke(c, 255 - c, 255 - c);
+        point(fator * i, fator * j);
+    }
+}

@@ -1,1 +1,64 @@
-unsupported reparse point
+*7400 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NAND gate pkg:DIP14 (A:1,2,3)(B:4,5,6)(C:10,9,8)(D:12,13,11)
+.SUBCKT X7400 3 4 5
+BNLVs1 1 0 V=~(V(3) & v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X7400
+
+*74F00 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NAND gate pkg:DIP14 (A:1,2,3)(B:4,5,6)(C:10,9,8)(D:12,13,11)
+.SUBCKT X74F00 3 4 5
+BNLVs1 1 0 V=~(V(3) & v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74F00
+
+*74HC00 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NAND gate pkg:DIP14 (A:1,2,3)(B:4,5,6)(C:10,9,8)(D:12,13,11)
+.SUBCKT X74HC00 3 4 5
+BNLVs1 1 0 V=~(V(3) & v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74HC00
+
+*74LS00 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NAND gate pkg:DIP14 (A:1,2,3)(B:4,5,6)(C:10,9,8)(D:12,13,11)
+.SUBCKT X74LS00 3 4 5
+BNLVs1 1 0 V=~(V(3) & v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74LS00
+
+*7437 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NAND gate pkg:DIP14 (A:1,2,3)(B:4,5,6)(C:10,9,8)(D:12,13,11)
+.SUBCKT X7437 3 4 5
+BNLVs1 1 0 V=~(V(3) & v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X7437
+
+*74F37 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NAND gate pkg:DIP14 (A:1,2,3)(B:4,5,6)(C:10,9,8)(D:12,13,11)
+.SUBCKT X74F37 3 4 5
+BNLVs1 1 0 V=~(V(3) & v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74F37
+
+*74HC37 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NAND gate pkg:DIP14 (A:1,2,3)(B:4,5,6)(C:10,9,8)(D:12,13,11)
+.SUBCKT X74HC37 3 4 5
+BNLVs1 1 0 V=~(V(3) & v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74HC37
+
+*74LS37 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NAND gate pkg:DIP14 (A:1,2,3)(B:4,5,6)(C:10,9,8)(D:12,13,11)
+.SUBCKT X74LS37 3 4 5
+BNLVs1 1 0 V=~(V(3) & v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74LS37
+

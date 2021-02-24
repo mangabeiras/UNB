@@ -1,0 +1,49 @@
+package DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import conector.Conexao;
+import dados.Homem;
+import dados.Mulher;
+import dados.Pessoa;
+
+public class grupoDao {
+	private Connection con = Conexao.getConnection();
+	
+	public ArrayList<Pessoa> getGrupo() {
+		ArrayList<Pessoa> grupo = new ArrayList<>();
+		
+		try {
+			PreparedStatement preparador = con.prepareStatement();
+			ResultSet resultado = preparador.executeQuery();
+			while(resultado.next()) {
+				if (resultado.getString("gestante") == null) {
+					grupo.add(new Homem(resultado.getString("nome"), resultado.getString("saude").charAt(0), resultado.getInt("idade")));
+				}
+				else {
+					grupo.add(new Mulher(resultado.getString("nome"), resultado.getString("saude").charAt(0), resultado.getString("gestante").charAt(0)));
+				}
+			}
+				
+			preparador.execute();
+			preparador.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			if (con != null) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					System.out.print("Falha ao fechar a conexão.");
+					System.out.println("Causa: " + e.getMessage());
+				}
+			}
+		}
+		return grupo;
+	}
+}

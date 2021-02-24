@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/complemento1/complemento1.srcs/sources_1/new/somador4b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'somador4b'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/robeg/OneDrive - unb.br/UnB/3 Semestre/complemento1/complemento1.srcs/sim_1/new/to_soma.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_soma4'

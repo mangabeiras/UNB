@@ -1,1 +1,28 @@
-unsupported reparse point
+*====================================================
+*Diode ACK pinout: 1=Anode 2=Common 3=Cathode
+*====================================================
+
+* 70V 215mA 6ns Si Dual Switching Diode pkg:SOT-23 3,1,2
+.PARAM XBAV99 File:Mcediode.lib
+
+* 70V 215mA 3us Si Dual Switching Diode pkg:SOT-23 3,1,2
+.PARAM XBAV199 File:Mcediode.lib
+
+* 70V 215mA 3us Si Dual Switching Diode pkg:SOT-23 3,1,2
+.PARAM XMMBD7000 File:Mcediode.lib
+
+* 100V 200A 3us pkg:TO-3 1,3,2
+.PARAM X203DNQ100 File:Mcediode.lib
+
+* 150V 200A 3us pkg:TO-3 1,3,2
+.PARAM X209DNQ150 File:Mcediode.lib
+
+* 100V 200A 3us pkg:TO-3 1,3,2
+.PARAM X203DMQ100 File:Mcediode.lib
+
+* 150V 200A 3us pkg:TO-3 1,3,2
+.PARAM X209DMQ150 File:Mcediode.lib
+
+* 45V 400A 3us pkg:TO-3 1,3,2
+.PARAM X400DMQ045 File:Mcediode.lib
+

@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../complemento1.srcs/sources_1/new/complemento1.vhd" \
+"../../../../complemento1.srcs/sources_1/new/somador1b.vhd" \
+"../../../../complemento1.srcs/sources_1/new/somador4b.vhd" \
+
+# Do not sort compile order
+nosort

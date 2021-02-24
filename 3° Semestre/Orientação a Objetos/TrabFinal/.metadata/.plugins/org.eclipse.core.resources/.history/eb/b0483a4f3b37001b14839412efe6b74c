@@ -1,0 +1,67 @@
+package visao;
+
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.table.TableModel;
+
+import DAO.PessoaDao;
+import dados.Pessoa;
+import javax.swing.JTable;
+import java.awt.Font;
+import javax.swing.table.DefaultTableModel;
+
+public class Listar extends JFrame {
+	private JScrollPane barraRolagem;
+	private JTable tabela;
+	private DefaultTableModel modelo;
+	public Listar() {
+		configuraFrame();
+		criaTabela();
+	}
+	
+	private void configuraFrame() {
+		setTitle("Cadastros");
+		setResizable(false);
+		setMinimumSize(new Dimension(800, 500));
+		setMaximumSize(new Dimension(800, 500));
+		setAlwaysOnTop(false);
+		setLocationRelativeTo(null);
+	}
+	
+
+	private void criaTabela() {
+		modelo = new DefaultTableModel();
+		modelo.addColumn("ID Pessoa");
+		modelo.addColumn("Nome");
+		modelo.addColumn("Saude");
+		modelo.addColumn("Gestacao");
+		modelo.addColumn("Idade");
+		tabela = new JTable(modelo);
+		tabela.setEnabled(false);
+		
+		tabela.getColumnModel().getColumn(0).setPreferredWidth(80);
+		tabela.getColumnModel().getColumn(1).setPreferredWidth(150);
+		tabela.getColumnModel().getColumn(2).setPreferredWidth(150);
+		tabela.getColumnModel().getColumn(3).setPreferredWidth(80);
+		tabela.getColumnModel().getColumn(4).setPreferredWidth(40);
+		preencheTabela();
+		getContentPane().add(tabela);
+		barraRolagem = new JScrollPane(tabela);
+		getContentPane().add(barraRolagem);
+	}
+	
+	private void preencheTabela() {
+		modelo.setNumRows(0);
+		PessoaDao dao = new PessoaDao();
+		
+		for (Pessoa p : dao.getGrupo()) {
+			if (p.getSituacaoGestacao() == null)
+				modelo.addRow(new Object[] {p.getId(), p.getNome(), p.getSituacaoExtenso(), "--", p.getIdade()});
+			else
+				modelo.addRow(new Object[] {p.getId(), p.getNome(), p.getSituacaoExtenso(), p.getSituacaoGExtenso(), "--"});
+		}
+	}
+}

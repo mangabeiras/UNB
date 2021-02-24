@@ -1,1 +1,2 @@
-unsupported reparse point
+*Deafult semiconductor resistor
+.MODEL RRESISTOR~ ()

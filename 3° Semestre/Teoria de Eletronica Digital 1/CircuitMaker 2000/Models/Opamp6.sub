@@ -1,1 +1,242 @@
-unsupported reparse point
+*==============================================
+*OPAMP6 pinout: +IN, -IN, +V, -V, OUT, X1
+*Copyright (c) 1997 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*==========================================
+*Comlinear
+
+*COM Sngl FastSettle WideBW LoGain OpAmp pkg:DIP8 3,2,7,4,6,1
+.PARAM XCLC400 File:Comlin.lib
+
+*COM Sngl LoPwr 110MHz OpAmp w/Disable pkg:DIP8 3,2,7,4,6,8
+.PARAM XCLC405 File:Comlin.lib
+
+*COM Sngl LoPwr 110MHz ProgramGain Buffer w/Disable pkg:DIP8 3,2,7,4,6,8
+.PARAM XCLC407 File:Comlin.lib
+
+*COM Sngl LoNoise WideBW OpAmp w/ISupAdj pkg:DIP8 3,2,7,4,6,8
+.PARAM XCLC425 File:Comlin.lib
+
+*COM Sngl WideBW 5V-15V OpAmp w/Disable pkg:DIP8 3,2,7,4,6,8
+.PARAM XCLC430 File:Comlin.lib
+
+*COM Sngl HiSpeed ProgamSupplyCurr OpAmp pkg:DIP8 3,2,7,4,6,8
+.PARAM XCLC505 File:Comlin.lib
+
+*==========================================
+*Linear Technology
+
+*LTC Sngl 250mA 60MHz CurrentFB Amp pkg:DIP8 3,2,8,6,7,5
+.PARAM XLT1206 File:Ltc.lib
+
+*LTC Sngl LoNoise VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6,5
+.PARAM XLT1222 File:Ltc.lib
+
+*AD Picoamp input currect OPAmp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705 File:Ad705.cir
+
+*AD Picoamp input currect OPAmp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705A File:Ad705a.cir
+
+*AD Picoamp input currect OPAmp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705B File:Ad705b.cir
+
+*AD Picoamp input currect OPAmp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705J File:Ad705j.cir
+
+*AD Picoamp input currect OPAmp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705K File:Ad705k.cir
+
+*AD Picoamp input currect OPAmp -55C to +125C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705T File:Ad705t.cir
+
+*AD Ultralow distortion, Ultralow noise OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD797 File:AD797.cir
+
+*AD Ultralow distortion, Ultralow noise OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD797A File:AD797a.cir
+
+*AD Ultralow distortion, Ultralow noise OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD797B File:AD797b.cir
+
+*AD Ultralow distortion, Ultralow noise OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD797S File:AD797s.cir
+
+*AD Low power video OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD810 File:AD810.cir
+
+*AD Low power video OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD810A File:AD810a.cir
+
+*AD Triple signle supply video amp with disable -40C to +85C pkg:DIP14 (A:5,6,4,11,7,1)(B:10,9,4,11,8,2)(C:12,13,4,11,14,3)
+.PARAM XAD813 File:Ad813.cir
+
+*AD Triple signle supply video amp with disable 0C to +70C pkg:DIP14 (A:5,6,4,11,7,1)(B:10,9,4,11,8,2)(C:12,13,4,11,14,3)
+.PARAM XAD813A File:Ad813a.cir
+
+*AD High speed low power video OP Amp 40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD829 File:Ad829.cir
+
+*AD High speed low power video OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD829A File:Ad829A.cir
+
+*AD High speed low power video OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD829J File:Ad829j.cir
+
+*AD High speed low power video OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD829S File:Ad829s.cir
+
+*AD 60MHz 2000V/us monolithic OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD844 File:Ad844.cir
+
+*AD 60MHz 2000V/us monolithic OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD844A File:Ad844a.cir
+
+*AD 60MHz 2000V/us monolithic OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD844B File:Ad844b.cir
+
+*AD 60MHz 2000V/us monolithic OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD844S File:Ad844s.cir
+
+*AD Precision 450V/us current feedback OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD846 File:Ad846.cir
+
+*AD Precision 450V/us current feedback OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD846A File:Ad846a.cir
+
+*AD Precision 450V/us current feedback OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD846B File:Ad846b.cir
+
+*AD Precision 450V/us current feedback OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD846S File:Ad846s.cir
+
+*==========================================
+*National Semiconductor
+
+*NS Sngl Programmable OpAmp pkg:DIP8 3,2,7,4,6,8
+.PARAM XLM4250/NS File:National.lib
+
+*NS Sngl CurrentFB OpAmp w/Disable pkg:DIP8 3,2,7,4,6,8
+.PARAM XLM6310/NS File:National.lib
+
+*NS Sngl UltraLoNoise OpAmp w/ExtComp pkg:DIP8 3,2,7,4,6,5
+.PARAM XLM6311/NS File:National.lib
+
+*NS Sngl LoVoltage CMOS OpAmp w/PwrDown pkg:DIP8 3,2,7,4,6,5
+.PARAM XLMC6681A/NS File:National.lib
+
+*NS Sngl LoVoltage CMOS OpAmp w/PwrDown pkg:DIP8 3,2,7,4,6,5
+.PARAM XLMC6681B/NS File:National.lib
+
+*NS Dual LoVoltage CMOS OpAmp w/PwrDown pkg:DIP14 (A:3,2,14,4,1,10)(B:11,12,14,4,13,10)
+.PARAM XLMC6682A/NS File:National.lib
+
+*NS Dual LoVoltage CMOS OpAmp w/PwrDown pkg:DIP14 (A:3,2,14,4,1,10)(B:11,12,14,4,13,10)
+.PARAM XLMC6682B/NS File:National.lib
+
+*NS Quad LoVoltage CMOS OpAmp w/PwrDown pkg:DIP16 (A:3,2,4,12,1,13)(B:6,7,4,12,8,5)(C:11,10,4,12,9,5)(D:14,15,4,12,16,13)
+.PARAM XLMC6684A/NS File:National.lib
+
+*NS Quad LoVoltage CMOS OpAmp w/PwrDown pkg:DIP16 (A:3,2,4,12,1,13)(B:6,7,4,12,8,5)(C:11,10,4,12,9,5)(D:14,15,4,12,16,13)
+.PARAM XLMC6684B/NS File:National.lib
+
+*====================================
+*Elantec
+
+*EL Sngl SnglSup 125MHz Clamping OpAmp pkg:DIP8 3,2,7,4,6,1
+.PARAM XEL2157/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP8 3,2,7,4,6,8
+.PARAM XEL2500/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP8 3,2,7,4,6,8
+.PARAM XEL2520/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP8 3,2,7,4,6,8
+.PARAM XEL2600/EL File:Elantec.lib
+
+*EL Sngl pkg:DIP8 3,2,7,4,6,8
+.PARAM XEL2620/EL File:Elantec.lib
+
+*==========================================
+*Analog Devices
+
+*AD Picoamp input currect OPAmp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705/AD File:AD1.lib
+
+*AD Picoamp input currect OPAmp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705A/AD File:AD1.lib
+
+*AD Picoamp input currect OPAmp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705B/AD File:AD1.lib
+
+*AD Picoamp input currect OPAmp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705J/AD File:AD1.lib
+
+*AD Picoamp input currect OPAmp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705K/AD File:AD1.lib
+
+*AD Picoamp input currect OPAmp -55C to +125C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD705T/AD File:AD1.lib
+
+*AD Ultralow distortion, Ultralow noise OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD797/AD File:AD1.lib
+
+*AD Ultralow distortion, Ultralow noise OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD797A/AD File:AD1.lib
+
+*AD Ultralow distortion, Ultralow noise OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD797B/AD File:AD1.lib
+
+*AD Ultralow distortion, Ultralow noise OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD797S/AD File:AD1.lib
+
+*AD Low power video OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD810/AD File:AD1.lib
+
+*AD Low power video OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,8
+.PARAM XAD810A/AD File:AD1.lib
+
+*AD Triple signle supply video amp with disable -40C to +85C pkg:DIP14 (A:5,6,4,11,7,1)(B:10,9,4,11,8,2)(C:12,13,4,11,14,3)
+.PARAM XAD813/AD File:AD1.lib
+
+*AD Triple signle supply video amp with disable 0C to +70C pkg:DIP14 (A:5,6,4,11,7,1)(B:10,9,4,11,8,2)(C:12,13,4,11,14,3)
+.PARAM XAD813A/AD File:AD1.lib
+
+*AD High speed low power video OP Amp 40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD829/AD File:AD1.lib
+
+*AD High speed low power video OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD829A/AD File:AD1.lib
+
+*AD High speed low power video OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD829J/AD File:AD1.lib
+
+*AD High speed low power video OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD829S/AD File:AD1.lib
+
+*AD 60MHz 2000V/us monolithic OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD844/AD File:AD1.lib
+
+*AD 60MHz 2000V/us monolithic OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD844A/AD File:AD1.lib
+
+*AD 60MHz 2000V/us monolithic OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD844B/AD File:AD1.lib
+
+*AD 60MHz 2000V/us monolithic OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD844S/AD File:AD1.lib
+
+*AD Precision 450V/us current feedback OP Amp 0C to +70C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD846/AD File:AD1.lib
+
+*AD Precision 450V/us current feedback OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD846A/AD File:AD1.lib
+
+*AD Precision 450V/us current feedback OP Amp -40C to +85C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD846B/AD File:AD1.lib
+
+*AD Precision 450V/us current feedback OP Amp -55C to +125C pkg:DIP8 3,2,7,4,6,5
+.PARAM XAD846S/AD File:AD1.lib

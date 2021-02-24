@@ -1,1 +1,80 @@
-unsupported reparse point
+*Extended Simcode 74LS74
+.SUBCKT XX74 15 14 13 12 3 4
+AU1 [11 10 9 8] [6 7] ls74
+.model ls74 xsimcode(file=c:\cm40_32\sim_ckt\simcode.txt func=ls74)
+V1 5 0 DC 5V
+AU2 5 0 [6 7] [3 4] da_out
+.model da_out xvdac
+AU3 [12 13 14 15] [8 9 10 11] adc1
+.model adc1 xadc
+.ENDS XX74
+
+*Simcode 74LS74
+.SUBCKT XLS74 15 14 13 12 3 4
+AU1A [11 10 9 8] [6 7] ls74
+.model ls74 simcode(file=c:\cm40_32\sim_ckt\simcode.txt func=ls74)
+V1 5 0 DC 4.5V
+AU2 5 0 [7] [4] da_out
+AU3 [12] [8] adc1
+AU4 [15] [11] adc1
+.model adc1 adc_bridge (in_low = 0.7 in_high = 2.2)
+AU5 [14] [10] adc1
+AU6 [13] [9] adc1
+AU7 5 0 [6] [3] da_out
+.model da_out vcdac
+.ENDS XLS74
+
+*7474 D Flip-Flop MCE Nodes: S,D,CP,R,QN,Q
+*MCE mixed-mode D Flip-Flop pkg:DIP14 (A:4,2,3,1,6,5)(B:10,12,11,13,8,9)
+.SUBCKT X7474 10 7 5 8 3 4
+XU1A 10 6 3 4 7410
+XU1B 4 8 11 3 7410
+XU1C 11 8 7 9 7410
+XU2A 6 5 9 11 7410
+XU2B 12 8 5 6 7410
+XU2C 10 9 6 12 7410
+.IC V(3)=0V V(4)=4.5V
+.ENDS X7474
+
+*74F74 D Flip-Flop MCE Nodes: S,D,CP,R,QN,Q
+*MCE mixed-mode D Flip-Flop pkg:DIP14 (A:4,2,3,1,6,5)(B:10,12,11,13,8,9)
+.SUBCKT X74F74 10 7 5 8 3 4
+XU1A 10 6 3 4 7410
+XU1B 4 8 11 3 7410
+XU1C 11 8 7 9 7410
+XU2A 6 5 9 11 7410
+XU2B 12 8 5 6 7410
+XU2C 10 9 6 12 7410
+.IC V(3)=0V V(4)=4.5V
+.ENDS X74F74
+
+*74HC74 D Flip-Flop MCE Nodes: S,D,CP,R,QN,Q
+*MCE mixed-mode D Flip-Flop pkg:DIP14 (A:4,2,3,1,6,5)(B:10,12,11,13,8,9)
+.SUBCKT X74HC74 10 7 5 8 3 4
+XU1A 10 6 3 4 7410
+XU1B 4 8 11 3 7410
+XU1C 11 8 7 9 7410
+XU2A 6 5 9 11 7410
+XU2B 12 8 5 6 7410
+XU2C 10 9 6 12 7410
+.IC V(3)=0V V(4)=4.5V
+.ENDS X74HC74
+
+*74LS74 D Flip-Flop MCE Nodes: S,D,CP,R,QN,Q
+*MCE mixed-mode D Flip-Flop pkg:DIP14 (A:4,2,3,1,6,5)(B:10,12,11,13,8,9)
+.SUBCKT X74LS74 10 7 5 8 3 4
+XU1A 10 6 3 4 7410
+XU1B 4 8 11 3 7410
+XU1C 11 8 7 9 7410
+XU2A 6 5 9 11 7410
+XU2B 12 8 5 6 7410
+XU2C 10 9 6 12 7410
+.IC V(3)=0V V(4)=4.5V
+.ENDS X74LS74
+
+*7410 MCE mixed-mode 3-input NAND gate: A,B,C,Q pkg:DIP14 (A:1,2,13,12)(B:3,4,5,6)(C:9,10,11,8)
+.SUBCKT 7410 1 2 3 4
+BNLVs1 5 0 V=~(V(1) & v(2) & v(3))
+R1 5 4 1
+C1 4 0 .004uF IC=0V
+.ENDS 7410

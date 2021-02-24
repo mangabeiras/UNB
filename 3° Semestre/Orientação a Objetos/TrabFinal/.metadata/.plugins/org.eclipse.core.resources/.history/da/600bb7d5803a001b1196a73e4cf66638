@@ -1,0 +1,147 @@
+package visao;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JTable;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.table.DefaultTableModel;
+
+import dados.Pessoa;
+import dao.PessoaDao;
+import validacao.Validacao;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+
+public class Pesquisa extends JFrame {
+	private JLabel erroNome;
+	private JTextField textField;
+	private JTable table;
+	private JButton pesquisar;
+
+	Pesquisa(JTable tabela) {
+
+		configuraFrame();
+
+		insereLabel();
+
+		criaTextFieldNome();
+
+		criaBotaoPesquisar();
+
+		criaAreaTabela(tabela);
+
+		JButton voltar = new JButton("Voltar");
+		voltar.setFont(new Font("Arial", Font.BOLD, 12));
+		voltar.setBounds(310, 421, 90, 23);
+		getContentPane().add(voltar);
+	}
+
+	// VERIFICA SE O NOME INSERIDO E VALIDO
+	private boolean hasErroNome(String nome) {
+		erroNome.setText("");
+		erroNome.setForeground(Color.RED);
+
+		if (!Validacao.validaLength(nome)) {
+			erroNome.setText("Minimo de 3 caracteres");
+			return true;
+		}
+
+		else if (!Validacao.isAlfabetico(nome)) {
+			erroNome.setText("Nao pode conter Numeros");
+			return true;
+		} else {
+			erroNome.setText("Nome Valido!");
+			erroNome.setForeground(Color.BLUE);
+			return false;
+		}
+	}
+
+	private void configuraFrame() {
+		setTitle("Pesquisa");
+		setResizable(false);
+		setMinimumSize(new Dimension(800, 500));
+		setMaximumSize(new Dimension(800, 500));
+		setAlwaysOnTop(false);
+		setLocationRelativeTo(null);
+		getContentPane().setLayout(null);
+	}
+
+	private void insereLabel() {
+		JLabel label = new JLabel("Insira o nome para Pesquisar");
+		label.setFont(new Font("Arial", Font.BOLD, 12));
+		label.setBounds(24, 21, 174, 14);
+		getContentPane().add(label);
+	}
+
+	private void criaTextFieldNome() {
+		textField = new JTextField();
+		textField.setFont(new Font("Arial", Font.BOLD, 12));
+		textField.setBounds(135, 46, 440, 20);
+		getContentPane().add(textField);
+		textField.setColumns(10);
+		criaLabelErro();
+
+		textField.addCaretListener(evt -> hasErroNome(textField.getText()));
+		textField.addCaretListener(evt -> pesquisar.setEnabled(!hasErroNome(textField.getText())));
+	}
+
+	private void criaLabelErro() {
+		erroNome = new JLabel();
+		erroNome.setFont(new Font("Arial", Font.BOLD | Font.ITALIC, 12));
+		erroNome.setBounds(135, 72, 46, 14);
+		getContentPane().add(erroNome);
+	}
+
+	private void criaBotaoPesquisar() {
+		pesquisar = new JButton("Pesquisar");
+		pesquisar.setFont(new Font("Arial", Font.BOLD, 12));
+		pesquisar.setBounds(635, 45, 111, 23);
+		getContentPane().add(pesquisar);
+		pesquisar.addActionListener(evt -> atualizaTabela());
+	}
+
+	private void criaAreaTabela(JTable tabela) {
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 124, 785, 280);
+		panel.setLayout(new BorderLayout());
+		getContentPane().add(panel);
+
+		table = tabela;
+		panel.add(table);
+
+		panel.add(getBarraRolagem());
+	}
+
+	private JScrollPane getBarraRolagem() {
+		JScrollPane barra;
+		barra = new JScrollPane(table);
+		barra.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		barra.doLayout();
+		barra.setBounds(0, 0, 784, 380);
+		return barra;
+	}
+
+	private void atualizaTabela() {
+		DefaultTableModel modelo = (DefaultTableModel) table.getModel();
+		modelo.setNumRows(0);
+		PessoaDao dao = new PessoaDao();
+
+		for (Pessoa p : dao.getGrupoByName(textField.getText()).getGrupo()) {
+			if (p.getSituacaoGestacao() == null)
+				modelo.addRow(new Object[] { p.getId(), p.getNome().toLowerCase(), p.getSituacaoExtenso(), "--",
+						p.getIdade() });
+			else
+				modelo.addRow(new Object[] { p.getId(), p.getNome().toLowerCase(), p.getSituacaoExtenso(),
+						p.getSituacaoGExtenso(), "--" });
+		}
+	}
+
+}

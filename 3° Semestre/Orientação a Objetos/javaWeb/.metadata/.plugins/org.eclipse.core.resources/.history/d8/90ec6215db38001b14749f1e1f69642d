@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="aula12exer3_robertosantana">
+        <property name="context-root" value="aula12exer3_robertosantana"/>
+        <property name="java-output-path" value="/aula12exer3_robertosantana/build/classes"/>
+    </wb-module>
+</project-modules>

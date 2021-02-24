@@ -1,1 +1,95 @@
-unsupported reparse point
+*==============================================
+*NPN Darling3 Pinout: C,B,E
+*Copyright (c) 1997 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*Default NPN Darlington Transistor pkg:TO-92B 1,2,3
+.PARAM XNPN3 File:Mcebjt.lib
+
+*80V  10A
+.PARAM XTIP141 File:Mcebjt.lib
+
+*Si 1500mW 80V 8A pkg:TO-3 3,2,1
+.PARAM XECG243   File:Mcebjt.lib
+
+*Si 1500mW 80V 10A pkg:TO-3 3,2,1
+.PARAM XECG245   File:Mcebjt.lib
+
+*Si 1500mW 100V 12A pkg:TO-3 3,2,1
+.PARAM XECG247   File:Mcebjt.lib
+
+*Si 1500mW 100V 16A pkg:TO-3 3,2,1
+.PARAM XECG249   File:Mcebjt.lib
+
+*Si 1500mW 100V 20A pkg:TO-3 3,2,1
+.PARAM XECG251   File:Mcebjt.lib
+
+*Si 1500mW 120V 50A pkg:TO-3 3,2,1
+.PARAM XECG2349  File:Mcebjt.lib
+
+*Si 1500mW 80V 4A pkg:TO-66 3,1,2
+.PARAM XECG274   File:Mcebjt.lib
+
+*Si 1500mW 450V 10A pkg:TO-3 2,1,3
+.PARAM XECG2316  File:Mcebjt.lib
+
+*Si 1500mW 450V 15A pkg:TO-3 2,1,3
+.PARAM XECG2317  File:Mcebjt.lib
+
+*Si 1500mW 60V 10A pkg:TO-3 2,1,3
+.PARAM XECG214   File:Mcebjt.lib
+
+*Si 1500mW 100V 8A pkg:TO-3 2,1,3
+.PARAM XECG215   File:Mcebjt.lib
+
+*Si 1500mW 120V 25A pkg:TO-3 2,1,3
+.PARAM XECG2541  File:Mcebjt.lib
+
+*Si 1500mW 120V 16A pkg:TO-3 2,1,3
+.PARAM XECG2559  File:Mcebjt.lib
+
+*Si 1500mW 100V 8A pkg:TO-220 2,1,3
+.PARAM XECG2326  File:Mcebjt.lib
+
+*Si 1500mW 60V 7A pkg:TO-220 2,1,3
+.PARAM XECG2554  File:Mcebjt.lib
+
+*Si 1500mW 100V 8A pkg:TO-220 2,1,3
+.PARAM XECG2556  File:Mcebjt.lib
+
+*Si 1500mW 60V 5A pkg:TO-220 2,1,3
+.PARAM XECG2545  File:Mcebjt.lib
+
+*Si 1500mW 100V 8A pkg:TO-220 2,1,3
+.PARAM XECG261   File:Mcebjt.lib
+
+*Si 1500mW 100V 10A pkg:TO-220 2,1,3
+.PARAM XECG263   File:Mcebjt.lib
+
+*Si 1500mW 120V 10A pkg:TO-220 2,1,3
+.PARAM XECG2343  File:Mcebjt.lib
+
+*Si 1500mW 60V 10A pkg:TO-220 2,1,3
+.PARAM XECG2551  File:Mcebjt.lib
+
+*Si 1500mW 100V 8A pkg:TO-220 2,1,3
+.PARAM XECG2547  File:Mcebjt.lib
+
+*Si 1500mW 200V 10A pkg:TO-220 2,1,3
+.PARAM XECG2553  File:Mcebjt.lib
+
+*Si 1500mW 400V 6A pkg:TO-220 2,1,3
+.PARAM XECG2540  File:Mcebjt.lib
+
+*Si 1500mW 80V 4A pkg:TO-126 2,3,1
+.PARAM XECG253   File:Mcebjt.lib
+
+*Si 1500mW 120V 1.5A pkg:TO-126 2,3,1
+.PARAM XECG2544  File:Mcebjt.lib
+
+*Si 1500mW 120V 6A pkg:SOT-82 2,1,3
+.PARAM XECG2345  File:Mcebjt.lib
+
+*Si 1500mW 80V 4A pkg:TO-126 2,1,3
+.PARAM XECG2351  File:Mcebjt.lib

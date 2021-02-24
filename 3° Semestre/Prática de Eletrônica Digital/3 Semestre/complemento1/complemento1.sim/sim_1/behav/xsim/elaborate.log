@@ -1,0 +1,17 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xinlinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto bd9d8f2b43034b18bff19e12dc214ef8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_soma4_behav xil_defaultlib.tb_soma4 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.complemento1 [complemento1_default]
+Compiling architecture behavioral of entity xil_defaultlib.somador1b [somador1b_default]
+Compiling architecture behavioral of entity xil_defaultlib.somador4b [somador4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_soma4
+Built simulation snapshot tb_soma4_behav

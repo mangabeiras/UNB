@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\P1_RobertoSantana_19-0019620"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula10exer6_Lucas"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula10exer5_Roberto"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula9extra1_jefferson"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula9extra1_matheus"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula9extra1_Roberto"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula8exer4_Jefferson"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer4Evolucao4_CarlosRoriz"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer4Evolucao4_cristian"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer4Evolucao4_Roberto"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer4Evolucao3_brenno"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer4Evolucao3_Roberto"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer2Evolucao2_Roberto"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer2Evolucao2_Joao"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer4Evolucao2_Rodrigo"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer4Evolucao2_thiago"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer2_Joao"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\Aula 2 Tarefa 4"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\Aula 1 Tarefa 1"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\The Top"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer4Evolucao3_brenno"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer4Evolucao2_thiago"/>
+			<item value="C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\Exercicios\aula7exer2_Joao"/>
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+	</section>
+</section>

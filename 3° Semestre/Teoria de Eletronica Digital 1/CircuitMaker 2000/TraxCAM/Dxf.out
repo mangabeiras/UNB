@@ -1,1 +1,18 @@
-unsupported reparse point
+; dxf.out
+;
+; DXF draws polylines only as flat ends, and when they are joined,
+; a joined extents is created. Polycrack will crack every polyline
+; equal greater a polycrackwidth into 2 Vertex polyline with a 
+; lineend set. 
+; This function will only work if linenends is selected.
+.POLYCRACKWIDTH         0.001
+.POLYCRACK              y
+;
+; This is the diameter of the circle for a Minimum Tool size
+; (also for an undefined toolsize).
+.MINUMUMTOOLDIAM        0.005
+; Layer of TOOL Circle
+.TOOLLAYER              TOOL
+.TOOLCODELAYER          TOOLCODE
+;
+;

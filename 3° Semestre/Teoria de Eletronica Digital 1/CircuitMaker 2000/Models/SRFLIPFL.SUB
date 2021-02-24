@@ -1,1 +1,24 @@
-unsupported reparse point
+*Generic SR Flip-Flip MCE Nodes: S,R,QN,Q
+*MCE mixed-mode Set/Reset Flip-Flop
+.SUBCKT XSRFF 3 2 4 5
+XU1A 7 4 5 7400
+XU1B 5 6 4 7400
+XU2A 3 7 7404
+XU2B 2 6 7404
+.IC V(4)=0V V(5)=4.5V
+.ENDS XSRFF
+
+* Models/Subcircuits Used:
+*7400 MCE mixed-mode 2-input NAND gate: A,B,Q pkg:DIP14 (A:1,2,3)(B:4,5,6)(C:10,9,8)(D:12,13,11)
+.SUBCKT 7400 3 4 5
+BNLVs1 1 0 V=~(V(3) & v(4))
+R1 1 5 1
+C1 5 0 .004uF
+.ENDS 7400
+
+*7404 MCE mixed-mode inverter: A,Q pkg:DIP14 (A:1,2)(B:3,4)(C:5,6)(D:9,8)(E:11,10)(F:13,12)
+.SUBCKT 7404 5 3
+BNLVs1 4 0 V=~(V(5))
+R1 4 3 1
+C1 3 0 .004uF
+.ENDS 7404

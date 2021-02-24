@@ -1,1 +1,332 @@
-unsupported reparse point
+! CAMCAD Layer Map File
+!
+! DXF
+! IGES
+! MENTORPCB
+! CDI
+! PADSPCB
+! ORCADPCB
+! PDIFPCB
+! PDIFSCH
+! PROTELPCB
+! TANGOPCB
+! GENCAD
+!
+.LAYER GENCAD        TOP   
+.LAYER GENCAD        BOTTOM
+.LAYER GENCAD        SOLDERMASK_TOP
+.LAYER GENCAD        SOLDERMASK_BOTTOM
+.LAYER GENCAD        SILKSCREEN_TOP
+.LAYER GENCAD        SILKSCREEN_BOTTOM
+.LAYER GENCAD        SOLDERPASTE_TOP
+.LAYER GENCAD        SOLDERPASTE_BOTTOM
+!
+.LAYER ORCADPCB      Adhesive Component      
+.LAYER ORCADPCB      Adhesive Solder         
+.LAYER ORCADPCB      SolderPaste Component   
+.LAYER ORCADPCB      SolderPaste Solder      
+.LAYER ORCADPCB      SilkScreen Component    
+.LAYER ORCADPCB      SilkScreen Solder       
+.LAYER ORCADPCB      SolderMask Component    
+.LAYER ORCADPCB      SolderMask Solder       
+.LAYER ORCADPCB      Assembly Drawing        
+.LAYER ORCADPCB      Comment Layer           
+.LAYER ORCADPCB      ECO 1                   
+.LAYER ORCADPCB      ECO 2                   
+.LAYER ORCADPCB      All Internal Copper     
+.LAYER ORCADPCB      All External Copper     
+.LAYER ORCADPCB      All Copper              
+.LAYER ORCADPCB      All Layers              
+.LAYER ORCADPCB      Component Copper        
+.LAYER ORCADPCB      Internal Copper 1       
+.LAYER ORCADPCB      Internal Copper 2       
+.LAYER ORCADPCB      Internal Copper 3       
+.LAYER ORCADPCB      Internal Copper 4       
+.LAYER ORCADPCB      Internal Copper 5       
+.LAYER ORCADPCB      Internal Copper 6       
+.LAYER ORCADPCB      Internal Copper 7       
+.LAYER ORCADPCB      Internal Copper 8       
+.LAYER ORCADPCB      Internal Copper 9       
+.LAYER ORCADPCB      Internal Copper 10      
+.LAYER ORCADPCB      Internal Copper 11      
+.LAYER ORCADPCB      Internal Copper 12      
+.LAYER ORCADPCB      Internal Copper 13      
+.LAYER ORCADPCB      Internal Copper 14      
+.LAYER ORCADPCB      Solder Copper           
+!
+.LAYER TANGOPCB      TOPLAYER         
+.LAYER TANGOPCB      BOTTOMLAYER       
+.LAYER TANGOPCB      POWERLAYER        
+.LAYER TANGOPCB      GROUNDLAYER       
+.LAYER TANGOPCB      MID1LAYER         
+.LAYER TANGOPCB      MID2LAYER         
+.LAYER TANGOPCB      MID3LAYER         
+.LAYER TANGOPCB      MID4LAYER         
+.LAYER TANGOPCB      TOPSILKLAYER      
+.LAYER TANGOPCB      BOTTOMSILKLAYER                       
+.LAYER TANGOPCB      TOPSOLDERLAYER    
+.LAYER TANGOPCB      BOTTOMSOLDERLAYER 
+.LAYER TANGOPCB      TOPASSLAYER       
+.LAYER TANGOPCB      BOTTOMASSLAYER    
+.LAYER TANGOPCB      BOARDLAYER        
+! .LAYER TANGOPCB      CONNECTLAYER      
+.LAYER TANGOPCB      DRILLLAYER        
+.LAYER TANGOPCB      KEEPOUTLAYER      
+.LAYER TANGOPCB      TITLELAYER   
+.LAYER TANGOPCB      MID5LAYER         
+.LAYER TANGOPCB      MID6LAYER         
+.LAYER TANGOPCB      MID7LAYER         
+.LAYER TANGOPCB      MID8LAYER         
+!
+.LAYER PROTELPCB	TOP LAYER
+.LAYER PROTELPCB	MID LAYER 1
+.LAYER PROTELPCB	MID LAYER 2
+.LAYER PROTELPCB	MID LAYER 3
+.LAYER PROTELPCB	MID LAYER 4
+.LAYER PROTELPCB	MID LAYER 5
+.LAYER PROTELPCB	MID LAYER 6						
+.LAYER PROTELPCB	MID LAYER 7
+.LAYER PROTELPCB	MID LAYER 8
+.LAYER PROTELPCB	MID LAYER 9
+.LAYER PROTELPCB	MID LAYER 10
+.LAYER PROTELPCB	MID LAYER 11
+.LAYER PROTELPCB	MID LAYER 12
+.LAYER PROTELPCB	MID LAYER 13
+.LAYER PROTELPCB	MID LAYER 14
+.LAYER PROTELPCB	BOTTOM LAYER
+.LAYER PROTELPCB	TOP SILKSCREEN
+.LAYER PROTELPCB	BOTTOM SILKSCREEN
+.LAYER PROTELPCB	TOP PASTE MASK
+.LAYER PROTELPCB	BOTTOM PASTE MASK
+.LAYER PROTELPCB	TOP SOLDER MASK
+.LAYER PROTELPCB	BOTTOM SOLDER MASK
+.LAYER PROTELPCB	PLANE 1
+.LAYER PROTELPCB	PLANE 2
+.LAYER PROTELPCB	PLANE 3
+.LAYER PROTELPCB	PLANE 4
+.LAYER PROTELPCB	DRILL GUIDE
+.LAYER PROTELPCB	KEEP OUT LAYER
+.LAYER PROTELPCB	MECHANICAL LAYER 1
+.LAYER PROTELPCB	MECHANICAL LAYER 2
+.LAYER PROTELPCB	MECHANICAL LAYER 3
+.LAYER PROTELPCB	MECHANICAL LAYER 4
+.LAYER PROTELPCB	DRILL DRAWING
+.LAYER PROTELPCB	MULTI LAYER
+!
+.LAYER PADSPCB       0   
+.LAYER PADSPCB       1
+.LAYER PADSPCB       2   
+.LAYER PADSPCB       3   
+.LAYER PADSPCB       4   
+.LAYER PADSPCB       5   
+.LAYER PADSPCB       6   
+.LAYER PADSPCB       7   
+.LAYER PADSPCB       8   
+.LAYER PADSPCB       9
+.LAYER PADSPCB       10   
+.LAYER PADSPCB       11   
+.LAYER PADSPCB       12   
+.LAYER PADSPCB       13   
+.LAYER PADSPCB       14   
+.LAYER PADSPCB       15   
+.LAYER PADSPCB       16   
+.LAYER PADSPCB       17   
+.LAYER PADSPCB       18   
+.LAYER PADSPCB       19   
+.LAYER PADSPCB       20
+.LAYER PADSPCB       21
+.LAYER PADSPCB       22
+.LAYER PADSPCB       23
+.LAYER PADSPCB       24
+.LAYER PADSPCB       25
+.LAYER PADSPCB       26
+.LAYER PADSPCB       27
+.LAYER PADSPCB       28
+.LAYER PADSPCB       29
+.LAYER PADSPCB       30
+!   
+.LAYER CDI           0
+.LAYER CDI           17
+.LAYER CDI           18
+.LAYER CDI           19
+.LAYER CDI           20
+.LAYER CDI           21
+.LAYER CDI           22
+.LAYER CDI           23
+.LAYER CDI           24
+.LAYER CDI           25
+.LAYER CDI           26
+.LAYER CDI           27
+.LAYER CDI           28
+.LAYER CDI           29
+.LAYER CDI           30
+.LAYER CDI           31
+.LAYER CDI           32
+.LAYER CDI           33
+!
+.LAYER DXF           DXF1   
+.LAYER DXF           DXF2
+.LAYER DXF           DXF3   
+.LAYER DXF           DXF4   
+!
+.LAYER MENTORPCB        BOARD_OUTLINE       
+.LAYER MENTORPCB        BREAKOUT            
+.LAYER MENTORPCB        BREAKOUT_1          
+.LAYER MENTORPCB        BREAKOUT_2          
+.LAYER MENTORPCB        DAM                 
+.LAYER MENTORPCB        DAM_1 
+.LAYER MENTORPCB        DAM_2 
+.LAYER MENTORPCB        DENSITY 
+.LAYER MENTORPCB        DENSITY_1 
+.LAYER MENTORPCB        DENSITY_2  
+.LAYER MENTORPCB        DENSITY_3 
+.LAYER MENTORPCB        DENSITY_4           
+.LAYER MENTORPCB        DENSITY_5           
+.LAYER MENTORPCB        DRAWING             
+.LAYER MENTORPCB        DRAWING_1           
+.LAYER MENTORPCB        DRAWING_2           
+.LAYER MENTORPCB        DRILL               
+.LAYER MENTORPCB        DRILL_HOLES         
+.LAYER MENTORPCB        ERRORS              
+.LAYER MENTORPCB        FORCE               
+.LAYER MENTORPCB        GLUE_MASK           
+.LAYER MENTORPCB        GLUE_MASK_1         
+.LAYER MENTORPCB        GLUE_MASK_2         
+.LAYER MENTORPCB        GUIDE               
+.LAYER MENTORPCB        HISTOGRAM           
+.LAYER MENTORPCB        MILLING             
+.LAYER MENTORPCB        OFF_GRID_PINS       
+.LAYER MENTORPCB        OFF_GRID_PINS_1     
+.LAYER MENTORPCB        OFF_GRID_PINS_2     
+.LAYER MENTORPCB        PAD                 
+.LAYER MENTORPCB        PAD_1               
+.LAYER MENTORPCB        PAD_2               
+.LAYER MENTORPCB        PAD_MASTER          
+.LAYER MENTORPCB        PASTE_MASK          
+.LAYER MENTORPCB        PASTE_MASK_1        
+.LAYER MENTORPCB        PASTE_MASK_2        
+.LAYER MENTORPCB        PIN_ID              
+.LAYER MENTORPCB        PIN_ID_1            
+.LAYER MENTORPCB        PIN_ID_2            
+.LAYER MENTORPCB        PLACE               
+.LAYER MENTORPCB        PLACEMENT_KEEPOUT   
+.LAYER MENTORPCB        PLACEMENT_REGION_1  
+.LAYER MENTORPCB        PLACEMENT_REGION_2  
+.LAYER MENTORPCB        PLACE_1             
+.LAYER MENTORPCB        PLACE_2             
+.LAYER MENTORPCB        POWER               
+.LAYER MENTORPCB        POWER_1             
+.LAYER MENTORPCB        POWER_2             
+.LAYER MENTORPCB        POWER_3             
+.LAYER MENTORPCB        POWER_4             
+.LAYER MENTORPCB        POWER_5             
+.LAYER MENTORPCB        POWER_6             
+.LAYER MENTORPCB        POWER_7             
+.LAYER MENTORPCB        POWER_8             
+.LAYER MENTORPCB        POWER_MASTER        
+.LAYER MENTORPCB        ROUTE_GRID          
+.LAYER MENTORPCB        ROUTE_GRID_1        
+.LAYER MENTORPCB        ROUTE_GRID_2        
+.LAYER MENTORPCB        ROUTE_GRID_3        
+.LAYER MENTORPCB        ROUTE_GRID_4        
+.LAYER MENTORPCB        ROUTE_GRID_5        
+.LAYER MENTORPCB        ROUTE_GRID_6        
+.LAYER MENTORPCB        ROUTE_GRID_7        
+.LAYER MENTORPCB        ROUTE_GRID_8        
+.LAYER MENTORPCB        ROUTE_GRID_9        
+.LAYER MENTORPCB        ROUTE_GRID_10       
+.LAYER MENTORPCB        ROUTE_GRID_11       
+.LAYER MENTORPCB        ROUTE_GRID_12       
+.LAYER MENTORPCB        ROUTING_KEEPOUT     
+.LAYER MENTORPCB        SIGNAL              
+.LAYER MENTORPCB        SIGNAL_1            
+.LAYER MENTORPCB        SIGNAL_2            
+.LAYER MENTORPCB        SIGNAL_3            
+.LAYER MENTORPCB        SIGNAL_4            
+.LAYER MENTORPCB        SIGNAL_5            
+.LAYER MENTORPCB        SIGNAL_6            
+.LAYER MENTORPCB        SIGNAL_7            
+.LAYER MENTORPCB        SIGNAL_8            
+.LAYER MENTORPCB        SIGNAL_9            
+.LAYER MENTORPCB        SIGNAL_10           
+.LAYER MENTORPCB        SIGNAL_11           
+.LAYER MENTORPCB        SIGNAL_12           
+.LAYER MENTORPCB        SILKSCREEN          
+.LAYER MENTORPCB        SILKSCREEN_1        
+.LAYER MENTORPCB        SILKSCREEN_2        
+.LAYER MENTORPCB        SOCKET_LAYER        
+.LAYER MENTORPCB        SOLDER_MASK         
+.LAYER MENTORPCB        SOLDER_MASK_1       
+.LAYER MENTORPCB        SOLDER_MASK_2       
+.LAYER MENTORPCB        THERMAL             
+.LAYER MENTORPCB        THERMAL_1           
+.LAYER MENTORPCB        THERMAL_2           
+.LAYER MENTORPCB        TRACE_KEEPOUT       
+.LAYER MENTORPCB        VIA                 
+.LAYER MENTORPCB        VIA_1               
+.LAYER MENTORPCB        VIA_2               
+.LAYER MENTORPCB        VIA_3               
+.LAYER MENTORPCB        VIA_4               
+.LAYER MENTORPCB        VIA_5               
+.LAYER MENTORPCB        VIA_6               
+.LAYER MENTORPCB        VIA_7               
+.LAYER MENTORPCB        VIA_8               
+.LAYER MENTORPCB        VIA_9               
+.LAYER MENTORPCB        VIA_10              
+.LAYER MENTORPCB        VIA_11              
+.LAYER MENTORPCB        VIA_KEEPOUT         
+.LAYER MENTORPCB        VIA_USAGE           
+;
+; The cadif setup is done for cs6.paf
+; Each layername must have the Lxx number first, and this
+; must match the used technology file.
+.LAYER CADIF            L17 Top Elec
+.LAYER CADIF            L20 GND
+.LAYER CADIF            L24 Sig 2
+.LAYER CADIF            L27 Sig 3
+.LAYER CADIF            L30 Sig 4
+.LAYER CADIF            L33 Sig 5
+.LAYER CADIF            L36 Sig 6
+.LAYER CADIF            L39 Sig 7
+.LAYER CADIF            L42 Sig 8
+.LAYER CADIF            L46 Sig 9
+.LAYER CADIF            L50 Sig 10
+.LAYER CADIF            L54 Sig 11
+.LAYER CADIF            L58 Sig 12
+.LAYER CADIF            L62 Sig 13
+.LAYER CADIF            L66 Vcc
+.LAYER CADIF            L70 Bottom Elec
+.LAYER CADIF            L139 Bottom Assembly
+.LAYER CADIF            L146 Bottom Glue Spot
+.LAYER CADIF            L160 Bottom Paste
+.LAYER CADIF            L132 Bottom Placement
+.LAYER CADIF            L125 Bottom silk
+.LAYER CADIF            L153 Bottom Solder Resist
+.LAYER CADIF            L74 Doc 1
+.LAYER CADIF            L77 Doc 2
+.LAYER CADIF            L80 Doc 3
+.LAYER CADIF            L83 Doc 4
+.LAYER CADIF            L86 Doc 5
+.LAYER CADIF            L89 Doc 6
+.LAYER CADIF            L92 Doc 7
+.LAYER CADIF            L95 Doc 8
+.LAYER CADIF            L98 Doc 9
+.LAYER CADIF            L101 Doc 10
+.LAYER CADIF            L104 Doc 11
+.LAYER CADIF            L107 Doc 12
+.LAYER CADIF            L110 Doc 13
+.LAYER CADIF            L113 Doc 14
+.LAYER CADIF            L116 Doc 15
+.LAYER CADIF            L119 Doc 16
+.LAYER CADIF            L122 Top silk
+.LAYER CADIF            L129 Top Placement
+.LAYER CADIF            L136 Top Assembly
+.LAYER CADIF            L143 Top Glue Spot
+.LAYER CADIF            L150 Top Solder Resist
+.LAYER CADIF            L157 Top Paste
+.LAYER CADIF            L812 Silkscreen
+.LAYER CADIF            L6 (All Layers)
+.LAYER CADIF            L11 (All Documentation Layers)
+!
+! end of layermap
+

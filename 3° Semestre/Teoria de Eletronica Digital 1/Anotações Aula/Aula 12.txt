@@ -1,1 +1,24 @@
-unsupported reparse point
+ Os SPLDs (Simple Programmable Logic Devices) podem ser:
+	- Programmable Array Logic (PAL) -  geralmente programável apenas uma vez
+	- Generic Array Logic (GAL) - pode ser reprogramável
+.PAL E GAL possuem portas AND e OR fixas
+
+. CPLD (Complex programmable logic device)
+	- Multiplas SPLDs com interconexoes programaveis chamadas de PIA (Programmable Interconnect Array).
+	- Cada SPLD recebe o nome de LAB (Logic Array Block)
+	- Tecnlogia: EEPROM, ou SRAM
+	- Densidade: de dezenas a 2000 macrocélulas
+	- Consumo de Potência: de miliwatts a centenas de miliwatts
+	- Tensao de alimentação: de 2.5V a 5 V
+
+.FPGA (Field Programmable Gate Array) é composto de três elementos básicos: bloco lógico configurável(CLB), interconexões e blocos de entrada/saída ao longo do seu perímetro
+	- Nao utiliza em sua estrutura PAL, GAL ou PLA
+	- Look-up table.
+	- CLBs nao tao complexos, porém +CLBs
+	- SRAM (Volatil), mas incluem memoria nao volatil incorporada no chip.
+
+.LTU (Lookup Table)
+	-É um tipo de memória programável usada para gerar funções lógicas combinacionais de soma-de-produtos
+	- Faz essencialmente o mesmo trabalho que um PAL ou PLA
+	- A organização de uma LUT consiste em um número de células de memória igual a 2^n, onde n é o número de variáveis de entrada
+

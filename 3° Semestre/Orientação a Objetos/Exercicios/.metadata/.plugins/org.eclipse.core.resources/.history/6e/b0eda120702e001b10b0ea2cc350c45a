@@ -1,0 +1,69 @@
+package interfaceGrafica;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+
+
+import javax.swing.JButton;
+
+import javax.swing.JLabel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+
+public class Entrada extends JFrame implements ActionListener{
+	
+	private String entrada;
+	private JButton confirma, cancela;
+	private JTextField dados;
+	private JLabel mensagem;
+	public Entrada(String mensagem, String titulo) {
+		setLocationRelativeTo(null);
+		setTitle(titulo);
+		setVisible(true);
+		setResizable(false);
+		setAutoRequestFocus(true);
+		getContentPane().setLayout(null);
+	
+		getContentPane().add(dados);
+		
+		dados = new JTextField();
+		dados.setLocation(26, 32);
+		dados.setEditable(true);
+		dados.setSize(200, 20);
+		
+		confirma = new JButton("Ok");
+		confirma.setLocation(26, 69);
+		confirma.setSize(90, 20);
+		confirma.addActionListener(this);
+		
+		cancela = new JButton("Cancela");
+		cancela.setLocation(136, 69);
+		cancela.setSize(90, 20);
+		cancela.addActionListener(this);
+		
+		this.mensagem = new JLabel(mensagem);
+		this.mensagem.setBounds(26, 7, 150, 14);
+		
+		getContentPane().add(dados);
+		getContentPane().add(confirma);
+		getContentPane().add(cancela);
+		getContentPane().add(this.mensagem);
+		
+		
+		
+	}
+	
+	public String getEntrada() {
+		return this.entrada;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent event) {
+		if (event.getSource() == confirma)
+			this.entrada = dados.getText();
+		if (event.getSource() == cancela)
+			throw new NullPointerException();
+	}
+}

@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\javaWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\880386944.index
+\operacoes\src
+C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\javaWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3515335589.index
+\aula12exer3_robertosantana\src
+C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\javaWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\920111925.index
+\aula12exer3_robertosantana\src
+C:\Users\robeg\OneDrive - unb.br\UnB\3° Semestre\Orientação a Objetos\javaWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1269471257.index
+\operacoes\src

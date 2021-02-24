@@ -1,1 +1,13 @@
-unsupported reparse point
+function I = trapezoidal (integ, a,b,n)
+%Roberto Gabriel Mangabeira Santana - 190019620
+  h = (b-a)/n;
+  func = inline (integ);
+  x=a:h:b;
+
+  for i=1:n+1
+    F(i)= func(x(i));
+   end
+
+  I=h(F(1)+F(n+1))/2+hsum(F(2:n));
+endfunction
+

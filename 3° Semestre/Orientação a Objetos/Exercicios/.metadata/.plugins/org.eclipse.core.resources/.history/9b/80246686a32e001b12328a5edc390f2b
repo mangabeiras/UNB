@@ -1,0 +1,49 @@
+package interfaceGrafica;
+
+import javax.swing.JFrame;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JTextPane;
+
+import validacao.Validacao;
+
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class CadastroIdade extends JFrame {
+	JButton confirma, cancela;
+	JTextField texto;
+	public CadastroIdade() {
+		getContentPane().setLayout(null);
+		
+		confirma = new JButton("Ok");
+		confirma.setBounds(97, 169, 89, 23);
+		confirma.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (Validacao.validaIdade(texto.getText())) {
+					
+				}
+			}
+		});
+		getContentPane().add(confirma);
+		
+		cancela = new JButton("Cancela");
+		cancela.setBounds(247, 169, 89, 23);
+		getContentPane().add(cancela);
+		
+		JTextPane texto = new JTextPane();
+		texto.setEnabled(true);
+		texto.setEditable(true);
+		texto.setBounds(72, 80, 280, 20);
+		getContentPane().add(texto);
+		
+		JLabel cabecalho = new JLabel("Idade");
+		cabecalho.setBounds(72, 37, 215, 14);
+		getContentPane().add(cabecalho);
+		
+
+	}
+}

@@ -1,1 +1,128 @@
-unsupported reparse point
+*==============================================
+*Compara5 pinout: +IN, -IN, +V, -V, OUT
+*Copyright (c) 1997 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*==============================================
+*MicroCode Engineering
+
+*IDEAL Voltage Comparator using Switches pkg:DIP8 3,2,7,4,6
+.PARAM XSWCOMP File:Mcemods2.LIB
+
+*Quad SnglSup pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+.PARAM XLM339 File:Mcemods2.LIB
+
+*====================================================
+*Maxim
+
+*MAX Dual SnglSup HiSpeed UltraLoPwr pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX907 File:Maxim.lib
+
+*MAX Quad SnglSup HiSpeed UltraLoPwr pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX908 File:Maxim.lib
+
+*MAX Dual SnglSup UltraLoPwr pkg:DIP8 (A:3,4,7,2,1)(B:6,5,7,2,8)
+.PARAM XMAX922 File:Maxim.lib
+
+*MAX Quad SnglSup UltraLoPwr pkg:DIP16 (A:5,4,3,9,2)(B:7,6,3,9,1)(C:11,10,3,9,16)(D:13,12,3,9,15)
+.PARAM XMAX924 File:Maxim.lib
+
+*MAX Quad UltraLoPwr LoCost 2%Ref pkg:DIP16 (A:5,4,3,9,2)(B:7,6,3,9,1)(C:11,10,3,9,16)(D:13,12,3,9,15)
+.PARAM XMAX934 File:Maxim.lib
+
+*MAX Sngl SnglSup HiSpeed LoPwr RailToRail pkg:DIP8 3,2,1,6,7
+.PARAM XMAX941 File:Maxim.lib
+
+*MAX Dual SnglSup HiSpeed LoPwr RailToRail pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XMAX942 File:Maxim.lib
+
+*MAX Quad SnglSup HiSpeed LoPwr RailToRail pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+.PARAM XMAX944 File:Maxim.lib
+
+*MAX Sngl LoPwr Comp. pkg:DIP8 2,3,1,6,7
+.PARAM XMAX975LP File:Maxim.lib
+
+*MAX Sngl HiSpeed Comp. pkg:DIP8 2,3,1,6,7
+.PARAM XMAX975HS File:Maxim.lib
+
+*MAX Dual LoPwr Comp. pkg:DIP14 (A:12,13,4,2,3)(B:5,6,4,9,10)
+.PARAM XMAX977LP File:Maxim.lib
+
+*MAX Dual HiSpeed Comp. pkg:DIP14 (A:12,13,4,2,3)(B:5,6,4,9,10)
+.PARAM XMAX977HS File:Maxim.lib
+
+*=====================================================
+*Texas Instruments
+
+*TI Quad 5V uPwr pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+.PARAM XLP239 File:Ti.lib
+
+*TI Quad 5V uPwr pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+.PARAM XLP339 File:Ti.lib
+
+*TI Quad 5V uPwr pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+.PARAM XLP2901 File:Ti.lib
+
+*TI Quad 5V uPwr CMOS pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+.PARAM XTLC339 File:Ti.lib
+
+*TI Dual 5V GenPurpose pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTLC352 File:Ti.lib
+
+*TI Quad 5V GenPurpose pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+.PARAM XTLC354 File:Ti.lib
+
+*TI Dual 5V GenPurpose pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTLC372 File:Ti.lib
+
+*TI Quad 5V GenPurpose pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+.PARAM XTLC374 File:Ti.lib
+
+*TI Dual 5V uPwr CMOS pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTLC393 File:Ti.lib
+
+*TI Dual 5V uPwr PushPullOutput pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTLC3702 File:Ti.lib
+
+*TI Quad 5V uPwr PushPullOut pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+.PARAM XTLC3704 File:Ti.lib
+
+*TI Dual 3V LoVoltage CMOS pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTLV2352I3 File:Ti.lib
+
+*TI Dual 5V LoVoltage CMOS pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XTLV2352I5 File:Ti.lib
+
+*TI Quad 3V LoVoltage CMOS pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+.PARAM XTLV2354I3 File:Ti.lib
+
+*TI Quad 5V LoVoltage CMOS pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+.PARAM XTLV2354I5 File:Ti.lib
+
+*=============================================
+*National Semiconductor
+
+*NS Dual uPwr RailToRail I/O CMOS pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6762A/NS File:National.lib
+
+*NS Dual uPwr RailToRail I/O CMOS pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6762B/NS File:National.lib
+
+*NS Dual uPwr OpenDrain CMOS pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6772A/NS File:National.lib
+
+*NS Dual uPwr OpenDrain CMOS pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+.PARAM XLMC6772B/NS File:National.lib
+
+*NS Sngl Tiny CMOS pkg:DIP8 3,2,7,4,6
+.PARAM XLMC7211A/NS File:National.lib
+
+*NS Sngl Tiny CMOS pkg:DIP8 3,2,7,4,6
+.PARAM XLMC7211B/NS File:National.lib
+
+*NS Sngl Tiny OpenDrain CMOS pkg:DIP8 3,2,7,4,6
+.PARAM XLMC7221A/NS File:National.lib
+
+*NS Sngl Tiny OpenDrain CMOS pkg:DIP8 3,2,7,4,6
+.PARAM XLMC7221B/NS File:National.lib

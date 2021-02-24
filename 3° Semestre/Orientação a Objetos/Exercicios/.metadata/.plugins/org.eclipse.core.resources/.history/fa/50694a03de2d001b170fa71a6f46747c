@@ -1,0 +1,73 @@
+package interfaceGrafica;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+
+public class Entrada extends JFrame implements ActionListener{
+	private String entrada;
+	JButton botao;
+	JTextField texto;
+	JLabel etq1, etq2;
+	Container conteiner = getContentPane();
+	public Entrada(String mensagem, String titulo) {
+		setBounds(200,200,200,200);
+		setTitle(titulo);
+		conteiner.setLayout(new GridLayout(2,2));
+		
+		
+		etq1 = new JLabel(mensagem);
+		etq1.setForeground(Color.black);
+		etq1.setFont(new Font("SansSerif",Font.BOLD,14));
+		
+		etq2 = new JLabel("");
+		etq2.setForeground(Color.black);
+		etq2.setFont(new Font("SansSerif",Font.BOLD,14));
+		
+		texto = new JTextField();
+		texto.setEnabled(false);
+		texto.setFont(new Font("Arial",Font.ITALIC,18));
+		botao = new JButton("Ok");
+		
+		this.addWindowListener(new WindowAdapter() {
+			public void windowOpened(WindowEvent evJanela) {
+				leEntrada();
+			}
+			public void windowClosing(WindowEvent evJanela) {
+				System.exit(0);
+			}
+		});
+	
+		conteiner.add(etq1);
+		conteiner.add(texto);
+		conteiner.add(etq2);
+		conteiner.add(botao);
+		
+		setVisible(true); 
+	}
+	public String getEntrada() {
+		return this.entrada;
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		this.entrada = this.texto.getText();
+	}
+	public void leEntrada() {
+		botao.addActionListener(this);
+	}
+
+}

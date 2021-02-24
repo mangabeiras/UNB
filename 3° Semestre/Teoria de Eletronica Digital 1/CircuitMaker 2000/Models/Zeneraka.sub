@@ -1,1 +1,227 @@
-unsupported reparse point
+*==============================================
+*Zener Diode Pinout 1=A, 2=K, 3=A
+*Copyright (c) 1998 MicroCode Engineering, Inc.
+*All Rights Reserved
+*==============================================
+
+*2.7V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C2V7 File:Mcediode.lib
+
+*3V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C3 File:Mcediode.lib
+
+*3.3V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C3V3 File:Mcediode.lib
+
+*3.6V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C3V6 File:Mcediode.lib
+
+*3.9V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C3V9 File:Mcediode.lib
+
+*4.4V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C4V4 File:Mcediode.lib
+
+*4.7V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C4V7 File:Mcediode.lib
+
+*5.1V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C5V1 File:Mcediode.lib
+
+*5.6V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C5V6 File:Mcediode.lib
+
+*6.2V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C6V2 File:Mcediode.lib
+
+*6.8V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C6V8 File:Mcediode.lib
+
+*7.5V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C7V5 File:Mcediode.lib
+
+*8.2V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C8V2 File:Mcediode.lib
+
+*9.1V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C9V1 File:Mcediode.lib
+
+*10V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C10 File:Mcediode.lib
+
+*11V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C11 File:Mcediode.lib
+
+*12V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C12 File:Mcediode.lib
+
+*13V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C13 File:Mcediode.lib
+
+*15V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C15 File:Mcediode.lib
+
+*16V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C16 File:Mcediode.lib
+
+*18V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C18 File:Mcediode.lib
+
+*20V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C20 File:Mcediode.lib
+
+*22V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C22 File:Mcediode.lib
+
+*24V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C24 File:Mcediode.lib
+
+*27V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C27 File:Mcediode.lib
+
+*30V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C30 File:Mcediode.lib
+
+*33V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C33 File:Mcediode.lib
+
+*36V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C36 File:Mcediode.lib
+
+*39V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C39 File:Mcediode.lib
+
+*43V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C43 File:Mcediode.lib
+
+*47V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C47 File:Mcediode.lib
+
+*51V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+.PARAM XDZ23C51 File:Mcediode.lib
+
+*3.9V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C3V9 File:Mcediode.lib
+
+*4.3V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C4V3 File:Mcediode.lib
+
+*4.7V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C4V7 File:Mcediode.lib
+
+*5.1V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C5V1 File:Mcediode.lib
+
+*5.6V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C5V6 File:Mcediode.lib
+
+*6.2V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C6V2 File:Mcediode.lib
+
+*6.8V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C6V8 File:Mcediode.lib
+
+*7.5V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C7V5 File:Mcediode.lib
+
+*8.2V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C8V2 File:Mcediode.lib
+
+*9.1V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C9V1 File:Mcediode.lib
+
+*10V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C10 File:Mcediode.lib
+
+*11V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C11 File:Mcediode.lib
+
+*12V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C12 File:Mcediode.lib
+
+*13V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C13 File:Mcediode.lib
+
+*15V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C15 File:Mcediode.lib
+
+*16V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C16 File:Mcediode.lib
+
+*18V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C18 File:Mcediode.lib
+
+*20V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C20 File:Mcediode.lib
+
+*22V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C22 File:Mcediode.lib
+
+*24V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C24 File:Mcediode.lib
+
+*27V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C27 File:Mcediode.lib
+
+*30V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C30 File:Mcediode.lib
+
+*33V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C33 File:Mcediode.lib
+
+*36V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C36 File:Mcediode.lib
+
+*39V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C39 File:Mcediode.lib
+
+*43V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C43 File:Mcediode.lib
+
+*47V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C47 File:Mcediode.lib
+
+*51V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C51 File:Mcediode.lib
+
+*56V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C56 File:Mcediode.lib
+
+*62V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C62 File:Mcediode.lib
+
+*68V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C68 File:Mcediode.lib
+
+*75V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C75 File:Mcediode.lib
+
+*82V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C82 File:Mcediode.lib
+
+*91V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C91 File:Mcediode.lib
+
+*100V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C100 File:Mcediode.lib
+
+*110V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C110 File:Mcediode.lib
+
+*120V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C120 File:Mcediode.lib
+
+*130V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C130 File:Mcediode.lib
+
+*150V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C150 File:Mcediode.lib
+
+*160V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C160 File:Mcediode.lib
+
+*180V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C180 File:Mcediode.lib
+
+*200V 1W Si Dual Zener pkg:SOT89/1234 1,4,3
+.PARAM XDZ89C200 File:Mcediode.lib

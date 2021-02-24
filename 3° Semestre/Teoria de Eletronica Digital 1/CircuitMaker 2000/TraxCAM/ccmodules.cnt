@@ -1,1 +1,74 @@
-unsupported reparse point
+:Base  ccmodules.HLP>main
+:Title CAMCAD Read/Import Modules
+1 Accel
+2 The Import File=raccel_theImportFile
+2 Importing Into CAMCAD=raccel_ImportingintoCAMCAD
+2 Items Controlled by Accel.IN=raccel_ItemsControlledbyAccel_IN
+2 Understanding the Accel.LOG File=raccel_UnderstandingtheACCEL_LOGfile
+2 Database Classifications=raccel_DatabaseClassification
+1 Mentor Neutral
+2 The Import File=rmentorneu_theImportFile
+2 Importing Into CAMCAD=rmentorneu_ImportingintoCAMCAD
+2 Items Controlled by Neutral.IN=rmentorneu_ItemsControlledbyneutral_IN
+2 Understanding the Neutral.LOG File=rmentorneu_Understandingtheneutral_LOGfile
+2 Database Classifications=rmentorneu_DatabaseClassifications
+1 Mentor Boardstation V8
+2 The Import File=rmentor4_theImportFile
+2 Importing Into CAMCAD=rmentor4_ImportingintoCAMCAD
+2 Items Controlled by Mentor.IN=rmentor4_ItemsControlledbyMENTOR_IN
+2 Understanding the Mentor.LOG File=rmentor4_UnderstandingtheMENTOR_LOGfile
+2 Database Classifications=rmentor4_DatabaseClassifications
+1 Scicards/Harris EDA
+2 The Import File=rscicards_theImportFile
+2 Importing Into CAMCAD=rscicards_ImportingintoCAMCAD
+2 Items Controlled by Cii.IN=rscicards_ItemsControlledBycii_IN
+2 Understanding the Cii.LOG File=rscicards_UnderstandingtheCii_LOGfile
+2 Database Classifications=rscicards_DatabaseClassifications
+1 Theda
+2 Creating the Import File=rtheda_CreatingtheImportFile
+2 Importing Into CAMCAD=rtheda_ImportingintoCAMCAD
+2 Items Controlled by Theda.IN=rtheda_ItemsControlledbyTHEDA_IN
+2 Understanding the Theda.LOG File=rtheda_UnderstandingtheTHEDA_LOGfile
+2 Database Classifications=rtheda_DatabaseClassifications
+1 Allegro
+2 Creating the Import File=rallegro_CreatingtheImportFile
+2 Importing Into CAMCAD=rallegro_ImportingintoCAMCAD
+2 Items Controlled by Allegro.IN=rallegro_ItemsControlledbyAllegro_IN
+2 Understanding the Allegro.LOG File=rallegro_UnderstandingtheAllegro_LOGfile
+2 Database Classifications=rallegro_DatabaseClassifications
+1 Orcad
+2 Creating the Import File=rorcad_CreatingtheImportFile2
+2 Importing Into CAMCAD=rorcad_ImportingintoCAMCAD2
+2 Items Controlled by Orcad.IN=rorcad_ItemsControlledbyORCAD_IN2
+2 Understanding the Orcad.LOG File=rorcad_UnderstandingtheORCAD_LOGfile2
+2 Database Classifications=rorcad_DatabaseClassifications2
+1 PCAD
+2 The Import File=rpcad_theImportFile
+2 Importing Into CAMCAD=rpcad_ImportingintoCAMCAD
+2 Items Controlled by PCAD.IN=rpcad_ItemsControlledbyPCAD_IN
+2 Understanding the PCAD.LOG File=rpcad_UnderstandingthePCAD_LOGfile
+2 Database Classifications=rpcad_DatabaseClassifications
+1 Protel for Windows
+2 Creating the Import File=rpfw_creatingimportfile
+2 Importing Into CAMCAD=rpfw_ImportingintoCAMCAD
+2 Items Controlled by Protel.IN=rpfw_ItemsControlledbyPROTEL_IN
+2 Understanding the Protel.LOG File=rpfw_UnderstandingthePROTEL_LOGfile
+2 Database Classifications=rpfw_DatabaseClassifications
+1 Veribest
+2 Creating the Import File=rveribest_CreatingtheImportFile
+2 Importing Into CAMCAD=rveribest_ImportingintoCAMCAD
+2 Items Controlled by ?.in=rveribest_ItemsControlledbyVeribest_IN
+2 Understanding the ?.LOG File=rveribest_ItemsControlledbyVeribest_IN
+2 Database Classifications=rveribest_DatabaseClassifications
+1 Visula CADSTAR
+2 The Import File=rvisula_cadstar_CreatingtheImportFile
+2 Importing Into CAMCAD=rvisula_cadstar_ImportingintoCAMCAD
+2 Items Controlled by Cct.IN=rvisula_cadstarItemsControlledbycct_IN
+2 Understanding the Cii.LOG File=rvisula_cadstar_Understandingthecct_LOGfile
+2 Database Classifications=rveribest_DatabaseClassifications
+1 Pads
+2 Creating the Import File=rpads_CreatingtheImportFile
+2 Importing Into CAMCAD=rpads_ImportingintoCAMCAD
+2 Items Controlled by Pads.IN=rpads_ItemsControlledbypads_IN
+2 Understanding the Pads.LOG File=rpads_Understandingthepads_LOGfile
+2 Database Classifications=rpads_DatabaseClassifications

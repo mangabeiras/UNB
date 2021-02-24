@@ -1,0 +1,5 @@
+package conector;
+
+public class Conexao {
+
+}

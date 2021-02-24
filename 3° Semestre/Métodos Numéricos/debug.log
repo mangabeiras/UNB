@@ -1,1 +1,5 @@
-unsupported reparse point
+[1022/195228.368:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1023/172052.167:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1023/172234.475:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1023/202316.223:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1024/143029.799:ERROR:crash_report_database_win.cc(457)] unexpected header

@@ -1,0 +1,19 @@
+package interfaceGrafica;
+
+import java.awt.Container;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Janela extends JFrame {
+	public Janela(JPanel painel) {
+		setAlwaysOnTop(true);
+		setLocationRelativeTo(null);
+		pack();
+		
+		setBounds(500,300,500,300);
+		setLayout(null);
+		setContentPane(painel);
+		setVisible(true);
+	}
+}

@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title> Login </title>
+    <meta charset=UTF-8>
+    
+    <script>
+	function validarSenha(){
+           senhaCompara = document.senha.senha1.value
+	   senhaCategoria = document.senha.categoria.value
+           if(senhaCompara == senhaCategoria)
+		alert("Acesso Confirmado!")
+	   else
+		alert("Acesso Negado!")	
+	}	
+    </script>
+  </head>
+  <body>
+    <h2> Login </h2>
+
+    <form action="" name="senha">
+      <label> Usuario </label>     
+      <input type="text">
+
+      <br /> <br /> 
+
+      <label> Categoria </label>
+      <select name="categoria">
+	 <option value="default"> </option>
+         <option value="empregado"> empregado </option> 
+         <option value="diretor"> diretor </option>
+         <option value="presidente"> presidente </option>
+      </select>
+ 
+      <br /> <br /> 
+      <label> Senha </label>  
+      <input type="password" name="senha1">
+      <br /> <label> A senha é sua categoria </label> 
+
+      <br /> <br />  
+
+    <input type=submit value="Entrar" onClick="validarSenha()"> 
+    <input type=submit value="Limpar" onClick="aula12exer3_robertosantana_19-0019620">
+   </form>
+</body>
+</html>

@@ -1,1 +1,24 @@
-unsupported reparse point
+*Generic quad 3-state buffer MCE Nodes: I0,I1,I2,I3,O0,O1,O2,O3,OE
+*MCE mixed-mode quad 3-state buffer
+.SUBCKT XQUAD3STA 3 11 4 10 9 8 7 6 5
+XU1 3 5 9 3SBUFF
+XU2 11 5 8 3SBUFF
+XU3 4 5 7 3SBUFF
+XU4 10 5 6 3SBUFF
+.ENDS XQUAD3STA
+
+* Models/Subcircuits Used:
+*3SBUFF MCE mixed-mode 3-state buffer: In,OE,Out
+.SUBCKT 3SBUFF 6 7 8
+R1 4 3 1
+C1 0 3 .004u IC=0V
+V1 5 0 DC 5V
+BNLVs1 4 0 V=v(6)
+SVcSW1 3 8 7 0 STTL
+R2 8 5 10Meg
+R3 0 8 10Meg
+R4 7 0 10Meg
+*TTL TTL switch (vih=2.0v, vil=0.8v)
+.MODEL STTL SW(VT=2 VH=1.2 ROFF=500E+6 )
+.ENDS 3SBUFF
+

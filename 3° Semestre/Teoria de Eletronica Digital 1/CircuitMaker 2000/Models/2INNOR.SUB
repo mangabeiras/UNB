@@ -1,1 +1,63 @@
-unsupported reparse point
+*7402 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NOR gate pkg:DIP14 (A:3,2,1)(B:5,6,4)(C:8,9,10)(D:11,12,13)
+.SUBCKT X7402 3 4 5
+BNLVs1 1 0 V=~(V(3) | v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X7402
+
+*74F02 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NOR gate pkg:DIP14 (A:3,2,1)(B:5,6,4)(C:8,9,10)(D:11,12,13)
+.SUBCKT X74F02 3 4 5
+BNLVs1 1 0 V=~(V(3) | v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74F02
+
+*74HC02 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NOR gate pkg:DIP14 (A:3,2,1)(B:5,6,4)(C:8,9,10)(D:11,12,13)
+.SUBCKT X74HC02 3 4 5
+BNLVs1 1 0 V=~(V(3) | v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74HC02
+
+*74LS02 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NOR gate pkg:DIP14 (A:3,2,1)(B:5,6,4)(C:8,9,10)(D:11,12,13)
+.SUBCKT X74LS02 3 4 5
+BNLVs1 1 0 V=~(V(3) | v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74LS02
+
+*7428 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NOR gate pkg:DIP14 (A:3,2,1)(B:5,6,4)(C:8,9,10)(D:11,12,13)
+.SUBCKT X7428 3 4 5
+BNLVs1 1 0 V=~(V(3) | v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X7428
+
+*74F28 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NOR gate pkg:DIP14 (A:3,2,1)(B:5,6,4)(C:8,9,10)(D:11,12,13)
+.SUBCKT X74F28 3 4 5
+BNLVs1 1 0 V=~(V(3) | v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74F28
+
+*74HC28 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NOR gate pkg:DIP14 (A:3,2,1)(B:5,6,4)(C:8,9,10)(D:11,12,13)
+.SUBCKT X74HC28 3 4 5
+BNLVs1 1 0 V=~(V(3) | v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74HC28
+
+*74LS28 MCE Nodes: A,B,Y
+*MCE mixed-mode 2-input NOR gate pkg:DIP14 (A:3,2,1)(B:5,6,4)(C:8,9,10)(D:11,12,13)
+.SUBCKT X74LS28 3 4 5
+BNLVs1 1 0 V=~(V(3) | v(4))
+R1 1 5 1
+C1 5 0 .004uF IC=0V
+.ENDS X74LS28

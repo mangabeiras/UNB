@@ -1,1 +1,104 @@
-unsupported reparse point
+#
+# VALID ALLEGRO OUTPUT SCRIPT FOR ROUTER SOLUTIONS SOFTWARE
+#
+# This Script creates 4 files : BRD.TXT PAD.TXT SYM.TXT RTE.TXT
+#
+# This is the new modified version May 92. (Router Solutions Inc.)
+# This is the new modified version APR 94. (Router Solutions Inc.)
+#		Component values, partnumber and type was added.
+#
+# This is the new modified version MAY 94. (Router Solutions Inc.)
+#               Pin Rotation was added. This only work from 
+#               Allegro version 6.
+#
+# This is the new modified version JUN 94. (Router Solutions Inc.)
+#               Test point was added.
+#
+# This is the new modified version DEC 96 (Router Solutions Inc.)
+#		User properties added.
+
+LAYER
+	LAYER_SORT
+	LAYER_SUBCLASS
+	LAYER_ARTWORK
+	LAYER_USE
+	LAYER_CONDUCTOR
+	LAYER_DIELECTRIC_CONSTANT
+	LAYER_ELECTRICAL_CONDUCTIVITY
+	LAYER_MATERIAL
+	LAYER_SHIELD_LAYER
+	LAYER_THERMAL_CONDUCTIVITY
+	LAYER_THICKNESS
+END
+
+PAD_DEF
+END
+
+GEOMETRY
+# GENERATES PLACEMENT, SYMBOL, AND ETCH INFORMATION
+  SYM_TYPE
+  SYM_NAME
+  REFDES
+  SYM_X 
+  SYM_Y
+  SYM_ROTATE
+  SYM_MIRROR
+  NET_NAME  
+  CLASS
+  SUBCLASS
+  RECORD_TAG
+  GRAPHIC_DATA_NAME
+  GRAPHIC_DATA_NUMBER
+  GRAPHIC_DATA_1
+  GRAPHIC_DATA_2
+  GRAPHIC_DATA_3
+  GRAPHIC_DATA_4
+  GRAPHIC_DATA_5
+  GRAPHIC_DATA_6
+  GRAPHIC_DATA_7
+  GRAPHIC_DATA_8
+  GRAPHIC_DATA_9
+  GRAPHIC_DATA_10
+  COMP_DEVICE_TYPE
+  COMP_PACKAGE
+  COMP_PART_NUMBER
+  COMP_VALUE
+# User Attributes are added here
+#  BARCODE
+#  BOARD_FIDUCIAL
+#  BOARD_TOOLING
+#  BREAKAWAY
+#  CUTOUT
+#  PANEL_FIDUCIAL
+#  PANEL_TOOLING
+#  ROBBER_BAR
+#  CLIP_DRAWING 
+END
+
+COMPOSITE_PAD
+# GENERATES VIA AND NETLIST INFORMATION
+  NET_NAME
+  PIN_NUMBER_SORT 
+  CLASS
+  REFDES
+  SYM_TYPE
+  SYM_NAME
+  SYM_X
+  SYM_Y
+  SYM_ROTATE
+  SYM_MIRROR
+  PIN_NAME
+  PIN_NUMBER
+  PIN_X
+  PIN_Y
+  PAD_STACK_NAME
+  VIA_X
+  VIA_Y
+# for Version 6
+  PIN_ROTATION
+  TEST_POINT    
+  NET_PROBE_NUMBER
+END
+
+# End of VALEXT.TXT
+

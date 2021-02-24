@@ -1,1 +1,2 @@
-unsupported reparse point
+* Default - type:divider
+.MODEL ADIVIDE divide ()

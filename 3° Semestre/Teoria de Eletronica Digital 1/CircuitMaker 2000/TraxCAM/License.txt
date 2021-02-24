@@ -1,1 +1,158 @@
-unsupported reparse point
+                 R S I   Software License Agreement
+------------------------------------------------------------------
+
+The software which accompanies this license (the "Software 
+Product") is the property of Router Solutions Incorporated ("RSI")
+or its licensors and is protected by copyright law. While RSI
+continues to own the Software Product, you will have certain
+rights to use the Software Product after your acceptance of the
+license. If you do not agree with this License Agreement, you may
+return the Software Product to RSI immediately. Except as may be 
+modified by a license addendum, your rights and obligations with
+respect to the use of this Product are listed below.
+
+------------------------------------------------------------------
+Copyright/Proprietary Protection
+
+The Software Product is owned by RSI or its licensors and is
+protected by United States and international copyright laws and
+international treaty provisions. You must treat the Software
+Product like any other copyrighted material, except to the extent
+that this License provides to the contrary.  Your right to use the 
+Software Product terminates automatically if you violate any part
+of this License. In the event of termination, you must immediately
+destroy all copies of the Software Product or return them to RSI.
+
+------------------------------------------------------------------
+You may:
+
+(a)	Use one copy of the Software Product on a single computer,
+	provided that the Software Product is in use on only one
+	computer at a time. If you have multiple Licenses for the
+	Software Product, then at any time you may use as many
+	copies of the Software Product as you have Licenses.  If
+	the number of persons who can access and us the Software
+	Product exceeds the total number of Licenses you acquire,
+	then you must have a reasonable mechanism of process in
+	place to ensure that the number of persons using the
+	Software Product at the same time does not exceed the 
+	number of Licenses.
+
+(b)	Use one copy of the Software Product on a single terminal
+	 connected to a single computer (i.e., with a single CPU).
+	The end user may copy the Software Product from one single
+	terminal to another such single terminal used by the end
+	user, provided that the Software Product is in use on only 
+	one computer at a time.
+
+(c)	Make one copy of the Software Product for archival
+	purposes, or copy the Software Product onto the hard disk
+	of your computer and retain the original for archival
+	purposes.
+
+(d)	After written notification to RSI, transfer the entire
+	Software Product on a permanent basis to another person 
+	or entity, provided you retain no copies of the Software
+	Product and the transferee agrees to the terms of this
+	License.
+
+------------------------------------------------------------------
+You may not:
+
+
+
+(a)	Copy the Documentation.  
+
+(b)	Translate the Software Product.
+
+(c)	Merge the Software Product with another program or modify 
+	the Software Product, except as may be specifically 
+	described in the Documentation. Any modification to the 
+	Software Product and use of the Software Product with 
+	other software are subject to this License.
+
+(d) 	Reverse-engineer, disassemble, decompile, or make any
+	attempt to discover the source code of the Software
+	Product.
+
+(e)	Sublicense, rent, or lease any portion of the Software
+	Product.
+
+(f)	Use a previous version of the Software Product in addition
+	to an upgraded version received as a replacement of the
+	prior version.  Upon upgrading the Software Product, all 
+	copies of the prior version must be destroyed except for
+	copies retained for archival purposes.
+
+------------------------------------------------------------------
+Demo Copy
+
+If you have received the Software Product for the specific purpose
+of demonstration or evaluation, you agree to return the Software
+Product to RSI at the end of the agreed upon evaluation period.
+You may not retain or use any copies of the Software Product
+beyond the evaluation period.
+
+------------------------------------------------------------------
+Limited Warranty
+
+RSI warrants that the media on which the Software Product is
+distributed will be free from defects for a period of sixty (60)
+days from the date of delivery of the Software Product to you.
+Your sole remedy in the event of a breach of the warranty will be
+that RSI will, at its option, replace any defective media returned 
+to RSI within the warranty period. RSI does not warrant that the
+Software Product will meet your requirements or that operation of
+the Software Product will be uninterrupted or that the Software
+Product be error-free.
+
+
+THE ABOVE WARRANTY IS EXCLUSIVE AND IN LIEU OF ALL OTHER 
+WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+AND NONINFRINGEMENT. THIS WARRANTY GIVES YOU SPECIFIC LEGAL 
+RIGHTS. YOU MAY HAVE OTHER RIGHTS, WHICH VARY FROM STATE TO STATE.
+
+------------------------------------------------------------------
+Disclaimer of Damages
+
+REGARDLESS OF WHETHER ANY REMEDY SET FORTH HEREIN FAILS OF ITS
+ESSENTIAL PURPOSE, IN NO EVENT WILL RSI BE LIABLE TO YOU FOR ANY
+SPECIAL, CONSEQUENTIAL, INDIRECT OR SIMILAR DAMAGES, INCLUDING ANY
+LOST PROFITS OR LOST DATA ARISING OUT OF THE USE OF OR INABILITY 
+TO USE THE SOFTWARE PRODUCT EVEN IF RSI HAS BEEN ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGES.
+
+SOME STATES DO NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY
+FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES SO THE ABOVE LIMITATION
+OR EXCLUSION MAY NOT APPLY TO YOU.
+
+IN NO CASE SHALL RSI'S LIABILITY EXCEED THE PURCHASE PRICE OF THE
+SOFTWARE PRODUCT. The disclaimers and limitations set forth above
+will apply regardless of whether you accept the Software Product.
+
+------------------------------------------------------------------
+U.S. Government Restricted Rights
+
+This Software Product is provided with RESTRICTED RIGHTS.  Use,
+duplication or disclosure by the U.S. Government is subject to
+restrictions set forth in subparagraph (c) (1) (ii) of the Rights
+in Technical Data and Computer Software clause at DFARS, 
+252.227-7013, or subparagraphs (c) (1) and (2) of the Commercial
+Computer Software-Restricted Rights clause at 48 CFR 52.227-19,
+as applicable. The Contractor/Manufacturer is Router Solutions
+Incorporated, 180 Newport Center Drive #240, Newport Beach, 
+CA 92660.
+
+------------------------------------------------------------------
+General
+
+This Agreement will be governed by the laws of the State of
+California. This Agreement may only be modified by a license 
+addendum or by a written document which has been signed by both 
+you and RSI. Should you have any questions concerning this
+Agreement, or if you desire to contact RSI, please write 
+
+	Router Solutions Incorporated
+	180 Newport Center Drive #240
+	Newport Beach, CA 92660

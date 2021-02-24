@@ -1,1 +1,127 @@
-unsupported reparse point
+;
+; This is a macro file to read aperture files.
+; (not yet ! every char can also be defined as hex 0x000 to 0x127)
+;
+; The apertature scanner expect a line driven Aperture list file.
+;
+; The checking work in sequence. Therefore the most complex .SCANLINE 
+; should be called first.
+; Example .SCANLINE .DCODE
+;   	  .SCANLINE .DCODE .XSIZE
+; In this example all lines would find the first scanline, and the second
+; one would never be used.
+;
+; All commands happen between .STARTDEF and .ENDDEF .The Software
+; will treat any section seperate, so that you can have i.e. different 
+; .UNITS for different formats.
+;
+; .STARTDEF	startdefinition name
+;    all commands in here
+; .ENDDEF
+;
+;
+;
+; The following .UNITS values of the input file are implemented:
+;   INCH  
+;   MIL   
+;   MM    
+;
+; The following commands are implemented:
+;   .UNITS         unit commands
+;   .IGNORE        " characters "
+;   .TEXTDELIMETER only and always 2 chars
+;   .SCANLINE      scanline commands
+;   .WORDDELIMETER " characters " - needed to seperate words.
+;				  i.e 0.2x0.4 x would be a word delimeter
+;				      to seperate XSIZE from YSIZE.	
+				"\"" this delimeter is a quote.
+;   .FORM_ROUND    Name of Round aperture in the input file (can be multiple)
+;   .FORM_SQUARE   
+;   .FORM_RECT     
+;   .FORM_OBLONG   
+;   .FORM_THERM    
+;   .FORM_DONUT
+; The folling .SCANLINE commands are implemented:
+;   .XSIZE      Keyword which expects to find a int/float x-coordinate
+;   .YSIZE      Keyword which expects to find a int/float y-coordinate
+;   .DCODE      Keyword which expects to find a int number with an optional D
+;   .APNUM      Keyword which expects to find a int number with an optional A
+;   .SKIPWORD   Keyword will skip this entry
+;   .FORM       Keyword for form as defined in .FORM section
+;
+;   .MUST_FORM_ROUND 	This Keyword must be a form of a type. This is done	
+;   .MUST_FORM_SQUARE	to do the following : Form    Size Orient Length 
+;   .MUST_FORM_RECT    			      Circle  55	
+;   .MUST_FORM_OBLONG			      Finger  50   90     100
+;   .MUST_FORM_THERMO			      Annulus 50          20	
+;   .MUST_FORM_DONUT
+;
+;   .APROT	Keyword for aperature rotation.
+;
+;
+;
+; Assign   Apnum   Dcode
+.ASSIGN       1    10
+.ASSIGN       3    12
+.ASSIGN       4    13
+.ASSIGN       9    18
+.ASSIGN      14    21
+.ASSIGN      19    26
+.ASSIGN      21    28
+.ASSIGN      25    30
+.ASSIGN      26    31
+.ASSIGN      30    35
+.ASSIGN      33    38
+.ASSIGN      34    39
+.ASSIGN      35    40
+.ASSIGN      36    41
+.ASSIGN      38    43
+.ASSIGN      39    44
+.ASSIGN      46    51
+.ASSIGN      47    52
+.ASSIGN      48    53
+.ASSIGN      50    55
+.ASSIGN      55    60
+.ASSIGN      56    61
+.ASSIGN      57    62
+.ASSIGN      58    63
+.ASSIGN      59    64
+;
+;
+.STARTDEF ALLEGRO
+        ;.UNITS=inch
+        ;.UNITS=MIL
+        ;.UNITS=mm
+	.UNIT_MIL 	INCHES
+	;.UNIT_INCH	INCHES
+	.UNIT_MM	MM
+	;
+	.SKIPLINE WHEEL	
+	.SCANLINE .SKIPWORD .UNIT_VAL
+        ;
+        .TEXTDELIMETER   ()
+        ;.IGNORE ""            // inside bracket
+        .WORDDELIMETER "HX"  // inside bracket
+        ;
+        ; Usable keywords
+        ; XSIZE
+        ; YSIZE
+	; SKIPLINE
+        ; SKIPWORD
+        ; SKIPALPHA
+        ; DCODE
+        ; APNUMBER
+        ; FORM
+        ; APPTYPE
+      .FORM_ROUND      LINE
+      .FORM_ROUND      CIRCLE
+      .FORM_SQUARE     SQUARE	
+      .FORM_RECT       RECTANGLE
+      .FORM_THERM      T
+        ; all different possibilities.
+      .SCANLINE .MUST_FORM_ROUND .XSIZE .DCODE
+      .SCANLINE .MUST_FORM_SQUARE .XSIZE .SKIPWORD .DCODE
+      .SCANLINE .MUST_FORM_RECT .XSIZE .YSIZE .APROT .DCODE
+      .SCANLINE .SKIPWORD .MUST_FORM_THERM .XSIZE .YSIZE .SKIPWORD .APROT .DCODE
+.ENDDEF
+;
